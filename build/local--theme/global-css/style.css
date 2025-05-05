@@ -1,0 +1,15 @@
+﻿/*******************************************************************************
+    WE DO NOT USE THIS CUSTOM THEME EDITOR!
+
+    If your site is PRIVATE:
+      Find the Theme on this page titled Private Site CSS
+      Input your CSS there
+
+    If your site is PUBLIC:
+      Go to the css:_home page.
+      Find the Global CSS page from the list of themes provided.
+      Edit the page to apply your CSS.
+*******************************************************************************/
+
+@import url('../private-site-css/style.css');
+@import url('../../cssglobal-css/code/1');

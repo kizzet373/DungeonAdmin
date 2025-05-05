@@ -1,0 +1,436 @@
+/** Standard Theme
+ *  Developed by the Wikidot Community
+ *  Special thanks to Timothy Foster
+ *  Version: 1.02.141017
+ *  TOC:
+ *      IMPT: Imports
+ *      GLOB: Global
+ *      FORM: Forms/Buttons
+ *      CVBS: Convert to Bootstrap
+ *      CONT: Containers
+ *      HEAD: Header
+ *      LOGN: Login Status
+ *      SCHB: Search Bar
+ *      TOPB: Top Bar
+ *      SIDE: Side Bar
+ *      MAIN: Main Content
+ *      TOCT: Table of Contents
+ *      CODE: Code Blocks
+ *      WTBL: Wiki Tables
+ *      ACTA: Action Area
+ *      BSCL: Bootstrap Colors
+ *      TABV: Tabview
+ *      IMBX: Image Boxes by Timothy Foster
+ *      INHV: Inline Hovertips by James Kanjo
+ *  ***************************************************************************/
+ 
+/*  Imports (!IMPT)
+==============================================================================*/
+@import url('//css.wikidot.com/theme:community-bootstrap-base/code_');
+@import url('//css.wikidot.com/cssnippet:minimized-login-status/code_');
+@import url('//css.wikidot.com/cssnippet:minimized-search-bar/code_');
+@import url('//css.wikidot.com/cssnippet:fontawesome-editor/code_');
+@import url('//css.wikidot.com/cssnippet:better-code-blocks/code_');
+@import url('//css.wikidot.com/cssnippet:inline-hovertips/code_');
+ 
+/*  Global (!GLOB)
+==============================================================================*/
+a.newpage{  color: #AAA; }
+a.newpage:hover,
+a.newpage:focus{  color: #888; }
+ 
+/*  Forms/Buttons (!FORM)
+==============================================================================*/
+.btn{
+    border-bottom-width: 3px;
+    padding: 3px 15px;
+}
+.btn-group-vertical > .btn{
+    border-bottom-width: 1px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+}
+.form-control{
+    border-radius: 4px;
+    height: 32px;
+    padding: 4px 12px;
+}
+ 
+/*  Convert to Bootstrap (!CVBS)
+==============================================================================*/
+/* * Unclassed Buttons > .btn * */
+input[type=button]:not(.btn),
+input[type=submit]:not(.btn),
+.button,
+.join-box a{
+    padding: 3px 15px;
+    border-bottom-width: 3px;
+}
+ 
+/* * Fields > .form-control * */
+input[type=text]:not(.form-control),
+textarea:not(.form-control){
+    padding: 4px 12px;
+}
+input[type=text]:not(.form-control){  height: 32px; }
+ 
+.pager > .target > a,
+.pager > .current,
+.pager > .dots{
+    border-bottom-width: 3px;
+}
+ 
+.breadcrumbs{
+    background: none;
+    padding: 0 24px;
+    color: #777;
+}
+ 
+/*  Containers (!CONT)
+==============================================================================*/
+ 
+/*  Header (!HEAD)
+==============================================================================*/
+header.header-wrap{
+    position: relative;
+    height: 250px;
+}
+header .header{  position: relative; }
+header.header-wrap h1{  margin-bottom: 0;}
+header.header-wrap h1 a{
+    font-size: 32px;
+    letter-spacing: 1px;
+    transition: color 128ms ease-out;
+}
+header.header-wrap h1 a:hover,
+header.header-wrap h1 a:focus,
+header.header-wrap h1 a:active{
+    text-decoration: none;
+}
+header.header-wrap h2{
+    font-size: 14px;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    padding-left: 56px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+header.header-wrap .site-title{  min-height: 75px; }
+ 
+/*  Login Status (!LOGN)
+==============================================================================*/
+.login-status{
+    padding-top: 3px;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+}
+ 
+/*  Search Bar (!SCHB)
+==============================================================================*/
+#search-top-box{
+    position: absolute;
+    top: 60px; right: 20px;
+    float: none;
+}
+#search-top-box-input{  margin-right: 0; }
+#search-top-box input.btn{  display: none; }
+#search-top-box input.text{
+    border: 1px solid;
+}
+ 
+/*  Top Bar (!TOPB)
+==============================================================================*/
+nav.top-bar-wrap{
+    background: none;
+    border: none;
+    margin-top: 0;
+}
+nav .top-bar .navbar-collapse{  padding: 0; }
+nav .top-bar .navbar-nav{  float: right; }
+nav .top-bar .navbar-nav li a{
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+nav .top-bar .navbar-brand{
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+ 
+/* * Dropdown Menu Open * */
+nav .top-bar .navbar-nav > .open > a,
+nav .top-bar .navbar-nav > .open > a:hover,
+nav .top-bar .navbar-nav > .open > a:focus{
+    background: none;
+}
+nav .top-bar .navbar-nav .dropdown-menu a{
+    color: #333;
+    padding-bottom: 3px;
+}
+nav .top-bar .navbar-nav > li > .dropdown-menu{  border-radius: 4px; }
+ 
+/* * Tablet/small screen * */
+nav .top-bar .navbar-toggle{
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    border: 1px solid;
+    margin-right: 20px;
+    padding: 0;
+}
+nav .top-bar .navbar-toggle:hover,
+nav .top-bar .navbar-toggle:focus{
+    outline: none;
+}
+
+nav .top-bar .navbar-toggle .icon-bar{
+    width: 14px;
+    margin: 3px auto;
+}
+ 
+nav .top-bar .navbar-collapse{
+    border: none;
+    overflow: hidden;
+    max-height: none;
+}
+nav .top-bar .navbar-collapse.collapsing,
+nav .top-bar .navbar-collapse.in{
+    position: relative;
+    z-index: 999;
+}
+nav .top-bar .navbar-collapse.collapsing,
+nav .top-bar .navbar-collapse.in,
+nav .top-bar .navbar-collapse.collapsing .dropdown-menu,
+nav .top-bar .navbar-collapse.in .dropdown-menu{
+    text-align: right;
+}
+nav .top-bar .navbar-collapse.collapsing ul.navbar-nav,
+nav .top-bar .navbar-collapse.in ul.navbar-nav{
+    margin: 6px;
+}
+nav .top-bar .navbar-collapse.collapsing ul.dropdown-menu,
+nav .top-bar .navbar-collapse.in ul.dropdown-menu{
+    margin-right: 1em;
+}
+
+@media (min-width:768px) and (max-width:992px){
+    nav .top-bar .navbar-brand{  display: none; }
+}
+ 
+/*  Side Bar (!SIDE)
+==============================================================================*/
+nav.side-bar-wrap{  float: right; }
+nav .side-bar{
+    padding-top: 74px;
+    font-size: 13px;
+    color: #999;
+}
+nav .side-bar h1{
+    font-size: 16px;
+    color: #888;
+}
+nav .side-bar h2{  font-size: 15px; }
+nav .side-bar h3{  font-size: 14px; }
+nav .side-bar h4{  font-size: 13px; }
+nav .side-bar h5{  font-size: 12px; }
+nav .side-bar h6{  font-size: 12px; }
+nav .side-bar ul{
+    list-style: none;
+    padding-left: 1.25em;
+}
+nav .side-bar ul li a{
+    color: #999;
+    display: block;
+}
+nav .side-bar ul li a:hover{
+    text-decoration: none;
+    border-right: 1px solid;
+}
+ 
+nav .side-bar .navbar-toggle{
+    line-height: 1.42857;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 3px 15px;
+    border-bottom-width: 3px;
+    z-index: 998;
+}
+nav .side-bar .navbar-toggle:hover,
+nav .side-bar .navbar-toggle:focus{
+    color: #333;
+    border-color: #ADADAD;
+    background-color: #EBEBEB;
+}
+nav .side-bar .navbar-toggle:active{
+    box-shadow: 0 3px 5px rgba(0,0,0,.125) inset;
+    outline: 0 none;
+}
+ 
+@media (max-width: 992px){
+    nav.side-bar-wrap{  float: none; }
+    nav .side-bar{  padding-top: 1em; }
+}
+@media (max-width: 992px) and (min-width: 768px){
+    nav .side-bar .navbar-collapse{
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+ 
+/*  Main Content (!MAIN)
+==============================================================================*/
+main > .content{
+    background: #fcfcfc;
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,.2);
+    position: relative;
+    top: -110px;
+    border-radius: 4px;
+    padding-bottom: 15px;
+}
+main > .content .page-title{
+    font-size: 32px;
+    border-bottom: 3px solid;
+    margin: 15px 0 1em 0;
+    padding: 0;
+    line-height: 1.25em;
+}
+main > .content .page-title span{
+    display: inline-block;
+    line-height: 1.25em;
+    height: calc(1.25em + 8px);
+    margin-bottom: -8px;
+    padding-right: 3px;
+}
+main .main-content h1{
+    margin-left: -21px;
+    padding-left: 21px;
+    margin-right: -21px;
+    padding-right: 21px;
+    font-size: 32px;
+}
+main .main-content h2{  font-size: 28px; }
+main .main-content h3{  font-size: 24px; }
+main .main-content h4{  font-size: 22px; }
+main .main-content h5{  font-size: 20px; }
+main .main-content h6{  font-size: 18px; }
+main .content .page-options-container{
+    text-align: center;
+    margin-top: 12px;
+}
+#page-info, .page-watch-options{  font-size: 12px; }
+#page-options-bottom{  margin-bottom: 8px; }
+#page-options-bottom-2{
+    width: 904px;
+    margin: auto;
+}
+ 
+@media (max-width: 768px){
+    main > .content{
+        border-radius: 0;
+/*      overflow-x: hidden;  */
+    }
+}
+ 
+/*  Table of Contents (!TOCT)
+==============================================================================*/
+#toc{  margin-left: 1em; }
+ 
+/*  Footer (!FOOT)
+==============================================================================*/
+ 
+/*  Code Blocks (!CODE)
+==============================================================================*/
+ 
+/*  Wiki Tables (!WTBL)
+==============================================================================*/
+ 
+/*  Action Area (!ACTA)
+==============================================================================*/
+#action-area{  margin-top: 56px; }
+#action-area .page-source{
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 13px;
+}
+.change-textarea-size{  display: none; }
+.wd-editor-toolbar-panel{
+    height: 25px;
+    margin-bottom: 10px;
+}
+.edit-help-34 a{
+    display: inline-block;
+    margin-right: 10px;
+}
+.edit-page-bottomtable{
+    width: 100%;
+    margin-top: 10px;
+}
+.edit-page-bottomtable td{  vertical-align: middle; }
+.edit-page-bottomtable #lock-info{  margin-bottom: 0; }
+#edit-page-textarea{  width: 100% !important; }
+ 
+a.action-area-close{  margin-top: 2px; }
+ 
+#action-area table.form{  margin: .5em auto; }
+#action-area table.form + .buttons,
+#action-area .form-actions{
+    text-align: center;
+    width: 100%;
+}
+#action-area table.form + .buttons input,
+#action-area .form-actions input{
+    float: none;
+}
+#action-area table.form + .buttons input + input,
+#action-area .form-actions input + input{
+    margin-left: -4px;
+}
+ 
+#action-area .form-group .col-sm-5{  width: 75%; }
+
+@media (max-width: 768px){
+    #action-area .form-group .col-sm-5{  width: 100%; }
+}
+ 
+/*  Bootstrap Colors (!BSCL)
+==============================================================================*/
+ 
+/*  Tabview (!TABV)
+==============================================================================*/
+ 
+/*  Image Boxes by Timothy Foster (!IMBX)
+==============================================================================*/
+ 
+/*  Inline Hovertips by James Kanjo (!INHV)
+==============================================================================*/
+.hover{
+    display: inline-block;
+    background: none;
+    height: 1.42857em;
+    margin-bottom: 3px;
+}
+.hover:hover{
+    background: url('//css.wikidot.com/local--files/theme:standard-theme/hovertipBelow.png');
+    background-repeat: no-repeat;
+    background-position: center calc(1.42857em - 2px);
+    height: calc(1.42857em + 3px);
+    margin-bottom: 0;
+}
+.hover span{  transition:none; }
+.hover:hover span{
+    border: none;
+    background: rgba(20, 20, 20, .95);
+    font-size: 12px;
+    min-width: 200px;
+    color: #FFF;
+    border-radius: 4px;
+    padding: 4px 12px;
+    margin-top: calc(1.42857em + 6px);
+}

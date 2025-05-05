@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Sheets Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .character-card {
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .sharing-options {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">RPG Character Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/dashboard">My Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout" id="logout-btn">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <h1>My Character Sheets</h1>
+            </div>
+            <div class="col-md-4 text-end">
+                <button id="create-character-btn" class="btn btn-primary">Create New Character</button>
+            </div>
+        </div>
+
+        <div class="row" id="character-list">
+            <!-- Character cards will be added here -->
+            <div class="col-12 text-center my-5" id="loading-indicator">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Character Modal -->
+    <div class="modal fade" id="createCharacterModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create New Character</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="create-character-form">
+                        <div class="mb-3">
+                            <label for="character-name" class="form-label">Character Name</label>
+                            <input type="text" class="form-control" id="character-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="character-species" class="form-label">Species</label>
+                            <input type="text" class="form-control" id="character-species">
+                        </div>
+                        <div class="mb-3">
+                            <label for="character-class" class="form-label">Class</label>
+                            <input type="text" class="form-control" id="character-class">
+                        </div>
+                        <div class="mb-3">
+                            <label for="character-level" class="form-label">Level</label>
+                            <input type="number" class="form-control" id="character-level" min="1" max="20" value="1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="save-new-character">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Character Modal -->
+    <div class="modal fade" id="shareCharacterModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Share Character</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="share-character-form">
+                        <input type="hidden" id="share-character-id">
+                        
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="make-public">
+                            <label class="form-check-label" for="make-public">Make character public (anyone with the link can view)</label>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="pin-code" class="form-label">PIN Code</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="pin-code" maxlength="6" placeholder="6-digit PIN">
+                                <button class="btn btn-outline-secondary" type="button" id="generate-pin">Generate</button>
+                            </div>
+                            <div class="form-text">PIN allows access to the character sheet without logging in</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="shared-emails" class="form-label">Share with specific users</label>
+                            <textarea class="form-control" id="shared-emails" rows="3" placeholder="Enter email addresses, one per line"></textarea>
+                            <div class="form-text">These users will be able to view your character sheet when logged in</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Shareable Links</label>
+                            <div id="share-links">
+                                <div class="alert alert-info">
+                                    Save sharing settings to generate links
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="save-sharing-settings">Save Settings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Global variables
+        let myCharacters = [];
+        
+        $(document).ready(function() {
+            loadCharacters();
+            
+            // Create character button
+            $('#create-character-btn').click(function() {
+                $('#createCharacterModal').modal('show');
+            });
+            
+            // Save new character
+            $('#save-new-character').click(function() {
+                const characterName = $('#character-name').val();
+                if (!characterName) {
+                    alert('Character name is required!');
+                    return;
+                }
+                
+                const newCharacter = {
+                    form: {
+                        character_name: characterName,
+                        species: $('#character-species').val(),
+                        class_subclass_levels: [{
+                            class: $('#character-class').val(),
+                            level: $('#character-level').val(),
+                            subclass: ""
+                        }],
+                        // Initialize other required fields
+                        strength_score: 10,
+                        dexterity_score: 10,
+                        constitution_score: 10,
+                        intelligence_score: 10,
+                        wisdom_score: 10,
+                        charisma_score: 10,
+                        hp_current: 0,
+                        hp_max: 0
+                    }
+                };
+                
+                createCharacter(newCharacter);
+            });
+            
+            // Generate PIN code
+            $('#generate-pin').click(function() {
+                const pin = Math.floor(100000 + Math.random() * 900000).toString();
+                $('#pin-code').val(pin);
+            });
+            
+            // Save sharing settings
+            $('#save-sharing-settings').click(function() {
+                const characterId = $('#share-character-id').val();
+                
+                const sharingSettings = {
+                    isPublic: $('#make-public').is(':checked'),
+                    pin: $('#pin-code').val(),
+                    generatePin: false,
+                    sharedWith: $('#shared-emails').val().split('\n').map(email => email.trim()).filter(email => email)
+                };
+                
+                saveCharacterSharingSettings(characterId, sharingSettings);
+            });
+        });
+        
+        function loadCharacters() {
+            $('#loading-indicator').show();
+            $('#character-list').empty();
+            
+            fetch('/api/characters')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load characters');
+                    }
+                    return response.json();
+                })
+                .then(characters => {
+                    myCharacters = characters;
+                    
+                    if (characters.length === 0) {
+                        $('#character-list').html(
+                            '<div class="col-12 text-center">' +
+                                '<p class="text-muted">You haven\'t created any characters yet.</p>' +
+                            '</div>'
+                        );
+                    } else {
+                        renderCharacterCards(characters);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading characters:', error);
+                    $('#character-list').html(
+                        '<div class="col-12">' +
+                            '<div class="alert alert-danger">Failed to load characters. Please try again later.</div>' +
+                        '</div>'
+                    );
+                })
+                .finally(() => {
+                    $('#loading-indicator').hide();
+                });
+        }
+        
+        function renderCharacterCards(characters) {
+            characters.forEach(character => {
+                const characterData = character.form || {};
+                
+                const card = `
+                    <div class="col-md-4 mb-4">
+                        <div class="card character-card" data-id="${character.id}">
+                            <div class="card-body">
+                                <h5 class="card-title">${characterData.character_name || 'Unnamed Character'}</h5>
+                                <p class="card-text">
+                                    ${characterData.species || ''} 
+                                    ${getCharacterClasses(characterData.class_subclass_levels)}
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        Last updated: ${new Date(character.updated).toLocaleDateString()}
+                                    </small>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-sm btn-primary edit-character-btn" 
+                                            data-id="${character.id}">Edit</button>
+                                    <button class="btn btn-sm btn-outline-primary share-character-btn" 
+                                            data-id="${character.id}">Share</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                $('#character-list').append(card);
+            });
+            
+            // Add click event handlers
+            $('.edit-character-btn').click(function(e) {
+                e.stopPropagation();
+                const characterId = $(this).data('id');
+                window.location.href = `/charactersheet.html?id=${characterId}`;
+            });
+            
+            $('.character-card').click(function() {
+                const characterId = $(this).data('id');
+                window.location.href = `/charactersheet.html?id=${characterId}`;
+            });
+            
+            $('.share-character-btn').click(function(e) {
+                e.stopPropagation();
+                const characterId = $(this).data('id');
+                openShareModal(characterId);
+            });
+        }
+        
+        function getCharacterClasses(classLevels) {
+            if (!classLevels || !Array.isArray(classLevels) || classLevels.length === 0) {
+                return '';
+            }
+            
+            return classLevels
+                .filter(cl => cl.class && cl.level)
+                .map(cl => `${cl.class} ${cl.level}${cl.subclass ? ` (${cl.subclass})` : ''}`)
+                .join(', ');
+        }
+        
+        function createCharacter(characterData) {
+            fetch('/api/characters', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(characterData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to create character');
+                }
+                return response.json();
+            })
+            .then(data => {
+                $('#createCharacterModal').modal('hide');
+                $('#create-character-form')[0].reset();
+                window.location.href = `/charactersheet.html?id=${data.id}`;
+            })
+            .catch(error => {
+                console.error('Error creating character:', error);
+                alert('Failed to create character. Please try again.');
+            });
+        }
+        
+        function openShareModal(characterId) {
+            $('#share-character-id').val(characterId);
+            
+            // Find character in our loaded list
+            const character = myCharacters.find(c => c.id === characterId);
+            
+            // Reset form
+            $('#share-character-form')[0].reset();
+            
+            // Populate current sharing settings
+            if (character) {
+                $('#make-public').prop('checked', character.isPublic || false);
+                $('#pin-code').val(character.pin || '');
+                
+                if (character.sharedWith && Array.isArray(character.sharedWith)) {
+                    $('#shared-emails').val(character.sharedWith.join('\n'));
+                }
+                
+                updateShareLinks(character);
+            }
+            
+            $('#shareCharacterModal').modal('show');
+        }
+        
+        function updateShareLinks(character) {
+            const baseUrl = `${window.location.origin}/charactersheet?id=${character.id}`;
+            let linkHtml = '';
+            
+            if (character.isPublic) {
+                linkHtml += `
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Public Link</span>
+                        <input type="text" class="form-control" value="${baseUrl}" readonly>
+                        <button class="btn btn-outline-secondary copy-link-btn" type="button">Copy</button>
+                    </div>
+                `;
+            }
+            
+            if (character.pin) {
+                linkHtml += `
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">PIN Link</span>
+                        <input type="text" class="form-control" value="${baseUrl}&pin=${character.pin}" readonly>
+                        <button class="btn btn-outline-secondary copy-link-btn" type="button">Copy</button>
+                    </div>
+                `;
+            }
+            
+            if (linkHtml) {
+                $('#share-links').html(linkHtml);
+                
+                // Add copy functionality
+                $('.copy-link-btn').click(function() {
+                    const linkInput = $(this).prev('input');
+                    linkInput.select();
+                    document.execCommand('copy');
+                    
+                    const originalText = $(this).text();
+                    $(this).text('Copied!');
+                    
+                    setTimeout(() => {
+                        $(this).text(originalText);
+                    }, 2000);
+                });
+            } else {
+                $('#share-links').html(`
+                    <div class="alert alert-info">
+                        Save sharing settings to generate links
+                    </div>
+                `);
+            }
+        }
+        
+        function saveCharacterSharingSettings(characterId, sharingSettings) {
+            fetch(`/api/characters/${characterId}/share`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(sharingSettings)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to update sharing settings');
+                }
+                return response.json();
+            })
+            .then(updatedSettings => {
+                // Update our local character data
+                const characterIndex = myCharacters.findIndex(c => c.id === characterId);
+                if (characterIndex >= 0) {
+                    myCharacters[characterIndex] = {
+                        ...myCharacters[characterIndex],
+                        isPublic: updatedSettings.isPublic,
+                        sharedWith: updatedSettings.sharedWith,
+                        pin: updatedSettings.pin
+                    };
+                    
+                    updateShareLinks(myCharacters[characterIndex]);
+                }
+                
+                alert('Sharing settings updated successfully!');
+            })
+            .catch(error => {
+                console.error('Error updating sharing settings:', error);
+                alert('Failed to update sharing settings. Please try again.');
+            });
+        }
+    </script>
+</body>
+</html>

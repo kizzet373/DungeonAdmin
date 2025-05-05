@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Sheet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            padding: .5em;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .sheet-container {
+            background: white;
+            padding: .5em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            border: 2px solid #333;
+            padding: .5em;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-content {
+            margin-top: 1em;
+        }
+
+        .container {
+            padding: 0px;
+        }
+
+        .section-header {
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .form-subsection {
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            padding: 5px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .collapse:not(.show) {
+            display: none;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            font-size: 15px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        input[type="text"] {
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-weight: bold;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        h5 {
+            font-size: 22px;
+            font-style: italic;
+            margin-bottom: .25em;
+        }
+
+        .row {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .row>div,
+        h5 {
+            padding-left: .5em !important;
+            padding-right: .5em !important;
+        }
+
+        .ability-proficiencies {
+            text-align: left;
+        }
+
+        .ability-proficiencies>.checkbox-container {
+            display: flex;
+            float: left;
+            margin-right: 5px;
+        }
+
+        .ability-proficiencies>.checkbox-container>input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .score,
+        .modifier {
+            width: 45%;
+            display: inline-block;
+        }
+
+        hr {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        th,
+        td,
+        th *,
+        td * {
+            font-size: .75rem !important;
+            padding: .5rem !important;
+            align-items: center !important;
+        }
+    </style>
+    <script>
+        async function loadCharacter() {
+            const response = await fetch("/get_character/player1");
+            const character = await response.json();
+            for (const key in character) {
+                if (document.getElementById(key)) {
+                    document.getElementById(key).value = character[key];
+                }
+            }
+        }
+
+        async function saveCharacter() {
+            const character = {};
+            document.querySelectorAll("input, textarea").forEach(el => {
+                character[el.id] = el.value;
+            });
+            await fetch("/update_character/player1", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(character)
+            });
+            alert("Character Updated!");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="sheet-container">
+        <h2 class="text-center">Character Sheet</h2>
+
+        <div class="section">
+            <div class="section-header">Basic Information</div>
+            <div class="section-content container show">
+                <div class="row">
+                    <div class="col-12 col-md-4"><label for="name"><u>Character Name</u></label> <input type="text"
+                            id="name" class="form-control"></div>
+                    <div class="col-12 col-md-4"><label for="appearance"><u>Appearance</u></label> <textarea
+                            id="appearance" class="form-control"></textarea></div>
+                    <div class="col-6 col-md-2"><label for="size"><u>Size</u></label> <input type="text" id="size"
+                            class="form-control"></div>
+                    <div class="col-6 col-md-4"><label for="species"><u>Species</u></label> <input type="text"
+                            id="species" class="form-control"></div>
+                    <div class="col-6 col-md-4"><label for="classes"><u>Classes</u></label> <input type="text"
+                            id="classes" class="form-control"></div>
+                    <div class="col-6 col-md-2"><label for="Levels"><u>Levels</u></label> <input type="text" id="levels"
+                            class="form-control"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">Combat Information</div>
+            <div class="section-content collapse container">
+                <div class="row">
+                    <div class="col-6 col-md-2">
+                        <label for="proficiency_bonus"><u>Proficiency Bonus</u></label>
+                        <input type="text" id="proficiency_bonus" class="form-control">
+                        <label for="armor_class"><u>Armor Class (AC)</u></label>
+                        <input type="text" id="armor_class" class="form-control">
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <label for="initiative"><u>Initiative</u></label>
+                        <input type="text" id="initiative" class="form-control">
+                        <label for="speed"><u>Speed</u></label>
+                        <input type="text" id="speed" class="form-control">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="form-subsection row" id="hp-subsection">
+                            <H4 class="col-12"><b>Hit Points</b></H4>
+                            <div class="col-6"><label for="hp_current"><u>Current</u></label> <input type="text"
+                                    id="hp_current" class="form-control"></div>
+                            <div class="col-6"><label for="hp_temp"><u>Temp</u></label> <input type="text" id="hp_temp"
+                                    class="form-control"></div>
+                        </div>
+                        <label for="hit_dice_spent"><u>Hit Dice</u></label>
+                        <input type="text" id="hit_dice_spent" class="form-control">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="form-subsection row" id="death-save-subsection">
+                            <H4 class="col-12"><b>Death Saves</b></H4>
+                            <div class="col-12">
+                                <div class="row justify-content-center">
+                                    <label class="col-12" for="death_success"><u>Success</u></label>
+                                    <input type="checkbox" id="death_success_1" class="form-control col-3">
+                                    <input type="checkbox" id="death_success_2" class="form-control col-3">
+                                    <input type="checkbox" id="death_success_3" class="form-control col-3">
+                                    <label class="col-12" for="death_fail"><u>Fail</u></label>
+                                    <input type="checkbox" id="death_fail_1" class="form-control col-3">
+                                    <input type="checkbox" id="death_fail_2" class="form-control col-3">
+                                    <input type="checkbox" id="death_fail_3" class="form-control col-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="weapons-and-cantrips"><u>Weapon Attacks & Damage Cantrips</u></label> <textarea
+                            id="weapons-and-cantrips" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">Ability Scores & Skills</div>
+            <div class="section-content collapse container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="form-subsection">
+                            <label for="strength_score">
+                                <h4><b>Strength</b></h4>
+                            </label>
+                            <hr />
+                            <div class="ability-stats">
+                                <div class="score">
+                                    <span>Score</span>
+                                    <input type="text" id="strength_score" class="form-control">
+                                </div>
+                                <div class="modifier">
+                                    <span>Modifier</span>
+                                    <input type="text" id="strength_modifier" class="form-control">
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="ability-proficiencies">
+                                <span>Saving Throw</span>
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="strength_save_prof">
+                                </div>
+                                <hr />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="athletics_prof">
+                                    ⭐ <input type="checkbox" id="athletics_expert">
+                                </div>
+                                <span>Athletics</span>
+                            </div>
+                        </div>
+
+                        <div class="form-subsection">
+                            <label for="dexterity_score">
+                                <h4><b>Dexterity</b></h4>
+                            </label>
+                            <hr />
+                            <div class="ability-stats">
+                                <div class="score">
+                                    <span>Score</span>
+                                    <input type="text" id="dexterity_score" class="form-control">
+                                </div>
+                                <div class="modifier">
+                                    <span>Modifier</span>
+                                    <input type="text" id="dexterity_modifier" class="form-control">
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="ability-proficiencies">
+                                <span>Saving Throw</span>
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="dexterity_save_prof">
+                                </div>
+                                <hr />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="acrobatics_prof">
+                                    ⭐ <input type="checkbox" id="acrobatics_expert">
+                                </div>
+                                <span>Acrobatics</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="sleight_of_hand_prof">
+                                    ⭐ <input type="checkbox" id="sleight_of_hand_expert">
+                                </div>
+                                <span>Sleight of Hand</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="stealth_prof">
+                                    ⭐ <input type="checkbox" id="stealth_expert">
+                                </div>
+                                <span>Stealth</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="form-subsection">
+                            <label for="constitution_score">
+                                <h4><b>Constitution</b></h4>
+                            </label>
+                            <hr />
+                            <div class="ability-stats">
+                                <div class="score">
+                                    <span>Score</span>
+                                    <input type="text" id="constitution_score" class="form-control">
+                                </div>
+                                <div class="modifier">
+                                    <span>Modifier</span>
+                                    <input type="text" id="constitution_modifier" class="form-control">
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="ability-proficiencies">
+                                <span>Saving Throw</span>
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="constitution_save_prof">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-subsection">
+                            <label for="intelligence_score">
+                                <h4><b>Intelligence</b></h4>
+                            </label>
+                            <hr />
+                            <div class="ability-stats">
+                                <div class="score">
+                                    <span>Score</span>
+                                    <input type="text" id="intelligence_score" class="form-control">
+                                </div>
+                                <div class="modifier">
+                                    <span>Modifier</span>
+                                    <input type="text" id="intelligence_modifier" class="form-control">
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="ability-proficiencies">
+                                <span>Saving Throw</span>
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="intelligence_save_prof">
+                                </div>
+                                <hr />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="arcana_prof">
+                                    ⭐ <input type="checkbox" id="arcana_expert">
+                                </div>
+                                <span>Arcana</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="history_prof">
+                                    ⭐ <input type="checkbox" id="history_expert">
+                                </div>
+                                <span>History</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="investigation_prof">
+                                    ⭐ <input type="checkbox" id="investigation_expert">
+                                </div>
+                                <span>Investigation</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="nature_prof">
+                                    ⭐ <input type="checkbox" id="nature_expert">
+                                </div>
+                                <span>Nature</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="religion_prof">
+                                    ⭐ <input type="checkbox" id="religion_expert">
+                                </div>
+                                <span>Religion</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="form-subsection">
+                            <label for="wisdom_score">
+                                <h4><b>Wisdom</b></h4>
+                            </label>
+                            <hr />
+                            <div class="ability-stats">
+                                <div class="score">
+                                    <span>Score</span>
+                                    <input type="text" id="wisdom_score" class="form-control">
+                                </div>
+                                <div class="modifier">
+                                    <span>Modifier</span>
+                                    <input type="text" id="wisdom_modifier" class="form-control">
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="ability-proficiencies">
+                                <span>Saving Throw</span>
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="wisdom_save_prof">
+                                </div>
+                                <hr />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="animal_handling_prof">
+                                    ⭐ <input type="checkbox" id="animal_handling_expert">
+                                </div>
+                                <span>Animal Handling</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="insight_prof">
+                                    ⭐ <input type="checkbox" id="insight_expert">
+                                </div>
+                                <span>Insight</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="medicine_prof">
+                                    ⭐ <input type="checkbox" id="medicine_expert">
+                                </div>
+                                <span>Medicine</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="perception_prof">
+                                    ⭐ <input type="checkbox" id="perception_expert">
+                                </div>
+                                <span>Perception</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="survival_prof">
+                                    ⭐ <input type="checkbox" id="survival_expert">
+                                </div>
+                                <span>Survival</span>
+                            </div>
+                        </div>
+
+                        <div class="form-subsection">
+                            <label for="charisma_score">
+                                <h4><b>Charisma</b></h4>
+                            </label>
+                            <hr />
+                            <div class="ability-stats">
+                                <div class="score">
+                                    <span>Score</span>
+                                    <input type="text" id="Charisma_score" class="form-control">
+                                </div>
+                                <div class="modifier">
+                                    <span>Modifier</span>
+                                    <input type="text" id="Charisma_modifier" class="form-control">
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="ability-proficiencies">
+                                <span>Saving Throw</span>
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="charisma_save_prof">
+                                </div>
+                                <hr />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="deception_prof">
+                                    ⭐ <input type="checkbox" id="deception_expert">
+                                </div>
+                                <span>Deception</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="intimidation_prof">
+                                    ⭐ <input type="checkbox" id="intimidation_expert">
+                                </div>
+                                <span>Intimidation</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="performance_prof">
+                                    ⭐ <input type="checkbox" id="performance_expert">
+                                </div>
+                                <span>Performance</span><br />
+                                <div class="checkbox-container">
+                                    ★ <input type="checkbox" id="persuasion_prof">
+                                    ⭐ <input type="checkbox" id="persuasion_expert">
+                                </div>
+                                <span>Persuasion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">Features</div>
+            <div class="section-content collapse">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">Items</div>
+            <div class="section-content collapse">
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">Spells</div>
+
+            <div class="section-content collapse">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <label for="spellcasting_ability"><u>Spellcasting Ability</u></label>
+                        <input type="text" id="spellcasting_ability" class="form-control">
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="spell_save_dc"><u>Spell Save DC</u></label>
+                        <input type="text" id="spell_save_dc" class="form-control" disabled>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="spell_attack_bonus"><u>Spell Attack Bonus</u></label>
+                        <input type="text" id="spell_attack_bonus" class="form-control" disabled>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="spell_slots"><u>Spell Slots</u></label>
+                        <input type="text" id="spell_slots" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-7 container">
+                        <h3>Spells Known</h3>
+                        <div id="spell_levels_container">
+                            <!-- New spell level tables will be added here -->
+                        </div>
+                        <button style="margin-top:1rem;" type="button" class="btn btn-success mb-3"
+                            id="addSpellLevel">Add Next Spell Table</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Hidden Spell Table Template -->
+        <template id="spell_table_template">
+            <div>
+                <div style="border:black 2px solid;" class="spell-level-header section-header"></div>
+                <div style="margin-top:0px !important; margin-bottom:1rem !important;" class="section-content collapse">
+                    <table style="margin-bottom:0px !important; border:black 1px solid; border-radius: 5px;"
+                        class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr class="row">
+                                <th class="col-2 col-md-2">Details</th>
+                                <th class="col-5 col-md-6">Name</th>
+                                <th class="col-3 col-md-2">Prepared</th>
+                                <th class="col-2 col-md-2">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <button style="width:30%;" type="button" class="btn btn-primary add-spell">Add Spell</button>
+                </div>
+            </div>
+        </template>
+
+        <!-- Hidden Spell Row Template -->
+        <template id="spell_row_template">
+            <tr class="spell-row row">
+                <td class="col-2 col-md-2 text-center">
+                    <button class="btn btn-sm btn-secondary toggle-details" type="button">+</button>
+                </td>
+                <td class="col-5 col-md-6"><input type="text" class="form-control" name="spell_name[]"></td>
+                <td class="text-center col-3 col-md-2">
+                    <input style="height:80%;width:80%;" type="checkbox" name="prepared[]">
+                </td>
+                <td class="text-center col-2 col-md-2">
+                    <button type="button" class="btn btn-danger btn-sm remove-row">X</button>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:0px !important;">
+                    <div class="collapse spell-details">
+                        <div class="p-2 border rounded bg-light row">
+                            <div class="col-4 col-md-2">
+                                <label>Range:</label>
+                                <input type="text" class="form-control mb-2" name="spell_range[]">
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <label>Casting Time:</label>
+                                <input type="text" class="form-control mb-2" name="casting_time[]">
+                            </div>
+                            <div class="col-4 col-md-2">
+                                <label>Ritual</label>
+                                <input type="text" class="form-control mb-2" name="ritual[]">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label>Notes:</label>
+                                <input type="text" class="form-control mb-2" name="spell_notes[]">
+                            </div>
+                            <div class="col-12 col-md-12">
+                                <label>Description:</label>
+                                <textarea class="form-control" name="spell_description[]" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </template>
+
+        <script>
+            $(document).ready(function () {
+                let spellLevels = ["Cantrips", "Level 1 Spells", "Level 2 Spells", "Level 3 Spells", "Level 4 Spells", "Level 5 Spells", "Level 6 Spells", "Level 7 Spells", "Level 8 Spells", "Level 9 Spells"];
+                let currentSpellLevel = 0;
+
+                function addSpellLevelTable() {
+                    if (currentSpellLevel >= spellLevels.length) return;
+
+                    let spellLevelName = spellLevels[currentSpellLevel];
+                    let spellTableId = "spells_table_" + currentSpellLevel;
+
+                    let newTable = $($("#spell_table_template").html());
+
+                    newTable.find(".section-header").text(spellLevelName + " ▼");
+                    newTable.find("table").attr("id", spellTableId);
+                    newTable.find(".add-spell").attr("data-table", spellTableId)
+
+                    $("#spell_levels_container").append(newTable);
+                    currentSpellLevel++;
+                }
+
+                function addNewRow(tableId) {
+                    let newRow = $($("#spell_row_template").html()); // Clone template
+
+                    let uniqueId = $("#" + tableId + " tbody tr").length + 1;
+                    let spellRowId = tableId + "_row" + uniqueId;
+                    let spellDetailsId = tableId + "_details" + uniqueId;
+
+                    newRow.filter(".spell-row").attr("id", spellRowId);
+                    newRow.find(".collapse").attr("id", spellDetailsId);
+                    newRow.find(".toggle-details").attr("data-bs-toggle", "collapse").attr("data-bs-target", "#" + spellDetailsId).attr("aria-expanded", "false");
+
+                    $("#" + tableId + " tbody").append(newRow);
+                }
+
+                // Click event for adding spell level
+                $("#addSpellLevel").click(addSpellLevelTable);
+
+                // Click event to add a spell row inside its corresponding table
+                $(document).on("click", ".add-spell", function () {
+                    let tableId = $(this).data("table");
+                    addNewRow(tableId);
+                });
+
+                // Click event to remove a spell row
+                $(document).on("click", ".remove-row", function () {
+                    let rowToRemove = $(this).closest("tr");
+                    let detailsRow = rowToRemove.next("tr");
+
+                    detailsRow.remove();
+                    rowToRemove.remove();
+
+                    $("#" + tableId + " tbody tr[id^='" + tableId + "_row']").each(function (index) {
+                        let newId = tableId + "_row" + (index + 1);
+                        let newDetailsId = tableId + "_details" + (index + 1);
+
+                        let oldId = $(this).attr("id");
+                        let oldDetailsId = $(this).next("tr").attr("id");
+
+                        // Update row IDs
+                        $(this).attr("id", newId);
+                        if (oldDetailsId.length) {
+                            oldDetailsId.attr("id", newDetailsId);
+                        }
+                    });
+                });
+
+                // Toggle spell details
+                $(document).on("click", ".toggle-details", function () {
+                    let targetId = $(this).attr("data-bs-target");
+                    $(targetId).collapse("toggle");
+                    $(this).text($(this).toggleClass("active").hasClass("active") ? "-" : "+");
+                });
+
+                // Toggle main section
+                $(document).on("click", ".section-header", function () {
+                    $(this).next(".section-content").collapse("toggle");
+                });
+
+                $(document).on("click", ".spell-level-header", function () {
+                    $(this).text($(this).text().slice(0, -1) + ($(this).toggleClass("active").hasClass("active") ? "▲" : "▼"));
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch("/nav-bar.html")
+                    .then(response => response.text())
+                    .then(data => document.getElementById("navbar-placeholder").innerHTML = data)
+                    .catch(error => console.error("Error loading navbar:", error));
+            });
+        </script>
+</body>
+
+</html>

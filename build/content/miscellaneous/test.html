@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Awesomplete + Alpine.js</title>
+
+    <!-- Awesomplete CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css" />
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="characterSheet" class="p-4" x-ref="root">
+
+    <label for="size-input">Size</label>
+    <input id="size-input" class="awesomplete" x-ref="sizeInput" x-model="selectedSize" @awesomplete-selectcomplete="selectedSize = $refs.sizeInput.value"/>
+
+    <label for="creature-input" class="mt-4 block">Creature</label>
+    <input id="creature-input" class="awesomplete" x-ref="creatureInput" x-model="selectedCreature" @awesomplete-selectcomplete="selectedCreature = $refs.selectedCreature.value" />
+
+    <!-- Awesomplete JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('characterSheet', () => ({
+                selectedSize: '',
+                selectedCreature: '',
+
+                sizes: ['Small', 'Medium'],
+
+                creatures: [
+                    { name: 'Imp', size: 'Small' },
+                    { name: 'Goblin', size: 'Small' },
+                    { name: 'Orc', size: 'Medium' },
+                    { name: 'Troll', size: 'Medium' }
+                ],
+
+                init() {
+                    // Size autocomplete
+                    this.sizeAwesomplete = new Awesomplete(this.$refs.sizeInput, {
+                        list: this.sizes,
+                        minChars: 0,
+                        autoFirst: true
+                    });
+
+                    // Creature autocomplete
+                    this.creatureAwesomplete = new Awesomplete(this.$refs.creatureInput, {
+                        list: this.creatures.map(c => c.name),
+                        minChars: 0,
+                        autoFirst: true
+                    });
+
+                    this.$refs.creatureInput.addEventListener('focus', () => {
+                        this.creatureAwesomplete.evaluate();
+                    });
+
+                    this.$refs.sizeInput.addEventListener('focus', () => {
+                        this.sizeAwesomplete.evaluate();
+                    });
+
+                    // Watch for size changes and update creature list
+                    this.$watch('selectedSize', value => {
+                        const filtered = value
+                            ? this.creatures.filter(c => c.size === value).map(c => c.name)
+                            : this.creatures.map(c => c.name);
+
+                        this.creatureAwesomplete.list = filtered;
+                    });
+                }
+            }));
+        });
+    </script>
+</body>
+
+</html>
