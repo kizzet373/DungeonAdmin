@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Programmed Illusion - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Programmed Illusion</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/all-spells">All Spells</a> &raquo; Programmed Illusion</div>
+
+
+                  <div id="page-content">
+
+                    <p id="source">source: Player's Handbook</p>
+                    <p><em id="spell-level-label">Level 6 Illusion (Bard, Wizard)</em></p>
+                    <p><strong>Casting Time:</strong><span id="casting-time"> Action</span><br>
+                      <strong>Range:</strong><span id="range"> 120 feet</span><br>
+                      <strong>Components:</strong><span id="components"> V, S, M (jade dust worth 25+ GP)</span><br>
+                      <strong>Duration:</strong><span id="duration"> Until dispelled</span>
+                    </p><div id="description">
+                    <p>You create an illusion of an object, a creature, or some other visible phenomenon within range
+                      that activates when a specific trigger occurs. The illusion is imperceptible until then. It must
+                      be no larger than a 30-foot Cube, and you decide when you cast the spell how the illusion behaves
+                      and what sounds it makes. This scripted performance can last up to 5 minutes.</p>
+                    <p>When the trigger you specify occurs, the illusion springs into existence and performs in the
+                      manner you described. Once the illusion finishes performing, it disappears and remains dormant for
+                      10 minutes, after which the illusion can be activated again.</p>
+                    <p>The trigger can be as general or as detailed as you like, though it must be based on visual or
+                      audible phenomena that occur within 30 feet of the area. For example, you could create an illusion
+                      of yourself to appear and warn off others who attempt to open a trapped door.</p>
+                    <p>Physical interaction with the image reveals it to be illusory, since things can pass through it.
+                      A creature that takes the Study action to examine the image can determine that it is an illusion
+                      with a successful Intelligence (Investigation) check against your spell save DC. If a creature
+                      discerns the illusion for what it is, the creature can see through the image, and any noise it
+                      makes sounds hollow to the creature.</p>
+
+
+
+                  </div></div>
+
+                  <div class="page-tags"><a href="/systempage-tags/tag/bard.html#pages">bard</a><a
+                      href="/systempage-tags/tag/illusion.html#pages">illusion</a><a
+                      href="/systempage-tags/tag/sixth.html#pages">sixth</a><a
+                      href="/systempage-tags/tag/wizard.html#pages">wizard</a></div>
+                  <div class="page-info-break"></div>
+                  <div class="page-options-container"></div>
+                  <div id="action-area" style="display: none;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+          </footer>
+      </div>
+      <script>
+        $(document).ready(() => {
+          $('.dropdown-toggle').on('click', e => {
+            if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+          });
+        });
+      </script>
+</body>
+
+</html>

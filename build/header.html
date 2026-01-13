@@ -1,118 +1,145 @@
-<header class="header-wrap" role="banner">
+<header class="header-wrap position-relative" role="banner">
     <div class="container header">
-        <div class="site-title">
-            <h1><a href="/index"><span>Koink's D&amp;D 2024</span></a></h1>
-            <h2><span>5th Edition 2024 Content</span></h2>
+        <div class="edition-selector-container fs-2">
+            <a class="text-white me-2" href="/index">D&D</a>
+            <select id="edition-selector" class="form-select form-select-sm d-inline-block w-auto mt-2 fs-3">
+                <option value="Kizzet2024">Kizzet2024</option>
+                <option value="5e">5e</option>
+                <option value="2024">2024</option>
+            </select>
         </div>
-    </div>
-    <nav class="top-bar-wrap navbar navbar-default" role="navigation">
-        <div class="container top-bar">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-target">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <b><a style="padding-right:50px;" class="navbar-brand" href="/index">Home</a></b>
+        <div id="profile-container" class="position-absolute top-0 end-0 d-none d-md-block">
+            <div class="logged-in" style="display:none;">
+                <a class="btn btn-light mt-3" href="/dashboard">My Character Sheets</a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle user-greeting mt-3" data-bs-toggle="dropdown" aria-expanded="false">
+                        My Account
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item logout-button" onclick="logout(); return false;">Logout</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="collapse navbar-collapse navbar-top-target">
-                <ul class="nav navbar-nav">
-                    <li><a href="/content/backgrounds/backgroundall">Backgrounds</a></li>
-
-                    <li class="dropdown" tabindex="0">
-                        <a class="dropdown-toggle">Species▼</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/content/species/speciesall">All Species</a></li>
-                            <li><a href="/content/species/speciesaasimar">Aasimar <purple>(updated)</purple></a></li>
-                            <li><a href="/content/species/specieschangeling">Changeling <purple>(5e updated)</purple>
-                                </a></li>
-                            <li><a href="/content/species/speciesdragonborn">Dragonborn <purple>(updated)</purple></a>
-                            </li>
-                            <li><a href="/content/species/speciesdwarf">Dwarf <purple>(updated)</purple></a></li>
-                            <li><a href="/content/species/specieself">Elf <purple>(updated)</purple></a></li>
-                            <li><a href="/content/species/speciesgnome">Gnome <purple>(updated)</purple></a></li>
-                            <li><a href="/content/species/speciesgoliath">Goliath</a></li>
-                            <li><a href="/content/species/specieshalfling">Halfling <purple>(updated)</purple></a></li>
-                            <li><a href="/content/species/specieshuman">Human</a></li>
-                            <li><a href="/content/species/speciesorc">Orc <purple>(updated)</purple></a></li>
-                            <li><a href="/content/species/speciestiefling">Tiefling</a></li>
-                        </ul>
+            <div class="logged-out" style="display:block;">
+                <a href="/dungeonadmin-api/auth/google" class="btn btn-light" onclick="login(); return false;">Login with Google</a>
+            </div>
+            </div>
+        </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent mt-3" role="navigation">
+        <div class="container">
+            <a class="fs-5 nav-link" href="/index">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse z-1" style="width:fit-content" id="navbarContent">
+                <ul class="navbar-nav px-3 mt-1 rounded-2 text-md-start text-end navbar-nav ms-auto" style="width:fit-content">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/content/backgrounds/backgroundall">Backgrounds</a>
                     </li>
 
-                    <li class="dropdown">
-                        <a class="dropdown-toggle">Classes▼</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/content/classes/classall">All Classes</a></li>
-                            <li><a href="/artificermain">Artificer (UA)</a></li>
-                            <li><a href="/content/classes/barbarianmain">Barbarian</a></li>
-                            <li><a href="/content/classes/bardmain">Bard</a></li>
-                            <li><a href="/content/classes/clericmain">Cleric</a></li>
-                            <li><a href="/content/classes/druidmain">Druid</a></li>
-                            <li><a href="/content/classes/fightermain">Fighter</a></li>
-                            <li><a href="/content/classes/monkmain">Monk</a></li>
-                            <li><a href="/content/classes/paladinmain">Paladin</a></li>
-                            <li><a href="/content/classes/rangermain">Ranger <purple>(updated)</purple></a></li>
-                            <li><a href="/content/classes/roguemain">Rogue</a></li>
-                            <li><a href="/content/classes/sorcerermain">Sorcerer</a></li>
-                            <li><a href="/content/classes/warlockmain">Warlock</a></li>
-                            <li><a href="/content/classes/wizardmain">Wizard</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="speciesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Species
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="speciesDropdown">
+                            <li><a class="dropdown-item" href="/content/species/speciesall">All Species</a></li>
+                            <li><a class="dropdown-item" href="/content/species/speciesaasimar">Aasimar <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/species/specieschangeling">Changeling <span><purple>(5e + updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/species/speciesdragonborn">Dragonborn <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/species/speciesdwarf">Dwarf <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/species/specieself">Elf <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/species/speciesgnome">Gnome <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/species/speciesgoliath">Goliath</a></li>
+                            <li><a class="dropdown-item" href="/content/species/specieshalfling">Halfling <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/species/specieshuman">Human</a></li>
+                            <li><a class="dropdown-item" href="/content/species/speciesorc">Orc <span class="purple">(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/species/speciestiefling">Tiefling</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle">Feats▼</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/content/feats/featall">All Feats</a></li>
-                            <li><a href="/content/feats/featall.html#origin">Origin Feats <purple>(updated)</purple></a>
-                            </li>
-                            <li><a href="/content/feats/featall.html#general">General Feats <purple>(updated)</purple>
-                                    </a></li>
-                            <li><a href="/content/feats/featall.html#fighting">Fighting Style Feats <purple>(updated)
-                                    </purple></a></li>
-                            <li><a href="/content/feats/featall.html#epic">Epic Boon Feats</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="classesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Classes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="classesDropdown">
+                            <li><a class="dropdown-item" href="/content/classes/classall">All Classes</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/artificermain">Artificer (UA)</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/barbarianmain">Barbarian</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/bardmain">Bard</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/clericmain">Cleric</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/druidmain">Druid</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/fightermain">Fighter</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/monkmain">Monk</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/paladinmain">Paladin</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/rangermain">Ranger <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/classes/roguemain">Rogue</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/sorcerermain">Sorcerer</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/warlockmain">Warlock</a></li>
+                            <li><a class="dropdown-item" href="/content/classes/wizardmain">Wizard</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle">Equipment▼</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/content/equipment/equipmentall">All Equipment</a></li>
-                            <li><a href="/content/equipment/equipmentarmor">Armor</a></li>
-                            <li><a href="/content/equipment/equipmentweapon">Weapons</a></li>
-                            <li><a href="/content/equipment/equipmentadventuring-gear">Adventuring Gear</a></li>
-                            <li><a href="/content/equipment/equipmenttrinket">Trinkets</a></li>
-                            <li><a href="/content/equipment/equipmentcurrency">Currency</a></li>
-                            <li><a href="/content/equipment/equipmenttool">Tools</a></li>
-                            <li><a href="/content/equipment/magic-items/magic-itemall">Magic Items</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Feats
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featsDropdown">
+                            <li><a class="dropdown-item" href="/content/feats/featall">All Feats</a></li>
+                            <li><a class="dropdown-item" href="/content/feats/featall#origin">Origin Feats <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/feats/featall#general">General Feats <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/feats/featall#fighting">Fighting Style Feats <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/feats/featall#epic">Epic Boon Feats</a></li>
                         </ul>
                     </li>
-                    <li><a href="/content/spells/spellall">Spells</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle">Character Sheets▼</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/Leo">Leo</a></li>
-                            <li><a href="/Bartholomew">Bartholomew</a></li>
-                            <li><a href="/Mitty">Mitty</a></li>
-                            <li><a href="/Adalia">Adalia</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="equipmentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Equipment
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="equipmentDropdown">
+                            <li><a class="dropdown-item" href="/content/equipment/equipmentarmor">Armor</a></li>
+                            <li><a class="dropdown-item" href="/content/equipment/equipmentweapon">Weapons <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/equipment/equipmentadventuring-gear">Adventuring Gear</a></li>
+                            <li><a class="dropdown-item" href="/content/equipment/equipmenttrinket">Trinkets</a></li>
+                            <li><a class="dropdown-item" href="/content/equipment/equipmentcurrency">Currency</a></li>
+                            <li><a class="dropdown-item" href="/content/all-tools">Tools</a></li>
+                            <li><a class="dropdown-item" href="/content/all-magic-items">Magic Items</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle">Miscellaneous▼</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/content/miscellaneous/languages">Languages</a></li>
-                            <li><a href="/content/miscellaneous/uaall">UA</a></li>
-                            <li><a href="/content/miscellaneous/classmulticlassing">Multiclass</a></li>
-                            <li><a href="/content/miscellaneous/bastions">Bastions</a></li>
-                            <li><a href="/content/miscellaneous/warlockeldritch-invocation">Eldritch Invocations
-                                    <purple>(updated)</purple>
-                                </a></li>
-                            <li><a href="/content/feats/featall.html#fighting">Fighting Styles <purple>(updated)
-                                    </purple>
-                                </a></li>
-                            <li><a href="/content/miscellaneous/maneuver-options">Maneuver Options</a></li>
-                            <li><a href="/content/miscellaneous/conditions">Conditions <purple>(expanded)</purple></a>
-                            </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/content/all-spells">Spells</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="miscDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Miscellaneous
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="miscDropdown">
+                            <li><a class="dropdown-item" href="/content/miscellaneous/languages">Languages</a></li>
+                            <li><a class="dropdown-item" href="/content/miscellaneous/uaall">UA</a></li>
+                            <li><a class="dropdown-item" href="/content/miscellaneous/classmulticlassing">Multiclass</a></li>
+                            <li><a class="dropdown-item" href="/content/miscellaneous/bastions">Bastions</a></li>
+                            <li><a class="dropdown-item" href="/content/miscellaneous/warlockeldritch-invocation">Eldritch Invocations <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/feats/featall.html#fighting">Fighting Styles <span><purple>(updated)</purple></span></a></li>
+                            <li><a class="dropdown-item" href="/content/miscellaneous/maneuver-options">Maneuver Options</a></li>
+                            <li><a class="dropdown-item" href="/content/miscellaneous/conditions">Conditions <span><purple>(expanded)</purple></span></a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item mobile d-md-none">
+                        <a href="/dashboard" class="logged-in btn btn-primary mb-2" style="display:none;">My Character Sheets</a>
+                        <a href="/dungeonadmin-api/auth/google" class="logged-out btn btn-primary" style="display:block;" onclick="login(); return false;">Login with Google</a>
+                    </li>
+                    <li class="nav-item mobile d-md-none logged-in" style="display:none;">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle user-greeting" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Account
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item logout-button" onclick="logout(); return false;">Logout</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>

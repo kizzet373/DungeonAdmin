@@ -1,0 +1,426 @@
+{
+  "id": "1749769230304-8965",
+  "form": {
+    "dnd_edition": "Kizzet2024",
+    "character_name": "Barry",
+    "character_size": "Medium",
+    "background": "Entertainer",
+    "species": "Elf",
+    "class_subclass_levels": [
+      {
+        "class": "Bard",
+        "level": 3,
+        "subclass": "College of whispers"
+      }
+    ],
+    "quick_notes": "",
+    "appearance": "",
+    "other_proficiencies": "",
+    "languages": "Elvish\nDeep Speech",
+    "backstory": "",
+    "proficiency_bonus": 2,
+    "armor_class": "14",
+    "initiative_mod": 2,
+    "speed": "30",
+    "hp_current": "24",
+    "hp_max": "24",
+    "hp_temp": 0,
+    "misc_defenses": "",
+    "hit_dice_size": "",
+    "hit_dice_available": "3d8",
+    "hit_dice_total": "3d8",
+    "attacks_and_cantrips": "",
+    "strength_score": 12,
+    "strength_mod": 1,
+    "dexterity_score": 14,
+    "dexterity_mod": 2,
+    "constitution_score": 14,
+    "constitution_mod": 2,
+    "intelligence_score": 14,
+    "intelligence_mod": 2,
+    "wisdom_score": 12,
+    "wisdom_mod": 1,
+    "charisma_score": 18,
+    "charisma_mod": 4,
+    "skill_notes": "",
+    "strength_save_prof": "",
+    "strength_save_mod": 1,
+    "dexterity_save_prof": "🔵",
+    "dexterity_save_mod": 4,
+    "constitution_save_prof": "",
+    "constitution_save_mod": 2,
+    "intelligence_save_prof": "",
+    "intelligence_save_mod": 2,
+    "wisdom_save_prof": "",
+    "wisdom_save_mod": 1,
+    "charisma_save_prof": "🔵",
+    "charisma_save_mod": 6,
+    "athletics_prof": "⭕",
+    "athletics_mod": 2,
+    "acrobatics_prof": "🔵",
+    "acrobatics_mod": 4,
+    "sleight_of_hand_prof": "🔵",
+    "sleight_of_hand_mod": 4,
+    "stealth_prof": "🔵",
+    "stealth_mod": 4,
+    "arcana_prof": "⭕",
+    "arcana_mod": 3,
+    "history_prof": "🔵",
+    "history_mod": 4,
+    "investigation_prof": "⭕",
+    "investigation_mod": 3,
+    "nature_prof": "⭕",
+    "nature_mod": 3,
+    "religion_prof": "⭕",
+    "religion_mod": 3,
+    "animal_handling_prof": "⭕",
+    "animal_handling_mod": 2,
+    "insight_prof": "🔵",
+    "insight_mod": 3,
+    "medicine_prof": "⭕",
+    "medicine_mod": 2,
+    "perception_prof": "⭐",
+    "perception_mod": 5,
+    "survival_prof": "🔵",
+    "survival_mod": 3,
+    "deception_prof": "⭕",
+    "deception_mod": 5,
+    "intimidation_prof": "⭕",
+    "intimidation_mod": 5,
+    "performance_prof": "⭐",
+    "performance_mod": 8,
+    "persuasion_prof": "🔵",
+    "persuasion_mod": 6,
+    "background_features": [
+      {
+        "name": "Lucky",
+        "description": "You gain the following benefits.\n\nLuck Points. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.\n\nAdvantage. When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.\n\nDisadvantage. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll.",
+        "row_color": "#0f188f"
+      },
+      {
+        "name": "Starting gear",
+        "description": "Equipment: Choose A or B: (A) Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler’s Clothes",
+        "row_color": "#ea1010"
+      }
+    ],
+    "racial_features": [
+      {
+        "name": "Elven Lineage ",
+        "description": "High Elf: You know the Prestidigitation cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different cantrip from the Wizard spell list.\t3Detect Magic\t 5Misty Step",
+        "row_color": "#0d5912"
+      },
+      {
+        "name": "Mirage of mist",
+        "description": "Whenever a creature casts a spell or attack that targets you, you can use a reaction to have the creature make a Wisdom Saving Throw (DC = 8 + Proficiency Bonus + your modifier for you ability chosen in your Elven Lineage feature). On a fail, that creature must change the target of that spell or attack within its range. You can't use this feature again until you finish a long rest.",
+        "row_color": "#0d5912"
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "You have Advantage on saving throws you make to avoid or end the Charmed condition",
+        "row_color": "#0d5912"
+      },
+      {
+        "description": "You have Advantage on saving throws you make to avoid or end the Charmed condition",
+        "name": "Keen Senses  ",
+        "row_color": "#0d5912"
+      },
+      {
+        "name": "Trance",
+        "description": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness.",
+        "row_color": "#0d5912"
+      }
+    ],
+    "class_features": [
+      {
+        "name": "Bardic Inspiration",
+        "description": "You can supernaturally inspire others through words, music, or dance. This inspiration is represented by your Bardic Inspiration die, which is a d6.\n\nUsing Bardic Inspiration. As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time.\n\nOnce within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled.\n\nNumber of Uses. You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\nAt Higher Levels. Your Bardic Inspiration die changes when you reach certain Bard levels, as shown in the Bardic Die column of the Bard Features table. The die becomes a d8 at level 5, a d10 at level 10, and a d12 at level 15.",
+        "row_color": "#f4ecec"
+      },
+      {
+        "name": "SpellCasting",
+        "description": "You have learned to cast spells through your bardic arts. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Bard spells, which appear in the Bard spell list later in the class's description.\n\nCantrips. You know two cantrips of your choice from the Bard spell list. Dancing Lights and Vicious Mockery are recommended.\n\nWhenever you gain a Bard level, you can replace one of your cantrips with another cantrip of your choice from the Bard spell list.\n\nWhen you reach Bard levels 4 and 10, you learn another cantrip of your choice from the Bard spell list, as shown in the Cantrips column of the Bard Features table.\n\nSpell Slots. The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.\n\nPrepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Bard spell list. Charm Person, Color Spray, Dissonant Whispers, and Healing Word are recommended.\n\nThe number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. Whenever that number increases, choose additional spells from the Bard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Bard, your list of prepared spells can include six spells of levels 1 and 2 in any combination.\n\nIf another Bard feature gives you spells that you always have prepared, those spells don’t count against the number of spells you can prepare with this feature, but those spells otherwise count as Bard spells for you.\n\nChanging Your Prepared Spells. Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots.\n\nSpellcasting Ability. Charisma is your spellcasting ability for your Bard spells.\n\nSpellcasting Focus. You can use a Musical Instrument as a Spellcasting Focus for your Bard spells."
+      },
+      {
+        "name": "Expertise",
+        "description": "you gain Expertise (see the rules glossary) in two of your skill proficiencies of your choice. Performance and Persuasion are recommended if you have proficiency in them.\n\nAt Bard level 9, you gain Expertise in two more of your skill proficiencies of your choice."
+      },
+      {
+        "name": "Jack of all Trades",
+        "description": "You can add half your Proficiency Bonus (round down) to any ability check you make that uses a skill proficiency you lack and that doesn't otherwise use your Proficiency Bonus.\n\nFor example, if you make a Strength (Athletics) check and lack Athletics proficiency, you can add half your Proficiency Bonus to the check."
+      },
+      {
+        "name": "Psychic Blades",
+        "description": "When you join the College of Whispers at 3rd level, you gain the ability to make your weapon attacks magically toxic to a creature's mind.\n\nWhen you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an additional 2d6 psychic damage to that target. You can do so only once per round on your turn.\n\nThe psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, and 8d6 at 15th level.",
+        "row_color": "#0d0d0d"
+      },
+      {
+        "name": "Words of Terror",
+        "description": "At 3rd level, you learn to infuse innocent-seeming words with an insidious magic that can inspire terror.\n\nIf you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear into its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged.\n\nIf the target succeeds on its saving throw, the target has no hint that you tried to frighten it.\n\nOnce you use this feature, you can't use it again until you finish a short rest or long rest.",
+        "row_color": "#000000"
+      }
+    ],
+    "coins": {
+      "platinum": 0,
+      "gold": "150",
+      "silver": 0,
+      "copper": 0
+    },
+    "equipment": [
+      {
+        "name": "Studded Leather (12+dex)",
+        "equip": true
+      },
+      {
+        "name": "2 daggers",
+        "equip": true
+      },
+      {
+        "name": "Instrument of Illusions",
+        "equip": true,
+        "description": "While you are playing this musical instrument, you can take a Magic action to create harmless, illusory visual effects within a 5-foot Emanation originating from the instrument. If you are a Bard, the size of the Emanation increases to 15 feet. Sample visual effects include luminous musical notes, a spectral dancer, butterflies, and gently falling snow. The magical effects have neither substance nor sound, and they are obviously illusory. The effects end when you stop playing."
+      },
+      {
+        "name": "Clockwork Amulet",
+        "equip": true,
+        "description": "This copper amulet contains tiny interlocking gears and is powered by magic from Mechanus, a plane of clockwork predictability. Faint ticking and whirring noises emanate from within.\n\nWhen you make an attack roll while wearing the amulet, you can forgo rolling the d20 to get a 10 on the die. Once used, this property can’t be used again until the next dawn."
+      },
+      {
+        "name": "Deck of Illusions",
+        "description": "This box contains a set of cards. A full deck has 34 cards: 32 depicting specific creatures and two with a mirrored surface. A deck found as treasure is usually missing 1d20 − 1 cards.\n\nThe magic of the deck functions only if its cards are drawn at random. You can take a Magic action to draw a card at random from the deck and throw it to the ground at a point within 30 feet of yourself. An illusion of a creature, determined by rolling on the Deck of Illusions table, forms over the thrown card and remains until dispelled. The illusory creature created by the card looks and behaves like a real creature of its kind, except that it can do no harm. While you are within 120 feet of the illusory creature and can see it, you can take a Magic action to move it anywhere within 30 feet of its card.\n\nAny physical interaction with the illusory creature reveals it to be false, because objects pass through it. A creature that takes a Study action to visually inspect the illusory creature identifies it as an illusion with a successful DC 15 Intelligence (Investigation) check. The illusion lasts until its card is moved or the illusion is dispelled (using a Dispel Magic spell or a similar effect). When the illusion ends, the image on its card disappears, and that card can’t be used again.\n\n1d100\tIllusion*\n01–03\tAdult Red Dragon\n04–06\tArchmage\n07–09\tAssassin\n10–12\tBandit Captain\n13–15\tBeholder\n16–18\tBerserker\n19–21\tBugbear Warrior\n22–24\tCloud Giant\n25–27\tDruid\n28–30\tErinyes\n31–33\tEttin\n34–36\tFire Giant\n37–39\tFrost Giant\n40–42\tGnoll Warrior\n43–45\tGoblin Warrior\n46–48\tGuardian Naga\n49–51\tHill Giant\n52–54\tHobgoblin Warrior\n55–57\tIncubus\n58–60\tIron Golem\n61–63\tKnight\n64–66\tKobold Warrior\n67–69\tLich\n70–72\tMedusa\n73–75\tNight Hag\n76–78\tOgre\n79–81\tOni\n82–84\tPriest\n85–87\tSuccubus\n88–90\tTroll\n91–93\tVeteran Warrior\n94–96\tWyvern\n97–00\tThe card drawer\n",
+        "equip": true
+      }
+    ],
+    "miscellaneous_items": [
+      {
+        "name": "Drum",
+        "description": "• Beat a steady rhythm, allowing each creature within 30 feet to ignore the effects of exhaustion for 1 minute (DC 15)\n• Play a known tune (DC 10)\n• improvise a song (DC 15)"
+      }
+    ],
+    "spellcasting_ability": "charisma",
+    "spell_save_dc": 14,
+    "spell_attack_bonus": 6,
+    "spells_known": "6",
+    "spells_prepared": "6",
+    "level_0_spell_slots_available": 0,
+    "level_0_spell_slot_max": 0,
+    "level_1_spell_slots_available": "4",
+    "level_1_spell_slot_max": "4",
+    "level_2_spell_slots_available": "2",
+    "level_2_spell_slot_max": "2",
+    "level_3_spell_slots_available": 0,
+    "level_3_spell_slot_max": 0,
+    "level_4_spell_slots_available": 0,
+    "level_4_spell_slot_max": 0,
+    "level_5_spell_slots_available": 0,
+    "level_5_spell_slot_max": 0,
+    "level_6_spell_slots_available": 0,
+    "level_6_spell_slot_max": 0,
+    "level_7_spell_slots_available": 0,
+    "level_7_spell_slot_max": 0,
+    "level_8_spell_slots_available": 0,
+    "level_8_spell_slot_max": 0,
+    "level_9_spell_slots_available": 0,
+    "level_9_spell_slot_max": 0,
+    "level_0_spells": [
+      {
+        "name": "Thunderclap",
+        "UA": false,
+        "file": "/content/spell#thunderclap",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "Self",
+        "components": "S",
+        "duration": "Instantaneous",
+        "description": "Each creature in a 5-foot Emanation originating from you must succeed on a Constitution saving throw or take 1d8 Thunder damage. The spell’s thunderous sound can be heard up to 100 feet away. \n\nCantrip Upgrade: The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+        "class": [
+          "bard",
+          "druid",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "evocation",
+        "status": "buffed",
+        "prepared": true
+      },
+      {
+        "name": "Vicious Mockery",
+        "UA": false,
+        "file": "/content/spell#vicious-mockery",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.\n\nCantrip Upgrade: The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
+        "class": [
+          "bard"
+        ],
+        "source": "player's handbook",
+        "school": "enchantment",
+        "status": "",
+        "prepared": true
+      }
+    ],
+    "level_1_spells": [
+      {
+        "name": "Speak With Animals",
+        "UA": false,
+        "file": "/content/spell#speak-with-animals",
+        "level": 1,
+        "casting_time": "action",
+        "ritual": true,
+        "range": "Self",
+        "components": "V, S",
+        "duration": "10 minutes",
+        "description": "For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action’s skill options with them.\n\nMost Beasts have little to say about topics that don’t pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.",
+        "class": [
+          "bard",
+          "druid",
+          "ranger",
+          "warlock"
+        ],
+        "source": "player's handbook",
+        "school": "divination",
+        "status": "",
+        "prepared": true
+      },
+      {
+        "name": "Dissonant Whispers",
+        "UA": false,
+        "file": "/content/spell#dissonant-whispers",
+        "level": 1,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only.\n\nHigher-Level Spell Slot: The damage increases by 1d6 for each spell slot level above 1.",
+        "class": [
+          "bard"
+        ],
+        "source": "player's handbook",
+        "school": "enchantment",
+        "status": "",
+        "prepared": true
+      },
+      {
+        "name": "Healing Word",
+        "UA": false,
+        "file": "/content/spell#healing-word",
+        "level": 1,
+        "casting_time": "Bonus Action",
+        "ritual": false,
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "A creature of your choice that you can see within range regains Hit Points equal to 2d4 plus your spellcasting ability modifier.\n\nHigher-Level Spell Slot: The healing increases by 2d4 for each spell slot level above 1.",
+        "class": [
+          "bard",
+          "cleric",
+          "druid"
+        ],
+        "source": "player's handbook",
+        "school": "abjuration",
+        "status": "",
+        "prepared": true
+      },
+      {
+        "name": "Comprehend Languages",
+        "UA": false,
+        "file": "/content/spell#comprehend-languages",
+        "level": 1,
+        "casting_time": "action",
+        "ritual": true,
+        "range": "Self",
+        "components": "V, S, M (a pinch of soot and salt)",
+        "duration": "1 hour",
+        "description": "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "divination",
+        "status": "",
+        "prepared": true
+      }
+    ],
+    "level_2_spells": [
+      {
+        "name": "Crown Of Madness",
+        "UA": false,
+        "file": "/content/spell#crown-of-madness",
+        "level": 2,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+        "description": "One creature that you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The creature succeeds automatically if it isn’t Humanoid.\n\nA spectral crown appears on the Charmed target's head, and it must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose. The target can act normally on its turn if you choose no creature or if no creature is within its reach. The target repeats the save at the end of each of its turns, ending the spell on itself on a success.\n\nOn your later turns, you must take the Magic action to maintain control of the target, or the spell ends.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "enchantment",
+        "status": "",
+        "prepared": true
+      },
+      {
+        "name": "Zone Of Truth",
+        "UA": false,
+        "file": "/content/spell#zone-of-truth",
+        "level": 2,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "60 feet",
+        "components": "V, S",
+        "duration": "10 minutes",
+        "description": "You create a magical zone that guards against deception in a 15-foot-radius Sphere centered on a point within range. Until the spell ends, a creature that enters the spell’s area for the first time on a turn or starts its turn there makes a Charisma saving throw. On a failed save, a creature can’t speak a deliberate lie while in the radius. You know whether a creature succeeds or fails on this save.\n\nAn affected creature is aware of the spell and can avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive yet must be truthful.",
+        "class": [
+          "bard",
+          "cleric",
+          "paladin"
+        ],
+        "source": "player's handbook",
+        "school": "enchantment",
+        "status": "",
+        "prepared": true
+      }
+    ],
+    "level_3_spells": [
+      {}
+    ],
+    "level_4_spells": [
+      {}
+    ],
+    "level_5_spells": [
+      {}
+    ],
+    "level_6_spells": [
+      {}
+    ],
+    "level_7_spells": [
+      {}
+    ],
+    "level_8_spells": [
+      {}
+    ],
+    "level_9_spells": [
+      {}
+    ],
+    "proficiencies": "Thieves tools\nDisguise Kit\nPlaying Cards\n\nSimple Weapons\nLight Armor"
+  },
+  "owner": "105129345853441151819",
+  "created": "2025-06-12T23:00:30.308Z",
+  "updated": "2025-06-13T02:29:44.805Z",
+  "_version": 217
+}

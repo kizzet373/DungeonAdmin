@@ -1,0 +1,243 @@
+{
+  "id": "1750011499556-3039",
+  "form": {
+    "dnd_edition": "Kizzet2024",
+    "character_name": "Rowen",
+    "character_size": "Medium",
+    "background": "Charlatan",
+    "species": "Human",
+    "class_subclass_levels": [
+      {
+        "class": "Barbarian",
+        "level": 14,
+        "subclass": ""
+      }
+    ],
+    "quick_notes": "",
+    "appearance": "",
+    "other_proficiencies": "",
+    "languages": "Common\nElvish\nHalfling",
+    "backstory": "",
+    "proficiency_bonus": 5,
+    "armor_class": "15",
+    "initiative_mod": 2,
+    "speed": "40",
+    "hp_current": "69",
+    "hp_max": "136",
+    "hp_temp": 0,
+    "misc_defenses": "",
+    "hit_dice_size": "d12",
+    "hit_dice_available": "14",
+    "hit_dice_total": "14",
+    "attacks_and_cantrips": "",
+    "strength_score": 22,
+    "strength_mod": 6,
+    "dexterity_score": 14,
+    "dexterity_mod": 2,
+    "constitution_score": 16,
+    "constitution_mod": 3,
+    "intelligence_score": 8,
+    "intelligence_mod": -1,
+    "wisdom_score": 13,
+    "wisdom_mod": 1,
+    "charisma_score": 14,
+    "charisma_mod": 2,
+    "skill_notes": "",
+    "strength_save_prof": "🔵",
+    "strength_save_mod": 11,
+    "dexterity_save_prof": "",
+    "dexterity_save_mod": 2,
+    "constitution_save_prof": "🔵",
+    "constitution_save_mod": 8,
+    "intelligence_save_prof": "",
+    "intelligence_save_mod": -1,
+    "wisdom_save_prof": "",
+    "wisdom_save_mod": 1,
+    "charisma_save_prof": "",
+    "charisma_save_mod": 2,
+    "athletics_prof": "🔵",
+    "athletics_mod": 11,
+    "acrobatics_prof": "",
+    "acrobatics_mod": 2,
+    "sleight_of_hand_prof": "",
+    "sleight_of_hand_mod": 2,
+    "stealth_prof": "🔵",
+    "stealth_mod": 7,
+    "arcana_prof": "",
+    "arcana_mod": -1,
+    "history_prof": "🔵",
+    "history_mod": 4,
+    "investigation_prof": "",
+    "investigation_mod": -1,
+    "nature_prof": "",
+    "nature_mod": -1,
+    "religion_prof": "",
+    "religion_mod": -1,
+    "animal_handling_prof": "🔵",
+    "animal_handling_mod": 6,
+    "insight_prof": "",
+    "insight_mod": 1,
+    "medicine_prof": "🔵",
+    "medicine_mod": 6,
+    "perception_prof": "🔵",
+    "perception_mod": 6,
+    "survival_prof": "🔵",
+    "survival_mod": 6,
+    "deception_prof": "",
+    "deception_mod": 2,
+    "intimidation_prof": "🔵",
+    "intimidation_mod": 7,
+    "performance_prof": "",
+    "performance_mod": 2,
+    "persuasion_prof": "🔵",
+    "persuasion_mod": 7,
+    "background_features": [
+      {}
+    ],
+    "racial_features": [
+      {
+        "name": "Darkvision"
+      },
+      {
+        "name": "Half-Elf Tings",
+        "description": "Immune to magical sleep, advantage on saves vs. charmed."
+      }
+    ],
+    "class_features": [
+      {
+        "name": "Rage",
+        "description": "Rages: 4\nRage damage bonus: +3\nGain advantage on STR checks & saves, deal +5 damage on strength-based melee attacks, and resistance to bludgeoning, piercing, & slashing damage."
+      },
+      {
+        "name": "Danger Sense",
+        "description": "Advantage on DEX saving throws against effects you can see."
+      },
+      {
+        "name": "Wrathful Smite",
+        "description": "3 charges per day.\n\nThe next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell."
+      },
+      {
+        "name": "Magic Sense",
+        "description": "As an action, detect any spell or magic item within 60 ft. that isn't behind total cover. Lasts until the end of your next turn.\n\n5 uses."
+      },
+      {
+        "name": "Wild Surge",
+        "description": "When you enter a rage, roll on the wild magic table to determine the magic effect product.\n\n"
+      },
+      {
+        "name": "Great Weapon Master",
+        "description": "When you score a crit with a melee weapon or reduce a creature to 0 HP with one, you can make one melee weapon attack as a bonus action.\n\nBefore you make a melee attack with a heavy weapon that you're proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+      },
+      {
+        "name": "Extra Attack"
+      },
+      {
+        "name": "Etc.",
+        "description": "Advantage on initiative\n\nIf you rage immediately, you can act normally instead of being surprised\n\nRoll one additional damage die for crits"
+      },
+      {
+        "name": "Sentinel",
+        "description": "Opportunity attacks reduce a creature's speed to 0\n\nDisengaged creatures still provoke opportunity attacks\n\nCreatures within 5 ft. making an opportunity attack provoke a reaction to melee attack."
+      },
+      {
+        "name": "Brutal Critical",
+        "description": "Roll 1 additional weapon danage die when critting a melee"
+      },
+      {
+        "name": "Relentless Rage",
+        "description": "If you drop to 0 HP while raging and don't die outright, DC 10 CON save to drop to 1 HP instead."
+      }
+    ],
+    "coins": {
+      "platinum": 0,
+      "gold": 0,
+      "silver": 0,
+      "copper": 0
+    },
+    "equipment": [
+      {
+        "name": "Maul",
+        "equip": true,
+        "description": "+11 to hit\n2d6+5"
+      },
+      {
+        "name": "Dagger",
+        "description": "+10 to hit\n1d4+5"
+      },
+      {
+        "name": "Javelin",
+        "description": "+10 to hit\n1d6+5"
+      },
+      {
+        "name": "Explorer's Pack"
+      },
+      {
+        "name": "Ring of Protection",
+        "equip": true,
+        "attune": true
+      }
+    ],
+    "miscellaneous_items": [
+      {}
+    ],
+    "spellcasting_ability": "",
+    "spell_save_dc": "13",
+    "spell_attack_bonus": "5",
+    "spells_known": 0,
+    "spells_prepared": 0,
+    "level_0_spell_slots_available": 0,
+    "level_0_spell_slot_max": 0,
+    "level_1_spell_slots_available": 0,
+    "level_1_spell_slot_max": 0,
+    "level_2_spell_slots_available": 0,
+    "level_2_spell_slot_max": 0,
+    "level_3_spell_slots_available": 0,
+    "level_3_spell_slot_max": 0,
+    "level_4_spell_slots_available": 0,
+    "level_4_spell_slot_max": 0,
+    "level_5_spell_slots_available": 0,
+    "level_5_spell_slot_max": 0,
+    "level_6_spell_slots_available": 0,
+    "level_6_spell_slot_max": 0,
+    "level_7_spell_slots_available": 0,
+    "level_7_spell_slot_max": 0,
+    "level_8_spell_slots_available": 0,
+    "level_8_spell_slot_max": 0,
+    "level_9_spell_slots_available": 0,
+    "level_9_spell_slot_max": 0,
+    "level_0_spells": [
+      {}
+    ],
+    "level_1_spells": [
+      {}
+    ],
+    "level_2_spells": [
+      {}
+    ],
+    "level_3_spells": [
+      {}
+    ],
+    "level_4_spells": [
+      {}
+    ],
+    "level_5_spells": [
+      {}
+    ],
+    "level_6_spells": [
+      {}
+    ],
+    "level_7_spells": [
+      {}
+    ],
+    "level_8_spells": [
+      {}
+    ],
+    "level_9_spells": [
+      {}
+    ]
+  },
+  "owner": "101630473292761751845",
+  "created": "2025-06-15T18:18:19.556Z",
+  "updated": "2025-07-27T19:35:01.672Z",
+  "_version": 165
+}

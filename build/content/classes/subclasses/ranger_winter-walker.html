@@ -2,29 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Winter Walker (UA) - Koinks D&amp;D 2024</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <title>Winter Walker (UA) - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body id="html-body">
@@ -32,6 +19,19 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
@@ -39,10 +39,7 @@
                 <div class="main-content">
                   <div class="page-title page-header"><span>Winter Walker (UA)</span></div>
                   <div class="breadcrumbs"><a href="/content/miscellaneous/uaall">All</a> &raquo; Winter Walker
-                    (UA)</div>
-
-
-                  <div id="page-content">
+                    (UA)</div>                 <div id="page-content">
 
                     <p>Source: <a href="https://www.dndbeyond.com/sources/dnd/ua/forgotten-realms-subclasses">Forgotten
                         Realms Subclasses UA (28.01.2025)</a></p>
@@ -68,10 +65,10 @@
                     </p>
                     <h3 id="toc1"><span>Level 3: Hunter's Rime</span></h3>
                     <p>Ice rimes you and your prey, protecting you and slowing them. When you cast <a
-                        href="/content/spells/spellhunter-s-mark">Hunter’s Mark</a>, you gain Temporary Hit Points
+                        href="/content/spell#hunter-s-mark">Hunter’s Mark</a>, you gain Temporary Hit Points
                       equal to 1d10 plus your Ranger level.</p>
                     <p>Additionally, while a creature is marked by your <a
-                        href="/content/spells/spellhunter-s-mark">Hunter’s Mark</a>, it can’t take the Disengage
+                        href="/content/spell#hunter-s-mark">Hunter’s Mark</a>, it can’t take the Disengage
                       action.</p>
                     <h3 id="toc2"><span>Level 3: Winter Walker Spells</span></h3>
                     <p>When you reach a Ranger level specified in the Winter Walker Spells table, you thereafter always
@@ -85,23 +82,23 @@
                         </tr>
                         <tr>
                           <td>3</td>
-                          <td><a href="/content/spells/spellice-knife">Ice Knife</a></td>
+                          <td><a href="/content/spell#ice-knife">Ice Knife</a></td>
                         </tr>
                         <tr>
                           <td>5</td>
-                          <td><a href="/content/spells/spellpass-without-trace">Pass Without Trace</a></td>
+                          <td><a href="/content/spell#pass-without-trace">Pass Without Trace</a></td>
                         </tr>
                         <tr>
                           <td>9</td>
-                          <td><a href="/content/spells/spellremove-curse">Remove Curse</a></td>
+                          <td><a href="/content/spell#remove-curse">Remove Curse</a></td>
                         </tr>
                         <tr>
                           <td>13</td>
-                          <td><a href="/content/spells/spellice-storm">Ice Storm</a></td>
+                          <td><a href="/content/spell#ice-storm">Ice Storm</a></td>
                         </tr>
                         <tr>
                           <td>17</td>
-                          <td><a href="/content/spells/spellcone-of-cold">Cone of Cold</a></td>
+                          <td><a href="/content/spell#cone-of-cold">Cone of Cold</a></td>
                         </tr>
                       </table>
                     </div>
@@ -120,7 +117,7 @@
                       You can use this Reaction a number of times equal to your Wisdom modifier (minimum of once), and
                       you regain all expended uses when you finish a Long Rest.</p>
                     <h3 id="toc6"><span>Level 15: Frozen Haunt</span></h3>
-                    <p>When you cast <a href="/content/spells/spellhunter-s-mark">Hunter’s Mark</a>, you can adopt
+                    <p>When you cast <a href="/content/spell#hunter-s-mark">Hunter’s Mark</a>, you can adopt
                       a ghostly, snowy form. This form lasts until the spell ends, and while you are in this form, you
                       gain the following benefits. Once you use this feature, you can’t use it again until you finish a
                       Long Rest unless you expend a level 4+ spell slot (no action required).</p>
@@ -132,10 +129,7 @@
                       take 1d10 Force damage if you end your turn inside a creature or an object. If the form ends while
                       you are inside a creature or an object, you are shunted to the nearest unoccupied space.
                     </p>
-                  </div>
-
-
-                </div>
+                  </div>               </div>
               </div>
             </div>
           </div>
@@ -150,15 +144,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

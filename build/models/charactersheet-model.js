@@ -1,6 +1,8 @@
 window.CSModel = {
     form: {
+
         // Basic Info
+        dnd_edition: "Kizzet2024",
         character_name: "",
         character_size: "",
         background: "",
@@ -10,15 +12,17 @@ window.CSModel = {
         appearance: "",
         other_proficiencies: "",
         languages: "",
+        backstory: "",
 
         // Combat Stats
         proficiency_bonus: 0,
         armor_class: 0,
-        initiative: 0,
+        initiative_mod: 0,
         speed: 0,
         hp_current: 0,
         hp_max: 0,
         hp_temp: 0,
+        misc_defenses: "",
         hit_dice_size: "",
         hit_dice_available: 0,
         hit_dice_total: 0,
@@ -37,6 +41,7 @@ window.CSModel = {
         wisdom_mod: 0,
         charisma_score: 10,
         charisma_mod: 0,
+        skill_notes: "",
 
         // Saving throws & proficiencies
         strength_save_prof: "",
@@ -91,8 +96,8 @@ window.CSModel = {
         persuasion_mod:0,
 
         // Features
+        background_features: [],
         racial_features: [],
-
         class_features: [],
 
         // Inventory

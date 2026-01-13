@@ -2,29 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Armor - Koinks D&amp;D 2024</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <title>Armor - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.7/cdn.min.js" defer></script>
 
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
+  <script src="/scripts/google-auth.js"></script>
+  <script src="/scripts/entity-loader.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body id="html-body">
@@ -32,186 +24,79 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(res => res.text())
+            .then(html => {
+              document.getElementById('header-placeholder').outerHTML = html;
+            })
+            .catch(error => console.error('all-magic-items.html: Error loading header:', error));
+        </script>
+
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
               <div class="main-content-wrap col-md-12">
                 <div class="main-content">
                   <div class="page-title page-header"><span>Armor</span></div>
-                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
-                      href="/content/equipment/equipmentall">Equipment</a> &raquo; Armor</div>
-
-
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; Armor</div>
                   <div id="page-content">
-
-                    <p>The Armor table lists the game’s main armor. The table includes the cost and weight of armor, as
-                      well as the following details:</p>
-                    <p><strong>Category.</strong> Every type of armor falls into a category: Light, Medium, or Heavy.
-                      The category determines how long it takes to don or doff the armor (as shown in the table).</p>
-                    <p><strong>Armor Class (AC).</strong> The table’s Armor Class column tells you what your base AC is
-                      when you wear a type of armor. For example, if you wear Leather Armor, your base AC is 11 plus
-                      your Dexterity modifier, whereas your AC is 16 in Chain Mail.</p>
-                    <p><strong>Strength.</strong> If the table shows a Strength score in the Strength column for an
-                      armor type, that armor reduces the wearer’s speed by 10 feet unless the wearer has a Strength
-                      score equal to or higher than the listed score.</p>
-                    <p><strong>Stealth.</strong> If the table shows “Disadvantage” in the Stealth column for an armor
-                      type, the wearer has Disadvantage on Dexterity (Stealth) checks.</p>
+                    <p><strong>Category:</strong> Light, Medium, or Heavy. The category determines how long it takes to
+                      don or doff the armor.</p>
+                    <p><strong>Armor Class (AC):</strong> Tells you what your base AC is when you wear the armor.</p>
+                    <p><strong>Requirements:</strong> Armor reduces the wearer’s speed by 10 feet unless the wearer
+                      meets the Strength requirement.</p>
                     <h5 id="toc0"><span>Armor</span></h5>
                     <h6 id="toc1"><span>Light Armor (1 Minute to Don or Doff)</span></h6>
-                    <div class="wiki-content-table-container">
-                      <table class="wiki-content-table">
-                        <tr>
-                          <th>Armor</th>
-                          <th>Armor Class (AC)</th>
-                          <th>Strength</th>
-                          <th>Stealth</th>
-                          <th>Weight</th>
-                          <th>Cost</th>
-                        </tr>
-                        <tr>
-                          <td>Padded Armor</td>
-                          <td>11 + Dex modifier</td>
-                          <td>-</td>
-                          <td>Disadvantage</td>
-                          <td>8&#160;lb.</td>
-                          <td>5 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Leather Armor</td>
-                          <td>11 + Dex modifier</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>10&#160;lb.</td>
-                          <td>10 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Studded Leather Armor</td>
-                          <td>12 + Dex modifier</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>13&#160;lb.</td>
-                          <td>45 GP</td>
-                        </tr>
-                      </table>
-                    </div>
-                    <h6 id="toc2"><span>Medium Armor (5 Minutes to Don and 1 Minute to Doff)</span></h6>
-                    <div class="wiki-content-table-container">
-                      <table class="wiki-content-table">
-                        <tr>
-                          <th>Armor</th>
-                          <th>Armor Class (AC)</th>
-                          <th>Strength</th>
-                          <th>Stealth</th>
-                          <th>Weight</th>
-                          <th>Cost</th>
-                        </tr>
-                        <tr>
-                          <td>Hide Armor</td>
-                          <td>12 + Dex modifier (max 2)</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>12&#160;lb.</td>
-                          <td>10 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Chain Shirt</td>
-                          <td>13 + Dex modifier (max 2)</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>20&#160;lb.</td>
-                          <td>50 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Scale Mail</td>
-                          <td>14 + Dex modifier (max 2)</td>
-                          <td>-</td>
-                          <td>Disadvantage</td>
-                          <td>45&#160;lb.</td>
-                          <td>50 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Breastplate</td>
-                          <td>14 + Dex modifier (max 2)</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>20&#160;lb.</td>
-                          <td>400 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Half Plate Armor</td>
-                          <td>15 + Dex modifier (max 2)</td>
-                          <td>-</td>
-                          <td>Disadvantage</td>
-                          <td>40&#160;lb.</td>
-                          <td>750 GP</td>
-                        </tr>
-                      </table>
-                    </div>
-                    <h6 id="toc3"><span>Heavy Armor (10 Minutes to Don and 5 Minutes to Doff)</span></h6>
-                    <div class="wiki-content-table-container">
-                      <table class="wiki-content-table">
-                        <tr>
-                          <th>Armor</th>
-                          <th>Armor Class (AC)</th>
-                          <th>Strength</th>
-                          <th>Stealth</th>
-                          <th>Weight</th>
-                          <th>Cost</th>
-                        </tr>
-                        <tr>
-                          <td>Ring Mail</td>
-                          <td>14</td>
-                          <td>-</td>
-                          <td>Disadvantage</td>
-                          <td>40&#160;lb.</td>
-                          <td>30 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Chain Mail</td>
-                          <td>16</td>
-                          <td>Str 13</td>
-                          <td>Disadvantage</td>
-                          <td>55&#160;lb.</td>
-                          <td>75 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Splint Armor</td>
-                          <td>17</td>
-                          <td>Str 15</td>
-                          <td>Disadvantage</td>
-                          <td>60&#160;lb.</td>
-                          <td>200 GP</td>
-                        </tr>
-                        <tr>
-                          <td>Plate Armor</td>
-                          <td>18</td>
-                          <td>Str 15</td>
-                          <td>Disadvantage</td>
-                          <td>65&#160;lb.</td>
-                          <td>1,500 GP</td>
-                        </tr>
-                      </table>
-                    </div>
-                    <h6 id="toc4"><span>Shield (Utilize Action to Don or Doff)</span></h6>
-                    <div class="wiki-content-table-container">
-                      <table class="wiki-content-table">
-                        <tr>
-                          <th>Armor</th>
-                          <th>Armor Class (AC)</th>
-                          <th>Strength</th>
-                          <th>Stealth</th>
-                          <th>Weight</th>
-                          <th>Cost</th>
-                        </tr>
-                        <tr>
-                          <td>Shield</td>
-                          <td>+2</td>
-                          <td>-</td>
-                          <td>-</td>
-                          <td>6&#160;lb.</td>
-                          <td>10 GP</td>
-                        </tr>
-                      </table>
+                    <div class="tab-container" x-data="armorsDisplay" x-init="init()">
+                      <div x-show="!isReady" class="loading-spinner"></div>
+                      <template x-if="isReady">
+                        <div id="isReadyContainer">
+                          
+                          <div class="tab-divst" id="tab-divst">
+                            <template x-for="(tabValue) in uniqueRarities" :key="tabValue">
+                              <div class="tab-item text-capitalize" :class="{'active': activeTab === tabValue}" @click="EPManager.setFilter('rarity', tabValue)" x-text="tabValue"></div>
+                            </template>
+                          </div>
+
+                          <div class="tab-content-container"></div>
+                          <template x-for="(armor, i) in armorsByType">
+                      <div class="tab-divst" id="tab-divst">
+                        <template x-for="(armors, type) in armorsByType" :key="type">
+                          <div class="tab-item text-capitalize" :data-tab="getTabId(type)" x-text="type"
+                            @click="window.location.hash = `#${type.split(' ')[0]}`"></div>
+                        </template>
+                      </div>
+                      <div class="tab-content-container">
+                        <template x-for="(armors, type) in armorsByType" :key="type">
+                          <div class="tab-content" :id="getTabId(type)">
+                            <table class="table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Armor Class(AC)</th>
+                                  <th>Requirements</th>
+                                  <th>Stealth</th>
+                                  <th>Weight</th>
+                                  <th>Cost</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <template x-for="armor in armors" :key="armor.name">
+                                  <tr>
+                                    <td class="fw-bold" style="white-space: nowrap;" x-text="armor.name"></td>
+                                    <td x-text="armor.armor_class"></td>
+                                    <td x-text="armor.strength_requirement"></td>
+                                    <td x-text="armor.stealth"></td>
+                                    <td x-text="armor.weight"></td>
+                                    <td x-text="armor.cost"></td>
+                                  </tr>
+                                </template>
+                              </tbody>
+                            </table>
+                          </div>
+                        </template>
+                      </div>
                     </div>
                     <h1 id="toc5"><span>Armor Training</span></h1>
                     <p>Anyone can don armor or hold a Shield, but only those with training can use them effectively, as
@@ -235,8 +120,6 @@
                       worn, they might need to visit a smith, a tailor, a leatherworker, or a similar expert to make the
                       item wearable. The cost for such work is 1d4 X 10 percent of the market price of the item.</p>
                   </div>
-
-
                   <div class="page-info-break"></div>
                   <div class="page-options-container"></div>
                   <div id="action-area" style="display: none;"></div>
@@ -244,6 +127,108 @@
               </div>
             </div>
           </div>
+          <script>
+            $(document).ready(function () {
+              document.addEventListener('globalEditionHandled', async (event) => {
+                await loadEntity(window.currentGlobalEdition, 'armors');
+              });
+
+              function getTabIdFromHash() {
+                const hash = window.location.hash.substring(1).toLowerCase();
+                const $tabItems = $(".tab-item");
+                const firstTab = $tabItems.first().data("tab");
+
+                if (!hash) return firstTab;
+
+                const $matchingTab = $tabItems.filter(function () {
+                  return $(this).text().toLowerCase().includes(hash);
+                });
+
+                return $matchingTab.length > 0 ? $matchingTab.data("tab") : firstTab;
+              }
+
+              function activateTab(tabId) {
+                $(".tab-item, .tab-content").removeClass("active");
+                $(`.tab-item[data-tab="${tabId}"], #${tabId}`).addClass("active");
+              }
+
+              activateTab(getTabIdFromHash());
+
+              $(window).on("hashchange", function () {
+                activateTab(getTabIdFromHash());
+              });
+
+              $(".tab-item").on("click", function () {
+                activateTab($(this).data("tab"));
+              });
+            });
+
+            document.addEventListener('alpine:init', () => {
+              Alpine.data('armorsDisplay', () => {
+                return {
+                  armorsByType: {},
+                  activeTab: '',
+
+                  init() {
+                    document.addEventListener('armorsLoaded', (event) => {
+                      if (!window.entities || !window.entities["armors"]) {
+                        console.error("armors: armorsLoaded event fired but armors is still empty.");
+                        return;
+                      }
+
+                      this.groupArmorsByType;
+                      this.setupTabs;
+
+                      queueMicrotask(() => {
+                        this.isReady = true;
+                      });
+                    });
+                  },
+
+                  groupArmorsByType(armors) {
+                    return armors.reduce((acc, armor) => {
+                      if (!acc[armor.type]) {
+                        acc[armor.type] = [];
+                      }
+                      acc[armor.type].push(armor);
+                      return acc;
+                    }, {});
+                  },
+                  getTabId(type) {
+                    return type.toLowerCase().replace(/ /g, '-');
+                  },
+                  setupTabs() {
+                    const tabDivst = document.getElementById('tab-divst');
+                    const tabContentContainer = document.querySelector('.tab-content-container');
+                    const tabItems = tabDivst.querySelectorAll('.tab-item');
+                    const tabContents = tabContentContainer.querySelectorAll('.tab-content');
+
+                    if (tabItems.length > 0) {
+                      this.selectTab(tabItems[0].getAttribute('data-tab'));
+                    }
+                  },
+                  selectTab(tabId) {
+                    this.activeTab = tabId;
+                    const tabItems = document.querySelectorAll('.tab-item');
+                    const tabContents = document.querySelectorAll('.tab-content');
+
+                    tabItems.forEach(item => item.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    const selectedTabItem = document.querySelector(`.tab-item[data-tab="${tabId}"]`);
+                    const selectedTabContent = document.getElementById(tabId);
+
+                    if (selectedTabItem) {
+                      selectedTabItem.classList.add('active');
+                    }
+                    if (selectedTabContent) {
+                      selectedTabContent.classList.add('active');
+                    }
+                  },
+                };
+              });
+            });
+          </script>
         </main>
 
         <footer class="footer-wrap" role="contentinfo">
@@ -253,17 +238,10 @@
                 rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
                 Attribution-ShareAlike 3.0 License</a></div>
           </div>
-          </footer>
+        </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
+    </div>
+  </div>
 </body>
 
 </html>

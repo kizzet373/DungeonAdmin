@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Sheet</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css" />
+    <link rel="stylesheet" href="/css/charactersheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
+
+    <script src="/models/charactersheet-model.js"></script>
+    <script src="/scripts/charactersheet-utilities.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="https://accounts.google.com/gsi/client"></script>
+    <script src="/scripts/entity-loader.js"></script>
+
+    <script>
+        window.awesompleteInits = {};
+        var spellLevelTitles = ["Cantrips", ...Array.from({ length: 9 }, (_, i) => `Level ${i + 1} Spells`)];
+        var currentSpellLevel=0;
+        let saveTimer = null;
+        let isReadOnly = false;
+        let characterId = null;
+        let characterData = null;
+        let isOwner = false;
+
+        async function initializeEntities(chosenEdition) {
+          const { loaded, failed } = await loadMultipleEntities([
+              { edition: chosenEdition, entityName: 'classes' },
+              { edition: chosenEdition, entityName: 'species' },
+              { edition: chosenEdition, entityName: 'spells' },
+              { edition: chosenEdition, entityName: 'subclasses' },
+              { edition: chosenEdition, entityName: 'skills' },
+              { edition: chosenEdition, entityName: 'abilities' },
+              { edition: chosenEdition, entityName: 'backgrounds' },
+              { edition: chosenEdition, entityName: 'magic-items' },
+              { edition: chosenEdition, entityName: 'tools'}
+          ], 'appCoreEntitiesLoaded');
+
+          if (loaded) {
+              window.entities.spells.forEach(spell => { (window.entities[`level${spell.level}Spells`] = window.entities[`level${spell.level}Spells`] || []).push(spell); });
+              //window.items = window['magic-items']
+          }
+
+          if (failed.length > 0) {
+              console.error('Some entities failed to load:', failed);
+          }
+        }
+
+        function generateCharacterSheetViews(form) {
+            return [
+                generateView("basic-info", "Core", "main-section", true, [
+                    generateInput({ id: "dnd_edition", model: "dnd_edition", title: "D&D Edition", containerClasses: "col-4 col-md-2", type: "awesomplete", watch:"updateEdition();", awesomParams: { options: ["Kizzet2024","5e", "2024"] }}),
+                    generateInput({ id: "character_name", model: "character_name", title: "Character Name", containerClasses: "col-4 col-md-3" }),
+                    generateInput({ id: "character_size", model: "character_size", title: "Size", containerClasses: "col-4 col-md-2", type: "awesomplete", awesomParams: { options: ["Small", "Medium"] } }),
+                    generateInput({ id: "background", model: "background", title: "Background", containerClasses: "col-6 col-md-2", type: "awesomplete", awesomParams: { options: entities.backgrounds.map(b => b.name)} }),
+                    generateInput({ id: "species", model: "species", title: "Species", containerClasses: "col-6 col-md-3", type: "awesomplete", awesomParams: { options: entities.species.map(s => s.name) } }),
+                    generateSubSection("class-level-subsection", "", "col-12 col-md-9", [
+                        generateTable("class_subclass_levels", [
+                            { key: "class", text: "Class", containerClasses: "col-4 col-md-4", type: "awesomplete", awesomParams: { optionsEntityKey: "classes", targetKey: "subclass", targetOptionsKey: "subclasses", targetFilterProperty: "class" } },
+                            { key: "subclass", text: "Subclass", containerClasses: "col-5 col-md-5", type: "awesomplete", awesomParams: { optionsEntityKey: "subclasses" } },
+                            { key: "level", text: "Level", containerClasses: "col-2 col-md-2", type: "awesomplete", restriction: "number", watch:"calculateProficiencyBonus();" , awesomParams: { options: [...Array(20)].map((_, i) => i + 1) } },
+                            { text: "", containerClasses: "col-1 col-md-1 px-0 px-md-2 align-items-center", type: "remove" }
+                        ]),
+                        generateButton("add_class_level_btn", "btn btn-success col-2", "Add", "class_subclass_levels", `generateTableRow($(this).data('table'));`)
+                    ]),
+                    generateInput({ id: "appearance", title: "Appearance", containerClasses: "col-12 col-md-6", type: "textarea", model: "appearance" }),
+                    generateInput({ id: "other-proficiencies", title: "Proficiencies", containerClasses: "col-6 col-md-3", type: "textarea", model: "proficiencies" }),
+                    generateInput({ id: "languages", title: "Languages", containerClasses: "col-6 col-md-3", type: "textarea", model: "languages" }),
+                    generateDiv("character-image-container", "col-12 col-md-8 text-center mb-1", [
+                        `<div class="character-image-wrapper">
+                            <img src="${form.character_image_path}" id="character-image" class="img-fluid rounded character-image mb-1" :style="form.character_image_path ? 'display:inline' : 'display: none'" alt="Character Image">
+                            <div id="image-loading-spinner" class="spinner-border" style="display:none" role="status"><span class="visually-hidden">Loading...</span></div>
+                            <div class="mt-2">
+                                <label for="character-image-upload" class="btn btn-sm btn-primary">
+                                    Upload Image
+                                </label>
+                                <input class="cs-form" type="file" id="character-image-upload" accept="image/*" style="display: none;">
+                            </div>
+                        </div>`
+                    ]),
+                    generateInput({id: "backstory", title: "Backstory", containerClasses: "col-12", type: "textarea", model: "backstory" }),
+                ]),
+                generateView("combat-info", "Combat", "main-section", false, [
+                    generateDiv("", "col-6 col-md-4 row", [    
+                        generateInput({ id: "proficiency_bonus", title: "Prof Bonus", containerClasses: "col-6", classes: "calculated",type: "awesomplete", restriction:"number", watch: `calculateAbilitySkillMods(['${window.entities.abilities.map(a => a.name).join("','")}']);calculateSpellBonuses()`, awesomParams: { options: [1, 2, 3, 4, 5, 6] }, model: "proficiency_bonus" }),
+                        generateInput({ id: "armor_class", title: "AC ⛨", containerClasses: "col-6", model: "armor_class" }),
+                        generateInput({ id: "initiative_mod", title: "Initiative", containerClasses: "col-6", classes: "calculated", type: "awesomplete", awesomParams: { options: [...Array(20)].map((_, i) => i + 1) }, model: "initiative_mod" }),
+                        generateInput({ id: "speed", title: "Speed", containerClasses: "col-6", type: "awesomplete", awesomParams: { options: [...Array(20)].map((_, i) => i * 5) }, model: "speed" })
+                    ]),
+                    generateSubSection("hp-subsection", "Hit Points", "col-6 col-md-4", [
+                        generateInput({ id: "hp_current", title: "Current💗", containerClasses: "col-5 col-md-4", classes:"border-2 border-danger", model: "hp_current" }),
+                        generateInput({ id: "hp_max", title: "Max", containerClasses: "col-4 col-md-4", classes:"border-2 border-primary", model: "hp_max" }),
+                        generateInput({ id: "hp_temp", title: "Temp", containerClasses: "col-3 col-md-4", classes:"border-2 border-dark", model: "hp_temp" })
+                    ]),
+                    generateInput({ id: "attacks_and_cantrips", title: "Combat Quick Notes 🌀⚔️", containerClasses: "col-12 col-md-8", type: "textarea", model: "attacks_and_cantrips" }),
+                    generateInput({id:"misc_defenses", title:"Defensive Features", containerClasses:"col-12 col-md-4", type:"textarea",model:"misc_defenses"}),
+                    generateDiv("","col-12 row", [
+                        window.entities.abilities.map(a => createAbilityInstance(a.name, "col-4 col-md-2", false)).join("")
+                    ]),
+                    generateSubSection("hit-dice-subsection", "Hit Dice", "col-6 col-md-4", [
+                        generateInput({ id: "hit_dice_size", title: "Size", containerClasses: "col-4 col-md-4", model: "hit_dice_size" }),
+                        generateInput({ id: "hit_dice_available", title: "Available", containerClasses: "col-5 col-md-4", model: "hit_dice_available" }),
+                        generateInput({ id: "hit_dice_total", title: "Total", containerClasses: "col-3 col-md-4", model: "hit_dice_total" })
+                    ]),
+                ]),
+                generateView("ability-scores", "Skills", "main-section", false, [
+                    generateDiv("", "col-6 col-md-3", [
+                        createAbilityInstance("strength", "col-12"),
+                        createAbilityInstance("dexterity", "col-12"),
+                        createAbilityInstance("intelligence", "col-12"),
+                    ]),
+                    generateDiv("", "col-6 col-md-3", [
+                        createAbilityInstance("constitution", "col-12"),
+                        createAbilityInstance("wisdom", "col-12"),
+                        createAbilityInstance("charisma", "col-12")
+                    ]),
+                    generateInput({ id: "skill_notes", title: "Skill Notes", containerClasses: "col-12 col-md-8", model: "skill_notes", type: "textarea" })
+                ]),
+
+                generateView("features", "Features", "main-section", false, [
+                    generateDiv("", "background-feature-header secondary-section col-11 col-md-9", [
+                      generateCollapsible("background-feature_container", "Background Features ▼", "", false, [
+                            generateTable("background_features", [
+                                { text: "Details", containerClasses: "col-2 col-md-2", type: "toggle-details" },
+                                { key: "name", text: "Name", containerClasses: "col-10 col-md-10", type: "text" },
+                                { key: "description", text: "Description", containerClasses: "col-12 col-md-12 detail", type: "textarea" },
+                                { text: "Remove", containerClasses: "col-2 detail", type: "remove" },
+                                { key: "row_color", text: "Color", containerClasses: "col-2 col-md-1 offset-2 detail", type: "color"}
+                            ]),
+                            generateButton("", "btn btn-primary add-row", "Add Row", "background_features", "generateTableRow($(this).data('table'));")
+                        ])
+                    ]),
+                    generateDiv("", "racial-feature-header secondary-section col-11 col-md-9", [
+                        generateCollapsible("racial-feature_container", "Racial Features ▼", "", false, [
+                            generateTable("racial_features", [
+                                { text: "Details", containerClasses: "col-2 col-md-2", type: "toggle-details" },
+                                { key: "name", text: "Name", containerClasses: "col-10 col-md-10", type: "text" },
+                                { key: "description", text: "Description", containerClasses: "col-12 col-md-12 detail", type: "textarea" },
+                                { text: "Remove", containerClasses: "col-2 detail", type: "remove" },
+                                { key: "row_color", text: "Color", containerClasses: "col-2 col-md-1 offset-2 detail", type: "color"}
+                            ]),
+                            generateButton("", "btn btn-primary add-row", "Add Row", "racial_features", "generateTableRow($(this).data('table'));")
+                        ])
+                    ]),
+                    generateDiv("", "class-feature-header secondary-section col-11 col-md-9", [
+                        generateCollapsible("class-feature_container", "Class Features ▼", "", false, [
+                            generateTable("class_features", [
+                                { key: "details", text: "Details", containerClasses: "col-2 col-md-2", type: "toggle-details" },
+                                { key: "name", text: "Name", containerClasses: "col-10 col-md-10", type: "text" },
+                                { key: "description", text: "Description", containerClasses: "col-12 col-md-12 detail", type: "textarea" },
+                                { key: "remove", text: "Remove", containerClasses: "col-2 detail", type: "remove" },
+                                { key: "row_color", text: "Color", containerClasses: "col-2 col-md-1 offset-2 detail", type: "color"}
+                            ]),
+                            generateButton("", "btn btn-primary add-row", "Add Row", "class_features", "generateTableRow($(this).data('table'));")
+                        ])
+                    ])
+                ]),
+                generateView("items", "Items", "main-section", false, [
+                    generateInput({ id: "platinum", title: "Platinum", containerClasses: "col-3 col-md-1", type: "number", model: "coins.platinum" }),
+                    generateInput({ id: "gold", title: "Gold", containerClasses: "col-3 col-md-1", type: "number", model: "coins.gold" }),
+                    generateInput({ id: "silver", title: "Silver", containerClasses: "col-3 col-md-1", type: "number", model: "coins.silver" }),
+                    generateInput({ id: "copper", title: "Copper", containerClasses: "col-3 col-md-1", type: "number", model: "coins.copper" }),
+
+                    generateDiv("", "equipment-header secondary-section col-11 col-md-9", [
+                        generateCollapsible("equipment_container", "Equipment ▼", "", false, [
+                            generateTable("equipment", [
+                                { key: "details", text: "Details", containerClasses: "col-2 col-md-2", type: "toggle-details" },
+                                { key: "name", text: "Name", containerClasses: "col-6 col-md-6", type: "awesomplete", awesomParams: { optionsEntityKey: `magic-items`, additionalSelectionCode:"populateItems($event.target);"}},
+                                { key: "equip", text: "Equip", containerClasses: "col-2 col-md-2", type: "checkbox" },
+                                { key: "attune", text: "Attune", containerClasses: "col-2 col-md-2", type: "checkbox" },
+                                { key: "description", text: "Description", containerClasses: "col-12 col-md-12 detail", type: "textarea" },
+                                { key: "remove", text: "Remove", containerClasses: "col-2 detail", type: "remove" },
+                                { key: "row_color", text: "Color", containerClasses: "col-2 col-md-1 offset-2 detail", type: "color"}
+                            ]),
+                            generateButton("", "btn btn-primary add-row", "Add Row", "equipment", "generateTableRow($(this).data('table'));")
+                        ])
+                    ]),
+
+                    generateDiv("", "miscellaneous-header secondary-section col-11 col-md-9", [
+                        generateCollapsible("miscellaneous_container", "Miscellaneous ▼", "", false, [
+                            generateTable("miscellaneous_items", [
+                                { key: "details", text: "Details", containerClasses: "col-2 col-md-2", type: "toggle-details" },
+                                { key: "name", text: "Name", containerClasses: "col-6 col-md-6", type: "text" },
+                                { key: "equip", text: "Equip", containerClasses: "col-2 col-md-2", type: "checkbox" },
+                                { key: "attune", text: "Attune", containerClasses: "col-2 col-md-2", type: "checkbox" },
+                                { key: "description", text: "Description", containerClasses: "col-12 col-md-12 detail", type: "textarea" },
+                                { key: "remove", text: "Remove", containerClasses: "col-2 detail", type: "remove" },
+                                { key: "row_color", text: "Color", containerClasses: "col-2 col-md-1 offset-2 detail", type: "color"}
+                            ]),
+                            generateButton("", "btn btn-primary add-row", "Add Row", "miscellaneous_items", "generateTableRow($(this).data('table'));")
+                        ])
+                    ])
+                ]),
+                generateView("spells", "Spells", "main-section", false, [
+                    generateInput({ id: "spellcasting_ability", title: "Spellcasting Ability", model: "spellcasting_ability", containerClasses: "col-6 col-md-2", type: "awesomplete", watch:"calculateSpellBonuses()", awesomParams: { options: window.entities.abilities.map(a => a.name) } }),
+                    generateInput({ id: "spell_save_dc", title: "Spell Save DC", model: "spell_save_dc", containerClasses: "col-6 col-md-2", type: "awesomplete", awesomParams: { options: [...Array(26)].map((_, i) => i + 5) } }),
+                    generateInput({ id: "spell_attack_bonus", title: "Spell Attack Bonus", model: "spell_attack_bonus", containerClasses: "col-6 col-md-2", type: "awesomplete", awesomParams: { options: [...Array(26)].map((_, i) => i - 5) } }),
+                    generateInput({ id: "spells_known", title: "Spells Known", model: "spells_known", containerClasses: "col-6 col-md-2", type: "awesomplete", awesomParams: { options: [...Array(50)].map((_, i) => i + 1) } }),
+                    generateInput({ id: "spells_prepared", title: "Spells Prepared", model: "spells_prepared", containerClasses: "col-6 col-md-2", type: "awesomplete", awesomParams: { options: [...Array(50)].map((_, i) => i + 1) } }),
+                    generateDiv("", "col-12 col-md-7", [
+                        generateDiv("spell_levels_container", "", []),
+                        generateButton("addSpellLevel", "btn btn-success mb-3", "Add Next Spell Table", "", `createSpellLevelTable()`)
+                    ])
+                ])
+            ];
+        }
+
+        function characterSheet() {
+            return {
+                form: structuredClone(CSModel.form),
+                isReady: false,
+                _version: 0,
+                async initPage() {
+                    window.alpineComponent = document.querySelector('[x-data]')?._x_dataStack[0];
+
+                    await loadCharacterData(); // Need character sheet d&d edition before getting entities
+
+                    await initializeEntities(this.form.dnd_edition.toLowerCase() || "kizzet2024"); // Need entities before generating elements
+
+                    $(".sheet-container").append(generateCharacterSheetViews(this.form)); // Need elements before initializing alpine
+                    setReadOnlyMode(isReadOnly);
+
+                    populateTablesFromForm();
+
+                    Alpine.initTree(document.querySelector('.sheet-container'));
+
+                    Object.entries(window.awesompleteInits).forEach(([id, awesomParams]) => {
+                        initAwesomplete(id, awesomParams);
+                    });
+
+                    initializeEventListeners();
+                    this.isReady = true;
+                },
+                calculateProficiencyBonus() {
+                    this.form[`proficiency_bonus`] = 1+ Math.ceil(this.form['class_subclass_levels'].reduce((sum, csl) => sum + (csl.level || 0), 0) / 4);
+                },
+                calculateAbilityMods(abilityIds){
+                    abilityIds.forEach(abilityId => this.calculateAbilityMod(abilityId));
+                },
+                calculateAbilityMod(abilityId) {
+                    const score = this.form[`${abilityId}_score`] || 0;
+                    this.form[`${abilityId}_mod`] = Math.floor((score - 10) / 2);
+                },
+                calculateAbilitySkillMods(abilityIds) {
+                    abilityIds.forEach(abilityId => {
+                        window.entities.skills.forEach(skill => skill.ability === abilityId ? this.calculateSkillMod(abilityId, skill.name) : "");
+                        this.calculateSkillMod(abilityId,`${abilityId}_save`);
+                        if(abilityId === "dexterity") this.calculateSkillMod(abilityId,"initiative")
+                    });
+                },
+                calculateSkillMod(abilityId, skillId) {
+                    const PB = this.form[`proficiency_bonus`] || 0;
+                    const proficiency = this.form[`${skillId}_prof`] || '';
+                    const abilityMod = this.form[`${abilityId}_mod`] || 0;
+                    const PBMultiplier = {"⭕": 0.5, "🔵": 1, "⭐": 2}[proficiency] || 0;
+                    this.form[`${skillId}_mod`] = abilityMod + Math.floor(PB * PBMultiplier);
+                },
+                calculateSpellBonuses(){
+                    const PB = this.form["proficiency_bonus"] || 0;
+                    const SCAbility = this.form["spellcasting_ability"] || "";
+                    const SCAbilityMod = this.form[`${SCAbility}_mod`] || "";
+                    this.form['spell_save_dc'] = 8 + PB + SCAbilityMod;
+                    this.form['spell_attack_bonus'] = PB + SCAbilityMod;
+                },
+                async updateEdition(){
+                  saveCharacter();
+                  window.location.reload();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body x-data="characterSheet()" x-init="initPage()">
+    <div>
+        <div class="save-status"></div>
+        
+        <div class="readonly-notice bg-info" style="display:none;">
+            <strong>View Only Mode:</strong> You are viewing this character sheet in read-only mode. You can't make changes.
+        </div>
+        
+        <div class="error-container" style="display:none;">
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">Error</h4>
+                <p id="error-message">An error occurred.</p>
+                <hr>
+                <p class="mb-0">Please try again or return to <a href="/">home</a>.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sheet-container tab-content" style="display: none;">
+        <div id="character-sidebar">
+            <ul class="nav nav-pills flex-column row" id="character-tabs" role="tablist"></ul>
+        </div>
+    </div>
+
+    <div x-show="!isReady" class="loading-spinner"></div>
+</body>
+
+</html>

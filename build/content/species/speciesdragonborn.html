@@ -2,67 +2,50 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Dragonborn - Koinks D&amp;D 2024</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <title>Dragonborn - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body id="html-body">
   <div id="skrollr-body">
-
-
-
-    <div class="container-wrap-wrap">
+   <div class="container-wrap-wrap">
       <div class="container-wrap">
 
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
 
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
 
-              <nav class="side-bar-wrap col-md-3">
-                <div class="side-bar">
-                  <div class="side-bar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                      data-target=".navbar-side-target">
-                      <span>Menu</span>
-                    </button>
-                  </div>
-                  <div class="collapse navbar-collapse navbar-side-target">
-                  </div>
-                </div>
-              </nav>
+              
 
               <div class="main-content-wrap col-md-12">
 
                 <div class="main-content">
                   <div class="page-title page-header"><span>Dragonborn</span></div>
                   <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
-                      href="/content/species/speciesall">Species</a> &raquo; Dragonborn</div>
-
-
-                  <div id="page-content">
+                      href="/content/species/speciesall">Species</a> &raquo; Dragonborn</div>                 <div id="page-content">
 
                     <p>Source: Player's Handbook</p>
                     <p>The ancestors of dragonborn hatched from the eggs of chromatic and metallic dragons. One story
@@ -155,10 +138,6 @@
                       it again until you finish a Long Rest.</p>
                   </div>
 
-                  <div class="page-tags"><a href="/systempage-tags/tag/common.html#pages">common</a></div>
-                  <div class="page-info-break"></div>
-                  <div class="page-options-container"></div>
-                  <div id="action-area" style="display: none;"></div>
                 </div>
               </div>
             </div>
@@ -174,15 +153,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

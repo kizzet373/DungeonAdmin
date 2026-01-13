@@ -1,0 +1,340 @@
+{
+  "form": {
+    "dnd_edition": "Kizzet2024",
+    "character_name": "Specific Access Test",
+    "character_size": "Medium",
+    "background": "Criminal",
+    "species": "Dragonborn",
+    "class_subclass_levels": [
+      {
+        "subclass": "Trickery Domain",
+        "class": "Cleric",
+        "level": 6
+      },
+      {
+        "class": "Ranger",
+        "subclass": "Gloom Stalker",
+        "level": 2
+      },
+      {
+        "class": "Barbarian",
+        "subclass": "Path Of The Wild Heart",
+        "level": 12
+      }
+    ],
+    "quick_notes": "yeppers",
+    "appearance": "ff\nf\nf\nf\nf\n\nf",
+    "other_proficiencies": "",
+    "languages": "\nf\nf\nf",
+    "backstory": "f\nf\n\nf\nf\n\nf\nf",
+    "proficiency_bonus": 6,
+    "armor_class": 0,
+    "initiative_mod": 1,
+    "speed": 0,
+    "hp_current": 0,
+    "hp_max": "99",
+    "hp_temp": "21",
+    "misc_defenses": "",
+    "hit_dice_size": "dshoi",
+    "hit_dice_available": "1",
+    "hit_dice_total": "2",
+    "attacks_and_cantrips": "quick\nlil\nboy\nf\nf\nf",
+    "strength_score": 10,
+    "strength_mod": 0,
+    "dexterity_score": 12,
+    "dexterity_mod": 1,
+    "constitution_score": 10,
+    "constitution_mod": 0,
+    "intelligence_score": 16,
+    "intelligence_mod": 3,
+    "wisdom_score": 18,
+    "wisdom_mod": 4,
+    "charisma_score": 10,
+    "charisma_mod": 0,
+    "skill_notes": "",
+    "strength_save_prof": "⭕",
+    "strength_save_mod": 3,
+    "dexterity_save_prof": "🔵",
+    "dexterity_save_mod": 7,
+    "constitution_save_prof": "⭐",
+    "constitution_save_mod": 12,
+    "intelligence_save_prof": "⭕",
+    "intelligence_save_mod": 6,
+    "wisdom_save_prof": "",
+    "wisdom_save_mod": 4,
+    "charisma_save_prof": "",
+    "charisma_save_mod": 0,
+    "athletics_prof": "",
+    "athletics_mod": 0,
+    "acrobatics_prof": "",
+    "acrobatics_mod": 1,
+    "sleight_of_hand_prof": "",
+    "sleight_of_hand_mod": 1,
+    "stealth_prof": "",
+    "stealth_mod": 1,
+    "arcana_prof": "⭐",
+    "arcana_mod": 15,
+    "history_prof": "",
+    "history_mod": 3,
+    "investigation_prof": "",
+    "investigation_mod": 3,
+    "nature_prof": "",
+    "nature_mod": 3,
+    "religion_prof": "",
+    "religion_mod": 3,
+    "animal_handling_prof": "",
+    "animal_handling_mod": 4,
+    "insight_prof": "",
+    "insight_mod": 4,
+    "medicine_prof": "",
+    "medicine_mod": 4,
+    "perception_prof": "",
+    "perception_mod": 4,
+    "survival_prof": "",
+    "survival_mod": 4,
+    "deception_prof": "",
+    "deception_mod": 0,
+    "intimidation_prof": "",
+    "intimidation_mod": 0,
+    "performance_prof": "",
+    "performance_mod": 0,
+    "persuasion_prof": "",
+    "persuasion_mod": 0,
+    "background_features": [
+      {}
+    ],
+    "racial_features": [
+      {
+        "name": "racial feature",
+        "description": "descript\nf\nf\nf"
+      },
+      {
+        "name": "racial feature 2",
+        "description": "descrip\nf\nf\nf"
+      },
+      {
+        "name": "teeter",
+        "description": "he peepin"
+      },
+      {
+        "name": "teeter swim",
+        "description": "he swimpin and peepin"
+      }
+    ],
+    "class_features": [
+      {
+        "name": "Class feature",
+        "description": "descript\nh\nh\nh"
+      },
+      {
+        "name": "Class feature 2",
+        "description": "descrip\ng\ng\ng"
+      },
+      {
+        "name": "Gyip",
+        "description": "g\ng\ng\ng"
+      },
+      {
+        "name": "Teeter fly",
+        "description": "peepin and flappin"
+      }
+    ],
+    "coins": {
+      "platinum": "30",
+      "gold": "20",
+      "silver": "10",
+      "copper": "5000000000"
+    },
+    "equipment": [
+      {
+        "name": "sword",
+        "equip": true
+      },
+      {
+        "name": "shield",
+        "equip": false,
+        "attune": true
+      },
+      {
+        "name": "specific thing"
+      },
+      {
+        "name": "tequila",
+        "equip": true
+      }
+    ],
+    "miscellaneous_items": [
+      {
+        "name": "rump",
+        "attune": true
+      },
+      {
+        "name": "gyimp",
+        "description": "Oh\nShint\nIt's\na\ncute\ngirl\nnamed\nain't \ntoo\nabbey\nshabby",
+        "attune": true
+      }
+    ],
+    "spellcasting_ability": "wisdom",
+    "spell_save_dc": 18,
+    "spell_attack_bonus": 10,
+    "spells_known": 0,
+    "spells_prepared": 0,
+    "level_0_spell_slots_available": 0,
+    "level_0_spell_slot_max": 0,
+    "level_1_spell_slots_available": "3",
+    "level_1_spell_slot_max": "3",
+    "level_2_spell_slots_available": 0,
+    "level_2_spell_slot_max": 0,
+    "level_3_spell_slots_available": 0,
+    "level_3_spell_slot_max": 0,
+    "level_4_spell_slots_available": 0,
+    "level_4_spell_slot_max": 0,
+    "level_5_spell_slots_available": 0,
+    "level_5_spell_slot_max": 0,
+    "level_6_spell_slots_available": 0,
+    "level_6_spell_slot_max": 0,
+    "level_7_spell_slots_available": 0,
+    "level_7_spell_slot_max": 0,
+    "level_8_spell_slots_available": 0,
+    "level_8_spell_slot_max": 0,
+    "level_9_spell_slots_available": 0,
+    "level_9_spell_slot_max": 0,
+    "level_0_spells": [
+      {
+        "name": "Chill Touch",
+        "file": "spellchill-touch.html",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "Touch",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can’t regain Hit Points until the end of your next turn.\n\nCantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
+      },
+      {
+        "name": "Fire Bolt",
+        "file": "spellfire-bolt.html",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn’t being worn or carried.\n\nCantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
+      },
+      {
+        "name": "Light",
+        "file": "spelllight.html",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "Touch",
+        "components": "V, M (a firefly or phosphorescent moss)",
+        "duration": "1 hour",
+        "description": "You touch one Large or smaller object that isn’t being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The light can be colored as you like.\n\nCovering the object with something opaque blocks the light. The spell ends if you cast it again.\n                    "
+      }
+    ],
+    "level_1_spells": [
+      {
+        "name": "Bane",
+        "UA": false,
+        "file": "/content/spell#bane",
+        "level": 1,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "30 feet",
+        "components": "V, S, M (a drop of blood)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Up to three creatures of your choice that you can see within range must each make a Charisma saving throw. Whenever a target that fails this save makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save.\n\nHigher-Level Spell Slot: You can target one additional creature for each spell slot level above 1.",
+        "class": [
+          "bard",
+          "cleric",
+          "warlock"
+        ],
+        "source": "player's handbook",
+        "school": "enchantment",
+        "status": ""
+      },
+      {
+        "name": "Bless",
+        "file": "spellbless.html",
+        "level": 1,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "30 feet",
+        "components": "V, S, M (a Holy Symbol worth 5+ GP)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save.\n\nUsing a Higher-Level Spell Slot. You can target one additional creature for each spell slot level above 1."
+      }
+    ],
+    "level_2_spells": [
+      {
+        "name": "Augury",
+        "file": "spellaugury.html",
+        "level": 2,
+        "casting_time": "1 minute",
+        "ritual": true,
+        "range": "Self",
+        "components": "V, S, M (specially marked sticks, bones, cards, or other divinatory\n                      tokens worth 25+ GP)",
+        "duration": "Instantaneous",
+        "description": "You receive an omen from an otherworldly entity about the results of a course of action that you plan to take within the next 30 minutes. The DM chooses the omen from the Omens table."
+      },
+      {
+        "name": "Barkskin",
+        "file": "spellbarkskin.html",
+        "level": 2,
+        "casting_time": "Bonus Action",
+        "ritual": false,
+        "range": "Touch",
+        "components": "V, S, M (a handful of bark)",
+        "duration": "1 hour",
+        "description": "You touch a willing creature. Until the spell ends, the target’s skin assumes a bark-like appearance, and the target has an Armor Class of 17 if its AC is lower than that."
+      }
+    ],
+    "level_3_spells": [
+      {
+        "name": "Call Lightning",
+        "file": "spellcall-lightning.html",
+        "level": 3,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "A storm cloud appears at a point within range that you can see above yourself. It takes the shape of a Cylinder that is 10 feet tall with a 60-foot radius.\n\nWhen you cast the spell, choose a point you can see under the cloud. A lightning bolt shoots from the cloud to that point. Each creature within 5 feet of that point makes a Dexterity saving throw, taking 3d10 Lightning damage on a failed save or half as much damage on a successful one.\n\nUntil the spell ends, you can take a Magic action to call down lightning in that way again, targeting the same point or a different one.\n\nIf you’re outdoors in a storm when you cast this spell, the spell gives you control over that storm instead of creating a new one. Under such conditions, the spell’s damage increases by 1d10.\n                    \n\nUsing a Higher-Level Spell Slot. The damage increases by 1d10 for each spell slot level above 3."
+      }
+    ],
+    "level_4_spells": [
+      {}
+    ],
+    "level_5_spells": [
+      {}
+    ],
+    "level_6_spells": [
+      {}
+    ],
+    "level_7_spells": [
+      {}
+    ],
+    "level_8_spells": [
+      {}
+    ],
+    "level_9_spells": [
+      {}
+    ],
+    "currentSpellLevel": 1,
+    "initiative": 0,
+    "proficiencies": "ff\n\nf\nf\n\nf",
+    "character_image_path": "/dungeonadmin-api/character-image/character_1746542659741-5119.png"
+  },
+  "id": "1746542659741-5119",
+  "owner": "101058586979842834815",
+  "created": "2025-05-15T18:52:09.700Z",
+  "updated": "2025-07-07T21:03:50.246Z",
+  "isOwner": true,
+  "isPublic": false,
+  "sharedWith": [
+    "kirklandbrown373@gmail.com"
+  ],
+  "_version": 59
+}

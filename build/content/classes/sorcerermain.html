@@ -2,30 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Sorcerer - Koinks D&amp;D 2024</title>
+  <title>Sorcerer - Dungeon Admin</title>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
-  <script type="text/javascript" src="/v--4b961b7cc327/common--modules/js/list/ListPagesModule.js"></script>
+  
 </head>
 
 <body id="html-body">
@@ -33,6 +22,19 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
@@ -40,10 +42,7 @@
                 <div class="main-content">
                   <div class="page-title page-header"><span>Sorcerer</span></div>
                   <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
-                      href="/content/classes/classall">Classes</a> &raquo; Sorcerer</div>
-
-
-                  <div id="page-content">
+                      href="/content/classes/classall">Classes</a> &raquo; Sorcerer</div>                 <div id="page-content">
 
                     <p>Source: Player's Handbook</p>
                     <p>Sorcerers wield innate magic that is stamped into their being. Some Sorcerers can’t name the
@@ -478,13 +477,13 @@
                     <h3 id="toc5"><span>Level 1: Spellcasting <a name="Spellcasting"></a></span></h3>
                     <p>Drawing from your innate magic, you can cast spells. See chapter 7 for the rules on spellcasting.
                       The information below details how you use those rules with Sorcerer spells, which appear in the <a
-                        href="/content/spells/spellall.html#class:sorcerer">Sorcerer spell list</a> later in the class’s
+                        href="/content/all-spells#class:sorcerer">Sorcerer spell list</a> later in the class’s
                       description.</p>
                     <p><strong>Cantrips.</strong> You know four Sorcerer cantrips of your choice. <a
-                        href="/content/spells/spelllight">Light</a>, <a
-                        href="/content/spells/spellprestidigitation">Prestidigitation</a>, <a
-                        href="/content/spells/spellshocking-grasp">Shocking Grasp</a>, and <a
-                        href="/content/spells/spellsorcerous-burst">Sorcerous Burst</a> are recommended. Whenever
+                        href="/content/spell#light">Light</a>, <a
+                        href="/content/spell#prestidigitation">Prestidigitation</a>, <a
+                        href="/content/spell#shocking-grasp">Shocking Grasp</a>, and <a
+                        href="/content/spell#sorcerous-burst">Sorcerous Burst</a> are recommended. Whenever
                       you gain a Sorcerer level, you can replace one of your cantrips from this feature with another
                       Sorcerer cantrip of your choice.</p>
                     <p>When you reach Sorcerer levels 4 and 10, you learn another Sorcerer cantrip of your choice, as
@@ -493,8 +492,8 @@
                       cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
                     <p><strong>Prepared Spells of Level 1+.</strong> You prepare the list of level 1+ spells that are
                       available for you to cast with this feature. To start, choose two level 1 Sorcerer spells. <a
-                        href="/content/spells/spellburning-hands">Burning Hands</a> and <a
-                        href="/content/spells/spelldetect-magic">Detect Magic</a> are recommended.</p>
+                        href="/content/spell#burning-hands">Burning Hands</a> and <a
+                        href="/content/spell#detect-magic">Detect Magic</a> are recommended.</p>
                     <p>The number of spells on your list increases as you gain Sorcerer levels, as shown in the Prepared
                       Spells column of the Sorcerer Features table. Whenever that number increases, choose additional
                       Sorcerer spells until the number of spells on your list matches the number in the Sorcerer
@@ -618,10 +617,7 @@
                         </table>
                       </div>
 
-
-
-
-                    </div>
+                   </div>
                     <h3 id="toc12"><span>Level 4: Ability Score Improvement <a
                           name="Ability-Score-Improvement"></a></span></h3>
                     <p>You gain the <a href="/content/feats/featability-score-improvement">Ability Score Improvement feat</a> or
@@ -638,7 +634,7 @@
                         href="/content/classes/subclasses/sorcerer_metamagic">Metamagic</a> options on each spell
                       you cast.</p>
                     <h3 id="toc15"><span>Level 19: Epic Boon <a name="Epic-Boon"></a></span></h3>
-                    <p>You gain an <a href="/content/feats/featall">Epic Boon feat</a> or another feat of your choice for which
+                    <p>You gain an <a href="/content/feats/featall#epic">Epic Boon feat</a> or another feat of your choice for which
                       you qualify. <a href="/content/feats/featboon-of-dimensional-travel">Boon of Dimensional Travel</a> is
                       recommended.</p>
                     <h3 id="toc16"><span>Level 20: Arcane Apotheosis <a name="Arcane-Apotheosis"></a></span></h3>
@@ -647,10 +643,6 @@
                       turns without spending Sorcery Points on it.</p>
                   </div>
 
-                  <div class="page-tags"><a href="systempage-tags/tag/class.html#pages">class</a></div>
-                  <div class="page-info-break"></div>
-                  <div class="page-options-container"></div>
-                  <div id="action-area" style="display: none;"></div>
                 </div>
               </div>
             </div>
@@ -666,15 +658,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

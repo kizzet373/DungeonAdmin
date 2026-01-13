@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Wand of Wonder - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Wand of Wonder</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/equipment/magic-items/magic-itemall">Magic Items</a> &raquo; Wand of Wonder
+                  </div>                 <div id="page-content">
+
+                    <p>Source: Dungeon Master's Guide</p>
+                    <p><em>Wand, Rare (Requires Attunement)</em></p>
+                    <p>This wand has 7 charges. While holding it, you can take a Magic action to expend 1 charge while
+                      choosing a point within 120 feet of yourself. That location becomes the point of origin of a spell
+                      or other magical effect determined by rolling on the Wand of Wonder Effects table. Spells cast
+                      from the wand have a save DC of 15. If a spell’s maximum range is normally less than 120 feet, it
+                      becomes 120 feet when cast from the wand. If an effect has multiple possible subjects, the DM
+                      determines randomly which among them are affected.</p>
+                    <p><strong>Regaining Charges.</strong> The wand regains 1d6 + 1 expended charges daily at dawn. If
+                      you expend the wand's last charge, roll 1d20. On a 1, the wand crumbles into dust and is
+                      destroyed.</p>
+                    <strong>Wand of Wonder Effects</strong><br>
+                    <div class="wiki-content-table-container">
+                      <table class="wiki-content-table">
+                        <tr>
+                          <th>1d100</th>
+                          <th>Effect</th>
+                        </tr>
+                        <tr>
+                          <td>01–20</td>
+                          <td>You cast a spell originating from the chosen point. Roll 1d10 to determine the spell: on a
+                            1–2, <a href="/content/spell#darkness">Darkness</a>; on a 3–4, <a
+                              href="/content/spell#faerie-fire">Faerie Fire</a>; on a 5–6, <a
+                              href="/content/spell#fireball">Fireball<purple>(nerfed)</purple></a>; on a 7–8,
+                            <a href="/content/spell#slow">Slow</a>; on a 9–10, <a
+                              href="/content/spell#stinking-cloud">Stinking Cloud</a>.</td>
+                        </tr>
+                        <tr>
+                          <td>21–25</td>
+                          <td>Nothing happens at the chosen point of origin. Instead, you have the Stunned condition
+                            until the start of your next turn, believing something awesome just happened.</td>
+                        </tr>
+                        <tr>
+                          <td>26–30</td>
+                          <td>You cast <a href="/content/spell#gust-of-wind">Gust of Wind</a>. The Line
+                            created by the spell extends from you to the chosen point of origin.</td>
+                        </tr>
+                        <tr>
+                          <td>31–35</td>
+                          <td>Nothing happens at the chosen point of origin. Instead, you take 1d6 Psychic damage.</td>
+                        </tr>
+                        <tr>
+                          <td>36–40</td>
+                          <td>Heavy rain falls for 1 minute in a 120-foot-high, 60-foot-radius Cylinder centered on the
+                            chosen point of origin. During that time, the area of effect is Lightly Obscured.</td>
+                        </tr>
+                        <tr>
+                          <td>41–45</td>
+                          <td>A cloud of 600 oversized butterflies fills a 60-foot-high, 30-foot-radius Cylinder
+                            centered on the chosen point of origin. The butterflies remain for 10 minutes, during which
+                            time the area of effect is Heavily Obscured.</td>
+                        </tr>
+                        <tr>
+                          <td>46–50</td>
+                          <td>You cast <a href="/content/spell#lightning-bolt">Lightning Bolt</a>. The Line
+                            created by the spell extends from you to the chosen point of origin.</td>
+                        </tr>
+                        <tr>
+                          <td>51–55</td>
+                          <td>The creature closest to the chosen point of origin is enlarged as if you had cast <a
+                              href="/content/spell#enlarge-reduce">Enlarge/Reduce</a> on it. If the target
+                            isn’t you and can’t be affected by that spell, you become the target instead.</td>
+                        </tr>
+                        <tr>
+                          <td>56–60</td>
+                          <td>A magically formed creature appears in an unoccupied space as close to the chosen point of
+                            origin as possible. The creature isn’t under your control, acts as it normally would, and
+                            disappears after 1 hour or when it drops to 0 Hit Points. Roll 1d4 to determine which
+                            creature appears. On a 1, a Rhinoceros appears; on a 2, an Elephant appears; and on a 3–4, a
+                            Rat appears.</td>
+                        </tr>
+                        <tr>
+                          <td>61–64</td>
+                          <td>Grass covers a 60-foot-radius circle of ground, with the center of that circle as close to
+                            the chosen point of origin as possible. Grass that’s already there grows to ten times its
+                            normal size and remains overgrown for 1 minute.</td>
+                        </tr>
+                        <tr>
+                          <td>65–68</td>
+                          <td>An object of the DM’s choice disappears into the Ethereal Plane. The object must be
+                            neither worn nor carried, within 120 feet of the chosen point of origin, and no larger than
+                            10 feet in any dimension. If there are no such objects in range, nothing happens.</td>
+                        </tr>
+                        <tr>
+                          <td>69–72</td>
+                          <td>Nothing happens at the chosen point of origin. Instead, you shrink as if you had cast <a
+                              href="/content/spell#enlarge-reduce">Enlarge/Reduce</a> on yourself and remain
+                            in that state for 1 minute.</td>
+                        </tr>
+                        <tr>
+                          <td>73–77</td>
+                          <td>Leaves grow from the creature nearest to the chosen point of origin. Unless they are
+                            picked off, the leaves turn brown and fall off after 24 hours.</td>
+                        </tr>
+                        <tr>
+                          <td>78–82</td>
+                          <td>Nothing happens at the chosen point of origin. Instead, a burst of colorful, shimmering
+                            light extends from you in a 30-foot Emanation. Each creature in the area must succeed on a
+                            DC 15 Constitution saving throw or have the Blinded condition for 1 minute. A creature
+                            repeats the save at the end of each of its turns, ending the effect on itself on a success.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>83–87</td>
+                          <td>Nothing happens at the chosen point of origin. Instead, you cast <a
+                              href="/content/spell#invisibility">Invisibility</a> on yourself.</td>
+                        </tr>
+                        <tr>
+                          <td>88–92</td>
+                          <td>Nothing happens at the chosen point of origin. Instead, a stream of 1d4 × 10 gems, each
+                            worth 1 GP, shoots from the wand’s tip in a Line 30 feet long and 5 feet wide toward the
+                            chosen point of origin. Each gem deals 1 Bludgeoning damage, and the total damage of the
+                            gems is divided equally among all creatures in the Line.</td>
+                        </tr>
+                        <tr>
+                          <td>93–97</td>
+                          <td>You cast <a href="/content/spell#polymorph">Polymorph</a>, targeting the
+                            creature closest to the chosen point of origin. Roll 1d4 to determine the target’s new form.
+                            On a 1, the new form is a Black Bear; on a 2, the new form is a Giant Wasp; on a 3–4, the
+                            new form is a Frog.</td>
+                        </tr>
+                        <tr>
+                          <td>98–00</td>
+                          <td>The creature closest to the chosen point of origin makes a DC 15 Constitution saving
+                            throw. On a failed save, the creature has the Restrained condition and begins to turn to
+                            stone. While Restrained in this way, the creature repeats the save at the end of its next
+                            turn. On a successful save, the effect ends. On a failed save, the creature has the
+                            Petrified condition instead of the Restrained condition. The petrification lasts until the
+                            creature is freed by the <a href="/content/spell#greater-restoration">Greater
+                              Restoration</a> spell or similar magic.</td>
+                        </tr>
+                      </table>
+                    </div>
+                 </div>
+
+                  <div class="page-tags"><a href="/systempage-tags/tag/attuned.html#pages">attuned</a><a
+                      href="/systempage-tags/tag/rare.html#pages">rare</a><a
+                      href="/systempage-tags/tag/wand.html#pages">wand</a></div>
+                  <div class="page-info-break"></div>
+                  <div class="page-options-container"></div>
+                  <div id="action-area" style="display: none;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+          </footer>
+      </div>
+</body>
+
+</html>

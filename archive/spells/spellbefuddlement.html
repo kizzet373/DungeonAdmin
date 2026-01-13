@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Befuddlement - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Befuddlement</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/all-spells">All Spells</a> &raquo; Befuddlement</div>
+
+
+                  <div id="page-content">
+
+                    <p id="source">source: Player's Handbook</p>
+                    <p><em id="spell-level-label">Level 8 Enchantment (Bard, Druid, Warlock, Wizard)</em></p>
+                    <p><strong>Casting Time:</strong><span id="casting-time"> Action</span><br>
+                      <strong>Range:</strong><span id="range"> 150 feet</span><br>
+                      <strong>Components:</strong><span id="components"> V, S, M (a key ring with no keys)</span><br>
+                      <strong>Duration:</strong><span id="duration"> Instantaneous</span>
+                    </p><div id="description">
+                    <p>You blast the mind of a creature that you can see within range. The target makes an Intelligence
+                      saving throw.</p>
+                    <p>On a failed save, the target takes 10d12 Psychic damage and can't cast spells or take the Magic
+                      action. At the end of every 30 days, the target repeats the save, ending the effect on a success.
+                      The effect can also be ended by the <a
+                        href="/content/spell#greater-restoration">Greater Restoration</a>, <a
+                        href="/content/spell#heal">Heal</a>, or <a
+                        href="/content/spell#wish">Wish</a> spell.</p>
+                    <p>On a successful save, the target takes half as much damage only.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(() => {
+      $('.dropdown-toggle').on('click', e => {
+        if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+      });
+    });
+  </script>
+</body>
+
+</html>

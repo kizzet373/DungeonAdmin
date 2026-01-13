@@ -1,0 +1,146 @@
+@import url('//css.wikidot.com/theme:community-bootstrap-base/code_');
+@import url('//css.wikidot.com/cssnippet:minimized-login-status/code_');
+@import url('//css.wikidot.com/cssnippet:minimized-search-bar/code_');
+@import url('//css.wikidot.com/cssnippet:fontawesome-editor/code_');
+@import url('//css.wikidot.com/cssnippet:better-code-blocks/code_');
+@import url('//css.wikidot.com/cssnippet:inline-hovertips/code_');
+
+a.newpage{  color: #AAA; }
+a.newpage:hover,
+a.newpage:focus{  color: #888; }
+
+.btn{
+    border-bottom-width: 3px;
+    padding: 3px 15px;
+}
+.btn-group-vertical > .btn{
+    border-bottom-width: 1px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+}
+.form-control{
+    border-radius: 4px;
+    height: 32px;
+    padding: 4px 12px;
+}
+ 
+input[type=button]:not(.btn),
+input[type=submit]:not(.btn),
+.button,
+.join-box a{
+    padding: 3px 15px;
+    border-bottom-width: 3px;
+}
+
+input[type=text]:not(.form-control),
+textarea:not(.form-control){
+    padding: 4px 12px;
+}
+input[type=text]:not(.form-control){  height: 32px; }
+ 
+.pager > .target > a,
+.pager > .current,
+.pager > .dots{
+    border-bottom-width: 3px;
+}
+ 
+.breadcrumbs{
+    background: none;
+    padding: 0 24px;
+    color: #777;
+}
+
+header.header-wrap{
+    position: relative;
+    height: 150px;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+header .header{  position: relative; }
+header.header-wrap h1{  margin-bottom: 0;}
+header.header-wrap h1 a{
+    font-size: 32px;
+    letter-spacing: 1px;
+    transition: color 128ms ease-out;
+}
+header.header-wrap h1 a:hover,
+header.header-wrap h1 a:focus,
+header.header-wrap h1 a:active{
+    text-decoration: none;
+}
+header.header-wrap h2{
+    font-size: 14px;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    padding-left: 56px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+header.header-wrap .site-title{  min-height: 75px; }
+
+main .main-content h2{  font-size: 28px; }
+main .main-content h3{  font-size: 24px; }
+main .main-content h4{  font-size: 22px; }
+main .main-content h5{  font-size: 20px; }
+main .main-content h6{  font-size: 18px; }
+main .content .page-options-container{
+    text-align: center;
+    margin-top: 12px;
+}
+#page-info, .page-watch-options{  font-size: 12px; }
+#page-options-bottom{  margin-bottom: 8px; }
+#page-options-bottom-2{
+    width: 904px;
+    margin: auto;
+}
+ 
+@media (max-width: 768px){
+    main > .content{
+        border-radius: 0;
+    }
+}
+
+#toc{  margin-left: 1em; }
+#action-area{  margin-top: 56px; }
+#action-area .page-source{
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 13px;
+}
+.change-textarea-size{  display: none; }
+.wd-editor-toolbar-panel{
+    height: 25px;
+    margin-bottom: 10px;
+}
+.edit-help-34 a{
+    display: inline-block;
+    margin-right: 10px;
+}
+.edit-page-bottomtable{
+    width: 100%;
+    margin-top: 10px;
+}
+.edit-page-bottomtable td{  vertical-align: middle; }
+.edit-page-bottomtable #lock-info{  margin-bottom: 0; }
+#edit-page-textarea{  width: 100% !important; }
+ 
+a.action-area-close{  margin-top: 2px; }
+ 
+#action-area table.form{  margin: .5em auto; }
+#action-area table.form + .buttons,
+#action-area .form-actions{
+    text-align: center;
+    width: 100%;
+}
+#action-area table.form + .buttons input,
+#action-area .form-actions input{
+    float: none;
+}
+#action-area table.form + .buttons input + input,
+#action-area .form-actions input + input{
+    margin-left: -4px;
+}
+ 
+#action-area .form-group .col-sm-5{  width: 75%; }
+
+@media (max-width: 768px){
+    #action-area .form-group .col-sm-5{  width: 100%; }
+}

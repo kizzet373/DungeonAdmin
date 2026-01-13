@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Teleport - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Teleport</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/all-spells">All Spells</a> &raquo; Teleport</div>
+
+
+                  <div id="page-content">
+
+                    <p id="source">source: Player's Handbook</p>
+                    <p><em id="spell-level-label">Level 7 Conjuration (Bard, Sorcerer, Wizard)</em></p>
+                    <p><strong>Casting Time:</strong><span id="casting-time"> Action</span><br>
+                      <strong>Range:</strong><span id="range"> 10 feet</span><br>
+                      <strong>Components:</strong><span id="components"> V</span><br>
+                      <strong>Duration:</strong><span id="duration"> Instantaneous</span>
+                    </p><div id="description">
+                    <p>This spell instantly transports you and up to eight willing creatures that you can see within
+                      range, or a single object that you can see within range, to a destination you select. If you
+                      target an object, it must be Large or smaller, and it can’t be held or carried by an unwilling
+                      creature.</p>
+                    <p>The destination you choose must be known to you, and it must be on the same plane of existence as
+                      you. Your familiarity with the destination determines whether you arrive there successfully. The
+                      DM rolls 1d100 and consults the Teleportation Outcome table and the explanations after it.</p>
+                    <h5 id="toc0"><span>Teleportation Outcome</span></h5>
+                    <div class="wiki-content-table-container">
+                      <table class="wiki-content-table">
+                        <tr>
+                          <th>Familiarity</th>
+                          <th>Mishap</th>
+                          <th>Similar Area</th>
+                          <th>Off Target</th>
+                          <th>On Target</th>
+                        </tr>
+                        <tr>
+                          <td>Permanent circle</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>01-00</td>
+                        </tr>
+                        <tr>
+                          <td>Linked object</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>01-00</td>
+                        </tr>
+                        <tr>
+                          <td>Very familiar</td>
+                          <td>01-05</td>
+                          <td>06-13</td>
+                          <td>14-24</td>
+                          <td>25-00</td>
+                        </tr>
+                        <tr>
+                          <td>Seen casually</td>
+                          <td>01-33</td>
+                          <td>34-43</td>
+                          <td>44-53</td>
+                          <td>54-00</td>
+                        </tr>
+                        <tr>
+                          <td>Viewed once or described</td>
+                          <td>01-43</td>
+                          <td>44-53</td>
+                          <td>54-73</td>
+                          <td>74-00</td>
+                        </tr>
+                        <tr>
+                          <td>False destination</td>
+                          <td>01-50</td>
+                          <td>51-00</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </table>
+                    </div></div>
+                    <p><strong>Familiarity.</strong> Here are the meanings of the terms in the table’s Familiarity
+                      column:</p>
+                    <ul>
+                      <li>“Permanent circle” means a permanent teleportation circle whose sigil sequence you know.</li>
+                      <li>“Linked object” means you possess an object taken from the desired destination within the last
+                        six months, such as a book from a wizard’s library.</li>
+                      <li>“Very familiar” is a place you have visited often, a place you have carefully studied, or a
+                        place you can see when you cast the spell.</li>
+                      <li>“Seen casually” is a place you have seen more than once but with which you aren’t very
+                        familiar.</li>
+                      <li>“Viewed once or described” is a place you have seen once, possibly using magic, or a place you
+                        know through someone else’s description, perhaps from a map.</li>
+                      <li>“False destination” is a place that doesn’t exist. Perhaps you tried to scry an enemy’s
+                        sanctum but instead viewed an illusion, or you are attempting to teleport to a location that no
+                        longer exists.</li>
+                    </ul>
+                    <p><strong>Mishap.</strong> The spell’s unpredictable magic results in a difficult journey. Each
+                      teleporting creature (or the target object) takes 3d10 Force damage, and the DM rerolls on the
+                      table to see where you wind up (multiple mishaps can occur, dealing damage each time).</p>
+                    <p><strong>Similar Area.</strong> You and your group (or the target object) appear in a different
+                      area that’s visually or thematically similar to the target area. You appear in the closest similar
+                      place. If you are heading for your home laboratory, for example, you might appear in another
+                      person’s laboratory in the same city.</p>
+                    <p><strong>Off Target.</strong> You and your group (or the target object) appear 2d12 miles away
+                      from the destination in a random direction. Roll 1d8 for the direction: <strong>1</strong>, east;
+                      <strong>2</strong>, southeast; <strong>3</strong>, south; <strong>4</strong>, southwest;
+                      <strong>5</strong>, west; <strong>6</strong>, northwest; <strong>7</strong>, north; or
+                      <strong>8</strong>, northeast.</p>
+                    <p><strong>On Target.</strong> You and your group (or the target object) appear where you intended.
+                    </p>
+
+
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+          </footer>
+      </div>
+      <script>
+        $(document).ready(() => {
+          $('.dropdown-toggle').on('click', e => {
+            if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+          });
+        });
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,533 @@
+{
+  "form": {
+    "dnd_edition": "Kizzet2024",
+    "character_name": "Leordian",
+    "character_size": "Medium",
+    "background": "Dragoon",
+    "species": "Wood Elf",
+    "class_subclass_levels": [
+      {
+        "subclass": "Dire Avenger",
+        "class": "Warlock",
+        "level": 3
+      }
+    ],
+    "quick_notes": "",
+    "appearance": "",
+    "other_proficiencies": "",
+    "languages": "",
+    "backstory": "",
+    "proficiency_bonus": 2,
+    "armor_class": "15",
+    "initiative_mod": 2,
+    "speed": "35",
+    "hp_current": "21",
+    "hp_max": "21",
+    "hp_temp": "",
+    "misc_defenses": "",
+    "hit_dice_size": "",
+    "hit_dice_available": 0,
+    "hit_dice_total": 0,
+    "attacks_and_cantrips": "Shotgun: 3d8 (- 1d8 per 5 away). Topple Mastery. Crit on 19 / 20",
+    "strength_score": 15,
+    "strength_mod": 2,
+    "dexterity_score": 14,
+    "dexterity_mod": 2,
+    "constitution_score": 12,
+    "constitution_mod": 1,
+    "intelligence_score": 9,
+    "intelligence_mod": -1,
+    "wisdom_score": 10,
+    "wisdom_mod": 0,
+    "charisma_score": 18,
+    "charisma_mod": 4,
+    "skill_notes": "",
+    "strength_save_prof": "",
+    "strength_save_mod": 2,
+    "dexterity_save_prof": "",
+    "dexterity_save_mod": 2,
+    "constitution_save_prof": "",
+    "constitution_save_mod": 1,
+    "intelligence_save_prof": "",
+    "intelligence_save_mod": -1,
+    "wisdom_save_prof": "🔵",
+    "wisdom_save_mod": 2,
+    "charisma_save_prof": "🔵",
+    "charisma_save_mod": 6,
+    "athletics_prof": "🔵",
+    "athletics_mod": 4,
+    "acrobatics_prof": "",
+    "acrobatics_mod": 2,
+    "sleight_of_hand_prof": "",
+    "sleight_of_hand_mod": 2,
+    "stealth_prof": "",
+    "stealth_mod": 2,
+    "arcana_prof": "",
+    "arcana_mod": -1,
+    "history_prof": "",
+    "history_mod": -1,
+    "investigation_prof": "",
+    "investigation_mod": -1,
+    "nature_prof": "",
+    "nature_mod": -1,
+    "religion_prof": "🔵",
+    "religion_mod": 1,
+    "animal_handling_prof": "🔵",
+    "animal_handling_mod": 2,
+    "insight_prof": "",
+    "insight_mod": 0,
+    "medicine_prof": "",
+    "medicine_mod": 0,
+    "perception_prof": "🔵",
+    "perception_mod": 2,
+    "survival_prof": "",
+    "survival_mod": 0,
+    "deception_prof": "",
+    "deception_mod": 4,
+    "intimidation_prof": "🔵",
+    "intimidation_mod": 6,
+    "performance_prof": "",
+    "performance_mod": 4,
+    "persuasion_prof": "",
+    "persuasion_mod": 4,
+    "background_features": [
+      {
+        "name": "Battle Initiate",
+        "description": "You gain the following benefits.\n\nWeapon Proficiency. You gain proficiency with two weapons of your choice.\n\nMastery Property. Your training with weapons allows you to choose to gain a mastery property from your choice of two kinds of Simple or Martial weapons that you have proficiency with.\n\nFighting Style. You gain a Fighting Style Feat of your choice.\n\nBattle Maneuver. You gain a Maneuver Option of your choice and one Superiority Dice, which are d8s, and are used for your Maneuvers. You regain your Superiority Dice after you finish a Short or Long Rest.\n\nChosen Weapons: Shotgun and Lance\n\nFighting Style: Great Weapon Fighting\n- Ravager: Crit on 19 / 20 with Two Handed Weapons\n\nManuever: Evasive Footwork"
+      },
+      {
+        "name": "Evasive Footwork",
+        "description": "As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.\n\nRegain Superiority dice on short or long rest.",
+        "row_color": "#00ffff"
+      }
+    ],
+    "racial_features": [
+      {
+        "name": "Mirage of the Mists",
+        "description": "Whenever a creature casts a spell or attack that targets you, you can use a reaction to have the creature make a Wisdom Saving Throw (DC = 8 + Proficiency Bonus + your modifier for you ability chosen in your Elven Lineage feature). On a fail, that creature must change the target of that spell or attack within its range. You can't use this feature again until you finish a long rest.",
+        "row_color": "#0000ff"
+      },
+      {
+        "name": "Fey Ancestry",
+        "description": "You have Advantage on saving throws you make to avoid or end the Charmed condition."
+      },
+      {
+        "name": "Keen Senses",
+        "description": "You have proficiency in the Insight, Perception, or Survival skill.\n\nChosen Skill: Perception"
+      },
+      {
+        "name": "Trance",
+        "description": "You don't need to sleep, and magic can't put you to sleep. You can finish a Long Rest in 4 hours if you spend those hours in a trancelike meditation, during which you retain consciousness."
+      },
+      {
+        "name": "Wood Elf Lineage",
+        "description": "Your Speed increases to 35 feet. You also know the Druidcraft cantrip."
+      }
+    ],
+    "class_features": [
+      {
+        "name": "Pact of the Blade",
+        "description": "As a Bonus Action, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can’t bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.\n\nWhenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.\n\nYour bond with the weapon ends if you use this feature’s Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends."
+      },
+      {
+        "name": "Eldritch Mind",
+        "description": "You have Advantage on Constitution saving throws that you make to maintain Concentration. Additionally, you can cast a 1st level spell or cantrip you know that requires concentration as a bonus action. You can't cast a spell this way again until you finish a long rest.",
+        "row_color": "#0000ff"
+      },
+      {
+        "name": "Otherworldly Leap",
+        "description": "You can cast Jump on yourself without expending a spell slot."
+      },
+      {
+        "name": "Magical Cunning",
+        "description": "You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up). Once you use this feature, you can’t do so again until you finish a Long Rest.",
+        "row_color": "#0000ff"
+      },
+      {
+        "description": "Your patron grants you the power to contort nature against your enemies. You gain the Thorn Whip cantrip and can treat it as a Warlock cantrip for the purposes of your invocations. In addition, you may cast this cantrip as a bonus action a number of times per day equal to your Charisma modifier (minimum of once.)\n",
+        "name": "Nature's Grasp",
+        "row_color": "#0000ff"
+      },
+      {
+        "description": "Your patron grants you the power to accelerate nature’s cycle to assist your allies or to harm your enemies. As an Action, or as a Reaction whenever a corporeal creature within range is brought to 0 hit points, you may target a Small or larger corpse within 60 feet of you with one of following effects:\n\nReturn to the Earth: The dead creature’s body is retaken by nature and immediately blooms into a carpet of fluorescent flowers, fungi, or other flora. You and all allies within 30 feet of the creature immediately regain hit points equal to 2d4 plus your Charisma bonus.\n\nExpunge the Rot: The dead creature’s body is turned inside out and scattered in a gory explosion. Each creature within 15 feet of the corpse must make a Dexterity saving throw versus your spell Save DC. On a failed save they suffer Necrotic damage equal to 2d4 plus your Charisma bonus.\n\nAny creature affected this way can only be resurrected by a True Resurrection or a Wish spell. \nYou may use this feature a number of times per day equal to your Charisma modifier.\n",
+        "name": "Accelerate the Cycle",
+        "row_color": "#0000ff"
+      }
+    ],
+    "coins": {
+      "platinum": 0,
+      "gold": "40",
+      "silver": 0,
+      "copper": 0
+    },
+    "equipment": [
+      {
+        "name": "Studded Leather",
+        "equip": true
+      },
+      {
+        "equip": true,
+        "attune": true,
+        "name": "Gloves of Missile Snaring",
+        "description": "If you’re hit by an attack roll made with a Ranged or Thrown weapon while wearing these gloves, you can take a Reaction to reduce the damage by 1d10 plus your Dexterity modifier if you have a free hand. If you reduce the damage to 0, you can catch the ammunition or weapon if it is small enough for you to hold in that hand.",
+        "row_color": "#00ff00"
+      },
+      {
+        "name": "Shotgun",
+        "description": "3d8 Piercing\tReach (15 ft), Ammunition (Bullet), Capacity(2), Scatter, Two-Handed, Heavy\tTopple, Brutal\t6 lb."
+      }
+    ],
+    "miscellaneous_items": [
+      {
+        "name": "Clockwork Amulet ",
+        "description": "This copper amulet contains tiny interlocking gears and is powered by magic from Mechanus, a plane of clockwork predictability. Faint ticking and whirring noises emanate from within.\n\nWhen you make an attack roll while wearing the amulet, you can forgo rolling the d20 to get a 10 on the die. Once used, this property can’t be used again until the next dawn."
+      },
+      {
+        "description": "This horn has 4 charges and regains 1d4 expended charges daily at dawn. As a Magic action, you can blow the horn while expending 1 charge. One creature of your choice hears the horn’s blare, provided that creature is within 600 feet of the horn. No other creature hears the horn.",
+        "name": "Horn of Silent Alarm"
+      },
+      {
+        "name": "Spherical Thing",
+        "description": "It blow up"
+      },
+      {
+        "name": "Potion of Healing x 2",
+        "description": "4d4 + 4"
+      },
+      {
+        "name": "10g of waterskins"
+      },
+      {
+        "name": "Adventurers Pack"
+      }
+    ],
+    "spellcasting_ability": "charisma",
+    "spell_save_dc": 14,
+    "spell_attack_bonus": 6,
+    "spells_known": 0,
+    "spells_prepared": 0,
+    "level_0_spell_slots_available": 0,
+    "level_0_spell_slot_max": 0,
+    "level_1_spell_slots_available": 0,
+    "level_1_spell_slot_max": 0,
+    "level_2_spell_slots_available": "0",
+    "level_2_spell_slot_max": "2",
+    "level_3_spell_slots_available": 0,
+    "level_3_spell_slot_max": 0,
+    "level_4_spell_slots_available": 0,
+    "level_4_spell_slot_max": 0,
+    "level_5_spell_slots_available": 0,
+    "level_5_spell_slot_max": 0,
+    "level_6_spell_slots_available": 0,
+    "level_6_spell_slot_max": 0,
+    "level_7_spell_slots_available": 0,
+    "level_7_spell_slot_max": 0,
+    "level_8_spell_slots_available": 0,
+    "level_8_spell_slot_max": 0,
+    "level_9_spell_slots_available": 0,
+    "level_9_spell_slot_max": 0,
+    "level_0_spells": [
+      {
+        "name": "Thorn Whip",
+        "file": "/content/spell#thorn-whip",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "30 feet",
+        "components": "V, S, M (the stem of a thorny plant)",
+        "duration": "Instantaneous",
+        "description": "You create a vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. On a hit, the target takes 1d8 Piercing damage, and if it is Large or smaller, you can pull it up to 10 feet closer to you.\n\nCantrip Upgrade: You can create an additional whip at levels 5 (2 whips), 11 (3 whips) , and 17 (4 whips). The whips must attack a different creature.",
+        "class": [
+          "druid"
+        ],
+        "source": "player's handbook",
+        "school": "transmutation",
+        "status": "buffed"
+      },
+      {
+        "name": "Blade Ward",
+        "file": "/content/spell#blade-ward",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "Self",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts 1d4 from the attack roll.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "abjuration",
+        "status": ""
+      },
+      {
+        "name": "Druidcraft",
+        "file": "/content/spell#druidcraft",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "30 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "Whispering to the spirits of nature, you create one of the following effects within range.\n\nWeather Sensor: You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.\n\nBloom: You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.\n\nSensory Effect: You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube.\n\nFire Play: You light or snuff out a candle, a torch, or a campfire.",
+        "class": [
+          "druid"
+        ],
+        "source": "player's handbook",
+        "school": "transmutation",
+        "status": "",
+        "row_color": "#00ffff"
+      },
+      {
+        "name": "Poison Spray",
+        "file": "/content/spell#poison-spray",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "15 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "You spray toxic mist at a creature within range. Each creature in a 10 foot cone from you must succeed on a Constitution saving throw or take 1d8 Poison damage and subtract 1d4 from the next attack roll it makes before the end of its next turn.\n\nCantrip Upgrade: The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
+        "class": [
+          "druid",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "necromancy",
+        "status": "updated"
+      }
+    ],
+    "level_1_spells": [
+      {
+        "name": "Entangle",
+        "file": "/content/spell#entangle",
+        "level": 1,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "90 feet",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Grasping plants sprout from the ground in a 20-foot square within range. For the duration, these plants turn the ground in the area into Difficult Terrain. They disappear when the spell ends.\n\nEach creature (other than you) in the area when you cast the spell must succeed on a Strength saving throw or have the Restrained condition until the spell ends. A Restrained creature can take an action to make a Strength (Athletics) check against your spell save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them.",
+        "class": [
+          "druid",
+          "ranger"
+        ],
+        "source": "player's handbook",
+        "school": "conjuration",
+        "status": ""
+      },
+      {
+        "name": "Fog Cloud",
+        "file": "/content/spell#fog-cloud",
+        "level": 1,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 hour",
+        "description": "You create a 20-foot-radius Sphere of fog centered on a point within range. The Sphere is Heavily Obscured. It lasts for the duration or until a strong wind (such as one created by Gust of Wind) disperses it.\n\nHigher-Level Spell Slot: The fog’s radius increases by 20 feet for each spell slot level above 1.",
+        "class": [
+          "druid",
+          "ranger",
+          "sorcerer",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "conjuration",
+        "status": ""
+      },
+      {
+        "name": "Longstrider",
+        "file": "/content/spell#longstrider",
+        "level": 1,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "Touch",
+        "components": "V, S, M (a pinch of dirt)",
+        "duration": "1 hour",
+        "description": "You touch a creature. The target’s Speed increases by 10 feet until the spell ends.\n\nHigher-Level Spell Slot: You can target one additional creature for each spell slot level above 1.",
+        "class": [
+          "bard",
+          "druid",
+          "ranger",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "transmutation",
+        "status": "",
+        "row_color": "#0000ff"
+      },
+      {
+        "name": "Speak With Animals",
+        "file": "/content/spell#speak-with-animals",
+        "level": 1,
+        "casting_time": "action",
+        "ritual": true,
+        "range": "Self",
+        "components": "V, S",
+        "duration": "10 minutes",
+        "description": "For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action’s skill options with them.\n\nMost Beasts have little to say about topics that don’t pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day.",
+        "class": [
+          "bard",
+          "druid",
+          "ranger",
+          "warlock"
+        ],
+        "source": "player's handbook",
+        "school": "divination",
+        "status": ""
+      },
+      {
+        "name": "Armor Of Agathys",
+        "file": "/content/spell#armor-of-agathys",
+        "level": 1,
+        "casting_time": "Bonus Action",
+        "ritual": false,
+        "range": "Self",
+        "components": "V, S, M (a shard of blue glass)",
+        "duration": "1 Hour",
+        "description": "Protective magical frost surrounds you. You gain 5 Temporary Hit Points. If a creature hits you with a melee attack roll before the spell ends, the creature takes 5 Cold damage. The spell ends early if you have no Temporary Hit Points.\n\nHigher-Level Spell Slot: The Temporary Hit Points and the Cold damage both increase by 5 for each spell slot level above 1.",
+        "class": [
+          "warlock"
+        ],
+        "source": "player's handbook",
+        "school": "abjuration",
+        "status": ""
+      }
+    ],
+    "level_2_spells": [
+      {
+        "name": "Spike Growth",
+        "file": "/content/spell#spike-growth",
+        "level": 2,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "150 feet",
+        "components": "V, S, M (seven thorns)",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "The ground in a 20-foot-radius Sphere centered on a point within range sprouts hard spikes and thorns. The area becomes Difficult Terrain for the duration. When a creature moves into or within the area, it takes 2d4 Piercing damage for every 5 feet it travels.\n\nThe transformation of the ground is camouflaged to look natural. Any creature that can’t see the area when the spell is cast must take a Search action and succeed on a Wisdom (Perception or Survival) check against your spell save DC to recognize the terrain as hazardous before entering it.",
+        "class": [
+          "druid",
+          "ranger"
+        ],
+        "source": "player's handbook",
+        "school": "transmutation",
+        "status": ""
+      },
+      {
+        "name": "Lesser Restoration",
+        "file": "/content/spell#lesser-restoration",
+        "level": 2,
+        "casting_time": "Bonus Action",
+        "ritual": false,
+        "range": "Touch",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "You touch a creature and end one condition on it: Blinded, Deafened, Paralyzed, or Poisoned.",
+        "class": [
+          "bard",
+          "cleric",
+          "druid",
+          "paladin",
+          "ranger"
+        ],
+        "source": "player's handbook",
+        "school": "abjuration",
+        "status": ""
+      },
+      {
+        "name": "Summon Beast",
+        "file": "/content/spell#summon-beast",
+        "level": 2,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "90 feet",
+        "components": "V, S, M (a feather, tuft of fur, and fish tail inside a gilded acorn worth 200+ GP)",
+        "duration": "Concentration, up to 1 hour",
+        "description": "You call forth a bestial spirit. It manifests in an unoccupied space that you can see within range and uses the Bestial Spirit stat block. When you cast the spell, choose an environment: Air, Land, or Water. The creature resembles an animal of your choice that is native to the chosen environment, which determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends.\n\nThe creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid danger.\n\nHigher-Level Spell Slot: Use the spell slot’s level for the spell’s level in the stat block.\n\nhttps://www.aidedd.org/monster/bestial-spirit\n",
+        "class": [
+          "druid",
+          "ranger"
+        ],
+        "source": "player's handbook",
+        "school": "conjuration",
+        "status": ""
+      },
+      {
+        "name": "Mirror Image",
+        "file": "/content/spell#mirror-image",
+        "level": 2,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "Self",
+        "components": "V, S",
+        "duration": "1 minute",
+        "description": "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it’s impossible to track which image is real.\n\nEach time a creature hits you with an attack roll during the spell’s duration, roll a d6 for each of your remaining duplicates. If any of the d6s rolls a 3 or higher, one of the duplicates is hit instead of you, and the duplicate is destroyed. The duplicates otherwise ignore all other damage and effects. The spell ends when all three duplicates are destroyed.\n\nA creature is unaffected by this spell if it has the Blinded condition, Blindsight, or Truesight. ",
+        "class": [
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "illusion",
+        "status": ""
+      },
+      {
+        "name": "Suggestion",
+        "file": "/content/spell#suggestion",
+        "level": 2,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "30 feet",
+        "components": "V, M (a drop of honey)",
+        "duration": "Concentration, up to 8 hours",
+        "description": "You suggest a course of activity—described in no more than 25 words—to one creature you can see within range that can hear and understand you. The suggestion must sound achievable and not involve anything that would obviously deal damage to the target or its allies. For example, you could say, “Fetch the key to the cult’s treasure vault, and give the key to me.” Or you could say, “Stop fighting, leave this library peacefully, and don’t return.”\n\nThe target must succeed on a Wisdom saving throw or have the Charmed condition for the duration or until you or your allies deal damage to the target. The Charmed target pursues the suggestion to the best of its ability. The suggested activity can continue for the entire duration, but if the suggested activity can be completed in a shorter time, the spell ends for the target upon completing it.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "enchantment",
+        "status": ""
+      }
+    ],
+    "level_3_spells": [
+      {}
+    ],
+    "level_4_spells": [
+      {}
+    ],
+    "level_5_spells": [
+      {}
+    ],
+    "level_6_spells": [
+      {}
+    ],
+    "level_7_spells": [
+      {}
+    ],
+    "level_8_spells": [
+      {}
+    ],
+    "level_9_spells": [
+      {}
+    ],
+    "initiative": 0
+  },
+  "id": "1746631659558-6897",
+  "owner": "114717675498119401522",
+  "created": "2025-05-07T15:39:50.294Z",
+  "updated": "2025-06-17T15:32:45.662Z",
+  "sharedWith": "kizzet373@gmail.com",
+  "isOwner": true,
+  "_version": 96
+}

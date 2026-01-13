@@ -1,0 +1,241 @@
+
+ 
+@import url('standard-theme.css');
+
+body {
+  background-color:rgb(30, 33, 41);
+  color:rgb(236, 236, 236);
+}
+
+a {color: rgb(93, 157, 214);}
+
+a:hover,a:focus,a:active,
+.btn:hover,.btn:focus,.btn:active,
+.navbar-brand:hover,.navbar-brand:focus{
+  color: color-mix(in srgb, currentcolor, white 20%);
+}
+
+.feature.offcolor{
+    background-color:rgba(255, 255, 255, 0.03);
+}
+
+/*.feature-header {
+  background-image:url("/assets/NicestScrollTop.png");
+  filter: contrast(90%);
+  background-size: 100% 100%;
+  padding: 60px calc(30px + 2vw);
+}
+.feature-container {
+  background-image:url("/assets/NicestScrollBody.png");
+  filter: contrast(90%);
+  background-size: 100% 100%;
+  padding: 0 calc(30px + 2vw);
+}
+.feature-footer {
+  background-image:url("/assets/NicestScrollBottom.png");
+  filter: contrast(90%);
+  background-size: 100% 100%;
+  padding: 80px calc(30px + 2vw);
+}*/
+
+main > .content .page-title{
+    font-size: 32px;
+    border-bottom: 3px solid;
+    margin: 15px 0 1em 0;
+    padding: 0;
+    line-height: 1.25em;
+}
+main > .content .page-title span{
+    display: inline-block;
+    line-height: 1.25em;
+    height: calc(1.25em + 8px);
+    margin-bottom: -8px;
+    padding-right: 3px;
+}
+
+purple { color: rgb(176, 150, 224); }
+orange { color:rgb(209, 168, 141); }
+
+table tr td,th{ font-size:13px; }
+.primary-row > td{ background-color:rgb(57, 58, 77); }
+.secondary-row > td{ background-color:rgb(43, 46, 58); }
+
+@media (min-width: 769px) {
+    .interactive:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        td {
+          border: 1px solid black;
+          background-color:rgb(81, 81, 105);
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu {
+    display: none;
+    left:auto !important;
+    right:0;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    list-style: none;
+    z-index: 2;
+}
+.dropdown-menu > li {
+    padding: 5px 0px;
+}
+.dropdown-menu > li > a {
+    color: black !important;
+    text-decoration: none;
+    display: block;
+}
+
+.tab-list {
+    display: flex;
+    background:rgb(41, 39, 58);
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab-item {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    background:rgb(36, 33, 41);
+
+    &:hover {
+      background:rgb(56, 51, 63)
+    }
+}
+
+.tab-item.active {
+    background: white;
+    font-weight: bold;
+}
+
+.tab-content-container {
+    border: 1px solid #000000;
+    overflow-x: auto;
+    box-sizing: content-box;
+}
+
+.tab-content {
+  width:100% !important;
+}
+
+.tab-content:not(.active) {
+  display: none !important;
+  height: 0px;
+}
+
+.tab-content th {
+    background-color: #64b0f3;
+    white-space: nowrap;
+}
+
+.tab-content tr {
+    border: 1px solid #000000;
+}
+.tab-content tr > td,th {
+    padding: .8rem;
+}
+
+.wiki-content-table-container {
+    overflow-x: auto;
+    box-sizing: content-box;
+}
+
+.wiki-content-table th {
+  background-color: rgba(0, 0, 0, .3) !important;
+  color:rgb(236, 236, 236) !important;
+}
+
+
+/* Hide empty tabs */
+.tab-list li.hidden {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .dropdown-menu li a:hover {
+        background-color: #ddd;
+    }
+    
+    .mobile {
+        display:none;
+    }
+}
+  
+@media (max-width: 768px) {
+    .navbar-nav {
+      background-color:rgba(20, 21, 26, 0.95);
+    }
+
+    .navbar-nav .nav-item {
+      padding: 3px;
+    }
+    
+    .desktop {
+        display:none;
+    }
+}
+
+.group-list {
+    padding: .7rem;
+    display: inline-block;
+    width: fit-content;
+}
+
+.position-absolute-top-right {
+    position:absolute !important;
+    top:10px;
+    right:10px;
+}
+
+header .nav-link {
+    color:rgb(255,255,255,.85);
+}
+header .nav-link:hover {
+    color:rgb(255,255,255,1)
+}
+
+a {
+    text-decoration: none;
+}
+
+.license-area {
+  text-align: center;
+}
+
+.btn.active, .tab-item.active {
+    font-weight: bold;
+    background-color: #005abb;
+    color: white;
+}
+[x-cloak] { display: none !important; }
+
+/* Spinner CSS */
+.loading-spinner {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto; /* Center the spinner */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

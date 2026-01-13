@@ -1,0 +1,8 @@
+[
+    {"name":"strength"},
+    {"name":"dexterity"},
+    {"name":"constitution"},
+    {"name":"intelligence"},
+    {"name":"wisdom"},
+    {"name":"charisma"}
+]

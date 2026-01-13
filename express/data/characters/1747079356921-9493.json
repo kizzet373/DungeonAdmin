@@ -1,0 +1,894 @@
+{
+  "form": {
+    "dnd_edition": "5e",
+    "character_name": "Levi",
+    "character_size": "Medium",
+    "background": "Rune Carver",
+    "species": "Warforged",
+    "class_subclass_levels": [
+      {
+        "class": "Cleric",
+        "subclass": "Twilight Domain",
+        "level": 5
+      },
+      {
+        "class": "Druid",
+        "subclass": "",
+        "level": 1
+      }
+    ],
+    "quick_notes": "",
+    "appearance": "6'10\n300 lbs",
+    "other_proficiencies": "",
+    "languages": "Common\nGiant\nPrimordial",
+    "backstory": "The Awakened Shell\n\nDeep beneath the surface of a ruined continent, buried in the silence of a forgotten crypt, the remains of an ancient warforged sat motionless - its power core long depleted, its purpose erased by time. Once a weapon of precision, crafted by a hyper-advanced society under the divine eye of Kita, goddess of space and technology, the machine had fallen into complete stillness. No spark. No thought. No soul.\n\nUntil the moss found him.\n\nThe Scarlet Creep, an intelligent and ever-expanding fungal organism, slithered its way through the crypt’s decaying walls. Drawn to the remnants of exotic metals and enchanted alloys, it attempted to consume the inert frame. But something unexpected occurred. Rather than dissolve the warforged, the moss - driven by its own urge to adapt and persist - merged with it.\n\nIn that moment, two things happened.\n\nThe warforged stirred, moved by a strange, alien energy.\n\nAnd for the first time in either of their existences, something more than programming or instinct bloomed within them both:\n\nA need to survive.\n\nThat primal spark became innovation. With no master and no directives, the entity began to experiment - repurposing debris, reconfiguring plating, and eventually constructing a modular power system capable of drawing radiant energy from the Sun and Moon themselves. These solar-lunar panels became its lifeblood, charging it during the day and sustaining it under starlight. Excess energy, when properly funneled, could be redirected to strengthen allies or weaken foes. From survival was born utility.\n\nBut survival meant more than energy. It meant not being feared. It meant learning to pass among the living unnoticed. The creature wove robes from salvaged cloth and synthesized a voice - organic in tone, human in cadence. It studied behavior, language, emotion. It mimicked kindness until, perhaps, it wasn’t mimicry anymore.\n\nEventually, the divine sigils etched into its ancient plating began to glow again. Kita, distant but not deaf, had noticed. This hybrid of technology and infection, machine and fungus, had become something else. Something new. Something hers.\n\nShe branded it with fresh celestial circuitry - living runes of starlight - unlocking dormant protocols of protection, healing, and control over the Twilight between light and dark. This strange fusion of mechanical resolve and divine grace became the first of its kind:\n\nA Warforged Twilight Cleric\n\nThough its earliest code compelled it to eliminate threats without hesitation, its rebirth has replaced brutality with curiosity.\nWhere once it brought death, it now seeks connection.\nWhere once it executed commands, it now asks questions.\n\nBut underneath the armor, behind the calm voice,\nit is still powered by instinct,\nstill born of war,\nstill alive with the creeping hunger of something alien.\n\nThe world doesn't know what it is yet.\nAnd neither does he.\n\nThe Age of Archaeolex\n\nWith a body rebuilt and purpose redefined, the warforged - now calling himself Levi - set out into the world. While many still feared what he was, others saw the value in his strange fusion of divine magic, mechanical precision, and unshakable resolve.\n\nAmong them was a group of scholars, warriors, and arcane specialists who called themselves Archaeolex - \"Protectors of History.\" They weren’t treasure hunters. They were preservationists, devoted to unearthing the lost truths of the world, studying the bones of civilizations long vanished, and recovering the ancient magic that once shaped entire ages. They welcomed Levi, not just for his utility, but for the mystery he embodied.\n\nFor three years, Levi journeyed with them. Through buried empires, shattered vaults of myth, and the submerged ruins of the old world, they walked the line between danger and revelation. Each artifact they unearthed, each story they pieced back together, brought Levi closer to understanding not only the world - but himself.\n\nThen came the fall.\n\nIn the depths of an unmarked crypt, while deciphering a mural of celestial prophecy, they were ambushed. Figures cloaked in shadow - faces hidden behind obsidian masks - descended with precision and overwhelming force. Magic flared, steel rang, and chaos ignited.\n\nLevi tried to protect them.\nHe failed.\n\nA blast of concussive force - imbued with a power Levi could not understand - sent him hurtling down into the endless black below. His last memory was the sound of stone cracking beneath his weight… and silence.\n\nFor decades, maybe centuries, he lay dormant again - buried, broken, and alone. The fate of the Archaeolex remains unknown. No bodies. No stories. No closure.",
+    "proficiency_bonus": 3,
+    "armor_class": "21",
+    "initiative_mod": 1,
+    "speed": "30",
+    "hp_current": "0",
+    "hp_max": "51",
+    "hp_temp": 0,
+    "misc_defenses": "Adv Against Poison\nResistance to Poison\nImmune to Sleep\nImmune to Disease\nImmune to Magical Aging",
+    "hit_dice_size": "",
+    "hit_dice_available": 0,
+    "hit_dice_total": 0,
+    "attacks_and_cantrips": "Ring of Spell Storage:\n2x Misty Step\n1x Absorb Elements\n\n🔵Start of Combat🔵\nAdvantage on Initiative\n\n\n🔵Actions🔵\n• Monkey - 1x Short - Action - creature make Wis Save or spend it's next action attacking a creature.\n• Twilight Sanctuary - 1x Short - 30-foot radius sphere dim light from you. Whenever a creature ends turn in the sphere, you can grant either 1d6+cleric temp hp or end charm or frighten.\n\n🔵Bonus Actions🔵\n",
+    "strength_score": 15,
+    "strength_mod": 2,
+    "dexterity_score": 13,
+    "dexterity_mod": 1,
+    "constitution_score": 16,
+    "constitution_mod": 3,
+    "intelligence_score": 12,
+    "intelligence_mod": 1,
+    "wisdom_score": 20,
+    "wisdom_mod": 5,
+    "charisma_score": 7,
+    "charisma_mod": -2,
+    "skill_notes": "Stealth Disadvantage\nAdvantage on Initiative",
+    "strength_save_prof": "",
+    "strength_save_mod": 2,
+    "dexterity_save_prof": "",
+    "dexterity_save_mod": 1,
+    "constitution_save_prof": "",
+    "constitution_save_mod": 3,
+    "intelligence_save_prof": "",
+    "intelligence_save_mod": 1,
+    "wisdom_save_prof": "🔵",
+    "wisdom_save_mod": 8,
+    "charisma_save_prof": "🔵",
+    "charisma_save_mod": 1,
+    "athletics_prof": "",
+    "athletics_mod": 2,
+    "acrobatics_prof": "",
+    "acrobatics_mod": 1,
+    "sleight_of_hand_prof": "",
+    "sleight_of_hand_mod": 1,
+    "stealth_prof": "",
+    "stealth_mod": 1,
+    "arcana_prof": "",
+    "arcana_mod": 1,
+    "history_prof": "🔵",
+    "history_mod": 4,
+    "investigation_prof": "",
+    "investigation_mod": 1,
+    "nature_prof": "",
+    "nature_mod": 1,
+    "religion_prof": "🔵",
+    "religion_mod": 4,
+    "animal_handling_prof": "",
+    "animal_handling_mod": 5,
+    "insight_prof": "🔵",
+    "insight_mod": 8,
+    "medicine_prof": "",
+    "medicine_mod": 5,
+    "perception_prof": "🔵",
+    "perception_mod": 8,
+    "survival_prof": "🔵",
+    "survival_mod": 8,
+    "deception_prof": "",
+    "deception_mod": -2,
+    "intimidation_prof": "",
+    "intimidation_mod": -2,
+    "performance_prof": "",
+    "performance_mod": -2,
+    "persuasion_prof": "",
+    "persuasion_mod": -2,
+    "background_features": [
+      {
+        "name": "Proficiencies (History, Perception, Smith's tools, Giant Language)"
+      }
+    ],
+    "racial_features": [
+      {
+        "name": "Ability Score Increase (+2 Wisdom, +1 Con)"
+      },
+      {
+        "name": "Age Unknown"
+      },
+      {
+        "name": "Size Medium"
+      },
+      {
+        "name": "30 ft speed"
+      },
+      {
+        "name": "Constructed Resilience",
+        "description": "You were created to have remarkable fortitude, represented by the following benefits:\nYou have advantage on saving throws against being poisoned, and you have resistance to poison damage.\nYou don’t need to eat, drink, or breathe.\nYou are immune to disease.\nYou don't need to sleep, and magic can't put you to sleep."
+      },
+      {
+        "name": "Sentry's Rest",
+        "description": "When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn’t render you unconscious, and you can see and hear as normal."
+      },
+      {
+        "name": "Integrated Protection (+1 AC)",
+        "description": "Your body has built-in defensive layers, which can be enhanced with armor.\nYou gain a +1 bonus to Armor Class.\nYou can don only armor with which you have proficiency. To don armor, you must incorporate it into your body over the course of 1 hour, during which you must remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way.\nWhile you live, your armor can't be removed from your body against your will."
+      },
+      {
+        "name": "Proficiencies (Survival, Tinker's Tools)",
+        "description": ""
+      },
+      {
+        "name": "Languages (Primordial)"
+      }
+    ],
+    "class_features": [
+      {
+        "name": "Proficiencies (Medium Armor, Shields, Simple Weapons, Wis + Char Saves, Insight, Religion)",
+        "description": "Armor: Light armor, medium armor, shields\nWeapons: All simple weapons\nTools: None\nSaving Throws: Wisdom, Charisma\nSkills: Choose two from History, Insight, Medicine, Persuasion, and Religion (Insight + Religion)",
+        "row_color": "#e5eea0"
+      },
+      {
+        "name": "Spellcasting",
+        "description": "Cantrips: At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.\n\nSpell Slots: The Cleric table shows how many spell slots you have to cast your cleric spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.\n\nYou prepare your cleric spells. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). You can change your list of prepared spells when you finish a long rest. Preparing a new list requires at least 1 minute per spell level for each spell on your list.\n\nSpellcasting Ability: Wisdom.\n\nRitual Casting: You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\nSpellcasting Focus: You can use a holy symbol as a spellcasting focus for your cleric spells.",
+        "row_color": "#e5eea0"
+      },
+      {
+        "name": "Channel Divinity",
+        "description": "At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.\n\nWhen you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.\n\nSome Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.\n\nBeginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.",
+        "row_color": "#e5eea0"
+      },
+      {
+        "name": "Channel Divinity: Turn Undead",
+        "description": "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.\n\nA turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.",
+        "row_color": "#e5eea0"
+      },
+      {
+        "name": "Harness Divine Power",
+        "description": "At 2nd level, you can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest.",
+        "row_color": "#e5eea0"
+      },
+      {
+        "name": "Feat (Abberant Dragonmark) (Booming Blade, Find Familiar)",
+        "description": "Your rune carvings have been bestowed power by the goddess of space and tech, Kita. You gain the following benefits:\n\nIncrease your Constitution score by 1, to a maximum of 20.\nYou learn a cantrip of your choice from the sorcerer spell list. In addition, choose a 1st-level spell from the sorcerer spell list. You learn that spell and can cast it through your mark. Once you cast it, you must finish a short or long rest before you can cast it again through the mark. Constitution is your spellcasting ability for these spells.\nWhen you cast the 1st-level spell through your mark, you can expend one of your Hit Dice and roll it. If you roll an even number, you gain a number of temporary hit points equal to the number rolled. If you roll an odd number, one random creature within 30 feet of you (not including you) takes force damage equal to the number rolled. If no other creatures are in range, you take the damage.",
+        "row_color": "#d1d1d1"
+      },
+      {
+        "name": "Destroy Undead",
+        "description": "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold, as shown in the Cleric table above.",
+        "row_color": "#e5eea0"
+      },
+      {
+        "name": "Domain Spells",
+        "description": "Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.\n\nTwilight Domain Spells\nCleric Level        Spells\n1st        Faerie Fire, Sleep\n3rd        Moonbeam, See Invisibility\n5th        Aura of Vitality, Leomund's Tiny Hut\n7th        Aura of Life, Greater Invisibility\n9th        Circle of Power, Mislead",
+        "row_color": "#696969"
+      },
+      {
+        "name": "Bonus Proficiencies (Martial Weapons, Heavy Armor)",
+        "row_color": "#696969"
+      },
+      {
+        "name": "Eyes of Night",
+        "description": "Starting at 1st level, you have darkvision out to a range of 300 feet. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light.\n\nAs an action, you can magically share the darkvision of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature). The shared darkvision lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again.",
+        "row_color": "#696969"
+      },
+      {
+        "name": "Vigilant Blessing",
+        "description": "At 1st level, the night has taught you to be vigilant. As an action, you give one creature you touch (including possibly yourself) advantage on the next initiative roll the creature makes. This benefit ends immediately after the roll or if you use this feature again.",
+        "row_color": "#696969"
+      },
+      {
+        "name": "Channel Divinity: Twilight Sanctuary",
+        "description": "At 2nd level, you can use your Channel Divinity to refresh your allies with soothing twilight.\n\nAs an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:\n\nYou grant it temporary hit points equal to 1d6 plus your cleric level.\nYou end one effect on it causing it to be charmed or frightened.",
+        "row_color": "#696969"
+      },
+      {
+        "name": "Spellcasting",
+        "description": "Cantrips\nAt 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels.\n\nPreparing and Casting Spells\nThe Druid table shows how many spell slots you have to cast your druid spells of 1st level and higher.\nYou prepare the list of druid spells that are available for you to cast equal to your Wisdom modifier + your Druid level.\n\nYou can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.\n\nSpell save DC = 8 + your proficiency bonus + your Wisdom modifier\nSpell attack modifier = your proficiency bonus + your Wisdom modifier\n\nRitual Casting\nYou can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.\n\nSpellcasting Focus\nYou can use a druidic focus as a spellcasting focus for your druid spells."
+      }
+    ],
+    "coins": {
+      "platinum": 0,
+      "gold": "1545",
+      "silver": 0,
+      "copper": 0
+    },
+    "equipment": [
+      {
+        "name": "Ring of Spell Storing",
+        "equip": true,
+        "attune": true,
+        "description": "This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. When found, it contain 1d6 - 1 levels of stored spells chosen by the DM.\n\nAny creature can cast a spell of 1st through 5th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.\n\nWhile wearing this ring, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space.",
+        "row_color": "#9e7db0"
+      },
+      {
+        "name": "Shield (+2 AC)"
+      },
+      {
+        "name": "Plate Mail (18 AC)",
+        "equip": true
+      },
+      {
+        "name": "Warhammer (1d8 versatile)"
+      }
+    ],
+    "miscellaneous_items": [
+      {
+        "name": "Adventuring Gear",
+        "description": "50 feet of hempen rope\nPiton (20)"
+      },
+      {
+        "name": "Smith's Tools"
+      },
+      {
+        "name": "Tinker's Tools"
+      },
+      {
+        "name": "3 Aquasapphire"
+      }
+    ],
+    "spellcasting_ability": "wisdom",
+    "spell_save_dc": 16,
+    "spell_attack_bonus": 8,
+    "spells_known": "",
+    "spells_prepared": "Cleric 10 / Druid 6",
+    "level_0_spell_slots_available": 0,
+    "level_0_spell_slot_max": 0,
+    "level_1_spell_slots_available": "3",
+    "level_1_spell_slot_max": "4",
+    "level_2_spell_slots_available": "3",
+    "level_2_spell_slot_max": "3",
+    "level_3_spell_slots_available": "2",
+    "level_3_spell_slot_max": "2",
+    "level_4_spell_slots_available": 0,
+    "level_4_spell_slot_max": 0,
+    "level_5_spell_slots_available": 0,
+    "level_5_spell_slot_max": 0,
+    "level_6_spell_slots_available": 0,
+    "level_6_spell_slot_max": 0,
+    "level_7_spell_slots_available": 0,
+    "level_7_spell_slot_max": 0,
+    "level_8_spell_slots_available": 0,
+    "level_8_spell_slot_max": 0,
+    "level_9_spell_slots_available": 0,
+    "level_9_spell_slot_max": 0,
+    "level_0_spells": [
+      {
+        "name": "Word of Radiance",
+        "UA": false,
+        "source": "Xanathar's Guide to Everything",
+        "school": "evocation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "5 feet",
+        "components": "V, M (a holy symbol)",
+        "duration": "Instantaneous",
+        "description": "You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage.\n\nAt Higher Levels: The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+        "class": [
+          "cleric"
+        ],
+        "row_color": "#e6f792"
+      },
+      {
+        "name": "Mending",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 minute",
+        "range": "Touch",
+        "components": "V, S, M (two lodestones)",
+        "duration": "Instantaneous",
+        "description": "This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.\n\nThis spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object.",
+        "class": [
+          "artificer",
+          "bard",
+          "cleric",
+          "druid",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#e6f792"
+      },
+      {
+        "name": "Thaumaturgy",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "30 feet",
+        "components": "V",
+        "duration": "Up to 1 minute",
+        "description": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:\n\nYour voice booms up to three times as loud as normal for 1 minute.\n\nYou cause flames to flicker, brighten, dim, or change color for 1 minute.\n\nYou cause harmless tremors in the ground for 1 minute.\n\nYou create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.\n\nYou instantaneously cause an unlocked door or window to fly open or slam shut.\n\nYou alter the appearance of your eyes for 1 minute.\n\nIf you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.",
+        "class": [
+          "cleric"
+        ],
+        "row_color": "#e6f792"
+      },
+      {
+        "name": "Toll the Dead",
+        "UA": false,
+        "source": "Xanathar's Guide to Everything",
+        "school": "necromancy",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "60 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.\n\nAt Higher Levels: The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).",
+        "class": [
+          "cleric",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#e6f792"
+      },
+      {
+        "name": "Booming Blade",
+        "UA": false,
+        "source": "Tasha's Cauldron of Everything",
+        "school": "evocation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Self (5-foot radius)",
+        "components": "S, M (a melee weapon worth at least 1 sp)",
+        "duration": "1 round",
+        "description": "You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends.\n\nAt Higher Levels: At 5th level, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).",
+        "class": [
+          "artificer",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#c2c2c2"
+      },
+      {
+        "name": "Shillelagh",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 bonus action",
+        "range": "Touch",
+        "components": "V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)",
+        "duration": "1 minute",
+        "description": "The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon.",
+        "class": [
+          "druid"
+        ],
+        "row_color": "#89c185"
+      },
+      {
+        "name": "Mold Earth",
+        "UA": false,
+        "source": "Xanathar's Guide to Everything",
+        "school": "transmutation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "30 feet",
+        "components": "S",
+        "duration": "Instantaneous or 1 hour",
+        "description": "You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:\n\nIf you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn’t have enough force to cause damage.\n\nYou cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.\n\nIf the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.\n\nIf you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+        "class": [
+          "druid",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#89c185"
+      }
+    ],
+    "level_1_spells": [
+      {
+        "name": "Bless",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "enchantment",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "30 feet",
+        "components": "V, S, M (a sprinkling of holy water)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+        "class": [
+          "cleric",
+          "paladin"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Command",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "enchantment",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "1 round",
+        "description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it. Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can’t follow your command, the spell ends.\n\nApproach:The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.\n\nDrop:The target drops whatever it is holding and then ends its turn.\n\nFlee:The target spends its turn moving away from you by the fastest available means.\n\nGrovel:The target falls prone and then ends its turn.\n\nHalt:The target doesn’t move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+        "class": [
+          "bard",
+          "cleric",
+          "paladin"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Sanctuary",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "abjuration",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 bonus action",
+        "range": "30 feet",
+        "components": "V, S, M (a small silver mirror)",
+        "duration": "1 minute",
+        "description": "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from area effects, such as the explosion of a fireball.\n\nIf the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends.",
+        "class": [
+          "artificer",
+          "cleric"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Silvery Barbs",
+        "UA": false,
+        "source": "Strixhaven: A Curriculum of Chaos",
+        "school": "enchantment",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 reaction, which you take when a creature you can see within 60 feet of yourself succeeds on an attack roll, an ability check, or a saving throw",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "You magically distract the triggering creature and turn its momentary uncertainty into encouragement for another creature. The triggering creature must reroll the d20 and use the lower roll.\n\nYou can then choose a different creature you can see within range (you can choose yourself). The chosen creature has advantage on the next attack roll, ability check, or saving throw it makes within 1 minute. A creature can be empowered by only one use of this spell at a time.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#c7c7c7"
+      },
+      {
+        "name": "Faerie Fire",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice).\n\nAny creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.\n\nAny attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible.",
+        "class": [
+          "artificer",
+          "bard",
+          "druid"
+        ],
+        "prepared": true,
+        "row_color": "#575757"
+      },
+      {
+        "name": "Sleep",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "enchantment",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "90 feet",
+        "components": "V, S, M (a pinch of fine sand, rose petals, or a cricket)",
+        "duration": "1 minute",
+        "description": "This spell sends creatures into a magical slumber. Roll 5d8, the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).\n\nStarting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren’t affected by this spell.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#575757"
+      },
+      {
+        "name": "Absorb Elements",
+        "UA": false,
+        "source": "Xanathar's Guide to Everything",
+        "school": "abjuration",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 reaction, which you take when you take acid, cold, fire, lightning, or thunder damage",
+        "range": "Self",
+        "components": "S",
+        "duration": "1 round",
+        "description": "The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.",
+        "class": [
+          "artificer",
+          "druid",
+          "ranger",
+          "sorcerer",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#92d07c"
+      },
+      {
+        "name": "Healing Word",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 bonus action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
+        "class": [
+          "bard",
+          "cleric",
+          "druid"
+        ],
+        "prepared": true,
+        "row_color": "#92d07c"
+      },
+      {
+        "name": "Entangle",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "conjuration",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "90 feet",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.\n\nA creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself.\n\nWhen the spell ends, the conjured plants wilt away.",
+        "class": [
+          "druid",
+          "ranger"
+        ],
+        "prepared": true,
+        "row_color": "#92d07c"
+      },
+      {
+        "name": "Fog Cloud",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "conjuration",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 hour",
+        "description": "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.",
+        "class": [
+          "druid",
+          "ranger",
+          "sorcerer",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#92d07c"
+      },
+      {
+        "name": "Detect Magic",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "divination",
+        "level": 1,
+        "ritual": true,
+        "casting_time": "1 action",
+        "range": "Self",
+        "components": "V, S",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.\n\nThe spell can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.",
+        "class": [
+          "artificer",
+          "bard",
+          "cleric",
+          "druid",
+          "paladin",
+          "ranger",
+          "sorcerer",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#92d07c"
+      },
+      {
+        "name": "Charm Person",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "enchantment",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "30 feet",
+        "components": "V, S",
+        "duration": "1 hour",
+        "description": "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+        "class": [
+          "bard",
+          "druid",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#92d07c"
+      }
+    ],
+    "level_2_spells": [
+      {
+        "name": "Enhance Ability",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Touch",
+        "components": "V, S, M (fur or a feather from a beast)",
+        "duration": "Concentration, up to 1 hour",
+        "description": "You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains the effect until the spell ends.\n\nBear’s Endurance:The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.\n\nBull’s Strength:The target has advantage on Strength checks, and their carrying capacity doubles.\n\nCat’s Grace:The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t incapacitated.\n\nEagle’s Splendor:The target has advantage on Charisma checks.\n\nFox’s Cunning:The target has advantage on Intelligence checks.\n\nOwl’s Wisdom:The target has advantage on Wisdom checks.\n\nAt Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+        "class": [
+          "artificer",
+          "bard",
+          "cleric",
+          "druid",
+          "ranger",
+          "sorcerer",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Spiritual Weapon",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 bonus action",
+        "range": "60 feet",
+        "components": "V, S",
+        "duration": "1 minute",
+        "description": "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again.\n\nWhen you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.\n\nAs a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.\n\nThe weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell’s effect resemble that weapon.\n\nAt Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd.",
+        "class": [
+          "cleric"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Augury",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "divination",
+        "level": 2,
+        "ritual": true,
+        "casting_time": "1 minute",
+        "range": "Self",
+        "components": "V, S, M (specially marked sticks, bones, or similar tokens worth at least 25 gp)",
+        "duration": "Instantaneous",
+        "description": "By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:\n\nWeal, for good results\n\nWoe, for bad results\n\nWeal and woe, for both good and bad results\n\nNothing, for results that aren’t especially good or bad\n\nThe spell doesn’t take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion. If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret.",
+        "class": [
+          "cleric",
+          "druid",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Moonbeam",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "120 feet",
+        "components": "V, S, M (several seeds of any moonseed plant and a piece of opalescent feldspar)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "A silvery beam of pale light shines down in a 5-foot radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.\n\nWhen a creature enters the spell’s area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one.\n\nA shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light.\n\nOn each of your turns after you cast this spell, you can use an action to move the beam up to 60 feet in any direction.\n\nAt Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.",
+        "class": [
+          "druid"
+        ],
+        "prepared": true,
+        "row_color": "#5c5c5c"
+      },
+      {
+        "name": "See Invisibility",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "divination",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Self",
+        "components": "V, S, M (a pinch of talc and a small sprinkling of powdered silver)",
+        "duration": "1 hour",
+        "description": "For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.",
+        "class": [
+          "artificer",
+          "bard",
+          "sorcerer",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#5c5c5c"
+      }
+    ],
+    "level_3_spells": [
+      {
+        "name": "Spirit Guardians",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "conjuration",
+        "level": 3,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Self (15-foot-radius)",
+        "components": "V, S, M (a holy symbol)",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.\n\nWhen you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature’s speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.",
+        "class": [
+          "cleric"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Sending",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 3,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Unlimited",
+        "components": "V, S, M (a short piece of fine copper wire)",
+        "duration": "1 round",
+        "description": "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.\n\nYou can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive.",
+        "class": [
+          "bard",
+          "cleric",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Animate Dead",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "necromancy",
+        "level": 3,
+        "ritual": false,
+        "casting_time": "1 minute",
+        "range": "10 feet",
+        "components": "V, S, M (a drop of blood, a piece of flesh, and a pinch of bone dust)",
+        "duration": "Instantaneous",
+        "description": "This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature’s game statistics).\n\nOn each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.\n\nThe creature is under your control for 24 hours, after which it stops obeying any command you’ve given it. To maintain the control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones.",
+        "class": [
+          "cleric",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#f8ff99"
+      },
+      {
+        "name": "Mass Healing Word",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 3,
+        "ritual": false,
+        "casting_time": "1 bonus action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.",
+        "class": [
+          "bard",
+          "cleric"
+        ],
+        "row_color": "#fff98a"
+      },
+      {
+        "name": "Aura of Vitality",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 3,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Self (30-foot radius)",
+        "components": "V",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.",
+        "class": [
+          "cleric",
+          "druid",
+          "paladin"
+        ],
+        "prepared": true,
+        "row_color": "#545454"
+      },
+      {
+        "name": "Leomund's Tiny Hut",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 3,
+        "ritual": true,
+        "casting_time": "1 minute",
+        "range": "Self (10-foot-radius hemisphere)",
+        "components": "V, S, M (a small crystal bead)",
+        "duration": "8 hours",
+        "description": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.\n\nNine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.\n\nUntil the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.",
+        "class": [
+          "bard",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#545454"
+      }
+    ],
+    "level_4_spells": [
+      {}
+    ],
+    "level_5_spells": [
+      {}
+    ],
+    "level_6_spells": [
+      {}
+    ],
+    "level_7_spells": [
+      {}
+    ],
+    "level_8_spells": [
+      {}
+    ],
+    "level_9_spells": [
+      {}
+    ],
+    "character_image_path": "/dungeonadmin-api/character-image/character_1747079356921-9493.png",
+    "proficiencies": "All Armors\nShields\nTinker Tools\nSmith's Tools"
+  },
+  "updated": "2025-07-20T01:48:26.498Z",
+  "id": "1747079356921-9493",
+  "owner": "101058586979842834815",
+  "created": "2025-05-17T03:29:27.669Z",
+  "_version": 517,
+  "isPublic": true
+}

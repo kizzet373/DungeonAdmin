@@ -2,29 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Wild Magic Sorcery - Koinks D&amp;D 2024</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <title>Wild Magic Sorcery - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body id="html-body">
@@ -32,6 +19,19 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
@@ -40,10 +40,7 @@
                   <div class="page-title page-header"><span>Wild Magic Sorcery</span></div>
                   <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
                       href="/content/classes/classall">Classes</a> &raquo; <a
-                      href="/content/classes/sorcerermain">Sorcerer</a> &raquo; Wild Magic Sorcery</div>
-
-
-                  <div id="page-content">
+                      href="/content/classes/sorcerermain">Sorcerer</a> &raquo; Wild Magic Sorcery</div>                 <div id="page-content">
 
                     <p>Source: Player's Handbook</p>
                     <p><em>Unleash Chaotic Magic</em></p>
@@ -116,7 +113,7 @@
                             on a 6, an eye appears on your forehead, granting you Advantage on Wisdom (Perception)
                             checks; on an 7, pink bubbles float out of your mouth whenever you speak; on an 8, your skin
                             turns a vibrant shade of blue for 24 hours or until the effect is ended by a <a
-                              href="/content/spells/spellremove-curse">Remove Curse</a> spell.</td>
+                              href="/content/spell#remove-curse">Remove Curse</a> spell.</td>
                         </tr>
                         <tr>
                           <td>21-24</td>
@@ -159,7 +156,7 @@
                         <tr>
                           <td>49-52</td>
                           <td>A spectral shield hovers near you for the next minute, granting you a +2 bonus to AC and
-                            immunity to <a href="/content/spells/spellmagic-missile">Magic Missile</a>.</td>
+                            immunity to <a href="/content/spell#magic-missile">Magic Missile</a>.</td>
                         </tr>
                         <tr>
                           <td>53-56</td>
@@ -169,17 +166,17 @@
                           <td>57-60</td>
                           <td>You cast a random spell. If the spell normally requires Concentration, it doesn’t require
                             Concentration in this case; the spell lasts for its full duration. Roll 1d10 to determine
-                            the spell: on a 1, <a href="/content/spells/spellconfusion">Confusion</a>; on a 2, <a
-                              href="/content/spells/spellfireball">Fireball<purple>(nerfed)</purple></a>; on a 3,
-                            <a href="/content/spells/spellfog-cloud">Fog Cloud</a>; on a 4, <a
-                              href="/content/spells/spellfly">Fly</a> (cast on a random creature within 60 feet of
-                            you), on a 5, <a href="/content/spells/spellgrease">Grease</a>; on a 6, <a
-                              href="/content/spells/spelllevitate">Levitate</a> (cast on yourself); on a 7, <a
-                              href="/content/spells/spellmagic-missile">Magic Missile</a> (cast as a level 5
-                            spell); on an 8, <a href="/content/spells/spellmirror-image">Mirror Image</a>; on a 9,
-                            <a href="/content/spells/spellpolymorph">Polymorph</a> (cast on yourself), and if you
+                            the spell: on a 1, <a href="/content/spell#confusion">Confusion</a>; on a 2, <a
+                              href="/content/spell#fireball">Fireball<purple>(nerfed)</purple></a>; on a 3,
+                            <a href="/content/spell#fog-cloud">Fog Cloud</a>; on a 4, <a
+                              href="/content/spell#fly">Fly</a> (cast on a random creature within 60 feet of
+                            you), on a 5, <a href="/content/spell#grease">Grease</a>; on a 6, <a
+                              href="/content/spell#levitate">Levitate</a> (cast on yourself); on a 7, <a
+                              href="/content/spell#magic-missile">Magic Missile</a> (cast as a level 5
+                            spell); on an 8, <a href="/content/spell#mirror-image">Mirror Image</a>; on a 9,
+                            <a href="/content/spell#polymorph">Polymorph</a> (cast on yourself), and if you
                             fail the saving throw, you turn into a Goat (see appendix B); on a 10, <a
-                              href="/content/spells/spellsee-invisibility">See Invisibility</a>.</td>
+                              href="/content/spell#see-invisibility">See Invisibility</a>.</td>
                         </tr>
                         <tr>
                           <td>61-64</td>
@@ -189,7 +186,7 @@
                         <tr>
                           <td>65-68</td>
                           <td>If you die within the next hour, you immediately revive as if by the <a
-                              href="/content/spells/spellreincarnate">Reincarnate</a> spell.</td>
+                              href="/content/spell#reincarnate">Reincarnate</a> spell.</td>
                         </tr>
                         <tr>
                           <td>69-72</td>
@@ -236,10 +233,6 @@
                     </div>
                   </div>
 
-                  <div class="page-tags"><a href="systempage-tags/tag/subclass.html#pages">subclass</a></div>
-                  <div class="page-info-break"></div>
-                  <div class="page-options-container"></div>
-                  <div id="action-area" style="display: none;"></div>
                 </div>
               </div>
             </div>
@@ -255,15 +248,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

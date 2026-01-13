@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Storm of Vengeance - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+
+
+
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+
+        <header class="header-wrap" role="banner">
+          <div class="container header">
+            <div class="site-title">
+              <h1><a href="/index"><span>Koink's D&amp;D 2024</span></a></h1>
+              <h2><span>5th Edition 2024 Content</span></h2>
+            </div>
+            <div class="login-status">
+              <a href="javascript:;" onclick="WIKIDOT.page.listeners.createAccount(event)"
+                class="login-status-create-account btn">Create account</a> <span>or</span> <a href="javascript:;"
+                onclick="WIKIDOT.page.listeners.loginClick(event)" class="login-status-sign-in btn btn-primary"></a>
+            </div>          </div>
+          <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        </header>
+
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Storm of Vengeance</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/all-spells">All Spells</a> &raquo; Storm of Vengeance</div>
+
+
+                  <div id="page-content">
+
+                    <p id="source">source: Player's Handbook</p>
+                    <p><em id="spell-level-label">Level 9 Conjuration (Druid)</em></p>
+                    <p><strong>Casting Time:</strong><span id="casting-time"> Action</span><br>
+                      <strong>Range:</strong><span id="range"> 1 mile</span><br>
+                      <strong>Components:</strong><span id="components"> V, S</span><br>
+                      <strong>Duration:</strong><span id="duration"> Concentration, up to 1 minute</span>
+                    </p><div id="description">
+                    <p>A churning storm cloud forms for the duration, centered on a point within range and spreading to
+                      a radius of 300 feet. Each creature under the cloud when it appears must succeed on a Constitution
+                      saving throw or take 2d6 Thunder damage and have the Deafened condition for the duration.</p>
+                    <p>At the start of each of your later turns, the storm produces different effects, as detailed
+                      below.</p>
+                    <p><strong>Turn 2.</strong> Acidic rain falls. Each creature and object under the cloud takes 4d6
+                      Acid damage.</p>
+                    <p><strong>Turn 3.</strong> You call six bolts of lightning from the cloud to strike six different
+                      creatures or objects beneath it. Each target makes a Dexterity saving throw, taking 10d6 Lightning
+                      damage on a failed save or half as much damage on a successful one.</p>
+                    <p><strong>Turn 4.</strong> Hailstones rain down. Each creature under the cloud takes 2d6
+                      Bludgeoning damage.</p>
+                    <p><strong>Turns 5-10.</strong> Gusts and freezing rain assail the area under the cloud. Each
+                      creature there takes 1d6 Cold damage. Until the spell ends, the area is Difficult Terrain and
+                      Heavily Obscured, ranged attacks with weapons are impossible there, and strong wind blows through
+                      the area.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(() => {
+      $('.dropdown-toggle').on('click', e => {
+        if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+      });
+    });
+  </script>
+</body>
+
+</html>

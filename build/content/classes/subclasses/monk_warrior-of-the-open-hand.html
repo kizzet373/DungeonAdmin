@@ -2,29 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Warrior of the Open Hand - Koinks D&amp;D 2024</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <title>Warrior of the Open Hand - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body id="html-body">
@@ -32,6 +19,19 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
@@ -40,30 +40,26 @@
                   <div class="page-title page-header"><span>Warrior of the Open Hand</span></div>
                   <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
                       href="/content/classes/classall">Classes</a> &raquo; <a
-                      href="/content/classes/monkmain">Monk</a> &raquo; Warrior of the Open Hand</div>
-
-
-                  <div id="page-content">
+                      href="/content/classes/monkmain">Monk</a> &raquo; Warrior of the Open Hand</div>                 <div id="page-content">
 
                     <p>Source: Player's Handbook</p>
                     <p><em>Master Unarmed Combat Techniques</em></p>
                     <p>Warriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip
                       their opponents and manipulate their own energy to protect themselves from harm.</p>
                     <h3 id="toc0"><span>Level 3: Open Hand Technique</span></h3>
-                    <p>Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of
+                    <p>Whenever you hit a creature with an attack granted by your Flurry of Blows or Bonus Unarmed Strike, you can impose one of
                       the following effects on that target.</p>
-                    <p><strong>Addle.</strong> The target can’t make Opportunity Attacks until the start of its next
-                      turn.</p>
+                    <p><strong>Addle.</strong> The target must succeed on a Wisdom saving throw or have the <a href="/content/miscellaneous/conditions">Disoriented</a> condition.</p>
                     <p><strong>Push.</strong> The target must succeed on a Strength saving throw or be pushed up to 15
                       feet away from you.</p>
-                    <p><strong>Topple.</strong> The target must succeed on a Dexterity saving throw or have the Prone
+                    <p><strong>Topple.</strong> The target must succeed on a Dexterity saving throw or have the <a href="/content/miscellaneous/conditions">Prone</a>
                       condition.</p>
+                    <p><strong>Rupture.</strong> The target must succeed on a Constitution saving throw or you roll your Martial Arts die and they take an additional force damage equal to the result.</p>
                     <h3 id="toc1"><span>Level 6: Wholeness of Body</span></h3>
-                    <p>You gain the ability to heal yourself. As a Bonus Action, you can roll your Martial Arts die. You
-                      regain a number of Hit Points equal to the number rolled plus your Wisdom modifier (minimum of 1
-                      Hit Point regained).</p>
-                    <p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and
-                      you regain all expended uses when you finish a Long Rest.</p>
+                    <p>You gain the ability to enter a state of tranquility to draw energy from external sources to heal yourself or others.</p>
+                    <p>Once until you finish a short or long rest, you can use an Action to <b>Concentrate</b> on entering a healing state for 1 minute.
+                      While you maintain <b>Concentration</b>, once per turn, when you deal damage a creature with an attack granted by your Flurry of Blows or Bonus Unarmed Strike, you may have you or a creature within 10 feet of you regain Hit Points equal to half the damage dealt.
+                    <p><strong>Flurry of Pursuit: </strong>Whenever you could make an opportunity attack, you can spend 1 Focus Point to Flurry of Blows instead.</p>
                     <h3 id="toc2"><span>Level 11: Fleet Step</span></h3>
                     <p>When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind
                       immediately after that Bonus Action.</p>
@@ -79,10 +75,6 @@
                       vibrations harmlessly (no action required).</p>
                   </div>
 
-                  <div class="page-tags"><a href="systempage-tags/tag/subclass.html#pages">subclass</a></div>
-                  <div class="page-info-break"></div>
-                  <div class="page-options-container"></div>
-                  <div id="action-area" style="display: none;"></div>
                 </div>
               </div>
             </div>
@@ -98,15 +90,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

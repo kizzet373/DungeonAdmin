@@ -1,0 +1,277 @@
+{
+  "id": "1749911572690-3764",
+  "form": {
+    "dnd_edition": "Kizzet2024",
+    "character_name": "Mitty",
+    "character_size": "Medium",
+    "background": "Hermit",
+    "species": "Aasimar",
+    "class_subclass_levels": [
+      {
+        "class": "Monk",
+        "level": 3,
+        "subclass": "Warrior Of The Open Hand"
+      }
+    ],
+    "quick_notes": "",
+    "appearance": "Build: Athletic, muscular\nHair: White\nEyes: Lavender\nOther: Amitiel has long white hair that she keeps up in a ponytail. Her hair is typically adorned with small, elegant baubles, clips, etcetera. She typically wears a miko-esque kimono top & hakama. ",
+    "other_proficiencies": "",
+    "languages": "Common\nCelestial",
+    "backstory": "Amitiel is the daughter of Harahel, child of Ilvasa and demi-god of purification. She, like her many, many siblings, was born for the sole purpose of creating as powerful a creature as possible to fight back against the crumbling of the realms. \n\n\nAfter her birth, she was raised by the Dreamwardens. As followers of Ilvasa, they happily accepted the task of raising the god’s descendents. Not all of Harahel’s children were sent here – Amitiel is one of ten who were. The Dreamwardens taught them everything – their purpose, their history, how to fight, how to survive.\n\nWhile the Dreamwardens were their primary caretakers, Harahel did make frequent appearances to visit the children. Harahel was responsible for the trajectory of their education, and did most of the indoctrination when it came to impressing upon the children the utter importance of their life’s purpose. \n\nAt 18, Mitty was finally allowed to leave her home with the Dreamwardens, expectations to help the world weighing heavily upon her shoulders.\n",
+    "proficiency_bonus": 2,
+    "armor_class": "17",
+    "initiative_mod": 4,
+    "speed": "40",
+    "hp_current": "35",
+    "hp_max": "35",
+    "hp_temp": 0,
+    "misc_defenses": "",
+    "hit_dice_size": "d8",
+    "hit_dice_available": 0,
+    "hit_dice_total": "3",
+    "attacks_and_cantrips": "Focus pts.: 3\n",
+    "strength_score": 14,
+    "strength_mod": 2,
+    "dexterity_score": 18,
+    "dexterity_mod": 4,
+    "constitution_score": 14,
+    "constitution_mod": 2,
+    "intelligence_score": 13,
+    "intelligence_mod": 1,
+    "wisdom_score": 13,
+    "wisdom_mod": 1,
+    "charisma_score": 13,
+    "charisma_mod": 1,
+    "skill_notes": "",
+    "strength_save_prof": "🔵",
+    "strength_save_mod": 4,
+    "dexterity_save_prof": "🔵",
+    "dexterity_save_mod": 6,
+    "constitution_save_prof": "",
+    "constitution_save_mod": 2,
+    "intelligence_save_prof": "",
+    "intelligence_save_mod": 1,
+    "wisdom_save_prof": "",
+    "wisdom_save_mod": 1,
+    "charisma_save_prof": "",
+    "charisma_save_mod": 1,
+    "athletics_prof": "🔵",
+    "athletics_mod": 4,
+    "acrobatics_prof": "🔵",
+    "acrobatics_mod": 6,
+    "sleight_of_hand_prof": "",
+    "sleight_of_hand_mod": 4,
+    "stealth_prof": "",
+    "stealth_mod": 4,
+    "arcana_prof": "",
+    "arcana_mod": 1,
+    "history_prof": "🔵",
+    "history_mod": 3,
+    "investigation_prof": "",
+    "investigation_mod": 1,
+    "nature_prof": "",
+    "nature_mod": 1,
+    "religion_prof": "",
+    "religion_mod": 1,
+    "animal_handling_prof": "",
+    "animal_handling_mod": 1,
+    "insight_prof": "",
+    "insight_mod": 1,
+    "medicine_prof": "",
+    "medicine_mod": 1,
+    "perception_prof": "",
+    "perception_mod": 1,
+    "survival_prof": "",
+    "survival_mod": 1,
+    "deception_prof": "",
+    "deception_mod": 1,
+    "intimidation_prof": "",
+    "intimidation_mod": 1,
+    "performance_prof": "",
+    "performance_mod": 1,
+    "persuasion_prof": "🔵",
+    "persuasion_mod": 3,
+    "background_features": [
+      {}
+    ],
+    "racial_features": [
+      {
+        "name": "Celestial Resistance",
+        "description": "You have Resistance to Necrotic damage and Radiant damage. "
+      },
+      {
+        "name": "Unify Blessing",
+        "description": "Whenever a creature you can see makes a skill check or a saving throw that you are proficient in, you can use a reaction to give that check advantage. You can do this once until you finish a long rest."
+      },
+      {
+        "name": "Healing Hands",
+        "description": "As a Magic action, you touch a creature and roll a number of d4s equal to your Proficiency Bonus. The creature regains a number of Hit Points equal to the total rolled. Once you use this trait, you can't use it again until you finish a Long Rest."
+      },
+      {
+        "name": "Light Bearer",
+        "description": "You know the Light cantrip. Charisma is your spellcasting ability for it."
+      },
+      {
+        "name": "Celestial Revelation",
+        "description": "When you reach character level 3, you can transform as a Bonus Action using one of the options below (choose the option each time you transform). The transformation lasts for 1 minute or until you end it (no action required). Once you transform, you can’t do so again until you finish a Long Rest.\n\nOnce on each of your turns before the transformation ends, you can deal extra damage to one target when you deal damage to it with an attack or a spell. The extra damage equals your Proficiency Bonus, and the extra damage’s type is either Necrotic for Necrotic Shroud or Radiant for Heavenly Wings and Inner Radiance.\n\nHere are the transformation options:\nHeavenly Wings. Two spectral wings sprout from your back temporarily. Until the transformation ends, you have a Fly Speed equal to your Speed.\n\nInner Radiance. Searing light temporarily radiates from your eyes and mouth. For the duration, you shed Bright Light in a 10-foot radius and Dim Light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes Radiant damage equal to your Proficiency Bonus.\n\nNecrotic Shroud. Your eyes briefly become pools of darkness, and flightless wings sprout from your back temporarily. Creatures other than your allies within 10 feet of you must succeed on a Charisma saving throw (DC 8 plus your Charisma modifier and Proficiency Bonus) or have the Frightened condition until the end of your next turn.",
+        "row_color": "#ffff80"
+      }
+    ],
+    "class_features": [
+      {
+        "name": "Unarmed Strike",
+        "description": "You can make an Unarmed Strike as a Bonus Action."
+      },
+      {
+        "name": "Martial Arts Die",
+        "description": " You can roll 1d6 in place of the normal damage of your Unarmed Strike or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table."
+      },
+      {
+        "name": "Dexterous Attacks",
+        "description": " You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC."
+      },
+      {
+        "name": "Monk's Focus",
+        "description": "Flurry of Blows. You can expend 1 Focus Point to make two Unarmed Strikes as a Bonus Action.\n\nPatient Defense. You can take the Disengage action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and the Dodge actions as a Bonus Action.\n\nStep of the Wind. You can take the Dash action as a Bonus Action. Alternatively, you can expend 1 Focus Point to take both the Disengage and Dash actions as a Bonus Action, and your jump distance is doubled for the turn."
+      },
+      {
+        "name": "Uncanny Metabolism",
+        "description": "When you roll Initiative, you can regain all expended Focus Points. When you do so, roll your Martial Arts die, and regain a number of Hit Points equal to your Monk level plus the number rolled.\n\nOnce you use this feature, you can’t use it again until you finish a Long Rest."
+      },
+      {
+        "name": "Deflect Attacks",
+        "description": "When an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack’s total damage against you. The reduction equals 1d10 plus your Dexterity modifier and Monk level.\n\nIf you reduce the damage to 0, you can expend 1 Focus Point to redirect some of the attack’s force. If you do so, choose a creature you can see within 5 feet of yourself if the attack was a melee attack or a creature you can see within 60 feet of yourself that isn’t behind Total Cover if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier. The damage is the same type dealt by the attack."
+      },
+      {
+        "name": "Open Hand Technique",
+        "description": "Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of the following effects on that target.\n\nAddle. The target can’t make Opportunity Attacks until the start of its next turn.\n\nPush. The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you.\n\nTopple. The target must succeed on a Dexterity saving throw or have the Prone condition."
+      }
+    ],
+    "coins": {
+      "platinum": 0,
+      "gold": "216",
+      "silver": 0,
+      "copper": 0
+    },
+    "equipment": [
+      {
+        "name": "Quarterstaff",
+        "equip": true,
+        "description": " \t1d8 Bludgeoning \tVersatile (1d10) \tTopple, Nick\n\n+5"
+      },
+      {
+        "name": "Cloak of Protection",
+        "equip": true,
+        "attune": true
+      }
+    ],
+    "miscellaneous_items": [
+      {
+        "name": "Herbalism Kit"
+      },
+      {
+        "name": "Bedroll"
+      },
+      {
+        "name": "Book"
+      },
+      {
+        "name": "Lamp"
+      },
+      {
+        "name": "Oil (Tree Flasks)"
+      },
+      {
+        "name": "Traveler's clothes"
+      },
+      {
+        "name": "Potion of Healing (4d4+4)"
+      },
+      {
+        "name": "Potion of Healing (4d4+4)"
+      }
+    ],
+    "spellcasting_ability": "charisma",
+    "spell_save_dc": 11,
+    "spell_attack_bonus": 3,
+    "spells_known": 0,
+    "spells_prepared": 0,
+    "level_0_spell_slots_available": 0,
+    "level_0_spell_slot_max": 0,
+    "level_1_spell_slots_available": 0,
+    "level_1_spell_slot_max": 0,
+    "level_2_spell_slots_available": 0,
+    "level_2_spell_slot_max": 0,
+    "level_3_spell_slots_available": 0,
+    "level_3_spell_slot_max": 0,
+    "level_4_spell_slots_available": 0,
+    "level_4_spell_slot_max": 0,
+    "level_5_spell_slots_available": 0,
+    "level_5_spell_slot_max": 0,
+    "level_6_spell_slots_available": 0,
+    "level_6_spell_slot_max": 0,
+    "level_7_spell_slots_available": 0,
+    "level_7_spell_slot_max": 0,
+    "level_8_spell_slots_available": 0,
+    "level_8_spell_slot_max": 0,
+    "level_9_spell_slots_available": 0,
+    "level_9_spell_slot_max": 0,
+    "level_0_spells": [
+      {
+        "name": "Light",
+        "UA": false,
+        "file": "/content/spell#light",
+        "level": 0,
+        "casting_time": "Action",
+        "ritual": false,
+        "range": "Touch",
+        "components": "V, M (a firefly or phosphorescent moss)",
+        "duration": "1 hour",
+        "description": "You touch one Large or smaller object that isn’t being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The light can be colored as you like.\n\nCovering the object with something opaque blocks the light. The spell ends if you cast it again. ",
+        "class": [
+          "bard",
+          "cleric",
+          "sorcerer",
+          "wizard"
+        ],
+        "source": "player's handbook",
+        "school": "evocation",
+        "status": "",
+        "prepared": true
+      }
+    ],
+    "level_1_spells": [
+      {}
+    ],
+    "level_2_spells": [
+      {}
+    ],
+    "level_3_spells": [
+      {}
+    ],
+    "level_4_spells": [
+      {}
+    ],
+    "level_5_spells": [
+      {}
+    ],
+    "level_6_spells": [
+      {}
+    ],
+    "level_7_spells": [
+      {}
+    ],
+    "level_8_spells": [
+      {}
+    ],
+    "level_9_spells": [
+      {}
+    ],
+    "proficiencies": "Acrobatics, history\nWoodcarver's tools\nSimple weapons & light martial weapons\n"
+  },
+  "owner": "101630473292761751845",
+  "created": "2025-06-14T14:32:52.691Z",
+  "updated": "2025-06-15T03:09:10.063Z",
+  "_version": 178,
+  "isPublic": true
+}

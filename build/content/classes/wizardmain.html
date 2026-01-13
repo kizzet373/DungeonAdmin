@@ -2,30 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Wizard - Koinks D&amp;D 2024</title>
+  <title>Wizard - Dungeon Admin</title>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
-  <script type="text/javascript" src="/v--4b961b7cc327/common--modules/js/list/ListPagesModule.js"></script>
+  
 </head>
 
 <body id="html-body">
@@ -33,6 +22,19 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
@@ -40,10 +42,7 @@
                 <div class="main-content">
                   <div class="page-title page-header"><span>Wizard</span></div>
                   <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
-                      href="/content/classes/classall">Classes</a> &raquo; Wizard</div>
-
-
-                  <div id="page-content">
+                      href="/content/classes/classall">Classes</a> &raquo; Wizard</div>                 <div id="page-content">
 
                     <p>Source: Player's Handbook</p>
                     <p>Wizards are defined by their exhaustive study of magic's inner workings. They cast spells of
@@ -460,7 +459,7 @@
                     <h3 id="toc5"><span>Level 1: Spellcasting <a name="Spellcasting"></a></span></h3>
                     <p>As a student of arcane magic, you have learned to cast spells. See chapter 7 for the rules on
                       spellcasting. The information below details how you use those rules with Wizard spells, which
-                      appear in the <a href="/content/spells/spellall.html#class:wizard">Wizard spell list</a> later in
+                      appear in the <a href="/content/all-spells#class:wizard">Wizard spell list</a> later in
                       the class’s description.</p>
                     <p><strong>Cantrips.</strong> You know three Wizard cantrips of your choice. Light, Mage Hand, and
                       Ray of Frost are recommended. Whenever you finish a Long Rest, you can replace one of your
@@ -472,12 +471,12 @@
                       read only by you or someone casting Identify. You determine the book’s appearance and materials,
                       such as a gilt-edged tome or a collection of vellum bound with twine.</p>
                     <p>The book contains the level 1+ spells you know. It starts with six level 1 Wizard spells of your
-                      choice. <a href="/content/spells/spelldetect-magic">Detect Magic</a>, <a
-                        href="/content/spells/spellfeather-fall">Feather Fall</a>, <a
-                        href="/content/spells/spellmage-armor">Mage Armor</a>, <a
-                        href="/content/spells/spellmagic-missile">Magic Missile</a>, <a
-                        href="/content/spells/spellsleep">Sleep</a>, and <a
-                        href="/content/spells/spellthunderwave">Thunderwave</a> are recommended.</p>
+                      choice. <a href="/content/spell#detect-magic">Detect Magic</a>, <a
+                        href="/content/spell#feather-fall">Feather Fall</a>, <a
+                        href="/content/spell#mage-armor">Mage Armor</a>, <a
+                        href="/content/spell#magic-missile">Magic Missile</a>, <a
+                        href="/content/spell#sleep">Sleep</a>, and <a
+                        href="/content/spell#thunderwave">Thunderwave</a> are recommended.</p>
                     <p>Whenever you gain a Wizard level after 1, add two Wizard spells of your choice to your spellbook.
                       Each of these spells must be of a level for which you have spell slots, as shown in the Wizard
                       Features table. The spells are the culmination of arcane research you do regularly.</p>
@@ -561,10 +560,7 @@
                         </table>
                       </div>
 
-
-
-
-                    </div>
+                   </div>
                     <h3 id="toc14"><span>Level 4: Ability Score Improvement <a
                           name="Ability-Score-Improvement"></a></span></h3>
                     <p>You gain the <a href="/content/feats/featability-score-improvement">Ability Score Improvement feat</a> or
@@ -582,7 +578,7 @@
                     <p>Whenever you finish a Long Rest, you can study your spellbook and replace one of those spells
                       with an eligible spell of the same level from the book.</p>
                     <h3 id="toc17"><span>Level 19: Epic Boon <a name="Epic-Boon"></a></span></h3>
-                    <p>You gain an <a href="/content/feats/featall">Epic Boon feat</a> or another feat of your choice for which
+                    <p>You gain an <a href="/content/feats/featall#epic">Epic Boon feat</a> or another feat of your choice for which
                       you qualify. <a href="/content/feats/featboon-of-spell-recall">Boon of Spell Recall</a> is recommended.</p>
                     <h3 id="toc18"><span>Level 20: Signature Spells <a name="Signature-Spells"></a></span></h3>
                     <p>Choose two level 3 spells in your spellbook as your signature spells. You always have these
@@ -591,10 +587,6 @@
                       cast either spell at a higher level, you must expend a spell slot.</p>
                   </div>
 
-                  <div class="page-tags"><a href="systempage-tags/tag/class.html#pages">class</a></div>
-                  <div class="page-info-break"></div>
-                  <div class="page-options-container"></div>
-                  <div id="action-area" style="display: none;"></div>
                 </div>
               </div>
             </div>
@@ -610,15 +602,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

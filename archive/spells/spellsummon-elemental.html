@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Summon Elemental - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Summon Elemental</span></div>
+
+
+
+                  <div id="page-content">
+
+                    <p id="source">source: Player's Handbook</p>
+                    <p><em id="spell-level-label">Level 4 Conjuration (Druid, Ranger, Wizard)</em></p>
+                    <p><strong>Casting Time:</strong><span id="casting-time"> Action</span><br>
+                      <strong>Range:</strong><span id="range"> 90 feet</span><br>
+                      <strong>Components:</strong><span id="components"> V, S, M (air, a pebble, ash, and water inside a gold-inlaid vial
+                      worth 400+ GP)</span><br>
+                      <strong>Duration:</strong><span id="duration"> Concentration, up to 1 hour</span>
+                    </p><div id="description">
+                    <p>You call forth an Elemental spirit. It manifests in an unoccupied space that you can see within
+                      range and uses the <strong>Elemental Spirit</strong> stat block. When you cast the spell, choose
+                      an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the
+                      chosen element, which determines certain details in its stat block. The creature disappears when
+                      it drops to 0 Hit Points or when the spell ends.</p>
+                    <p>The creature is an ally to you and your allies. In combat, the creature shares your Initiative
+                      count, but it takes its turn immediately after yours. It obeys your verbal commands (no action
+                      required by you). If you don’t issue any, it takes the Dodge action and uses its movement to avoid
+                      danger.</p>
+                    <p><strong>Using a Higher-Level Spell Slot.</strong> Use the spell slot’s level for the spell’s
+                      level in the stat block.</p>
+                    <div class="wiki-content-table-container">
+                      <table class="wiki-content-table">
+                        <tr>
+                          <th colspan="6">Elemental Spirit</th>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><em>Medium Elemental, Neutral</em></td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Armor Class:</strong> 11 + the spell’s level</td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Hit Points:</strong> 50 + 10 for each spell level above 4</td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Speed:</strong> 40 ft.; Burrow 40 ft. (Earth only); Fly 40 ft. (hover;
+                            Air only); Swim 40 ft. (Water only)</td>
+                        </tr>
+                        <tr>
+                          <th>STR (Mod/Save)</th>
+                          <th>DEX (Mod/Save)</th>
+                          <th>CON (Mod/Save)</th>
+                          <th>INT (Mod/Save)</th>
+                          <th>WIS (Mod/Save)</th>
+                          <th>CHA (Mod/Save)</th>
+                        </tr>
+                        <tr>
+                          <td>18 (+4/+4)</td>
+                          <td>15 (+2/+2)</td>
+                          <td>17 (+3/+3)</td>
+                          <td>4 (-3/-3)</td>
+                          <td>10 (+0/+0)</td>
+                          <td>16 (+3/+3)</td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Resistances:</strong> Acid (Water only), Lightning and Thunder (Air
+                            only), Piercing and Slashing (Earth only)</td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Immunities:</strong> Immunities Fire (Fire only), Poison; Exhaustion,
+                            Paralyzed, Petrified, Poisoned</td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Senses:</strong> Darkvision 60 ft., Passive Perception 10</td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Languages:</strong> Primordial, understands the languages you know
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Challenge Rating:</strong> None (XP 0; PB equals your Proficiency
+                            Bonus)</td>
+                        </tr>
+                        <tr>
+                          <th colspan="6">Traits</th>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Amorphous Form (Air, Fire, and Water Only).</strong> The spirit can
+                            move through a space as narrow as 1 inch wide without it counting as Difficult Terrain.</td>
+                        </tr>
+                        <tr>
+                          <th colspan="6">Actions</th>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Multiattack.</strong> The spirit makes a number of Slam attacks equal
+                            to half this spell’s level (round down).</td>
+                        </tr>
+                        <tr>
+                          <td colspan="6"><strong>Slam.</strong> Melee Attack Roll: Bonus equals your spell attack
+                            modifier, reach 5 ft. Hit: 1d10 + 4 + the spell’s level Bludgeoning (Earth only), Cold
+                            (Water only), Lightning (Air only), or Fire (Fire only) damage.</td>
+                        </tr>
+                      </table>
+                    </div></div>
+
+
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+          </footer>
+      </div>
+      <script>
+        $(document).ready(() => {
+          $('.dropdown-toggle').on('click', e => {
+            if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+          });
+        });
+      </script>
+</body>
+
+</html>

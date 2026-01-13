@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Warrior of the Open Hand - Dungeon Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Warrior of the Open Hand</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/classes/classall">Classes</a> &raquo; <a
+                      href="/content/classes/monkmain">Monk</a> &raquo; Warrior of the Open Hand</div>                 <div id="page-content">
+
+                    <p>Source: Player's Handbook</p>
+                    <p><em>Master Unarmed Combat Techniques</em></p>
+                    <p>Warriors of the Open Hand are masters of unarmed combat. They learn techniques to push and trip
+                      their opponents and manipulate their own energy to protect themselves from harm.</p>
+                    <h3 id="toc0"><span>Level 3: Open Hand Technique</span></h3>
+                    <p>Whenever you hit a creature with an attack granted by your Flurry of Blows, you can impose one of
+                      the following effects on that target.</p>
+                    <p><strong>Addle.</strong> The target can’t make Opportunity Attacks until the start of its next
+                      turn.</p>
+                    <p><strong>Push.</strong> The target must succeed on a Strength saving throw or be pushed up to 15
+                      feet away from you.</p>
+                    <p><strong>Topple.</strong> The target must succeed on a Dexterity saving throw or have the Prone
+                      condition.</p>
+                    <h3 id="toc1"><span>Level 6: Wholeness of Body</span></h3>
+                    <p>You gain the ability to heal yourself. As a Bonus Action, you can roll your Martial Arts die. You
+                      regain a number of Hit Points equal to the number rolled plus your Wisdom modifier (minimum of 1
+                      Hit Point regained).</p>
+                    <p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and
+                      you regain all expended uses when you finish a Long Rest.</p>
+                    <h3 id="toc2"><span>Level 11: Fleet Step</span></h3>
+                    <p>When you take a Bonus Action other than Step of the Wind, you can also use Step of the Wind
+                      immediately after that Bonus Action.</p>
+                    <h3 id="toc3"><span>Level 17: Quivering Palm</span></h3>
+                    <p>You gain the ability to set up lethal vibrations in someone’s body. When you hit a creature with
+                      an Unarmed Strike, you can expend 4 Focus Points to start these imperceptible vibrations, which
+                      last for a number of days equal to your Monk level. The vibrations are harmless unless you take an
+                      action to end them. Alternatively, when you take the Attack action on your turn, you can forgo one
+                      of the attacks to end the vibrations. To end them, you and the target must be on the same plane of
+                      existence. When you end them, the target must make a Constitution saving throw, taking 10d12 Force
+                      damage on a failed save or half as much damage on a successful one.</p>
+                    <p>You can have only one creature under the effect of this feature at a time. You can end the
+                      vibrations harmlessly (no action required).</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+          </footer>
+      </div>
+</body>
+
+</html>

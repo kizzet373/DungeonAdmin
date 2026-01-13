@@ -2,29 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Bastions - Koinks D&amp;D 2024</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <title>Bastions - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body id="html-body">
@@ -32,16 +19,26 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
               <div class="main-content-wrap col-md-12">
                 <div class="main-content">
                   <div class="page-title page-header"><span>Bastions</span></div>
-
-
-
-                  <div id="page-content">
+                 <div id="page-content">
 
                     <div id="toc" class="floatright">
                       <div id="toc-action-bar"><a href="javascript:;"
@@ -352,7 +349,7 @@
                     <p>The Maintain order is unusual; it is issued to the whole Bastion rather than to one or more
                       special facilities. If a character isn’t in their Bastion on a given Bastion turn, the Bastion
                       acts as though it were issued the Maintain order on that turn unless the owner can communicate
-                      with the Bastion hirelings using the <a href="/content/spells/spellsending">Sending spell</a>
+                      with the Bastion hirelings using the <a href="/content/spell#sending">Sending spell</a>
                       or similar magic.</p>
                     <p>The orders are as follows:</p>
                     <h5 id="toc14"><span>Craft</span></h5>
@@ -578,7 +575,7 @@
                     <p>An Arcane Study is a place of quiet research that contains one or more desks and bookshelves.</p>
                     <p><strong>Arcane Study Charm.</strong> After spending a Long Rest in your Bastion, you gain a
                       magical Charm (see “Supernatural Gifts”) that lasts for 7 days or until you use it. The Charm
-                      allows you to cast <a href="/content/spells/spellidentify">Identify</a> without expending a
+                      allows you to cast <a href="/content/spell#identify">Identify</a> without expending a
                       spell slot or using Material components. You can’t gain this Charm again while you still have it.
                     </p>
                     <p><strong>Craft Options.</strong> When you issue the Craft order to this facility, choose one of
@@ -608,7 +605,7 @@
                     <p><strong>Research: Helpful Lore.</strong> When you issue the Research order to this facility, you
                       commission the facility’s hireling to search the Archive for helpful lore. The work takes 7 days.
                       The hireling gains knowledge as if they had cast the <a
-                        href="/content/spells/spelllegend-lore">Legend Lore</a> spell, then shares this knowledge
+                        href="/content/spell#legend-lore">Legend Lore</a> spell, then shares this knowledge
                       with you the next time you speak with them.</p>
                     <p><strong>Reference Book.</strong> Your Archive contains one copy of a rare and valuable reference
                       book, which gives you a benefit while you and the book are in your Bastion. You can choose one of
@@ -768,7 +765,7 @@
                           <td>Herb</td>
                           <td>Garden of rare herbs, some of which have medicinal uses</td>
                           <td>Herbs that are used to create either ten Healer’s Kits or one <a
-                              href="/content/equipment/magic-items/magic-itempotion-of-healing">Potion of
+                              href="/content/magic-item#potion-of-healing">Potion of
                               Healing</a></td>
                         </tr>
                         <tr>
@@ -791,13 +788,13 @@
                     </p>
                     <p><strong>Fruit of Restoration.</strong> One plant in your Greenhouse has three magical fruits
                       growing on it. Any creature that eats one of these fruits gains the benefit of a <a
-                        href="/content/spells/spelllesser-restoration">Lesser Restoration</a> spell. Fruits that
+                        href="/content/spell#lesser-restoration">Lesser Restoration</a> spell. Fruits that
                       aren’t eaten within 24 hours of being picked lose their magic. The plant replaces all picked
                       fruits daily at dawn, and it can’t be transplanted without killing it.</p>
                     <p><strong>Harvest Options.</strong> When you issue the Harvest order to this facility, choose one
                       of the following options:</p>
                     <p><strong>Harvest: Healing Herbs.</strong> You commission the facility’s hireling to create a <a
-                        href="/content/equipment/magic-items/magic-itempotion-of-healing">Potion of Healing
+                        href="/content/magic-item#potion-of-healing">Potion of Healing
                         (greater)</a> made from healing herbs. The work takes 7 days and costs no money.</p>
                     <p><strong>Harvest:</strong> Poison. You commission the facility’s hireling to extract one
                       application of a poison from rare plants or fungi. Choose the type of poison from the following
@@ -1094,7 +1091,7 @@
                     <p><strong>Observatory Charm.</strong> You can use your Observatory to peer into the far corners of
                       Wildspace and the Astral Plane. After spending a Long Rest in your Observatory, you gain a magical
                       Charm (see “Supernatural Gifts” in chapter 3) that lasts for 7 days or until you use it. The Charm
-                      allows you to cast <a href="/content/spells/spellcontact-other-plane">Contact Other Plane</a>
+                      allows you to cast <a href="/content/spell#contact-other-plane">Contact Other Plane</a>
                       without expending a spell slot. You can’t gain this Charm again while you still have it.</p>
                     <p><strong>Empower: Eldritch Discovery.</strong> When you issue the Empower order to this facility,
                       you enable yourself or the facility’s hireling to explore the eldritch mysteries of the stars for
@@ -1124,10 +1121,10 @@
                     <p><strong>Pub Special.</strong> The Pub has one magical beverage on tap, chosen from the options
                       below:</p>
                     <p><strong>Bigby’s Burden.</strong> Drinking a pint of this beverage grants you the “enlarge” effect
-                      of an <a href="/content/spells/spellenlarge-reduce">Enlarge/Reduce</a> spell that has a
+                      of an <a href="/content/spell#enlarge-reduce">Enlarge/Reduce</a> spell that has a
                       duration of 24 hours (no saving throw allowed).</p>
                     <p><strong>Kiss of the Spider Queen.</strong> Drinking a pint of this beverage grants you the effect
-                      of a <a href="/content/spells/spellspider-climb">Spider Climb</a> spell that has a duration
+                      of a <a href="/content/spell#spider-climb">Spider Climb</a> spell that has a duration
                       of 24 hours.</p>
                     <p><strong>Moonlight Serenade.</strong> Drinking a pint of this beverage gives you Darkvision out to
                       60 feet for 24 hours. If you already have Darkvision, its range is extended by 60 feet for the
@@ -1153,7 +1150,7 @@
                     <p>This vault holds sacred objects.</p>
                     <p><strong>Reliquary Charm.</strong> After spending a Long Rest in your Bastion, you gain a magical
                       Charm (see “Supernatural Gifts”) that lasts for 7 days or until you use it. The Charm allows you
-                      to cast <a href="/content/spells/spellgreater-restoration">Greater Restoration</a> once
+                      to cast <a href="/content/spell#greater-restoration">Greater Restoration</a> once
                       without expending a spell slot or using Material components. You can’t gain this Charm again while
                       you still have it.</p>
                     <p><strong>Harvest: Talisman.</strong> When you issue the Harvest order to this facility, you
@@ -1202,7 +1199,7 @@
                     </p>
                     <p><strong>Sanctuary Charm.</strong> After spending a Long Rest in your Bastion, you gain a magical
                       Charm (see “Supernatural Gifts” in chapter 3) that lasts for 7 days or until you use it. The Charm
-                      allows you to cast <a href="/content/spells/spellhealing-word">Healing Word</a> once without
+                      allows you to cast <a href="/content/spell#healing-word">Healing Word</a> once without
                       expending a spell slot. You can’t gain this Charm again while you still have it.</p>
                     <p><strong>Craft: Sacred Focus.</strong> When you issue the Craft order to this facility, you
                       commission the facility’s hireling to craft a Druidic Focus (wooden staff) or a Holy Symbol. The
@@ -1218,7 +1215,7 @@
                     <p>A Sanctum is a place of solace and healing.</p>
                     <p><strong>Sanctum Charm.</strong> After spending a Long Rest in your Bastion, you gain a magical
                       Charm (see “Supernatural Gifts” in chapter 3) that lasts for 7 days or until you use it. The Charm
-                      allows you to cast <a href="/content/spells/spellheal">Heal</a> once without expending a
+                      allows you to cast <a href="/content/spell#heal">Heal</a> once without expending a
                       spell slot. You can’t gain this Charm again while you still have it.</p>
                     <p><strong>Empower: Fortifying Rites.</strong> When you issue the Empower order to this facility,
                       you inspire its hirelings to perform daily rites that benefit you or another character you name.
@@ -1226,11 +1223,11 @@
                       benefit. Each time the beneficiary finishes a Long Rest, they gain Temporary Hit Points equal to
                       your level. This effect lasts for 7 days.</p>
                     <p><strong>Sanctum Recall.</strong> While the Sanctum exists, you always have the <a
-                        href="/content/spells/spellword-of-recall">Word of Recall</a> spell prepared. When you cast
-                      <a href="/content/spells/spellword-of-recall">Word of Recall</a>, you can make your Sanctum
+                        href="/content/spell#word-of-recall">Word of Recall</a> spell prepared. When you cast
+                      <a href="/content/spell#word-of-recall">Word of Recall</a>, you can make your Sanctum
                       the destination of the spell instead of another place you have previously designated. In addition,
                       one creature of your choice that arrives in the Sanctum via this spell gains the benefit of a <a
-                        href="/content/spells/spellheal">Heal</a> spell.</p>
+                        href="/content/spell#heal">Heal</a> spell.</p>
                     <h3 id="toc41"><span>Scriptorium <a name="Scriptorium"></a></span></h3>
                     <p><em>Level 9 Bastion Facility</em></p>
                     <p><strong>Prerequisite:</strong> None<br>
@@ -1244,7 +1241,7 @@
                     <p><strong>Craft: Book Replica.</strong> You commission the facility’s hireling to make a copy of a
                       nonmagical Book. Doing so requires a blank book. The work takes 7 days.</p>
                     <p><strong>Craft: Spell Scroll.</strong> You commission the facility’s hireling to scribe a <a
-                        href="/content/equipment/magic-items/magic-itemspell-scroll">Spell Scroll</a> containing
+                        href="/content/magic-item#spell-scroll">Spell Scroll</a> containing
                       one Cleric or Wizard spell of level 3 or lower. The facility has the necessary Calligrapher’s
                       Supplies, and the hireling meets all the prerequisites needed to scribe the scroll. The “Crafting
                       Equipment” section in the Player’s Handbook specifies the time needed to scribe the scroll and the
@@ -1324,7 +1321,7 @@
                       <strong>Order:</strong> Recruit
                     </p>
                     <p>Inscribed on the floor of this room is a permanent teleportation circle created by the <a
-                        href="/content/spells/spellteleportation-circle">Teleportation Circle</a> spell.</p>
+                        href="/content/spell#teleportation-circle">Teleportation Circle</a> spell.</p>
                     <p><strong>Recruit: Spellcaster.</strong> Each time you issue the Recruit order to this facility,
                       its hireling extends an invitation to a Friendly NPC spellcaster. Roll any die. If the number
                       rolled is odd, the invitee declines the invitation, and you gain no benefit from having issued the
@@ -1755,7 +1752,7 @@
                       looted. If the character returns later, they can start a new Bastion, perhaps building it amid the
                       ruins of the old one.</p>
                     <p><strong>Ruination.</strong> Drawing the Ruin card from the <a
-                        href="/content/equipment/magic-items/magic-itemdeck-of-many-things">Deck of Many Things</a>
+                        href="/content/magic-item#deck-of-many-things">Deck of Many Things</a>
                       instantly deprives a character of their Bastion. When such an event occurs, the player can decide
                       what terrible fate befalls the Bastion. The Bastion might be sacked by enemies or destroyed by an
                       earthquake, for example.</p>
@@ -1763,10 +1760,7 @@
                       and determine how it comes into being. Use the Special Facility Acquisition table to determine how
                       many special facilities come with it. The new Bastion also starts with two basic facilities (one
                       Cramped and one Roomy) of the player’s choice.</p>
-                  </div>
-
-
-                  <div class="page-info-break"></div>
+                  </div>                 <div class="page-info-break"></div>
                   <div class="page-options-container"></div>
                   <div id="action-area" style="display: none;"></div>
                 </div>
@@ -1784,15 +1778,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

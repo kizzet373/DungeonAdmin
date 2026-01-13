@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Hunter&#039;s Mark - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Hunter's Mark</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/all-spells">All Spells</a> &raquo; Hunter's Mark</div>
+
+
+                  <div id="page-content">
+
+                    <p id="source">source: Player's Handbook</p>
+                    <p><em id="spell-level-label">Level 1 Divination (Ranger)</em></p>
+                    <p><strong>Casting Time:</strong><span id="casting-time"> Bonus Action</span><br>
+                      <strong>Range:</strong><span id="range"> 90 feet</span><br>
+                      <strong>Components:</strong><span id="components"> V</span><br>
+                      <strong>Duration:</strong><span id="duration"> Concentration, up to 1 hour</span>
+                    </p><div id="description">
+                    <p>You magically mark one creature you can see within range as your quarry. Until the spell ends,
+                      you deal an extra 1d6 Force damage to the target whenever you hit it with an attack roll. You also
+                      have Advantage on any Wisdom (Perception or Survival) check you make to find it.</p>
+                    <p>If the target drops to 0 Hit Points before this spell ends, you can take a Bonus Action to move
+                      the mark to a new creature you can see within range.</p>
+                    <p><strong>Using a Higher-Level Spell Slot.</strong> Your Concentration can last longer with a spell
+                      slot of level 3–4 (up to 8 hours) or 5+ (up to 24 hours). <purple>Additionally, the damage
+                        increases by 1d6 for every 2 spell slot levels above 1</purple>.</p>
+
+
+
+                  </div></div>
+
+                  <div class="page-tags"><a href="/systempage-tags/tag/divination.html#pages">divination</a><a
+                      href="/systempage-tags/tag/first.html#pages">first</a><a
+                      href="/systempage-tags/tag/ranger.html#pages">ranger</a></div>
+                  <div class="page-info-break"></div>
+                  <div class="page-options-container"></div>
+                  <div id="action-area" style="display: none;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+          </footer>
+      </div>
+      <script>
+        $(document).ready(() => {
+          $('.dropdown-toggle').on('click', e => {
+            if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+          });
+        });
+      </script>
+</body>
+
+</html>

@@ -2,29 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Eldritch Invocation - Koinks D&amp;D 2024</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <title>Eldritch Invocation - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body id="html-body">
@@ -32,6 +19,19 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
@@ -40,10 +40,7 @@
                   <div class="page-title page-header"><span>Eldritch Invocation</span></div>
                   <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
                       href="/content/classes/classall">Classes</a> &raquo; <a
-                      href="/content/classes/warlockmain">Warlock</a> &raquo; Eldritch Invocation</div>
-
-
-                  <div id="page-content">
+                      href="/content/classes/warlockmain">Warlock</a> &raquo; Eldritch Invocation</div>                 <div id="page-content">
 
                     <div id="toc" class="floatright">
                       <div id="toc-action-bar"><a href="javascript:;"
@@ -93,13 +90,13 @@
                       choose <purple>an additional</purple> eligible cantrip.</p>
                     <h3 id="toc1"><span>Armor of Shadows</span></h3>
                     <p>Source: Player's Handbook<br>
-                      You can cast <a href="/content/spells/spellmage-armor">Mage Armor</a> on yourself without
+                      You can cast <a href="/content/spell#mage-armor">Mage Armor</a> on yourself without
                       expending a spell slot.</p>
                     <h3 id="toc2"><span>Ascendant Step</span></h3>
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 5+ Warlock</em>
                     </p>
-                    <p>You can cast <a href="/content/spells/spelllevitate">Levitate</a> on yourself without
+                    <p>You can cast <a href="/content/spell#levitate">Levitate</a> on yourself without
                       expending a spell slot.</p>
                     <h3 id="toc3"><span>Devil’s Sight</span></h3>
                     <p>Source: Player's Handbook<br>
@@ -141,7 +138,7 @@
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 2+ Warlock</em>
                     </p>
-                    <p>You can cast <a href="/content/spells/spellfalse-life">False Life</a> on yourself without
+                    <p>You can cast <a href="/content/spell#false-life">False Life</a> on yourself without
                       expending a spell slot. When you cast the spell with this feature, you don’t roll the die for the
                       Temporary Hit Points; you automatically get the highest number on the die.</p>
                     <h3 id="toc9"><span>Gaze of Two Minds</span></h3>
@@ -160,8 +157,8 @@
                       <em>Prerequisite: Level 5+ Warlock</em>
                     </p>
                     <p>You can breathe underwater, and you gain a Swim Speed equal to your Speed.</p>
-                    <p>You can also cast <a href="/content/spells/spellwater-breathing">Water Breathing</a>
-                      <purple> and <a href="/content/spells/spellcontrol-water">Control Water</a> once each
+                    <p>You can also cast <a href="/content/spell#water-breathing">Water Breathing</a>
+                      <purple> and <a href="/content/spell#control-water">Control Water</a> once each
                       </purple>without expending a spell slot. You regain the ability to cast <purple>these spells
                       </purple> in this way again when you finish a Long Rest.
                     </p>
@@ -180,7 +177,7 @@
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 5+ Warlock, Pact of the Chain Invocation</em>
                     </p>
-                    <p>When you cast <a href="/content/spells/spellfind-familiar">Find Familiar</a>, you infuse the
+                    <p>When you cast <a href="/content/spell#find-familiar">Find Familiar</a>, you infuse the
                       summoned familiar with a measure of your eldritch power, granting the creature the following
                       benefits.</p>
                     <p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your
@@ -200,7 +197,7 @@
                     <p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one <a
                         href="/content/feats/featall">Origin feat</a> of your choice.</p>
                     <p><strong>Repeatable.</strong> You can gain this invocation more than once. Each time you do so,
-                      choose a different <a href="/content/feats/featall">Origin feat</a>.</p>
+                      choose a different <a href="/content/feats/featall#origin">Origin feat</a>.</p>
                     <h3 id="toc14"><span>Lifedrinker</span></h3>
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 9+ Warlock, Pact of the Blade Invocation</em>
@@ -213,32 +210,32 @@
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 2+ Warlock</em>
                     </p>
-                    <p>You can cast <a href="/content/spells/spelldisguise-self">Disguise Self</a> without
+                    <p>You can cast <a href="/content/spell#disguise-self">Disguise Self</a> without
                       expending a spell slot.</p>
                     <h3 id="toc16"><span>Master of Myriad Forms</span></h3>
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 5+ Warlock</em>
                     </p>
-                    <p>You can cast <a href="/content/spells/spellalter-self">Alter Self (updated)</a> without
+                    <p>You can cast <a href="/content/spell#alter-self">Alter Self (updated)</a> without
                       expending a spell slot.</p>
                     <h3 id="toc17"><span>Misty Visions</span></h3>
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 2+ Warlock</em>
                     </p>
-                    <p>You can cast <a href="/content/spells/spellsilent-image">Silent Image</a> without expending
+                    <p>You can cast <a href="/content/spell#silent-image">Silent Image</a> without expending
                       a spell slot.</p>
                     <h3 id="toc18"><span>One with Shadows</span></h3>
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 5+ Warlock</em>
                     </p>
                     <p>While you’re in an area of Dim Light or Darkness, you can cast <a
-                        href="/content/spells/spellinvisibility">Invisibility</a> on yourself without expending a
+                        href="/content/spell#invisibility">Invisibility</a> on yourself without expending a
                       spell slot.</p>
                     <h3 id="toc19"><span>Otherworldly Leap</span></h3>
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 2+ Warlock</em>
                     </p>
-                    <p>You can cast <a href="/content/spells/spelljump">Jump</a> on yourself without expending a
+                    <p>You can cast <a href="/content/spell#jump">Jump</a> on yourself without expending a
                       spell slot.</p>
                     <h3 id="toc20"><span>Pact of the Blade</span></h3>
                     <p>Source: Player's Handbook</p>
@@ -255,7 +252,7 @@
                       when the bond ends.</p>
                     <h3 id="toc21"><span>Pact of the Chain</span></h3>
                     <p>Source: Player's Handbook</p>
-                    <p>You learn the <a href="/content/spells/spellfind-familiar">Find Familiar</a> spell and can
+                    <p>You learn the <a href="/content/spell#find-familiar">Find Familiar</a> spell and can
                       cast it as a Magic action without expending a spell slot.</p>
                     <p>When you cast the spell, you choose one of the normal forms for your familiar or one of the
                       following special forms: Imp, Pseudodragon, Quasit, Skeleton, Slaad Tadpole, Sphinx of Wonder,
@@ -292,23 +289,20 @@
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 9+ Warlock</em>
                     </p>
-                    <p>You can cast <a href="/content/spells/spellarcane-eye">Arcane Eye</a> without expending a
+                    <p>You can cast <a href="/content/spell#arcane-eye">Arcane Eye</a> without expending a
                       spell slot.</p>
                     <h3 id="toc26"><span>Whispers of the Grave</span></h3>
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 7+ Warlock</em>
                     </p>
-                    <p>You can cast <a href="/content/spells/spellspeak-with-dead">Speak with Dead</a> without
+                    <p>You can cast <a href="/content/spell#speak-with-dead">Speak with Dead</a> without
                       expending a spell slot.</p>
                     <h3 id="toc27"><span>Witch Sight</span></h3>
                     <p>Source: Player's Handbook<br>
                       <em>Prerequisite: Level 15+ Warlock</em>
                     </p>
                     <p>You have Truesight with a range of 30 feet.</p>
-                  </div>
-
-
-                  <div class="page-info-break"></div>
+                  </div>                 <div class="page-info-break"></div>
                   <div class="page-options-container"></div>
                   <div id="action-area" style="display: none;"></div>
                 </div>
@@ -326,15 +320,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

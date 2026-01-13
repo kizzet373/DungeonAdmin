@@ -2,29 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>Draconic Sorcery - Koinks D&amp;D 2024</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-
-  <meta http-equiv="content-language" content="en">
-  <script type="text/javascript" src="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.js"></script>
-
-  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <title>Draconic Sorcery - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <style type="text/css">
-    body {
-      background-position: center 24px;
-    }
-  </style>
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--bootstrap/3.2.0/bootstrap.min.css">
-  <link rel="stylesheet" href="/v--4b961b7cc327/common--theme/bootstrap-base/css/style.css">
-  <link rel="stylesheet" href="/local--theme/customized-blue-test/style.css">
-  <link rel="shortcut icon" href="/local--favicon/favicon.gif">
-  <link rel="icon" type="image/gif" href="/local--favicon/favicon.gif">
-
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <script src="/scripts/global-utilities.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body id="html-body">
@@ -32,6 +19,19 @@
     <div class="container-wrap-wrap">
       <div class="container-wrap">
         <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
         <main class="content-wrap" role="main">
           <div class="container content">
             <div class="row">
@@ -40,10 +40,7 @@
                   <div class="page-title page-header"><span>Draconic Sorcery</span></div>
                   <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
                       href="/content/classes/classall">Classes</a> &raquo; <a
-                      href="/content/classes/sorcerermain">Sorcerer</a> &raquo; Draconic Sorcery</div>
-
-
-                  <div id="page-content">
+                      href="/content/classes/sorcerermain">Sorcerer</a> &raquo; Draconic Sorcery</div>                 <div id="page-content">
 
                     <p>Source: Player's Handbook</p>
                     <p><em>Breathe the Magic of Dragons</em></p>
@@ -68,25 +65,25 @@
                         </tr>
                         <tr>
                           <td>3</td>
-                          <td><a href="/content/spells/spellalter-self">Alter Self (updated)</a>, <a
-                              href="/content/spells/spellchromatic-orb">Chromatic Orb</a>, <a
-                              href="/content/spells/spellcommand">Command</a>, <a
-                              href="/content/spells/spelldragon-s-breath">Dragon's Breath</a></td>
+                          <td><a href="/content/spell#alter-self">Alter Self (updated)</a>, <a
+                              href="/content/spell#chromatic-orb">Chromatic Orb</a>, <a
+                              href="/content/spell#command">Command</a>, <a
+                              href="/content/spell#dragon-s-breath">Dragon's Breath</a></td>
                         </tr>
                         <tr>
                           <td>5</td>
-                          <td><a href="/content/spells/spellfear">Fear</a>, <a
-                              href="/content/spells/spellfly">Fly</a></td>
+                          <td><a href="/content/spell#fear">Fear</a>, <a
+                              href="/content/spell#fly">Fly</a></td>
                         </tr>
                         <tr>
                           <td>7</td>
-                          <td><a href="/content/spells/spellarcane-eye">Arcane Eye</a>, <a
-                              href="/content/spells/spellcharm-monster">Charm Monster</a></td>
+                          <td><a href="/content/spell#arcane-eye">Arcane Eye</a>, <a
+                              href="/content/spell#charm-monster">Charm Monster</a></td>
                         </tr>
                         <tr>
                           <td>9</td>
-                          <td><a href="/content/spells/spelllegend-lore">Legend Lore</a>, <a
-                              href="/content/spells/spellsummon-dragon">Summon Dragon</a></td>
+                          <td><a href="/content/spell#legend-lore">Legend Lore</a>, <a
+                              href="/content/spell#summon-dragon">Summon Dragon</a></td>
                         </tr>
                       </table>
                     </div>
@@ -102,17 +99,13 @@
                     <p>Once you use this feature, you can’t use it again until you finish a Long Rest unless you spend 3
                       Sorcery Points (no action required) to restore your use of it.</p>
                     <h3 id="toc5"><span>Level 18: Dragon Companion</span></h3>
-                    <p>You can cast <a href="/content/spells/spellsummon-dragon">Summon Dragon</a> without a
+                    <p>You can cast <a href="/content/spell#summon-dragon">Summon Dragon</a> without a
                       Material component. You can also cast it once without a spell slot, and you regain the ability to
                       cast it in this way when you finish a Long Rest.</p>
                     <p>Whenever you start casting the spell, you can modify it so that it doesn’t require Concentration.
                       If you do so, the spell’s duration becomes 1 minute for that casting.</p>
                   </div>
 
-                  <div class="page-tags"><a href="systempage-tags/tag/subclass.html#pages">subclass</a></div>
-                  <div class="page-info-break"></div>
-                  <div class="page-options-container"></div>
-                  <div id="action-area" style="display: none;"></div>
                 </div>
               </div>
             </div>
@@ -128,15 +121,6 @@
           </div>
           </footer>
       </div>
-      <script>
-        $(document).ready(function() {
-          $('#header-placeholder').load('/header.html', () => {
-            $('.dropdown-toggle').on('click', e => {
-              if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
-            });
-          });
-        });
-      </script>
 </body>
 
 </html>

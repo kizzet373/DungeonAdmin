@@ -1,0 +1,596 @@
+[
+  {
+    "type": "artisan tool",
+    "name": "Alchemist's Supplies",
+    "ability": "Intelligence",
+    "weight": "8 lb.",
+    "cost": "50 GP",
+    "utilize": [
+      "Identify a substance (DC 5)",
+      "Start a fire (DC 5)",
+      "Create a 15ft radius cloud of obscuring smoke (DC 20)"
+    ],
+    "craft": [
+      "Acid",
+      "Alchemist’s Fire",
+      "Oil"
+    ],
+    "description": "Tools used for the practice of alchemy."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Brewer's Supplies",
+    "ability": "Intelligence",
+    "weight": "9 lb.",
+    "cost": "20 GP",
+    "utilize": [
+      "Detect poisoned drink (DC 10)",
+      "Identify alcohol (DC 5)"
+    ],
+    "craft": [
+      "Wine/Mead - (Advantage on saves against being frightened)",
+      "Ale/Beer - (Advantage on Charisma skill checks while speaking to someone under the effect of alcohol)",
+      "Spirits - (Temporarily reduce the level of exhaustion by 1)"
+    ],
+    "description": "Tools and equipment necessary for brewing beverages. Effects of consuming alcohol last 1 hour and always reduce AC by 1."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Calligrapher's Supplies",
+    "ability": "Dexterity",
+    "weight": "5 lb.",
+    "cost": "10 GP",
+    "utilize": [
+      "Write text that guards against forgery (DC 10)",
+      "Mimic 10 or fewer words of someone else's handwriting (DC 10)",
+      "Duplicate a wax seal (DC 10)"
+    ],
+    "craft": [
+      "Ink",
+      "Spell Scroll",
+      "Prepare special inks that fade or become visible only under heat or specified condition"
+    ],
+    "description": "Implements used for fine writing and illumination, as well as forgeries of documents."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Carpenter's Tools",
+    "ability": "Strength",
+    "weight": "6 lb.",
+    "cost": "8 GP",
+    "utilize": [
+      "Seal or pry open a door or container (DC 10)",
+      "Reinforce a wooden structure, granting it resistance to all damage (DC 10).",
+      "Fashion a makeshift splint to stabilize a broken limb (DC 10)",
+      "Identify weak point(s) in a wooden structure (DC 10)"
+    ],
+    "craft": [
+      "Club",
+      "Greatclub",
+      "Quarterstaff",
+      "Barrel",
+      "Chest",
+      "Ladder",
+      "Pole",
+      "Portable Ram",
+      "Torch",
+      "Wooden Shield",
+      "Collapsible Ladder"
+    ],
+    "description": "Tools for working with wood."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Cartographer's Tools",
+    "ability": "Wisdom",
+    "weight": "6 lb.",
+    "cost": "15 GP",
+    "utilize": [
+      "Draft a map of a small area (DC 5)",
+      "Analyze existing map to deduce a hidden route or feature (DC 15)",
+      "Identify current location and directional orientation using a map (DC 10)",
+      "Recollect geographical location of foreign landmark or land (DC 10)"
+    ],
+    "craft": [
+      "Map",
+      "Paper made from various materials",
+      "Colored Ink"
+    ],
+    "description": "Instruments for creating maps and charts."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Cook's Utensils",
+    "ability": "Wisdom",
+    "weight": "8 lb.",
+    "cost": "1 GP",
+    "utilize": [
+      "Improve food’s flavor, granting advantage on Wisdom Perception checks for 1 hour (DC 10)",
+      "Detect spoiled or poisoned food (DC 10)"
+    ],
+    "craft": [
+      "Rations",
+      "Cookware",
+      "Hearty Meal"
+    ],
+    "description": "Implements for preparing and cooking food."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Jeweler's Tools",
+    "ability": "Intelligence",
+    "weight": "2 lb.",
+    "cost": "25 GP",
+    "utilize": [
+      "Discern a gem’s value (DC 10)",
+      "Temporarily enhance a magic item, granting the wielder advantage on a saving throw of your choice for 1 hour. (DC 15)",
+      "Carefully clean and polish gemstones to increase their perceived value for trade by 50%. (DC 15)"
+    ],
+    "craft": [
+      "Arcane Focus",
+      "Holy Symbol",
+      "A setting for a specific gem"
+    ],
+    "description": "Tools for crafting and appraising jewelry."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Leatherworker's Tools",
+    "ability": "Dexterity",
+    "weight": "5 lb.",
+    "cost": "5 GP",
+    "utilize": [
+      "Determine toughness of an animal's hide (DC 5)",
+      "Add a design to a leather item (DC 10)"
+    ],
+    "craft": [
+      "Sling",
+      "Whip",
+      "Hide Armor",
+      "Leather Armor",
+      "Studded Leather Armor",
+      "Backpack",
+      "Crossbow Bolt Case",
+      "Map or Scroll Case",
+      "Parchment",
+      "Pouch",
+      "Quiver",
+      "Waterskin"
+    ],
+    "description": "Tools for working with leather."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Mason's Tools",
+    "ability": "Strength",
+    "weight": "8 lb.",
+    "cost": "10 GP",
+    "utilize": [
+      "Chisel a symbol or hole in stone (DC 10)",
+      "Identify weak points in stone structures (DC 10)"
+    ],
+    "craft": [
+      "Block and Tackle"
+    ],
+    "description": "Tools for shaping and working with stone."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Painter's Supplies",
+    "ability": "Wisdom",
+    "weight": "5 lb.",
+    "cost": "10 GP",
+    "utilize": [
+      "Paint a recognizable image of something you've seen (DC 10)",
+      "Create a convincing forgery of a painting or symbol (DC 15)",
+      "Mix pigments that glow faintly in the dark for 1 hour (DC 5)",
+      "Camouflage for one creature's equipment (for a particular environment)"
+    ],
+    "craft": [
+      "High-quality brush",
+      "Druidic Focus",
+      "Holy Symbol"
+    ],
+    "description": "Materials and tools for painting."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Smith's Tools",
+    "ability": "Strength",
+    "weight": "8 lb.",
+    "cost": "20 GP",
+    "utilize": [
+      "Pry open a door or container (DC 10)",
+      "Weld up to 5ft of metal (DC 10) (DC 20 Strength check to break)",
+      "Identify any flaws or weaknesses in metalwork"
+    ],
+    "craft": [
+      "Any Melee weapon (except Club)",
+      "Greatclub",
+      "Quarterstaff",
+      "and Whip)",
+      "Medium armor (except Hide)",
+      "Heavy armor",
+      "Ball Bearings",
+      "Bucket",
+      "Caltrops",
+      "Chain",
+      "Crowbar",
+      "Firearm Bullets",
+      "Grappling Hook",
+      "Iron Pot",
+      "Iron Spikes",
+      "Sling Bullets"
+    ],
+    "description": "Tools for working with metal."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Tinker's Tools",
+    "ability": "Dexterity",
+    "weight": "10 lb.",
+    "cost": "50 GP",
+    "utilize": [
+      "Assemble a Tiny item composed of scrap, which falls apart in 1 minute (DC 20)",
+      "Disable a simple mechanical device (DC-10)",
+      "Create a noise of your choice that can be heard from 60 feet away (DC-5)."
+    ],
+    "craft": [
+      "Musket",
+      "Pistol",
+      "Bell",
+      "Bullseye Lantern",
+      "Flask",
+      "Hooded Lantern",
+      "Hunting Trap",
+      "Lock",
+      "Manacles",
+      "Mirror",
+      "Shovel",
+      "Signal Whistle",
+      "Tinderbox"
+    ],
+    "description": "A variety of tools for making and repairing small mechanisms."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Weaver's Tools",
+    "ability": "Dexterity",
+    "weight": "5 lb.",
+    "cost": "1 GP",
+    "utilize": [
+      "Mend a tear in clothing (DC 5)",
+      "sew a Tiny design (DC 5)",
+      "Reinforce light armor or clothing to grant a temporary +1 bonus to AC for 1 hour (DC 20)"
+    ],
+    "craft": [
+      "Padded Armor",
+      "Basket",
+      "Bedroll",
+      "Blanket",
+      "Fine Clothes",
+      "Net",
+      "Robe",
+      "Rope",
+      "Sack",
+      "String",
+      "Tent",
+      "Traveler's Clothes"
+    ],
+    "description": "Tools for weaving fabric and creating textiles."
+  },
+  {
+    "type": "artisan tool",
+    "name": "Woodcarver's Tools",
+    "ability": "Dexterity",
+    "weight": "5 lb.",
+    "cost": "1 GP",
+    "utilize": [
+      "Carve a pattern in wood (DC 10)",
+      "Identify a tree and its wood quality (DC 10)"
+    ],
+    "craft": [
+      "Club",
+      "Greatclub",
+      "Quarterstaff",
+      "Ranged weapons (except Pistol",
+      "Musket",
+      "and Sling)",
+      "Arcane Focus",
+      "Arrows",
+      "Bolts",
+      "Druidic Focus",
+      "Ink Pen",
+      "Needles"
+    ],
+    "description": "Tools for shaping and carving wood."
+  },
+  {
+    "type": "specialty tool",
+    "name": "Disguise Kit",
+    "ability": "Charisma",
+    "weight": "3 lb.",
+    "cost": "25 GP",
+    "utilize": [
+      "Apply makeup to look older, look wounded, etc (DC 10)",
+      "Identify whether a creature is disguised (DC 10)"
+    ],
+    "craft": [
+      "Costume",
+      "False facial hair and wig",
+      "Mask"
+    ],
+    "description": "A collection of cosmetics, hair dye, and small props for creating disguises."
+  },
+  {
+    "type": "specialty tool",
+    "name": "Herbalism Kit",
+    "ability": "Intelligence",
+    "weight": "3 lb.",
+    "cost": "5 GP",
+    "utilize": [
+      "Identify a plant (DC 5)",
+      "Create a soothing balm that grants advantage on saving throws against disease and poison for 1 hour (DC 15)",
+      "Prepare herbs to mask a scent (DC 10)"
+    ],
+    "craft": [
+      "Antitoxin",
+      "Candle",
+      "Healer’s Kit",
+      "Potion of Healing"
+    ],
+    "description": "A collection of tools and ingredients for identifying and using herbs."
+  },
+  {
+    "type": "specialty tool",
+    "name": "Navigator's Tools",
+    "ability": "Wisdom",
+    "weight": "2 lb.",
+    "cost": "25 GP",
+    "utilize": [
+      "Determine position from stars and environment (DC 15)",
+      "Determine the current weather patterns (DC 10)",
+      "Estimate travel time to a known location (DC 10)"
+    ],
+    "craft": [
+      "A rudimentary compass"
+    ],
+    "description": "Instruments used for navigation, especially at sea."
+  },
+  {
+    "type": "specialty tool",
+    "name": "Poisoner's Kit",
+    "ability": "Intelligence",
+    "weight": "2 lb.",
+    "cost": "50 GP",
+    "utilize": [
+      "Detect a poisoned object (DC 10)",
+      "Safely extract a mild venom from a poisonous creature (DC 20)"
+    ],
+    "craft": [
+      "Basic Poison",
+      "Antidote"
+    ],
+    "description": "Equipment and ingredients for creating poisons."
+  },
+  {
+    "type": "specialty tool",
+    "name": "Thieves' Tools",
+    "ability": "Dexterity",
+    "weight": "1 lb.",
+    "cost": "25 GP",
+    "utilize": [
+      "Pick a simple lock (DC 10)",
+      "disarm a simple trap (DC 10)",
+      "Jam a simple lock temporarily (DC 10)"
+    ],
+    "craft": [
+      "Caltrop",
+      "Lockpick"
+    ],
+    "description": "A set of specialized tools used for picking locks and disarming traps."
+  },
+  {
+    "type": "gaming set",
+    "name": "Dice",
+    "ability": "Wisdom",
+    "weight": "-",
+    "cost": "1 SP",
+    "utilize": [
+      "You can reroll a single roll in the next 1 minute (DC 15)",
+      "Discern whether someone is cheating (DC 10)",
+      "Cheat secretly for a more positive outcome (DC 10)",
+      "Win the game (DC 20)"
+    ],
+    "craft": [
+      "Dice"
+    ],
+    "description": "A set of dice used for various games of chance. (Suggestion: Roll 4d6. Keep them hidden. 2 rounds of betting.)"
+  },
+  {
+    "type": "gaming set",
+    "name": "Dragonchess",
+    "ability": "Intelligence",
+    "weight": "-",
+    "cost": "1 GP",
+    "utilize": [
+      "Increase your focus, granting +1 to your initiative for 10 minutes (DC 15)",
+      "Gain insight about your opponents next move (DC 15)",
+      "Win the game (DC 20)"
+    ],
+    "craft": [
+      "Chess piece"
+    ],
+    "description": "A complex strategy game played on a multi-tiered board. (Suggestion: Use a chess puzzle)"
+  },
+  {
+    "type": "gaming set",
+    "name": "Playing Cards",
+    "ability": "Charisma",
+    "weight": "-",
+    "cost": "5 SP",
+    "utilize": [
+      "You have advantage on Charisma (deception) rolls for 1 minute (DC 15)",
+      "Discern whether someone is cheating (DC 10)",
+      "Cheat secretly for a more positive outcome (DC 10)",
+      "Win the game (DC 20)"
+    ],
+    "craft": [],
+    "description": "A deck of cards used for various games. (Suggestion: Each player draws a card or rolls a d10. Can tell either a lie or the truth about your card number. You get that many points unless you are called out on a lie. A player loses 7 points for wrongly calling a bluff.)"
+  },
+  {
+    "type": "gaming set",
+    "name": "Three-dragon Ante",
+    "ability": "Wisdom",
+    "weight": "-",
+    "cost": "1 GP",
+    "utilize": [
+      "You have advantage on Wisdom (insight) rolls for 1 minute (DC 15)",
+      "Discern whether someone is cheating (DC 10)",
+      "Cheat secretly for a more positive outcome (DC 10)",
+      "Win the game (DC 20)"
+    ],
+    "craft": [],
+    "description": "A popular card game involving betting and dragon imagery. (Suggestion: Each player draws 6 cards or rolls 6d10 secretly. Reveal 3 and line them in a single row. After everyone reveals, arrange the remaining 3 behind each card in the first row, still hidden, creating 3 columns of 2. Simultaneously, reveal the hidden row. Whoever has the highest total for the most columns wins. If it's a tie, the tied players play another round until there is a winner."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Bagpipes",
+    "ability": "Charisma",
+    "weight": "6 lb.",
+    "cost": "30 GP",
+    "utilize": [
+      "Play a calming melody, imposing disadvantage on Wisdom (Insight) checks against a creature you can see for 1 minute (DC 15)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A wind instrument with reeds and a bag."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Drum",
+    "ability": "Charisma",
+    "weight": "3 lb.",
+    "cost": "6 GP",
+    "utilize": [
+      "Beat a steady rhythm, allowing each creature within 30 feet to ignore the effects of exhaustion for 1 minute (DC 15)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A percussion instrument with a stretched membrane."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Dulcimer",
+    "ability": "Charisma",
+    "weight": "10 lb.",
+    "cost": "25 GP",
+    "utilize": [
+      "Play a delicate melody, granting each creature advantage on Wisdom (animal handling) checks against any animals who heard it (DC 10)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A stringed instrument played by striking the strings with hammers."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Flute",
+    "ability": "Charisma",
+    "weight": "1 lb.",
+    "cost": "2 GP",
+    "utilize": [
+      "Play a luring melody to attract harmless birds and rodents (DC 10)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A wind instrument with finger holes."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Horn",
+    "ability": "Charisma",
+    "weight": "2 lb.",
+    "cost": "3 GP",
+    "utilize": [
+      "Sound a powerful blast, granting advantage to allies on Charisma (Intimidation) checks for 1 minute against other creatures that heard it (DC 15)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A brass instrument, often made from an animal horn."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Lute",
+    "ability": "Charisma",
+    "weight": "2 lb.",
+    "cost": "35 GP",
+    "utilize": [
+      "Strum a rhythmic tune, granting any allies who heard it advantage for 1 minute on the next Constitution saving throw to maintain concentration (DC 15)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A stringed instrument with a rounded body and a fretted neck."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Lyre",
+    "ability": "Charisma",
+    "weight": "2 lb.",
+    "cost": "30 GP",
+    "utilize": [
+      "Pluck chords of dissonance, directed towards a single creature. For 1 minute, the first time that creature causes a saving throw, all creatures have advantage on it (DC 15)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A stringed instrument with a U-shaped frame."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Pan Flute",
+    "ability": "Charisma",
+    "weight": "2 lb.",
+    "cost": "12 GP",
+    "utilize": [
+      "Play a hypnotic tune, directed towards a single creature. For 1 minute, the first time that creature attacks, it has disadvantage on all attacks for the turn (DC 15).",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A wind instrument consisting of multiple pipes of varying lengths."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Shawm",
+    "ability": "Charisma",
+    "weight": "1 lb.",
+    "cost": "2 GP",
+    "utilize": [
+      "Play a painfully shrill chord. For 1 minute, each hostile creature that heard the note has disadvantage on it's first attack against any creature other than you (DC 15)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A double-reed woodwind instrument with a piercing sound."
+  },
+  {
+    "type": "musical instrument",
+    "name": "Viol",
+    "ability": "Charisma",
+    "weight": "1 lb.",
+    "cost": "30 GP",
+    "utilize": [
+      "Play a melancholic tune to evoke feelings, granting to each creature who heard it advantage on death saving throws for 1 minute (DC 15)",
+      "Play a known tune (DC 10)",
+      "improvise a song (DC 15)"
+    ],
+    "craft": [],
+    "description": "A bowed string instrument, an ancestor of the violin."
+  }
+]

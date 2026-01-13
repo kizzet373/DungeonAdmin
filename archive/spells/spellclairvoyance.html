@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Clairvoyance - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Clairvoyance</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/all-spells">All Spells</a> &raquo; Clairvoyance</div>
+
+
+                  <div id="page-content">
+
+                    <p id="source">source: Player's Handbook</p>
+                    <p><em id="spell-level-label">Level 3 Divination (Bard, Cleric, Sorcerer, Wizard)</em></p>
+                    <p><strong>Casting Time:</strong><span id="casting-time"> 10 minutes</span><br>
+                      <strong>Range:</strong><span id="range"> 1 mile</span><br>
+                      <strong>Components:</strong><span id="components"> V, S, M (a focus worth 100+ GP, either a jeweled horn for hearing or
+                      a glass eye for seeing)</span><br>
+                      <strong>Duration:</strong><span id="duration"> Concentration, up to 10 minutes
+                    </p><div id="description">
+                    <p>You create an Invisible sensor within range in a location familiar to you (a place you have
+                      visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a
+                      door, around a corner, or in a grove of trees). The intangible, invulnerable sensor remains in
+                      place for the duration.</p>
+                    <p>When you cast the spell, choose seeing or hearing. You can use the chosen sense through the
+                      sensor as if you were in its space. As a Bonus Action, you can switch between seeing and hearing.</span>
+                    </p>
+                    <p>A creature that sees the sensor (such as a creature benefiting from See Invisibility or
+                      Truesight) sees a luminous orb about the size of your fist.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(() => {
+      $('.dropdown-toggle').on('click', e => {
+        if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+      });
+    });
+  </script>
+</body>
+
+</html>

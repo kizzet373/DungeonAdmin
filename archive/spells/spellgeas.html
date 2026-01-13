@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Geas - Koinks D&amp;D 2024</title>
+
+  <head>
+  <title>Druidcraft - Koinks D&amp;D 2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/scripts/google-auth.js"></script>
+  <link href="/v--4b961b7cc327/common--fonts/awesome/3.2.1/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/local--theme/global-css/theme_standard-blue.css">
+</head>
+
+<body id="html-body">
+  <div id="skrollr-body">
+    <div class="container-wrap-wrap">
+      <div class="container-wrap">
+        <div id="header-placeholder"></div>
+        <script>
+          fetch('/header.html')
+            .then(response => response.text())
+            .then(htmlContent => {
+              document.getElementById('header-placeholder').outerHTML = htmlContent;
+              checkAuthStatus();
+            })
+            .then(() => {
+              $('.dropdown-toggle').on('click', e => {
+                if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+              });
+            })
+        </script>
+        <main class="content-wrap" role="main">
+          <div class="container content">
+            <div class="row">
+              <div class="main-content-wrap col-md-12">
+                <div class="main-content">
+                  <div class="page-title page-header"><span>Geas</span></div>
+                  <div class="breadcrumbs"><a href="/index">Home</a> &raquo; <a
+                      href="/content/all-spells">All Spells</a> &raquo; Geas</div>
+
+
+                  <div id="page-content">
+
+                    <p id="source">source: Player's Handbook</p>
+                    <p><em id="spell-level-label">Level 5 Enchantment (Bard, Cleric, Druid, Paladin, Wizard)</em></p>
+                    <p><strong>Casting Time:</strong><span id="casting-time"> 1 minute</span><br>
+                      <strong>Range:</strong><span id="range"> 60 feet</span><br>
+                      <strong>Components:</strong><span id="components"> V</span><br>
+                      <strong>Duration:</strong><span id="duration"> 30 days</span>
+                    </p><div id="description">
+                    <p>You give a verbal command to a creature that you can see within range, ordering it to carry out
+                      some service or refrain from an action or a course of activity as you decide. The target must
+                      succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target
+                      automatically succeeds if it can’t understand your command.</p>
+                    <p>While Charmed, the creature takes 5d10 Psychic damage if it acts in a manner directly counter to
+                      your command. It takes this damage no more than once each day.</p>
+                    <p>You can issue any command you choose, short of an activity that would result in certain death.
+                      Should you issue a suicidal command, the spell ends.</p>
+                    <p>A <a href="/content/spell#remove-curse">Remove Curse</a>, <a
+                        href="/content/spell#greater-restoration">Greater Restoration</a>, or <a
+                        href="/content/spell#wish">Wish</a> spell ends this spell.</p>
+                    <p><strong>Using a Higher-Level Spell Slot.</strong> If you use a level 7 or 8 spell slot, the
+                      duration is 365 days. If you use a level 9 spell slot, the spell lasts until it is ended by one of
+                      the spells mentioned above.</p>
+
+
+
+                  </div></div>
+
+                  <div class="page-tags"><a href="/systempage-tags/tag/bard.html#pages">bard</a><a
+                      href="/systempage-tags/tag/cleric.html#pages">cleric</a><a
+                      href="/systempage-tags/tag/druid.html#pages">druid</a><a
+                      href="/systempage-tags/tag/enchantment.html#pages">enchantment</a><a
+                      href="/systempage-tags/tag/fifth.html#pages">fifth</a><a
+                      href="/systempage-tags/tag/paladin.html#pages">paladin</a><a
+                      href="/systempage-tags/tag/wizard.html#pages">wizard</a></div>
+                  <div class="page-info-break"></div>
+                  <div class="page-options-container"></div>
+                  <div id="action-area" style="display: none;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer-wrap" role="contentinfo">
+          <div class="container footer">
+
+            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
+                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+                Attribution-ShareAlike 3.0 License</a></div>
+          </div>
+          </footer>
+      </div>
+      <script>
+        $(document).ready(() => {
+          $('.dropdown-toggle').on('click', e => {
+            if ($(window).width() <= 768) $(e.target).next().toggleClass('open');
+          });
+        });
+      </script>
+</body>
+
+</html>
