@@ -5500,7 +5500,7 @@
     },
     {
         "name": "Summon Warrior Spirit",
-        "UA": false,
+        "UA": true,
         "source": "Unearthed Arcana 85 - Wonders of the Multiverse",
         "school": "conjuration",
         "level": 3,

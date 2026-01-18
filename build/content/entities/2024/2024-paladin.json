@@ -1,0 +1,286 @@
+{
+  "name": "Paladin",
+  "source": "Player's Handbook",
+  "class description": "<p>Paladins are united by their oaths to stand against the forces of annihilation and corruption. Whether sworn before a god's altar, in a sacred glade before nature spirits or in a moment of desperation and grief with the dead as the only witness, a Paladin's oath is a powerful bond. It is a source of power that turns a devout warrior into a blessed champion.<br>\nPaladins train to learn the skills of combat, mastering a variety of weapons and armor. Even so, their martial skills are secondary to the magical power they wield: power to heal the injured, smite their foes, and protect the helpless and those who fight at their side.<br>\nAlmost by definition, the life of a Paladin is an adventuring life, for every Paladin lives on the lines of the cosmic struggle against annihilation. Fighters are rare enough among the ranks of the world's armies, but even fewer can claim the calling of a Paladin. When they do receive the call, these blessed folk turn from their former occupations and take up arms and magic.</p>",
+  "core traits": [
+    {
+      "name": "Primary Ability",
+      "html description": "Strength and Charisma"
+    },
+    {
+      "name": "Hit Point Die",
+      "html description": "D10 per Paladin level"
+    },
+    {
+      "name": "Saving Throw Proficiencies",
+      "html description": "Wisdom and Charisma"
+    },
+    {
+      "name": "Skill Proficiencies",
+      "html description": "Choose 2: Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion"
+    },
+    {
+      "name": "Weapon Proficiencies",
+      "html description": "Simple and Martial weapons"
+    },
+    {
+      "name": "Armor Training",
+      "html description": "Light, Medium and Heavy armor and Shields"
+    },
+    {
+      "name": "Starting Equipment",
+      "html description": "Choose A or B: (A) Chain Mail, Shield, Longsword, 6 Javelins, Holy Symbol, Priest's Pack and 9 GP; or (B) 150 GP"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Paladin spell list",
+      "url": "/paladin:spell-list"
+    },
+    {
+      "name": "Oath of Devotion",
+      "url": "/paladin:oath-of-devotion"
+    },
+    {
+      "name": "Oath of Glory",
+      "url": "/paladin:oath-of-glory"
+    },
+    {
+      "name": "Oath of the Ancients",
+      "url": "/paladin:oath-of-the-ancients"
+    },
+    {
+      "name": "Oath of the Noble Genies",
+      "url": "/paladin:oath-of-the-noble-genies"
+    },
+    {
+      "name": "Oath of Vengeance",
+      "url": "/paladin:oath-of-vengeance"
+    }
+  ],
+  "multiclass requirements": [],
+  "multiclass characteristics": [
+    {
+      "name": "Gained Traits",
+      "html_content": "<ul>\n<li>Gain the following traits from the Core Paladin Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.</li>\n<li>Gain the Paladin's level 1 features, which are listed in the Paladin Features table. See the multiclassing rules in <a href=\"/class:multiclassing\">multiclassing</a> to determine your available spell slots.</li>\n</ul>"
+    }
+  ],
+  "class feature table": [
+    {
+      "name": "Class Feature Table",
+      "columns": [
+        "Level",
+        "Channel Divinity",
+        "Prepared Spells",
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th"
+      ],
+      "rows": [
+        [
+          "1",
+          "-",
+          "2",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "-",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "2",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "2",
+          "5",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "2",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "2",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "2",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "2",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-"
+        ],
+        [
+          "14",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-"
+        ],
+        [
+          "15",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "16",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "17",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1"
+        ],
+        [
+          "18",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1"
+        ],
+        [
+          "19",
+          "3",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2"
+        ],
+        [
+          "20",
+          "3",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2"
+        ]
+      ]
+    }
+  ],
+  "features": []
+}

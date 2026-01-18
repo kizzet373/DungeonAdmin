@@ -209,8 +209,20 @@
                         generateDiv("spell_levels_container", "", []),
                         generateButton("addSpellLevel", "btn btn-success mb-3", "Add Next Spell Table", "", `createSpellLevelTable()`)
                     ])
+                ]),
+                generateView("notes", "Notes", "main-section", false, [
+                  generateDiv("", "campaign-notes-header secondary-section col-11 col-md-9", [
+                    generateCollapsible("campaign_notes_container", "Campaign Notes ▼", "", false, [
+                      generateInput({ id: "campaign_notes", title: "", model: "campaign_notes", containerClasses: "col-12 col-md-12", type: "textarea" })
+                    ])
+                  ]),
+                  generateDiv("", "misc-notes-header secondary-section col-11 col-md-9", [
+                    generateCollapsible("misc_notes_container", "Misc Notes ▼", "", false, [
+                      generateInput({ id: "misc_notes", title: "", model: "misc_notes", containerClasses: "col-12 col-md-12", type: "textarea" })
+                    ])
+                  ])
                 ])
-            ];
+              ];
         }
 
         function characterSheet() {
@@ -299,7 +311,7 @@
     
     <div class="sheet-container tab-content" style="display: none;">
         <div id="character-sidebar">
-            <ul class="nav nav-pills flex-column row" id="character-tabs" role="tablist"></ul>
+            <ul class="nav nav-pills flex-column row row-cols-7" id="character-tabs" role="tablist"></ul>
         </div>
     </div>
 

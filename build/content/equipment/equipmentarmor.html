@@ -1,13 +1,15 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
 <head>
   <title>Armor - Dungeon Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
   <meta http-equiv="content-language" content="en">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/scripts/all-entity-page-manager.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.7/cdn.min.js" defer></script>
 
@@ -27,10 +29,8 @@
         <script>
           fetch('/header.html')
             .then(res => res.text())
-            .then(html => {
-              document.getElementById('header-placeholder').outerHTML = html;
-            })
-            .catch(error => console.error('all-magic-items.html: Error loading header:', error));
+            .then(html => { document.getElementById('header-placeholder').outerHTML = html; })
+            .catch(error => console.error('Error loading header:', error));
         </script>
 
         <main class="content-wrap" role="main">
@@ -40,86 +40,83 @@
                 <div class="main-content">
                   <div class="page-title page-header"><span>Armor</span></div>
                   <div class="breadcrumbs"><a href="/index">Home</a> &raquo; Armor</div>
+
                   <div id="page-content">
-                    <p><strong>Category:</strong> Light, Medium, or Heavy. The category determines how long it takes to
-                      don or doff the armor.</p>
+                    <p><strong>Category:</strong> Light, Medium, or Heavy. The category determines how long it takes to don or doff the armor.</p>
                     <p><strong>Armor Class (AC):</strong> Tells you what your base AC is when you wear the armor.</p>
-                    <p><strong>Requirements:</strong> Armor reduces the wearer’s speed by 10 feet unless the wearer
-                      meets the Strength requirement.</p>
+                    <p><strong>Requirements:</strong> Armor reduces the wearer’s speed by 10 feet unless the wearer meets the Strength requirement.</p>
+
                     <h5 id="toc0"><span>Armor</span></h5>
-                    <h6 id="toc1"><span>Light Armor (1 Minute to Don or Doff)</span></h6>
-                    <div class="tab-container" x-data="armorsDisplay" x-init="init()">
+
+                    <!-- Alpine root -->
+                    <div class="tab-container" x-data="armorsDisplay()" x-cloak>
                       <div x-show="!isReady" class="loading-spinner"></div>
+
                       <template x-if="isReady">
                         <div id="isReadyContainer">
-                          
-                          <div class="tab-divst" id="tab-divst">
-                            <template x-for="(tabValue) in uniqueRarities" :key="tabValue">
-                              <div class="tab-item text-capitalize" :class="{'active': activeTab === tabValue}" @click="EPManager.setFilter('rarity', tabValue)" x-text="tabValue"></div>
+                          <div class="tab-divst">
+                            <template x-for="type in Object.keys(armorsByType)" :key="type">
+                              <div
+                                class="tab-item text-capitalize"
+                                :class="{ 'active': activeTab === type }"
+                                @click="selectTab(type)"
+                                x-text="type">
+                              </div>
                             </template>
                           </div>
 
-                          <div class="tab-content-container"></div>
-                          <template x-for="(armor, i) in armorsByType">
-                      <div class="tab-divst" id="tab-divst">
-                        <template x-for="(armors, type) in armorsByType" :key="type">
-                          <div class="tab-item text-capitalize" :data-tab="getTabId(type)" x-text="type"
-                            @click="window.location.hash = `#${type.split(' ')[0]}`"></div>
-                        </template>
-                      </div>
-                      <div class="tab-content-container">
-                        <template x-for="(armors, type) in armorsByType" :key="type">
-                          <div class="tab-content" :id="getTabId(type)">
-                            <table class="table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th>Name</th>
-                                  <th>Armor Class(AC)</th>
-                                  <th>Requirements</th>
-                                  <th>Stealth</th>
-                                  <th>Weight</th>
-                                  <th>Cost</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <template x-for="armor in armors" :key="armor.name">
-                                  <tr>
-                                    <td class="fw-bold" style="white-space: nowrap;" x-text="armor.name"></td>
-                                    <td x-text="armor.armor_class"></td>
-                                    <td x-text="armor.strength_requirement"></td>
-                                    <td x-text="armor.stealth"></td>
-                                    <td x-text="armor.weight"></td>
-                                    <td x-text="armor.cost"></td>
-                                  </tr>
-                                </template>
-                              </tbody>
-                            </table>
+                          <div class="tab-content-container">
+                            <template x-for="(armors, type) in armorsByType" :key="type">
+                              <div class="tab-content" x-show="activeTab === type" :class="{ 'active': activeTab === type }">
+                                <table class="table table-bordered table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th>Name</th>
+                                      <th>Armor Class (AC)</th>
+                                      <th>Requirements</th>
+                                      <th>Stealth</th>
+                                      <th>Weight</th>
+                                      <th>Cost</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <template x-for="armor in armors" :key="armor.name">
+                                      <tr>
+                                        <td class="fw-bold" style="white-space: nowrap;" x-text="armor.name"></td>
+                                        <td x-text="armor.armor_class"></td>
+                                        <td x-text="armor.strength_requirement"></td>
+                                        <td x-text="armor.stealth"></td>
+                                        <td x-text="armor.weight"></td>
+                                        <td x-text="armor.cost"></td>
+                                      </tr>
+                                    </template>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </template>
                           </div>
-                        </template>
-                      </div>
+                        </div>
+                      </template>
                     </div>
+
                     <h1 id="toc5"><span>Armor Training</span></h1>
-                    <p>Anyone can don armor or hold a Shield, but only those with training can use them effectively, as
-                      explained below. A character’s class and other features determine the character’s armor training.
-                      A monster has training with any armor in its stat block.</p>
+                    <p>Anyone can don armor or hold a Shield, but only those with training can use them effectively, as explained below. A character’s class and other features determine the character’s armor training. A monster has training with any armor in its stat block.</p>
+
                     <h5 id="toc6"><span>Light, Medium, or Heavy Armor</span></h5>
-                    <p>If you wear Light, Medium, or Heavy armor and lack training with it, you have Disadvantage on any
-                      D20 Test that involves Strength or Dexterity, and you can't cast spells.</p>
+                    <p>If you wear Light, Medium, or Heavy armor and lack training with it, you have Disadvantage on any D20 Test that involves Strength or Dexterity, and you can't cast spells.</p>
+
                     <h5 id="toc7"><span>Shield</span></h5>
                     <p>You gain the Armor Class benefit of a Shield only if you have training with it.</p>
+
                     <h1 id="toc8"><span>One at a Time</span></h1>
                     <p>A creature can wear only one suit of armor at a time and wield only one Shield at a time.</p>
+
                     <h5 id="toc9"><span>Variant: Equipment Sizes</span></h5>
-                    <p>In most campaigns, you can use or wear any equipment that you find on your adventures, within the
-                      bounds of common sense. For example, an orc adventurer won't fit in a halfling's Leather Armor,
-                      and a cloud giant’s robe would be far too large for a gnome.</p>
-                    <p>The DM can impose more realism. For example, a suit of Plate Armor made for one human might not
-                      fit another one without significant alterations, and a guard's uniform might be visibly
-                      ill-fitting when an adventurer tries to wear it as a disguise.</p>
-                    <p>Using this variant, when adventurers find armor, clothing, and similar items that are made to be
-                      worn, they might need to visit a smith, a tailor, a leatherworker, or a similar expert to make the
-                      item wearable. The cost for such work is 1d4 X 10 percent of the market price of the item.</p>
+                    <p>In most campaigns, you can use or wear any equipment that you find on your adventures, within the bounds of common sense. For example, an orc adventurer won't fit in a halfling's Leather Armor, and a cloud giant’s robe would be far too large for a gnome.</p>
+                    <p>The DM can impose more realism. For example, a suit of Plate Armor made for one human might not fit another one without significant alterations, and a guard's uniform might be visibly ill-fitting when an adventurer tries to wear it as a disguise.</p>
+                    <p>Using this variant, when adventurers find armor, clothing, and similar items that are made to be worn, they might need to visit a smith, a tailor, a leatherworker, or a similar expert to make the item wearable. The cost for such work is 1d4 X 10 percent of the market price of the item.</p>
                   </div>
+
                   <div class="page-info-break"></div>
                   <div class="page-options-container"></div>
                   <div id="action-area" style="display: none;"></div>
@@ -127,121 +124,99 @@
               </div>
             </div>
           </div>
+
           <script>
+            // Keep your existing load flow
             $(document).ready(function () {
-              document.addEventListener('globalEditionHandled', async (event) => {
+              document.addEventListener('globalEditionHandled', async () => {
                 await loadEntity(window.currentGlobalEdition, 'armors');
-              });
-
-              function getTabIdFromHash() {
-                const hash = window.location.hash.substring(1).toLowerCase();
-                const $tabItems = $(".tab-item");
-                const firstTab = $tabItems.first().data("tab");
-
-                if (!hash) return firstTab;
-
-                const $matchingTab = $tabItems.filter(function () {
-                  return $(this).text().toLowerCase().includes(hash);
-                });
-
-                return $matchingTab.length > 0 ? $matchingTab.data("tab") : firstTab;
-              }
-
-              function activateTab(tabId) {
-                $(".tab-item, .tab-content").removeClass("active");
-                $(`.tab-item[data-tab="${tabId}"], #${tabId}`).addClass("active");
-              }
-
-              activateTab(getTabIdFromHash());
-
-              $(window).on("hashchange", function () {
-                activateTab(getTabIdFromHash());
-              });
-
-              $(".tab-item").on("click", function () {
-                activateTab($(this).data("tab"));
               });
             });
 
+            // Alpine component
             document.addEventListener('alpine:init', () => {
-              Alpine.data('armorsDisplay', () => {
+              Alpine.data('armorsDisplay', function () {
                 return {
                   armorsByType: {},
                   activeTab: '',
+                  isReady: false,
 
                   init() {
-                    document.addEventListener('armorsLoaded', (event) => {
-                      if (!window.entities || !window.entities["armors"]) {
-                        console.error("armors: armorsLoaded event fired but armors is still empty.");
-                        return;
-                      }
+                    const hydrate = () => {
+                      const armors = window.entities?.armors;
 
-                      this.groupArmorsByType;
-                      this.setupTabs;
+                      if (Array.isArray(armors) && armors.length) {
+                        this.armorsByType = this.groupArmorsByType(armors);
 
-                      queueMicrotask(() => {
+                        const types = Object.keys(this.armorsByType);
+                        const hash = window.location.hash.substring(1).toLowerCase();
+                        const match = hash ? types.find(t => t.toLowerCase().includes(hash)) : null;
+
+                        this.activeTab = match || types[0] || '';
                         this.isReady = true;
-                      });
-                    });
+                        return true;
+                      } 
+                      return false;
+                    };
+
+                    // try immediately; if not ready, keep waiting
+                    if (hydrate()) return;
+
+                    const tick = () => {
+                      if (!hydrate()) requestAnimationFrame(tick);
+                    };
+                    tick();
+                  },
+
+                  selectTab(type) {
+                    this.activeTab = type;
+                    window.location.hash = `#${type.split(' ')[0]}`;
                   },
 
                   groupArmorsByType(armors) {
-                    return armors.reduce((acc, armor) => {
-                      if (!acc[armor.type]) {
-                        acc[armor.type] = [];
-                      }
-                      acc[armor.type].push(armor);
+                    const getBaseAC = (ac) => {
+                      if (!ac) return 0;
+
+                      // "+2" → 2
+                      if (ac.trim().startsWith('+')) return parseInt(ac, 10) || 0;
+
+                      // "14 + Dex modifier (max 2)" → 14
+                      const match = ac.match(/\d+/);
+                      return match ? parseInt(match[0], 10) : 0;
+                    };
+
+                    const grouped = armors.reduce((acc, armor) => {
+                      (acc[armor.type] ??= []).push(armor);
                       return acc;
                     }, {});
-                  },
-                  getTabId(type) {
-                    return type.toLowerCase().replace(/ /g, '-');
-                  },
-                  setupTabs() {
-                    const tabDivst = document.getElementById('tab-divst');
-                    const tabContentContainer = document.querySelector('.tab-content-container');
-                    const tabItems = tabDivst.querySelectorAll('.tab-item');
-                    const tabContents = tabContentContainer.querySelectorAll('.tab-content');
 
-                    if (tabItems.length > 0) {
-                      this.selectTab(tabItems[0].getAttribute('data-tab'));
+                    // Sort each group by AC ascending
+                    for (const type in grouped) {
+                      grouped[type].sort((a, b) => getBaseAC(a.armor_class) - getBaseAC(b.armor_class));
                     }
-                  },
-                  selectTab(tabId) {
-                    this.activeTab = tabId;
-                    const tabItems = document.querySelectorAll('.tab-item');
-                    const tabContents = document.querySelectorAll('.tab-content');
 
-                    tabItems.forEach(item => item.classList.remove('active'));
-                    tabContents.forEach(content => content.classList.remove('active'));
-
-                    const selectedTabItem = document.querySelector(`.tab-item[data-tab="${tabId}"]`);
-                    const selectedTabContent = document.getElementById(tabId);
-
-                    if (selectedTabItem) {
-                      selectedTabItem.classList.add('active');
-                    }
-                    if (selectedTabContent) {
-                      selectedTabContent.classList.add('active');
-                    }
+                    return grouped;
                   },
                 };
               });
             });
+
           </script>
         </main>
 
         <footer class="footer-wrap" role="contentinfo">
           <div class="container footer">
-
-            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
-                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
-                Attribution-ShareAlike 3.0 License</a></div>
+            <div class="license-area">
+              Unless otherwise stated, the content of this page is licensed under
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+                Creative Commons Attribution-ShareAlike 3.0 License
+              </a>
+            </div>
           </div>
         </footer>
+
       </div>
     </div>
   </div>
 </body>
-
 </html>

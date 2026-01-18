@@ -2,205 +2,163 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title x-text="magicItem.name">
-    Magic Item Details</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-  <meta http-equiv="content-language" content="en">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title x-text="magicItem ? magicItem.name">Magic Item Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.7/cdn.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.7/cdn.min.js" defer></script>
 
-  <script src="/scripts/google-auth.js"></script>
-  <script src="/scripts/entity-loader.js"></script>
-  <script src="/scripts/global-utilities.js"></script>
+    <script src="/scripts/google-auth.js"></script>
+    <script src="/scripts/entity-loader.js"></script>
+    <script src="/scripts/global-utilities.js"></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/theme_standard-blue.css">
-  <style>
-    .not-found {
-      color: #721c24;
-      background-color: #f8d7da;
-      border: 1px solid #f5c6cb;
-      border-radius: 4px;
-      padding: 15px;
-      margin: 20px 0;
-    }
-
-    /* Basic styling for description paragraphs if not already handled by theme_standard-blue.css */
-    .magic-item-description p {
-      margin-bottom: 1rem;
-    }
-  </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
-<body id="html-body" >
-  <div id="skrollr-body">
+<body id="html-body">
     <div class="container-wrap-wrap">
-      <div class="container-wrap">
-        <div id="header-placeholder"></div>
-        <script>
-          fetch('/header.html')
-            .then(res => res.text())
-            .then(html => {
-              document.getElementById('header-placeholder').outerHTML = html;
-            })
-            .catch(error => console.error('all-magic-items.html: Error loading header:', error));
-        </script>
+        <div class="container-wrap">
+            <div id="header-placeholder"></div>
+            <script>fetch('/header.html').then(r => r.text()).then(h => { document.getElementById('header-placeholder').outerHTML = h; }).catch(error => console.error('Error loading header:', error));</script>
 
-        <main class="content-wrap" role="main">
-          <div class="container content">
-            <div class="row">
-              <div class="main-content-wrap col-md-12">
-                <div class="main-content" x-data="magicItemData()">
-                  <div x-show="!isReady" class="loading-spinner"></div>
-                  <template x-if="isReady">
-                    <div id="isReadyContainer">
-                      <template x-if="magicItem">
-                        <div>
-                          <div class="page-title page-header"><span x-text="magicItem.name"></span></div>
-                          <div class="breadcrumbs">
-                            <a href="/index">Home</a> &raquo;
-                            <a href="/content/all-magic-items#common">All Magic Items</a> &raquo;
-                            <span x-text="magicItem.name"></span>
-                          </div>
-                          <div class="page-content">
-                            <p>Source: <span class="text-capitalize" x-text="magicItem.source || 'Core Rulebook'"></span>
-                            </p>
-                            <p class="text-capitalize">
-                              <em>
-                                <span x-text="magicItem.type.split(' (')[0].trim()"></span>,
-                                <span x-text="formatRarity(magicItem.rarity)"></span>
-                                <template x-if="magicItem.attunement">
-                                  <span x-text="' (' + magicItem.attunement + ')'"></span>
+            <main class="content-wrap" role="main">
+                <div class="container content">
+                    <div class="row">
+                        <div class="main-content-wrap col-md-12">
+                            <div class="main-content" x-data="magicItemData()">
+                                <template x-if="!magicItem && isready">
+                                    <div>
+                                        <h3>Magic Item Not Found</h3>
+                                        <p>Sorry, the magic item you're looking for couldn't be found.</p>
+                                        <p>You can <a href="/content/all-magic-items#common">view all magic items here</a>.</p>
+                                    </div>
                                 </template>
-                              </em>
-                            </p>
-                            <p>
-                              <strong>Cost: </strong><span x-text="magicItem.cost"></span>
-                            </p>
-                            <div class="magic-item-description" x-html="formatDescription(magicItem.description)"></div>
-                          </div>
+                                
+                                <div x-show="!isReady" class="loading-spinner"></div>
+                                
+                                <template x-if="magicItem && isReady">
+                                    <div id="isReadyContainer">
+                                        <template x-if="magicItem">
+                                            <div>
+                                                <div class="page-title page-header"><span x-text="magicItem.name"></span></div>
+                                                <div class="breadcrumbs">
+                                                    <a href="/index">Home</a> &raquo;
+                                                    <a href="/content/all-magic-items#common">All Magic Items</a> &raquo;
+                                                    <span x-text="magicItem.name"></span>
+                                                </div>
+                                                <div class="page-content">
+                                                    <p>Source: <span class="text-capitalize" x-text="magicItem.source || 'Core Rulebook'"></span>
+                                                    </p>
+                                                    <p class="text-capitalize">
+                                                        <em>
+                                                            <span x-text="magicItem.type.split(' (')[0].trim()"></span>,
+                                                            <span x-text="formatRarity(magicItem.rarity)"></span>
+                                                            <template x-if="magicItem.attunement">
+                                                                <span x-text="' (' + magicItem.attunement + ')'"></span>
+                                                            </template>
+                                                        </em>
+                                                    </p>
+                                                    <p>
+                                                        <strong>Cost: </strong><span x-text="magicItem.cost"></span>
+                                                    </p>
+                                                    <div class="magic-item-description" x-html="formatDescription(magicItem.description)"></div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </div>
                         </div>
-                      </template>
-
-                      <template x-if="!magicItem && !loading">
-                        <div class="not-found">
-                          <h3>Magic Item Not Found</h3>
-                          <p>Sorry, the magic item you're looking for couldn't be found. Please check the
-                            URL and try again.</p>
-                          <p>You can <a href="/content/all-magic-items#common">view all magic items here</a>.</p>
-                        </div>
-                      </template>
-
-                      <template x-if="loading">
-                        <div>
-                          <p>Loading magic item information...</p>
-                        </div>
-                      </template>
                     </div>
-                  </template>
                 </div>
-              </div>
-            </div>
-          </div>
-        </main>
+            </main>
 
-        <footer class="footer-wrap" role="contentinfo">
-          <div class="container footer">
-            <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a
-                rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
-                Attribution-ShareAlike 3.0 License</a></div>
-          </div>
-        </footer>
-      </div>
+            <div id="footer-placeholder"></div>
+            <script>fetch('/footer.html').then(r => r.text()).then(h => { document.getElementById('footer-placeholder').outerHTML = h; }).catch(error => console.error('Error loading header:', error));</script>
+        </div>
     </div>
-  </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.addEventListener('globalEditionHandled', async (event) => {
-        await loadEntity(window.currentGlobalEdition, 'magic-items');
-      });
-    });
-    
-    document.addEventListener('alpine:init', () => {
-      Alpine.data('magicItemData', () => {
-        return {
-          magicItem: null,
-          isReady: false,
-
-          init() {
-            document.addEventListener('magic-itemsLoaded', (event) => {
-              if (!window.entities || !window.entities["magic-items"]) {
-                console.error("magic-items: magic-itemsLoaded event fired but magic-items is still empty.");
-                return;
-              }
-
-              this.loadMagicItemFromUrlHash();
-
-              queueMicrotask(() => {
-                this.isReady = true;
-              });
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('globalEditionHandled', async (event) => {
+                await loadEntity(window.currentGlobalEdition, 'magic-items');
             });
+        });
 
-            window.addEventListener('hashchange', () => {
-              this.loadMagicItemFromUrlHash();
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('magicItemData', () => {
+                return {
+                    magicItem: null,
+                    isReady: false,
+
+                    init() {
+                        document.addEventListener('magic-itemsLoaded', (event) => {
+                            if (!window.entities || !window.entities["magic-items"]) {
+                                console.error("magic-items: magic-itemsLoaded event fired but magic-items is still empty.");
+                                return;
+                            }
+
+                            this.loadMagicItemFromUrlHash();
+
+                            queueMicrotask(() => {
+                                this.isReady = true;
+                            });
+                        });
+
+                        window.addEventListener('hashchange', () => {
+                            this.loadMagicItemFromUrlHash();
+                        });
+                    },
+
+                    loadMagicItemFromUrlHash() {
+                        let itemNameSlug = window.location.hash.substring(1);
+
+                        if (!itemNameSlug) {
+                            this.magicItem = null;
+                            return;
+                        }
+
+                        this.magicItem = this.findMagicItemBySlug(itemNameSlug);
+                    },
+
+                    normalizeItemNameForSlug(name) {
+                        return name.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s/g, '-');
+                    },
+
+                    findMagicItemBySlug(slugToFind) {
+                        for (const item of window.entities["magic-items"]) {
+                            let itemSlug = this.normalizeItemNameForSlug(item.name);
+
+                            if (itemSlug === slugToFind) {
+                                return item;
+                            }
+                            if (slugToFind.endsWith('-ua') && itemSlug === slugToFind.slice(0, -3)) {
+                                return item;
+                            }
+                        }
+                        return null;
+                    },
+
+                    formatRarity(rarity) {
+                        return rarity.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                    },
+
+                    formatDescription(description) {
+                        let formatted = description.replace(/\n([^:\n]{1,25}:)(?=\s|$)/g, '<strong>$1</strong>');
+                        formatted = "<p>" + formatted
+                            .replace(/\n\n/g, '</p><p>')
+                            .replace(/\n/g, '<br>') + "</p>";
+
+                        return formatted;
+                    }
+                };
             });
-          },
-
-          loadMagicItemFromUrlHash() { 
-            let itemNameSlug = window.location.hash.substring(1);
-
-            if (!itemNameSlug) {
-              this.magicItem = null;
-              return;
-            }
-
-            this.magicItem = this.findMagicItemBySlug(itemNameSlug);
-
-            if (this.magicItem) {
-              document.title = this.magicItem.name + ' - Koinks D&D 2024';
-            } else {
-              document.title = 'Magic Item Not Found - Koinks D&D 2024';
-            }
-          },
-
-          normalizeItemNameForSlug(name) {
-            return name.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s/g, '-');
-          },
-
-          findMagicItemBySlug(slugToFind) {
-            for (const item of window.entities["magic-items"]) {
-              let itemSlug = this.normalizeItemNameForSlug(item.name);
-
-              if (itemSlug === slugToFind) {
-                return item;
-              }
-              if (slugToFind.endsWith('-ua') && itemSlug === slugToFind.slice(0, -3)) {
-                return item;
-              }
-            }
-            return null;
-          },
-
-          formatRarity(rarity) {
-            return rarity.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-          },
-
-          formatDescription(description) {
-            let formatted = description.replace(/\n([^:\n]{1,25}:)(?=\s|$)/g, '<strong>$1</strong>');
-            formatted = "<p>" + formatted
-              .replace(/\n\n/g, '</p><p>')
-              .replace(/\n/g, '<br>') + "</p>";
-
-            return formatted;
-          }
-        };
-      });
-    });
-  </script>
+        });
+    </script>
 </body>
 
 </html>

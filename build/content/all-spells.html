@@ -2,225 +2,208 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <title>All Spells</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-  <meta http-equiv="content-language" content="en">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>All Spells</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="/scripts/entity-page-manager.js"></script>
+    <script src="/scripts/all-entity-page-manager.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.7/cdn.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.7/cdn.min.js" defer></script>
 
-  <script src="/scripts/google-auth.js"></script>
-  <script src="/scripts/entity-loader.js"></script>
-  <script src="/scripts/global-utilities.js"></script>
+    <script src="/scripts/google-auth.js"></script>
+    <script src="/scripts/entity-loader.js"></script>
+    <script src="/scripts/global-utilities.js"></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/theme_standard-blue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/theme_standard-blue.css">
 </head>
 
 <body>
-  <div class="container-wrap-wrap">
     <div class="container-wrap">
-      <div id="header-placeholder"></div>
-      <script>
-        fetch('/header.html')
-          .then(res => res.text())
-          .then(html => {
-            document.getElementById('header-placeholder').outerHTML = html;
-          })
-          .catch(error => console.error('all-spells.html: Error loading header:', error));
-      </script>
-      <main class="content-wrap" role="main">
-        <div class="container content">
-          <div class="row">
-            <div class="main-content-wrap col-md-12">
-              <div class="main-content">
-                <div class="page-title page-header"><span><a href="/content/all-spells">All Spells</a></span></div>
-                <div class="breadcrumbs"><a href="/index">Home</a> &raquo;<a href="/content/all-spells">All Spells</a></div>
+        <div id="header-placeholder"></div>
+        <script>fetch('/header.html').then(r => r.text()).then(h => { document.getElementById('header-placeholder').outerHTML = h; }).catch(error => console.error('Error loading header:', error));</script>
 
-                <div id="page-content" x-data="spellData()" x-cloak>
-                  <div x-show="!isReady" class="loading-spinner"></div>
+        <main class="content-wrap" role="main">
+            <div class="container content">
+                <div class="row">
+                    <div class="main-content-wrap col-md-12">
+                        <div class="main-content">
+                            <div class="page-title page-header"><span><a href="/content/all-spells">All Spells</a></span></div>
+                            <div class="breadcrumbs"><a href="/index">Home</a> &raquo;<a href="/content/all-spells">All Spells</a></div>
 
-                  <template x-if="isReady">
-                    <div>
-                      <div class="group-list">
-                        <h4><span>Schools of Magic</span></h4>
-                        <div class="filter-buttons">
-                          <button class="btn btn-outline-secondary" :class="{'active': !activeFilter.school}"
-                            @click="EPManager.clearFilter('school')">All Schools</button>
-                          <template x-for="school in uniqueSchools" :key="school">
-                            <button class="btn btn-outline-secondary ms-1 mb-1 text-capitalize"
-                              :class="{'active': activeFilter.school === school.toLowerCase()}"
-                              @click="EPManager.setFilter('school', school.toLowerCase())" x-text="school"></button>
-                          </template>
-                        </div>
-                      </div>
-                      <div class="group-list mt-3">
-                        <h4><span>Class Spell Lists</span></h4>
-                        <div class="filter-buttons">
-                          <button class="btn btn-outline-secondary" :class="{'active': !activeFilter.class}"
-                            @click="EPManager.clearFilter('class')">All Classes</button>
-                          <template x-for="className in uniqueClasses" :key="className">
-                            <button class="btn btn-outline-secondary ms-1 mb-1 text-capitalize"
-                              :class="{'active': activeFilter.class === className.toLowerCase()}"
-                              @click="EPManager.setFilter('class', className.toLowerCase())"
-                              x-text="className"></button>
-                          </template>
-                        </div>
-                      </div>
-
-                      <div class="tab-container">
-                        <h4><span>Spells</span></h4>
-                        <div class="tab-divst" id="tab-divst">
-                          <template x-for="(tabValue) in availableSpellLevels" :key="tabValue">
-                            <div class="tab-item" :class="{'active': activeTab === tabValue}" @click="EPManager.setFilter('level', tabValue)" x-text="spellLevels[tabValue]"></div>
-                          </template>
-                        </div>
-
-                        <div class="tab-content-container">
-                          <template x-for="(levelText, index) in spellLevels" :key="index">
-                            <div :id="'level-' + index" class="tab-content" :class="{'active': activeTab === index}">
-                              <table class="w-100 table-bordered">
-                                <thead>
-                                  <tr>
-                                    <th>Name</th>
-                                    <th>School</th>
-                                    <th>Classes</th>
-                                    <th class="desktop">Casting Time</th>
-                                    <th>Range</th>
-                                    <th class="desktop">Components</th>
-                                    <th class="desktop">Duration</th>
-                                  </tr>
-                                </thead>
-                                <template x-for="(spell, i) in filteredSpells.filter(spell => spell.level === index)" :key="spell.name">
-                                  <tbody>
-                                    <tr :class="'border-1 interactive ' + (Math.floor(i) % 2 === 0 ? 'primary-row' : 'secondary-row')" data-bs-toggle="collapse" :data-bs-target="'#' + i + '-details'" aria-expanded="false" :aria-controls="i + '-details'">
-                                      <td><a href="javascript: void(0)">
-                                          <span x-text="spell.name"></span>
-                                          <span x-text="spell.UA ? '(UA)' : ''"></span>
-                                          <purple style="font-size:small" x-text="spell.status ? ' (' + spell.status + ')' : ''"></purple>
-                                        </a></td>
-                                      <td class="text-capitalize" x-text="spell.school"></td>
-                                      <td class="text-capitalize" x-text="spell.class ? spell.class.join(', ') : ''">
-                                      </td>
-                                      <td class="desktop">
-                                        <span x-text="spell.casting_time"></span>
-                                        <span x-text="spell.ritual ? '(ritual)' : ''"></span>
-                                      </td>
-                                      <td x-text="spell.range"></td>
-                                      <td class="desktop" x-text="spell.components"></td>
-                                      <td class="desktop" x-html="spell.duration">
-                                      </td>
-                                    </tr>
-                                    <tr :class="Math.floor(i) % 2 === 0 ? 'primary-row' : 'secondary-row'">
-                                      <td colspan="7" class="p-0">
-                                        <div class="collapse p-3" style="border-bottom:1px solid;" :id="i + '-details'">
-                                          <p class="mobile"><b>Casting Time:</b>
-                                            <span x-text="spell.casting_time"></span>
-                                            <span x-text="spell.ritual ? '(ritual)' : ''"></span>
-                                          </p>
-                                          <p class="mobile"><b>Components:</b>
-                                            <span x-text="spell.components"></span>
-                                          </p>
-                                          <p class="mobile"><b>Duration:</b>
-                                            <span x-html="spell.duration"></span>
-                                          </p>
-                                          <b>Description: </b>
-                                          <div style="white-space: pre-wrap;" x-html="spell.description"></div>
+                            <div id="page-content" x-data="spellData()" x-cloak>
+                                <div x-show="!isReady" class="loading-spinner"></div>
+                                <template x-if="isReady">
+                                    <div>
+                                        <div class="group-list">
+                                            <h4><span>Schools of Magic</span></h4>
+                                            <div class="filter-buttons">
+                                                <button class="btn btn-outline-secondary" :class="{'active': !activeFilter.school}" @click="EPManager.clearFilter('school')">All Schools</button>
+                                                <template x-for="school in uniqueSchools" :key="school">
+                                                    <button class="btn btn-outline-secondary ms-1 mb-1 text-capitalize" :class="{'active': activeFilter.school === school.toLowerCase()}" @click="EPManager.setFilter('school', school.toLowerCase())" x-text="school"></button>
+                                                </template>
+                                            </div>
                                         </div>
-                                      </td>
-                                    </tr>
-                                  </tbody>
+                                        <div class="group-list mt-3">
+                                            <h4><span>Class Spell Lists</span></h4>
+                                            <div class="filter-buttons">
+                                                <button class="btn btn-outline-secondary" :class="{'active': !activeFilter.class}" @click="EPManager.clearFilter('class')">All Classes</button>
+                                                <template x-for="className in uniqueClasses" :key="className">
+                                                    <button class="btn btn-outline-secondary ms-1 mb-1 text-capitalize" :class="{'active': activeFilter.class === className.toLowerCase()}" @click="EPManager.setFilter('class', className.toLowerCase())" x-text="className"></button>
+                                                </template>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-container">
+                                            <h4><span>Spells</span></h4>
+                                            <div class="tab-divst" id="tab-divst">
+                                                <template x-for="(tabValue) in availableSpellLevels" :key="tabValue">
+                                                    <div class="tab-item" :class="{'active': activeTab === tabValue}" @click="EPManager.setFilter('level', tabValue)" x-text="spellLevels[tabValue]"></div>
+                                                </template>
+                                            </div>
+
+                                            <div class="tab-content-container">
+                                                <template x-for="(levelText, index) in spellLevels" :key="index">
+                                                    <div :id="'level-' + index" class="tab-content" :class="{'active': activeTab === index}">
+                                                        <table class="w-100 table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>School</th>
+                                                                    <th>Classes</th>
+                                                                    <th class="desktop">Casting Time</th>
+                                                                    <th>Range</th>
+                                                                    <th class="desktop">Components</th>
+                                                                    <th class="desktop">Duration</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <template x-for="(spell, i) in filteredSpells.filter(spell => spell.level === index)" :key="spell.name">
+                                                                <tbody>
+                                                                    <tr :class="'border-1 interactive ' + (Math.floor(i) % 2 === 0 ? 'primary-row' : 'secondary-row')" data-bs-toggle="collapse" :data-bs-target="'#' + i + '-details'" aria-expanded="false" :aria-controls="i + '-details'">
+                                                                        <td><a href="javascript: void(0)">
+                                                                                <span x-text="spell.name"></span>
+                                                                                <span x-text="spell.UA ? '(UA)' : ''"></span>
+                                                                                <purple style="font-size:small" x-text="spell.status ? ' (' + spell.status + ')' : ''">
+                                                                                </purple>
+                                                                            </a></td>
+                                                                        <td class="text-capitalize" x-text="spell.school"></td>
+                                                                        <td class="text-capitalize" x-text="spell.class ? spell.class.join(', ') : ''">
+                                                                        </td>
+                                                                        <td class="desktop">
+                                                                            <span x-text="spell.casting_time"></span>
+                                                                            <span x-text="spell.ritual ? '(ritual)' : ''"></span>
+                                                                        </td>
+                                                                        <td x-text="spell.range"></td>
+                                                                        <td class="desktop" x-text="spell.components">
+                                                                        </td>
+                                                                        <td class="desktop" x-html="spell.duration">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr :class="Math.floor(i) % 2 === 0 ? 'primary-row' : 'secondary-row'">
+                                                                        <td colspan="7" class="p-0">
+                                                                            <div class="collapse p-3" style="border-bottom:1px solid;" :id="i + '-details'">
+                                                                                <p class="mobile"><b>Casting Time:</b>
+                                                                                    <span x-text="spell.casting_time"></span>
+                                                                                    <span x-text="spell.ritual ? '(ritual)' : ''"></span>
+                                                                                </p>
+                                                                                <p class="mobile"><b>Components:</b>
+                                                                                    <span x-text="spell.components"></span>
+                                                                                </p>
+                                                                                <p class="mobile"><b>Duration:</b>
+                                                                                    <span x-html="spell.duration"></span>
+                                                                                </p>
+                                                                                <b>Description: </b>
+                                                                                <div style="white-space: pre-wrap;" x-html="spell.description"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </template>
+                                                        </table>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </template>
-                              </table>
                             </div>
-                          </template>
                         </div>
-                      </div>
                     </div>
-                  </template>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </main>
+        </main>
 
-      <footer class="footer-wrap" role="contentinfo">
-        <div class="container footer">
-          <div class="license-area">Unless otherwise stated, the content of this page is licensed under <a rel="license"
-              href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
-              Attribution-ShareAlike 3.0 License</a></div>
-        </div>
-      </footer>
+        <div id="footer-placeholder"></div>
+        <script>fetch('/footer.html').then(r => r.text()).then(h => { document.getElementById('footer-placeholder').outerHTML = h; }).catch(error => console.error('Error loading header:', error));</script>
     </div>
-  </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.addEventListener('globalEditionHandled', async (event) => {
-        await loadEntity(window.currentGlobalEdition, 'spells');
-      });
-    });
-
-    document.addEventListener('alpine:init', () => {
-      Alpine.data('spellData', function () {
-        return {
-          EPManager: null,
-          allSpells: [],
-          filteredSpells: [],
-          spellLevels: ['Cantrip', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th'],
-          uniqueSchools: [],
-          uniqueClasses: [],
-          isReady: false,
-          availableSpellLevels: [],
-          activeTab: 0,
-          activeFilter: {},
-
-          init() {
-            this.EPManager = window.createEntityPageManager(
-              this,
-              (newActiveFilter, dataFilteredByNormalFilters, newActiveTabValue, newAvailableTabValues) => {
-                this.activeFilter = { ...newActiveFilter };
-                this.activeTab = newActiveTabValue;
-                this.filteredSpells = dataFilteredByNormalFilters;
-                this.availableSpellLevels = newAvailableTabValues;
-              },
-              {
-                tabProperty: 'level',
-                tabValues: this.spellLevels.map((_, index) => index)
-              }
-            );
-            this.EPManager.initialize();
-
-            document.addEventListener('spellsLoaded', (event) => {
-              this.allSpells = window.entities?.spells || [];
-
-              if (!this.allSpells.length) {
-                console.error("spellData: spellsLoaded event fired but allSpells is still empty.");
-                return;
-              }
-
-              if (this.EPManager) {
-                this.EPManager.setEntityData(this.allSpells);
-
-                this.uniqueSchools = this.EPManager.getUniquePropertyValues('school');
-                this.uniqueClasses = this.EPManager.getUniquePropertyValues('class');
-                this.activeFilter = { ...this.EPManager.activeFilter };
-              }
-
-              queueMicrotask(() => {
-                this.isReady = true;
-              });
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener('globalEditionHandled', async (event) => {
+                await loadEntity(window.currentGlobalEdition, 'spells');
             });
-          }
-        };
-      });
-    });
-  </script>
+        });
+
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('spellData', function () {
+                return {
+                    EPManager: null,
+                    allSpells: [],
+                    filteredSpells: [],
+                    spellLevels: ['Cantrip', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th'],
+                    uniqueSchools: [],
+                    uniqueClasses: [],
+                    isReady: false,
+                    availableSpellLevels: [],
+                    activeTab: 0,
+                    activeFilter: {},
+
+                    init() {
+                        this.EPManager = window.createEntityPageManager(
+                            this,
+                            (newActiveFilter, dataFilteredByNormalFilters, newActiveTabValue, newAvailableTabValues) => {
+                                this.activeFilter = { ...newActiveFilter };
+                                this.activeTab = newActiveTabValue;
+                                this.filteredSpells = dataFilteredByNormalFilters;
+                                this.availableSpellLevels = newAvailableTabValues;
+                            },
+                            {
+                                tabProperty: 'level',
+                                tabValues: this.spellLevels.map((_, index) => index)
+                            }
+                        );
+                        this.EPManager.initialize();
+
+                        document.addEventListener('spellsLoaded', (event) => {
+                            this.allSpells = (window.entities?.spells || []).sort((a, b) => {
+                                return a.name < b.name ? -1 : (a.name > b.name ? 1 : 0)
+                            });
+
+                            if (!this.allSpells.length) {
+                                console.error("spellData: spellsLoaded event fired but allSpells is still empty.");
+                                return;
+                            }
+
+                            if (this.EPManager) {
+                                this.EPManager.setEntityData(this.allSpells);
+
+                                this.uniqueSchools = this.EPManager.getUniquePropertyValues('school');
+                                this.uniqueClasses = this.EPManager.getUniquePropertyValues('class');
+                                this.activeFilter = { ...this.EPManager.activeFilter };
+                            }
+
+                            queueMicrotask(() => {
+                                this.isReady = true;
+                            });
+                        });
+                    }
+                };
+            });
+        });
+    </script>
 </body>
 
 </html>

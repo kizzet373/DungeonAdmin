@@ -1,5 +1,5 @@
 function generateView(id, title, classes, show, fields, sectionHeaderContent="") {
-  const viewButton = `<li class="nav-item col-2"><a class="nav-link ${show ? "active" : ""}" id="${id}-tab" data-bs-toggle="tab" href="#${id}" role="tab">${title}</a></li>`;
+  const viewButton = `<li class="nav-item col"><a class="nav-link ${show ? "active" : ""}" id="${id}-tab" data-bs-toggle="tab" href="#${id}" role="tab">${title}</a></li>`;
   $("#character-tabs").append(viewButton);
   
   return `<div class="tab-pane fade ${show ? "show active" : ""} ${classes}" id="${id}" role="tabpanel">
@@ -400,7 +400,7 @@ function initializeEventListeners() {
       });
 
       if (!response.ok) {
-          const errorData = await response.json();
+          const errorData = await response.html();
           if (response.status === 409) {
               alert(`Version mismatch: ${errorData.error}\nYour image upload failed because the sheet was updated by someone else. Please refresh the page.`);
               setReadOnlyMode(true);

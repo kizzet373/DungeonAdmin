@@ -8,24 +8,8 @@
     "class_subclass_levels": [
       {
         "class": "Fighter",
-        "subclass": "Battle Master",
-        "level": 3,
-        "disabled": true
-      },
-      {
-        "class": "Warlock",
-        "subclass": "Genie Patron",
-        "level": 3,
-        "disabled": true
-      },
-      {
-        "class": "Sorcerer",
-        "subclass": "College Of Glamour",
-        "level": 8,
-        "disabled": true
-      },
-      {
-        "disabled": true
+        "subclass": "None",
+        "level": 1
       },
       {
         "class": "Warlock",
@@ -35,26 +19,26 @@
       {
         "class": "Sorcerer",
         "subclass": "Galvanic (Lunar) Sorcery",
-        "level": 11
+        "level": 10
       }
     ],
     "quick_notes": "",
-    "appearance": "🔷Gondin, the Renegade🔷\n 7'2 Goliath with rough grey skin and a deeply pained expression, worn out leather armor pieces, and hands that clearly are affected by some type of brutal affliction or curse. He has long black hair and a barely maintained black beard. He has tattoos across his body that seem to tell a tale of slavery and hardship. But one particular marking looks to be a symbol of a serpent bite, surrounded by that same affliction.\n\n🔷Surge, the Alleviator🔷 (White Phantom of the WN)\nA 6 foot Humanoid in an immaculately clean white suit, with powerful alchemical solutions attached to multiple belts strapped to his body. He has an incredible staff wreathed in lightning and a stylish white top hat. His white mask that covers his entire face has a divine energy and seems to perfectly hide all sense of identity.",
+    "appearance": "🔷Gondin, the Renegade🔷\n 7'2 Goliath with rough grey skin and a deeply pained expression, worn out leather armor pieces, and hands that clearly are affected by some type of brutal affliction or curse. He has long black hair and a barely maintained black beard. He has tattoos across his body that seem to tell a tale of slavery and hardship. But one particular marking looks to be a symbol of a serpent bite, surrounded by that same affliction. And he always wears hand wraps no matter what magic he uses to disguise himself, as his affliction bleeds through the magic.\n\n🔷Surge, the Alleviator🔷 (White Phantom of the WN)\nA 6 foot Humanoid in an immaculately clean white suit, with powerful alchemical solutions attached to multiple belts strapped to his body. He has an incredible staff wreathed in lightning and a stylish white top hat. His white mask that covers his entire face has a divine energy and seems to perfectly hide all sense of identity.",
     "other_proficiencies": "",
     "languages": "Common\nGiant\nSylvan",
     "backstory": "🔷 HOMETOWN 🔷\nGondin's early years were spent in comfort within Suzdol, a vibrant town nestled west of Skophos. Life was peaceful, marked by community and simple pleasures. However, that peace shattered when Skophos, an oppressive city-state, seized control of Suzdol. The new rulers imposed crushing labor demands and debilitating taxes, rapidly eroding the town's prosperity. After years of struggle, Gondin's family, unable to meet the tyrannical demands, made a heartbreaking choice: they reluctantly sold him into slavery at age 13 to settle their insurmountable debts. \n\n🔷 Gondin's Family 🔷\n- Mother: 🖤Oodnis🖤\n- Father: 🖤Komlo🖤\n- Little Brother: 🖤Komnoy🖤 (2 years younger)\n\n🔷 CHAINS OF SKOPHOS 🔷\nAs a slave in Skophos, Gondin endured grueling days of relentless labor with scant rest. Amidst the ceaseless grind, he found comfort and friendship with a few fellow captives: 😎Mogal😎, a spirited young man who became his closest confidant; Verrea, a kind, motherly woman who offered comfort and hope and 💜Paalu💜, a young woman with whom Gondin shared a brief, tender romance. Their romantic affection was tragically discovered by a cruel slave trader, 😡Barga😡. To make an example, Paalu was brutally taken, with it spread among the slaves that she had been beheaded. Later, Verrea succumbed to illness and was killed, being deemed no longer worth the cost of her upkeep. Enraged by this cruelty, Gondin and Mogal attempted a desperate escape, fighting against their captors. But they were vastly outnumbered, and the labyrinthine streets of Skophos proved an impossible maze. Gondin was recaptured and, due to his defiance, was sold to an even more formidable organization: The Shattering, where it was believed he could be more thoroughly controlled. He never saw Mogal again. Gondin's losses fueled a simmering rage within him - one that could only be calmed with blood.\n\n🔷 ROCK BOTTOM 🔷\nGondin began his life at the bottom within The Shattering - less of a recruit, more a designated pack mule and certified fodder for a powerful and abusive strike team. This infamous dark organization of assassins was comprised of followers that believed in the organization's false goal of dismantling authority and destroying inheritance. The strike team's cruelty culminated in a fateful expedition to an ancient crypt, where they unearthed what they believed might be a powerful ancient elixir. Out of paranoia, they forced Gondin to test it himself, revealing the elixir to be a trap - a divine poison crafted by Pharika herself to punish greed. As Gondin was on the verge of death, foaming at the mouth, he was abandoned and left to die by his team. The poison was designed to be as potent as one's desire for power and wealth. After hours of suffering, Gondin barely survives, holding onto his life through sheer endurance and lack of greed.\n\n🔷 CONQUERING THE SHATTERING 🔷\nPharika, goddess of affliction and alchemy, took notice. Intrigued by Gondin’s resilience and suspected thirst for revenge for his captors and former teammates, she marked him with a blessing: the knowledge to create poisons of mythic potency. Armed with this forbidden craft, Gondin turned on his captors. Over weeks, he slowly and methodically poisoned each member of the team, watching them suffer exactly as he had. Their deaths were just the beginning.\n\nGondin rose through the ranks of the organization not out of loyalty, but with the sole intention of bringing it down from the inside. His ascent was driven by pure vengeance and an undying urge to flip his position of power from slave to leader. In doing so, he made several enemies: 😡Kael😡 (human sorcerer), a powerful rival always one step behind him, seething with envy; 😡Lyra😡(Tabaxi rogue), a cunning woman enraged by his constant romantic rejection, who sought vengeance; and 😡Raxus😡 (naga wizard), an arch-enemy who clung to the belief that a former slave would always remain a slave, regardless of his power. Yet, he also forged crucial alliances. Some, like 😎Silas😎 (human rogue), respected his competence and shared his mission to dismantle the corrupt establishment. Others, including his future left-hand man, 😎Thorne😎 (naga fighter), saw beyond his past and respected him for his incredible perseverence and ambition. Under Pharika’s divine shadow, Gondin rebuilt the group into a tightly controlled syndicate dealing in exotic poisons, their antidotes, and targeted assassinations – holding cities hostage with the cure to their own engineered plagues.\n\n🔷 VOLDRAXIS AND THE BETRAYAL 🔷\nBut then came Voldraxis, a powerful Nyxborn of Keranos, the god of storms and visions. Drawn to Gondin’s unnatural brilliance and brutal ambition, Voldraxis appeared with an offer: abandon Pharika, break from the cycle of suffering, and pursue true innovation. Voldraxis bestowed a burst of knowledge, including a vision of Pharika's followers as nothing more than enslaved toys on her \"chessboard,\" eternally chained to her whims. Seeing this, Gondin was enraged that the very goddess who had supposedly freed him had done so only to enslave him herself. After careful consideration, he firmly decided to devote himself to Keranos and fully leave this cruel, dark side of the world. Voldraxis then bestowed him a private dimensional laboratory.\n\n🔷 THE WELLSPRING NEXUS 🔷\nGondin built a new empire, named \"Wellspring Nexus\": a medical conglomerate that offered miracle cures and wonder-serums to the masses. While openly providing these life-saving solutions, he still secretly maintained order within The Shattering, slowly warping its overall mission statement and meticulously removing corruption from within the organization, one by one.\n\n🔷 SUZDOL TRAGEDY 🔷\nAfter another year, Gondin had successfully removed most of the corruption from within The Shattering and developed a full-fledged organization built from his medical innovation and enticing passion to end suffering. During this time, his right-hand woman in the Wellspring Nexus, 😎Kileen😎 (centaur cleric), informed him that a plague had swept over Suzdol, his hometown. Rushing back, Gondin discovered that the town was now entirely run by Skophos slave owners, and nearly everyone was infected.\n\nDespite his personal history with Skophos, Gondin made the decision to save everyone, even the slave owners. He meticulously analyzed the symptoms and crafted an elixir for immediate distribution. To his horror, within a week, his \"cures\" had turned to potent poisons, killing everyone in Suzdol. Petrified and devastated, Gondin vanished for months, retreating into his private alchemy lab and destroying everything within it. Unknown to him, Pharika had not forgotten about his betrayal. She had meticulously meddled with his ability to craft concoctions, orchestrating the plague and timing her curse precisely so that Gondin would become the instrument of his own people's demise. After months of his torment, Pharika finally spoke, revealing her curse for his betrayal and her role in the plague, but asserting that Gondin had sealed their fate by failing to properly test his solutions.\n\n🔷 GONDIN, THE RENEGADE 🔷\nAfter another month in solitude, shattered but not broken, Gondin decided that he could still do good if he simply didn't do the brewing himself. This, he realized, was his best opportunity to right his and Pharika's wrongs. Upon his return, he was pronounced a traitor, dubbed by nearly everyone as \"Gondin, the Renegade.\" The only people who fully trusted him and remained devoted after understanding his plight were his right-hand woman, Kileen (who became the new leader of the Wellspring Nexus), and his left-hand man, Thorne (who became the new leader of The Shattering).\n\n🔷 DEATH TO GONDIN, ARISE SURGE, THE WHITE PHANTOM 🔷\nGondin tasked Thorne with faking his public execution. With his past behind him, he adopted a new identity: Surge, the White Phantom of the Wellspring Nexus. Surge knew that as the company grew, he would have to defend it from thieves, competitors, and other darker entities. He would need to become stronger himself and recruit powerful allies, as well as find a way to test his theories and recipes without crafting them himself. Unable to bring anyone else into his rebuilt alchemy lab, he devised a solution: an automated mech capable of obeying commands for very precise and scientific use.\n\n🔷 THE AXIOM BROTHERS AND LEVI🔷\nOver the next few years, Surge traveled to Meletis, renowned for its brilliant minds and engineers. There, he honed his knowledge, gathered allies, and strengthened himself. His search for an engineer to create his mech consistently led him to the same sarcastic answer: the genius but inaccessible twin brothers, the 😎Axiom brothers😎. Barid Axiom, an architect under Keranos, and Roric Axiom, a forgemaster under Purphoros, were introverted genius dwarf brothers who stubbornly refused all requests, crafting only for themselves. As a playful jest, they always sent their requesters on an impossible quest. If the requester succeeded, the brothers would fulfill the request. Most gave up, some died attempting it. Only one in a hundred years did someone succeed.\n\nSurge approached them with his request. They burst into hysterical laughter and demanded he drink a nice hot mug of tea brewed with water directly from the Tidal Stream in the Underworld. Surge accepted immediately. And after much research confirming the task was truly deadly, conceived a ridiculous idea: Pharika would likely just turn it to deadly poison, so he simply needed to survive the poison. He traveled and survived the Underworld, encapsulated the Tidal Stream water, and brewed it directly infront of them. Right as it started turning to poison, he drank it and dropped to the floor, writhing in agony. But he succeed, chugging antidotes, using poison resist spells, and still nearly dying. Confused and impressed, the brothers fulfilled his request and befriended Surge as a respected warrior and scientist. After many weeks, the mech was made. He was then named Levi.\n\n🔷 THE MYTHIC SOLVENT 🔷\nWith Levi's unparalleled precision at his disposal, Surge eventually unraveled every bit of knowledge he had gained from Voldraxis and requested more. Voldraxis responded that he had given all he could; Surge would need to truly innovate to gain the attention of Keranos himself.\n\nSurge decided on a path that would lead to recognition from his god and further power: crafting a divine solvent, something that could extract the divine essence from a god-crafted weapon into a tangible material. It took many months for him to uncover the secrets of this absurd solution. He traveled across lands and planes to acquire every necessary component, and with Levi's purest precision and Surge's brilliant mind, he crafted it.\n\n🔷 THE BOLT OF KERANOS 🔷\nSurge was immediately struck by a bolt of lightning. Keranos had recognized Surge's innovative mind and attempted to instill additional knowledge onto him: the whereabouts of a long-forgotten, broken artifact of Keranos, as well as additional secrets of medicine. Surge was once again nearly killed by the bolt, but survived. He later told his fellow engineers of his latest craft and new knowledge. Not fully recognizing its significance, word has spread and society erupted in uproar, causing Surge to flee the city for his safety. He was off to find this broken artifact.\n\n🔷 THE WHITE LIGHTNING MASK 🔷\nSurge encountered various challenges and powerful monsters on his journey to find the artifact. Eventually, he located it, poured the divine solvent on all of its fragments, and stored what was left in an adamantine container. Surge brought the divine material to the Axiom brothers, requesting their work once more. They laughed in disbelief and refused until Surge showed them the divine material. Overcome with passion, they fully accepted the job under the condition that Surge revealed his true identity from beneath his mask. He accepted, and they used his mundane mask as the form for the new, man-made artifact, the White Lightning Mask.\n\n🔷 THE ALLEVIATOR 🔷\nA few more years passed, and Surge acquired more powerful allies and items. He also caught wind of a plague corrupting a city, a plague identical to the one that ravaged Suzdol. Terrified that this was another trick of Pharika, Surge hesitated, but decided that his fears were less important than the lives of these people. With his new powers, he quickly found the source of the plague: Zyrene, a Nyxborn and a lost child of Pharika thought to be dead. She was a gargantuan plague giant with high intelligence, emanating a deadly gas, and possessing an incredible hunger, weakening every 48 hours she didn't consume large quantities of plagued meat.\n\nRecognizing the immense danger, Surge first healed everyone who had been plagued. Then, he devised a strategy to lead Zyrene from city to city, evacuating the populace, systematically weakening her for two weeks straight. Surge pursued this obsessively, wanting her to suffer as much as possible before their direct confrontation, as a twisted revenge against Zyrene and Pharika for their role in killing his people and ruining his life. Using his developed powers and his White Lightning Mask, he finally slew the Nyxborn, earning Surge the title: \"The Alleviator.\"\n\nKedriss - Rough dude who showed up at the front gates\n",
-    "proficiency_bonus": 8,
+    "proficiency_bonus": 5,
     "armor_class": "24",
-    "initiative_mod": 2,
+    "initiative_mod": "7",
     "speed": "35",
     "hp_current": "97",
     "hp_max": "97",
     "hp_temp": 0,
-    "misc_defenses": "🔷Passive🔷\n• Immunities - Mind Reading\n• Resistances - Psychic, Lightning, Fire\n• Imposed Disadvantage - Insight checks\n• Advantage - Saves against grapples\n• Crits are normal hits against you.\n\n🔷No Action🔷\n• 3/3 Long: Lucky - D20 check or enemy attack\n• 1/1 Long  - legendary resistance\n• 1/1 Short - auto-succeed on mental save\n\n🔷Bonus Action🔷\n• 2/2 Short - bon action 2nd wind: 1d10 + 3\n• Bardic - Bon Action: Give temp hp to 6 creatures equal to twice 1d10. They can use reaction to move speed without provoking.\n• Healing Word, Mass Healing Word, Sanctuary\n\n🔷Reaction🔷\n• 1/1 Short - Reaction(range atk 10ft): round: redirect all ranged attacks 10ft + resistance\n• 1/1 Long - Reaction when you/5ft ally attacked or saving throw vs AoE: Concentrate 1 min: 5ft radius impassable dome: negates effect. Nothing in can be damaged by anything from outside and vice-versa.\n• 1/1 long (free) - Shield Spell\n• Silvery Barbs, Hellish Rebuke, Shield\n• Reaction when creature 30 ft fails save against Charm/Fright: reroll save (with advantage)\n",
+    "misc_defenses": "🔷Passive🔷\n• Immunities - Mind Reading, Lightning\n• Resistances - Psychic\n• Imposed Disadvantage - Insight checks\n• Advantage - Saves against grapples\n• Crits are normal hits\n\n🔷No Action🔷\n• 3/3 Long: Lucky - D20 check or enemy attack\n• 1/1 Long  - legendary resist\n• 1/1 Short - mental legendary resist\n\n🔷B Action🔷\n• 2/2 Short - bon action 2nd wind: 1d10 + 3\n• Healing Word, Sanctuary, Misty Step\n\n🔷Reaction🔷\n• 1/1 Short - range atk 10ft: round: redirect all ranged atks 10ft + resistance\n• 1/1 Long - When you/5ft ally atked or saving throw vs AoE: Concentrate 1 min: 5ft radius impassable dome: negates effect. Nothing in can be damaged by anything from outside and vice-versa.\n• Silvery Barbs, Hellish Rebuke, Shield (1 free), Absorb Elements\n",
     "hit_dice_size": "",
     "hit_dice_available": "8d8 + 6d10",
     "hit_dice_total": "8d8 + 6d10",
-    "attacks_and_cantrips": "🟡🟡Resources🟡🟡\n• Superiority Die: 4/4 (short rest)\n• Bardic Inspiration: 4/6 (long rest)\n• Sorcery Points: 2/2 (long rest)\n• Staff of Power Charges: 20/20 (long rest)\n• Hill Tumble: 4/4 (long rest)\n• Warlock Spellslots: 2/2 (short rest)\n• Comfortable dice: 0\n- Second Wind (1d10) - 2/2 (short rest)\n• Action Surge - 1/1 (short rest)\n\n🔴🔴START OF COMBAT🔴🔴\n• Superiority - 1d8 to initiative\n• Second Wind - 1d10 to initiative\n\n🔴🔴DURING COMBAT🔴🔴\n• Eldritch Blast - 3x 1d10 - Push 10 feet on each hit.\n• 1/1 Long - Summon Air Elemental (magic action)\n• 1/1 48hrs - Summon Giant Owl Mount (magic action)\n• Tons of spells\n\n🔷Passive🔷\n• Deal Lightning Damage - Creature can't take reactions\n• Damage creature concentrating - Disadvantage on concentration save\n• 1/Turn - Add proficiency bonus to attack damage (lightning damage)\n\n🔷No Action🔷\n• 5/5 Long - Prone a Large or smaller creature you attack.\n• 1/1 Short - Action Surge (no magic action)\n• Superiority - use 5 ft: switch places target, not provoking. 1d10 to AC of you/target.\n• 1/1 Long - 30 blindsight: 5 mins\n• Bardic + 1 Free Long - cast Ench/Illusn: 60 ft target Charm/Fright (DC 21): 1 min resave\n• Sorcery points - Transmute Spell or Subtle Spell\n• Expend spell slot - Restore a bardic. \n\n🔷Bonus Action🔷\n• 1/1 Short - Bon Action: 5 by 30 ft. bolt: DC (19) Dex Save: 4d6 lightning or half. Creature 30 ft heals half total damage. \n• 1/1 Long - Bon Action: 10min: Size Large + Adv Str checks, Speed+10\n• Bardic - Bon Action: 1d10 bardic inspiration die to creature in 60 feet\n• 1/1 Long (or level 3 slot) - Bon Action: Free Command + Form 1 minute + concentration: More free Bon Action Commands. Any creature charmed auto-fails.\n• Misty Step\n\n🔴🔴OUT OF COMBAT🔴🔴\n• 1/1 Long - 1 minute: Regain warlock spell slots equal to half your max (round up)(2)\n• On Short - Regain all warlock spell slots\n• On Short - Regain all Bardic Inspiration",
+    "attacks_and_cantrips": "🟡🟡Resources🟡🟡\n• Sorcery Points: 10/10 (long rest)\n• Staff of Power Charges: 20/20 (long rest)\n• Hill Tumble: 4/4 (long rest)\n• Warlock Spellslots: 2/2 (short rest)\n• Second Wind: 2/2 (1 per short rest)\n• Comfortable dice: 0\n\n🔴🔴START OF COMBAT🔴🔴\n• Lucky on Initiative and may swap with willing\n\n🔷🔷SETUP🔷🔷\n• Shillelagh (b action)\n• Lrg Form (b act) (lrg, +10 sp, STR check adv)\n• Animate Objs / Wall of Fire / Hold Monster\n\n🔷🔷Action🔷🔷\n• E-Blast (3x) - H(+14) - D(d10) - push 10 ft\n• BB - H(+14) - D(4d8+7>4d8) - Con 20: Prone\n• 2/2 48hrs - Summon Giant Owl Mount\n• 1/1 Long (action) - Enter Vessel\n\n🔷Passive🔷\n• lightning damage - can't take reactions\n• targets have disadv on concentration save\n• 1/Turn - prof to atk's damage (lightning)\n\n🔷No Action🔷\n• 5/5 Long - Prone a Large or smaller creature you hit.\n• 1/1 Long - 30 blindsight: 5 mins\n• Sorcery points - Metamagic\n• Expend Sorc Slot for equal Sorc Pnts\n\n🔷B Action🔷\n• 1/1 Short - B Action: 30 ft. bolt: Dex Save 20: 4d6 lightning or half. Creature 30ft heals half damage. \n• 2/2 Long (or 2 sorc pnts) - B Action: 1min: Sorc Spells - DC+1, Adv Atks, 2 meta/spell\n• 1/1 Long - Large Form\n• Shillelagh\n• Misty Step\n• Quicken Spell\n• Expend Sorc Pnts for Sorc Slot (varies)\n\n🔷Metamagic Options🔷\n• Heightened (2pts) - one target disadv on save\n• Quickened (2pts) - b action spell (only 1 lvled spell this turn)\n• Subtle (1pt) - No components but consumed \n• Transmute (1pt) - acid, cold, fire, lightning, poison, thunder\n\n🔴🔴Out of Combat🔴🔴\n• 1/1 Long - 1 minute: Regain half max (1) warlock spell slots\n\n🔴🔴Short Rest🔴🔴\n• Regain all warlock spell slots\n• 1/1 Long - Regain half sorc pnts (5)\n\n🔴🔴Long Rest🔴🔴\n• Regain 3 Luck Points\n• Choose Lightning Form: White, Black, Blue",
     "strength_score": 11,
     "strength_mod": 0,
     "dexterity_score": 14,
@@ -65,64 +49,64 @@
     "intelligence_mod": 1,
     "wisdom_score": 12,
     "wisdom_mod": 1,
-    "charisma_score": 22,
-    "charisma_mod": 6,
-    "skill_notes": "Disadvantage on Stealth\nYou count as one size larger for carrying capacity.\n1x Long - Bon Action: Large for 10 mins. Adv on STR checks, Speed +10.\n2x Short (Second Wind) - roll 1d10 and add to the ability check. Fail: not expended.\n4x Short (Superiority): 1d8 to Stealth, Initiative, Persuade, Perform, Intimidate",
+    "charisma_score": 24,
+    "charisma_mod": 7,
+    "skill_notes": "Disadvantage on Stealth\nYou count as one size larger for carrying capacity.\n1x Long - Bon Action: Large for 10 mins. Adv on STR checks, Speed +10.",
     "strength_save_prof": "🔵",
-    "strength_save_mod": 8,
+    "strength_save_mod": 7,
     "dexterity_save_prof": "",
-    "dexterity_save_mod": 2,
+    "dexterity_save_mod": 4,
     "constitution_save_prof": "🔵",
-    "constitution_save_mod": 9,
+    "constitution_save_mod": 8,
     "intelligence_save_prof": "",
-    "intelligence_save_mod": 1,
+    "intelligence_save_mod": 3,
     "wisdom_save_prof": "",
-    "wisdom_save_mod": 1,
+    "wisdom_save_mod": 3,
     "charisma_save_prof": "",
-    "charisma_save_mod": 6,
-    "athletics_prof": "⭕",
-    "athletics_mod": 4,
-    "acrobatics_prof": "⭕",
-    "acrobatics_mod": 6,
-    "sleight_of_hand_prof": "⭕",
-    "sleight_of_hand_mod": 6,
-    "stealth_prof": "⭕",
-    "stealth_mod": 6,
-    "arcana_prof": "⭕",
-    "arcana_mod": 5,
-    "history_prof": "⭕",
-    "history_mod": 5,
-    "investigation_prof": "⭕",
-    "investigation_mod": 5,
-    "nature_prof": "⭕",
-    "nature_mod": 5,
-    "religion_prof": "⭕",
-    "religion_mod": 5,
-    "animal_handling_prof": "⭕",
-    "animal_handling_mod": 5,
+    "charisma_save_mod": 9,
+    "athletics_prof": "",
+    "athletics_mod": 0,
+    "acrobatics_prof": "",
+    "acrobatics_mod": 2,
+    "sleight_of_hand_prof": "",
+    "sleight_of_hand_mod": 2,
+    "stealth_prof": "",
+    "stealth_mod": 2,
+    "arcana_prof": "",
+    "arcana_mod": 1,
+    "history_prof": "",
+    "history_mod": 1,
+    "investigation_prof": "",
+    "investigation_mod": 1,
+    "nature_prof": "",
+    "nature_mod": 1,
+    "religion_prof": "",
+    "religion_mod": 1,
+    "animal_handling_prof": "",
+    "animal_handling_mod": 1,
     "insight_prof": "🔵",
-    "insight_mod": 9,
-    "medicine_prof": "⭕",
-    "medicine_mod": 5,
-    "perception_prof": "⭐",
-    "perception_mod": 17,
-    "survival_prof": "⭕",
-    "survival_mod": 5,
-    "deception_prof": "⭕",
-    "deception_mod": 10,
-    "intimidation_prof": "⭕",
-    "intimidation_mod": 10,
-    "performance_prof": "⭕",
-    "performance_mod": 10,
-    "persuasion_prof": "⭐",
-    "persuasion_mod": 22,
+    "insight_mod": 6,
+    "medicine_prof": "",
+    "medicine_mod": 1,
+    "perception_prof": "🔵",
+    "perception_mod": 6,
+    "survival_prof": "🔵",
+    "survival_mod": 6,
+    "deception_prof": "",
+    "deception_mod": 7,
+    "intimidation_prof": "",
+    "intimidation_mod": 7,
+    "performance_prof": "",
+    "performance_mod": 7,
+    "persuasion_prof": "🔵",
+    "persuasion_mod": 12,
     "background_features": [
       {
         "name": "Ability Scores (+2 Charisma, +1 Int)"
       },
       {
         "name": "Origin Feat: Lucky",
-        "description": "You gain the following benefits.\n\nLuck Points. You have a number of Luck Points equal to your Proficiency Bonus and can spend the points on the benefits below. You regain your expended Luck Points when you finish a Long Rest.\n\nAdvantage. When you roll a d20 for a D20 Test, you can spend 1 Luck Point to give yourself Advantage on the roll.\n\nDisadvantage. When a creature rolls a d20 for an attack roll against you, you can spend 1 Luck Point to impose Disadvantage on that roll."
+        "description": "- Regain on Long Rest: You have a number of Luck Points equal to your Prof Bonus.\n\n- When you make a D20 Test, you can spend 1 Luck Point to give yourself Advantage.\n\n- When a create makes an attack roll against you, you can spend 1 Luck Point to impose Disadvantage."
       },
       {
         "name": "Skills: Persuasion, Insight"
@@ -135,7 +119,7 @@
       },
       {
         "name": "Supernatural Gift: INSCRUTABLE",
-        "description": "Like a sphinx, you have a mind like a maze, impenetrable to mortal scrutiny. Additionally, you gain the following traits.\n- Psychic Shield. You have resistance to psychic damage.\n- Sphinx's Shroud. You are immune to any effect that\nallows other creatures to sense your emotions or read\nyour thoughts. Wisdom (Insight) checks made to ascertain your intentions or sincerity have disadvantage.\n\nINSCRUTABLE CHARACTERISTICS\n- I have sworn a vow to allow no living person to unveil the mask of Surge",
+        "description": "- Psychic Shield. You have resistance to psychic damage.\n- Sphinx's Shroud. You are immune to any effect that\nallows other creatures to sense your emotions or read\nyour thoughts. Wisdom (Insight) checks made to ascertain your intentions or sincerity have disadvantage.\n\nINSCRUTABLE CHARACTERISTICS\n- I have sworn a vow to allow no living person to unveil the mask of Surge",
         "row_color": "#d9e0e9"
       }
     ],
@@ -146,12 +130,12 @@
       },
       {
         "name": "Hill's Tumble (Hill Giant)",
-        "description": "You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest:\n\nWhen you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.",
+        "description": "Regain on Long Rest: You can use this a number of times equal to your Proficiency Bonus.\n- When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the Prone condition.",
         "row_color": "#8e8a85"
       },
       {
         "name": "Large Form",
-        "description": "Starting at character level 5, you can change your size to Large as a Bonus Action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a Long Rest.",
+        "description": "Once per Long Rest, Bonus Action: You can change your size to Large if you're in a big enough space. This lasts for 10 minutes or until you end it (no action required). For that duration, you have Advantage on Strength checks, and your Speed increases by 10 ft.",
         "row_color": "#8e8a85"
       },
       {
@@ -162,44 +146,19 @@
     ],
     "class_features": [
       {
-        "name": "Fighter: Starting Proficiencies (intimidation, acrobatics)",
-        "description": "-Skill Proficiencies- \nChoose 2 of Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival\n(Intimidation, Acrobatics)\n\n-Weapon Proficiencies-\nSimple and Martial weapons\n\n-Armor Training-\nLight, Medium and Heavy armor and Shields",
-        "row_color": "#d9c2af"
-      },
-      {
-        "name": "Fighter: Fighting Style: Defense",
+        "name": " Fighter: Fighting Style (Defense)",
         "description": "+1 AC",
-        "row_color": "#d9c2af"
+        "row_color": "#ddc6b7"
       },
       {
         "name": "Fighter: Second Wind",
-        "description": "As a Bonus Action, you can use it to regain Hit Points equal to 1d10 plus your Fighter level.\n\nYou can use this feature twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.",
-        "row_color": "#d9c2af"
+        "description": "Twice per Long Rest, as a Bonus Action, you can use it to regain Hit Points equal to 1d10 + your Fighter level. You regain an expended use on Short Rest.",
+        "row_color": "#ddc6b7"
       },
       {
-        "name": "Fighter: Weapon Mastery",
-        "description": "One-Handed Crossbow (vex: on hit: advantage on next attack against them)\n\nQuarterstaff (topple: Con Save 8 + Mod + Prof)\n\nDagger (nick: Auto deal mod)\n",
-        "row_color": "#d9c2af"
-      },
-      {
-        "name": "Fighter: Action Surge",
-        "description": "Once per short rest, on your turn, you can take one additional action, except the Magic action.",
-        "row_color": "#d9c2af"
-      },
-      {
-        "name": "Fighter: Tactical Mind",
-        "description": "When you fail an ability check, you can expend a use of your Second Wind to roll 1d10 and add the number rolled to the ability check. If the check still fails, this use of Second Wind isn’t expended.",
-        "row_color": "#d9c2af"
-      },
-      {
-        "name": "Battle Master: Combat Superiority (Ambush, Bait and Switch, Commanding Presence)",
-        "description": "Maneuvers. You learn three maneuvers of your choice from the Maneuver Options. You can use only one maneuver per attack.\n\nSuperiority Dice. You have four Superiority Dice, which are d8s and are expended when you use it. You regain all expended Superiority Dice when you finish a Short or Long Rest.\n\nSaving Throws. Maneuver DC equals 8 + Strength or Dexterity modifier (your choice) + Proficiency Bonus.\n\n--Chosen Maneuvers--\n--Ambush--\nWhen you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you are Incapacitated.\n\n--Bait and Switch--\nWhen you’re within 5 feet of a willing non-incapacitated creature on your turn, you can expend one Superiority Die and 5 feet of movement to switch places with that creature. This movement doesn’t provoke Opportunity Attacks. Roll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains AC equal to the number rolled.\n\n--Commanding Presence--\nWhen you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the roll.",
-        "row_color": "#809bc6"
-      },
-      {
-        "name": "Battle Master: Student of War (Calligrapher's Tools, Perception)",
-        "description": "You gain proficiency with one type of Artisan’s Tools of your choice, and you gain proficiency in one skill of your choice from the skills available to Fighters at level 1:\n(Calligrapher's Tool, Perception)\n\nAcrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival",
-        "row_color": "#809bc6"
+        "name": "Fighter: Weapon Masteries (Quarterstaff, Hand Cross, Trident)",
+        "description": "You may use the mastery properties of three kinds of weapons of your choice. On Long Rest, you can change one of those weapon choices.\n\nQuarterstaff (1d6 / vers-1d8) - Topple\nHand Crossbow (1d6) - Vex\nTrident (1d8 / Thrown (Range 20/60), vers-1d10) - Topple\n\n- TOPPLE - On hit: You can force the creature to make a Con save (DC: 8 + ability mod + prof) or gain the Prone condition.\n- VEX - On damage: You have Advantage on your next attack roll against that creature before the end of your next turn.",
+        "row_color": "#ddc6b7"
       },
       {
         "name": "Warlock: Invocation: Repelling Blast (Eldritch Blast)",
@@ -207,33 +166,33 @@
         "row_color": "#8171ad"
       },
       {
-        "name": "Warlock: Invocation: Lessons of the First Ones: Magic Initiate ( Chill Touch , Lightning Lure , Shield)",
-        "description": "Two Cantrips. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).\n\nLevel 1 Spell. Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.\n\nSpell Change. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.\n\nRepeatable. You can take this feat more than once, but you must choose a different spell list each time.",
+        "name": "Warlock: Invocation: Lessons of the First Ones: Magic Initiate",
+        "description": "You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Choose Intelligence, Wisdom, or Charisma as your spellcasting ability for this feat's spells. (Druid > Shillelagh, Mold Earth > Charisma)\n\nLevel 1 Spell. Choose a level 1 spell from the same spell list. You always have that spell prepared. You can cast it using any spell slots you have or once per Long Rest without a spell slot. (Healing Word)\n\nSpell Change. Whenever you gain a new level, you can replace one of the spells you chose with a different spell of the same level from the same spell list.\n\nRepeatable feat.",
         "row_color": "#8171ad"
       },
       {
         "name": "Warlock: Invocation: Lessons of the First Ones: Alert",
-        "description": "You gain the following benefits.\n\nInitiative Proficiency. When you roll Initiative, you can add your Proficiency Bonus to the roll.\n\nInitiative Swap. Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.",
+        "description": "- Add Proficiency Bonus to Initiative Roll.\n\n- After you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat if you and that ally don't have the Incapacitated condition.",
         "row_color": "#8171ad"
       },
       {
         "name": "Warlock: Pact Magic",
-        "description": "Through occult ceremony, you have formed a pact with a mysterious entity to gain magical powers.\n\nCantrips. You know two Warlock cantrips of your choice. Whenever you gain a Warlock level, you can replace one of your cantrips.\n\nSpell Slots. You regain all expended Pact Magic spell slots when you finish a Short or Long Rest.\n\nChanging Your Prepared Spells. Whenever you gain a Warlock level, you can replace one spell on your list.\n\nSpellcasting Ability. Charisma.\n\nSpellcasting Focus. You can use an Arcane Focus.",
+        "description": "Cantrips. You know two Warlock cantrips of your choice. Whenever you gain a Warlock level, you can replace one of your cantrips.\n\nSpell Slots. You regain all expended Pact Magic spell slots when you finish a Short Rest.\n\nChanging Your Prepared Spells. Whenever you gain a Warlock level, you can replace one spell on your list.\n\nSpellcasting Ability. Charisma.\n\nSpellcasting Focus. You can use an Arcane Focus.",
         "row_color": "#8171ad"
       },
       {
-        "name": "Warlock: Magical Cunning",
-        "description": "You can perform an esoteric rite for 1 minute. At the end of it, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up) (2). Once you use this feature, you can’t do so again until you finish a Long Rest.",
+        "name": "Warlock: Magical Cunning (1 slot per long rest)",
+        "description": "Spending 1 minute performing this ritual, you regain expended Pact Magic spell slots but no more than a number equal to half your maximum (round up) (1). Once you use this feature, you can’t do so again until you finish a Long Rest.",
         "row_color": "#8171ad"
       },
       {
-        "name": "The Genie: Expanded Spell List: Dao (Earth)",
+        "name": "The Genie: Expanded Spell List: Dao (earth)",
         "description": "Genie Spells\t               Djinni Spells\nDetect Evil and Good     Sanctuary\nPhantasmal Force\t       Spike Growth",
         "row_color": "#c082a3"
       },
       {
         "name": "The Genie: Genie's Vessel (ring)",
-        "description": "The vessel is a Tiny object, and you can use it as a spellcasting focus for your warlock spells. You decide what the object is. While you are touching the vessel, you can use it in the following ways:\n\nBottled Respite: As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest.\n\nThe vessel's AC equals your spell save DC. Its hit points equal your warlock level plus your proficiency bonus, and it is immune to poison and psychic damage.\n\nIf the vessel is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die.",
+        "description": "The vessel is a Tiny object of your choice, and you can use it as a spellcasting focus for your warlock spells. While you are touching the vessel, you can use it in the following ways:\n\nBottled Respite: Once per long rest, as an action, you can magically vanish into your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder and 20 feet high. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there appears in the unoccupied spaces closest to the vessel's former space.\n\nThe vessel's AC equals your spell save DC. Its hit points equal your warlock level plus your proficiency bonus, and it is immune to poison and psychic damage.\n\nIf the vessel is destroyed or you lose it, you can perform a 1-hour ceremony during a short or long rest to receive a replacement from your patron. The previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die.",
         "row_color": "#c082a3"
       },
       {
@@ -242,64 +201,62 @@
         "row_color": "#c082a3"
       },
       {
-        "name": "Bard: Proficiencies (flute, stealth)",
-        "description": "Multiclass Proficiencies: Choose 1 skill and 1 musical instrument to be proficient in",
-        "row_color": "#e6da9e"
+        "name": "Sorcerer: Innate Sorcery",
+        "description": "Twice per Long Rest, as a Bonus Action, you can unleash that magic for 1 minute, during which you gain the following benefits:\n\n    - The spell save DC of your Sorcerer spells increases by 1.\n    - You have Advantage on the attack rolls of Sorcerer spells you cast.",
+        "row_color": "#dd7d7d"
       },
       {
-        "name": "Bard: Bardic Inspiration",
-        "description": "You can supernaturally inspire others through words, music, or dance. This inspiration is represented by your Bardic Inspiration die, which is a d6.\n\nUsing Bardic Inspiration. As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time.\n\nOnce within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled.\n\nNumber of Uses. You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.\n\nAt Higher Levels. Your Bardic Inspiration die changes when you reach certain Bard levels, as shown in the Bardic Die column of the Bard Features table. The die becomes a d8 at level 5, a d10 at level 10, and a d12 at level 15.",
-        "row_color": "#e6da9e"
+        "name": "Sorcerer: Font of Magic",
+        "description": "- You have Sorcery Points equal to your Sorcerer Level. You regain all expended Sorcery Points when you finish a Long Rest.\n\n- You can expend a spell slot to gain a number of Sorcery Points equal to the slot’s level (no action required).\n\n- As a Bonus Action, you can expend Sorcery Points to create one spell slot until a Long Rest. The requirements are described in the table below. You can create a spell slot no higher than level 5.\n\nCreating Spell Slots\nSpell Slot\t| Sorc Point\t| Sorcerer Level\n1 \t                2 \t                 2\n2 \t                3 \t                 3\n3 \t                5 \t                 5\n4 \t                6 \t                 7\n5 \t                7 \t                 9",
+        "row_color": "#dd7d7d"
       },
       {
-        "name": "Bard: Spellcasting",
-        "description": "You have learned to cast spells through your bardic arts.\n\nCantrips. You know cantrips based on the Bard table. Whenever you gain a Bard level, you can replace one of your cantrips with another cantrip of your choice from the Bard spell list.\n\nSpell Slots. The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.\n\nPrepared Spells of Level 1+. You prepare the list of level 1+ spells that are available for you to cast with this feature. The number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. The chosen spells must be of a level for which you have spell slots.\n\nChanging Your Prepared Spells. Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots.\n\nSpellcasting Ability. Charisma is your spellcasting ability for your Bard spells.\n\nSpellcasting Focus. You can use a Musical Instrument as a Spellcasting Focus for your Bard spells.",
-        "row_color": "#e6da9e"
+        "name": "Sorcerer: Metamagic (Subtle, Quickened, Heightened, Transmuted)",
+        "description": "- You gain two Metamagic options of your choice of your choice at Sorcerer level 2 (Subtle Spell, Quickened Spell), level 10 (Heightened Spell, Transmuted Spell), and level 17.\n- You may replace one whenever you level up as a Sorcerer. \n- You may use only one Metamagic option on a spell when you cast it unless otherwise noted in one of those options.",
+        "row_color": "#dd7d7d"
       },
       {
-        "name": "Bard: Expertise (persuasion, perception)",
-        "description": "You gain Expertise (see the rules glossary) in two of your skill proficiencies of your choice.",
-        "row_color": "#e6da9e"
+        "name": "Sorcerer: Feat (Mage Slayer) (dex)",
+        "row_color": "#dd7d7d",
+        "description": "- Increase your Str or Dex score by 1, to a maximum of 20. (dex)\n\n- When you damage a creature that is concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.\n\n- One per Short Rest, if you fail an Int, Wis, or Cha save, you can cause yourself to succeed instead."
       },
       {
-        "name": "Bard: Jack of all Trades",
-        "description": "You can add half your Proficiency Bonus (round down) to any ability check you make that uses a skill proficiency you lack and that doesn't otherwise use your Proficiency Bonus.",
-        "row_color": "#e6da9e"
+        "name": "Sorcerer: Sorcerous Restoration",
+        "description": "Once per Long Rest, when you finish a Short Rest, you can regain expended Sorcery Points equal to half your Sorcerer level (round down).",
+        "row_color": "#dd7d7d"
       },
       {
-        "name": "College of Glamour: Beguiling Magic",
-        "description": "You always have the Charm Person and Mirror Image spells prepared.\n\nIn addition, immediately after you cast an Enchantment or Illusion spell using a spell slot, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Charmed or Frightened condition (your choice) for 1 minute. The target repeats the save at the end of each of its turns, ending the effect on itself on a success.\n\nOnce you use this benefit, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending one use of your Bardic Inspiration (no action required).",
-        "row_color": "#9ee6bd"
+        "name": "Sorcerer: Sorcery Incarnate ",
+        "description": "- If you have no uses of Innate Sorcery left, you can use it if you spend 2 Sorcery Points when you take the Bonus Action to activate it.\n\n- In addition, while your Innate Sorcery feature is active, you can use up to two of your Metamagic options on each spell you cast.",
+        "row_color": "#dd7d7d"
       },
       {
-        "name": "College of Glamour: Mantle of Inspiration",
-        "description": "You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of those creatures gains a number of Temporary Hit Points equal to two times the number rolled on the Bardic Inspiration die, and then each can use its Reaction to move up to its Speed without provoking Opportunity Attacks.",
-        "row_color": "#9ee6bd"
+        "name": "Sorcerer: ASI (cha, cha)",
+        "row_color": "#dd7d7d"
       },
       {
-        "name": "College of Glamour: Mantle of Majesty",
-        "description": "You always have the Command spell prepared.\n\nAs a Bonus Action, you cast Command without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends. During this time, you can cast Command as a Bonus Action without expending a spell slot.\n\nAny creature Charmed by you automatically fails its saving throw against the Command you cast with this feature.\n\nOnce you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).",
-        "row_color": "#9ee6bd"
+        "name": "Galvanic Sorcery: Galvanic Spells",
+        "description": "Lv |White Lightning    |Black Lightning           |Blue Lightning\n3   |Shield+Lessr Rst |Ray o'Sick+Blnd/Deaf |Color Spr+Alter Sf\n5   |Dispel Magic \t  |Vampiric Touch \t       |Phantom Steed\n7   |Death Ward \t  |Confusion                    |Hallucinatory Trn\n9   |Rary Telepathic B|Hold Monster \t       |Mislead\n\n- Whenever you finish a long rest, you can choose what type of lightning manifests through your magic.\n- Once per long rest, you can cast one 1st-level spell associate with your Lightning Form in the Galvanic Spells table once without expending a spell slot.",
+        "row_color": "#7ec2c2"
       },
       {
-        "name": "Feat: Metamagic Adept (Subtle Spell, Transmuted Spell)",
-        "description": "You've learned how to exert your will on your spells to alter how they function:\n\nYou learn two Metamagic options of your choice from the sorcerer class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class.\nYou gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.\n\n--Subtle Spell--\nCost: 1 Sorcery Point\n\nWhen you cast a spell, you can spend 1 Sorcery Point to cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell.\n\n--Transmuted Spell--\nCost: 1 Sorcery Point\n\nWhen you cast a spell that deals a type of damage from the following list, you can spend 1 Sorcery Point to change that damage type to one of the other listed types: Acid, Cold, Fire, Lightning, Poison, Thunder.",
-        "row_color": "#e6da9e"
+        "name": "Galvanic Sorcery: Radiant Bolt",
+        "description": "You learn the Sacred Flame spell. When you cast the spell, you may target up to two creatures within range that are within 5 feet of each other.",
+        "row_color": "#7ec2c2"
       },
       {
-        "name": "Bard: Font of Inspiration",
-        "description": "You now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.\n\nIn addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.",
-        "row_color": "#e6da9e"
+        "name": "Galvanic Sorcery: Spark of Affinity",
+        "description": "White Lightning - Abjuration and Divination spells\nBlack Lightning - Enchantment and Necromancy spells\nBlue Lightning - Illusion and Transmutation spells\n\nWhenever you use Metamagic on a spell of a school of magic associated with your current Lightning Form, you can reduce the sorcery points spent by 1. You can do this a number of times equal to your proficiency bonus per long rest",
+        "row_color": "#7ec2c2"
       },
       {
-        "name": "Bard: Countercharm",
-        "description": "You can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage.",
-        "row_color": "#e6da9e"
+        "name": "Galvanic Sorcery: Shocking Surge",
+        "description": "- As a bonus action, you can spend 1 sorcery point to change your current Lightning Form for a different one.\n\n- Once per long rest per Lightning Form, you can cast one 1st-level spell from your current Lightning Form without expending a spell slot.",
+        "row_color": "#7ec2c2"
       },
       {
-        "name": "Feat: Mage Slayer (Dex)",
-        "description": "Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.\n\nConcentration Breaker. When you damage a creature that is concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.\n\nGuarded Mind. If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.",
-        "row_color": "#e6da9e"
+        "name": "Fighter: Skill Proficiencies (Perception, Survival)",
+        "description": "Choose 2: Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival (Perception, Survival)"
       }
     ],
     "coins": {
@@ -310,20 +267,31 @@
     },
     "equipment": [
       {
+        "name": "Voldraxis's Vessel Ring",
+        "equip": true,
+        "description": "Sapphire Silver Ring with bolt of lightning darting around in the sapphire"
+      },
+      {
         "name": "Adamantine Half Plate (uncommon 1)",
-        "description": "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+        "description": "Crits are normal hits.",
         "equip": true,
         "row_color": "#a2d7a8"
       },
       {
-        "name": "Ring of Resistance (fire) (rare 1)",
+        "name": "Hat of Holding (uncommon 2)",
+        "description": "This hat has an interior space larger than its outside dimensions - roughly 2 ft square and 4 ft deep on the inside. The hat can hold up to 500 pounds, not exceeding a volume of 64 cubic feet, and weighs 5 pounds, regardless of its contents. Retrieving an item requires a Utilize action. If overloaded, pierced, or torn, it is destroyed, and its contents are scattered in the Astral Plane. If the hat is turned inside out, its contents spill forth unharmed, but the hat must be put right before it can be used again. The hat holds enough air for 10 minutes of breathing, divided by the number of breathing creatures inside. Placing a Hat of Holding inside an extradimensional space created by a Heward’s Handy Haversack, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within a 10-foot-radius Sphere centered on the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way and can’t be reopened.",
         "equip": true,
-        "description": "You have Resistance to one damage type while wearing this ring: Fire.",
+        "row_color": "#a2d7a8"
+      },
+      {
+        "name": "Ring of Resistance (lightning) (rare 1)",
+        "equip": true,
+        "description": "Resistance to Lightning damage.",
         "row_color": "#e77e7e"
       },
       {
         "name": "Shield of the Cavalier (very rare 1)",
-        "description": "Requires Attunement\nWhile holding this Shield, you have a +2 bonus to Armor Class. This bonus is in addition to the Shield’s normal bonus to AC. The Shield has the following additional properties that you can use while holding it. \n\nForceful Bash: When you take the Attack, you can make one of the attack rolls using the Shield against a target within 5 feet of yourself. Apply your Proficiency Bonus and Strength modifier to the attack roll. On a hit, the Shield deals Force damage to the target equal to 2d6 + 2 plus your Strength modifier, and if the target is a creature, you can push it up to 10 feet directly away from yourself. If the creature is your size or smaller, you can also knock it down, giving it the Prone condition. \n\nProtective Field: As a Reaction, when you or an ally you can see within 5 feet of you is targeted by an attack or makes a saving throw against an area of effect, you can use the Shield to create an immobile 5-foot Emanation originating from you. When the Emanation appears, any creatures or objects not fully contained within it are pushed into the nearest unoccupied spaces outside it. The attack or area of effect that triggered the Reaction has no effect on creatures and objects inside the Emanation, which lasts as long as you maintain Concentration, up to 1 minute. Nothing can pass into or out of the Emanation. A creature or object inside the Emanation can’t be damaged by attacks or effects originating from outside, nor can a creature inside the Emanation damage anything outside it. Once this property is used, it can’t be used again until the next dawn.",
+        "description": "Requires Attunement\nWhile holding, you have a +2 to AC in addition to the Shield’s normal bonus to AC.\n\nProtective Field: Once until Dawn, as a Reaction, when you or an ally you can see within 5 ft of you is targeted by an attack or makes a saving throw against an AoE, you can create an immobile 5 ft Emanation originating from you, pushing any creatures or objects not fully contained within it into the nearest unoccupied spaces outside it. The attack or AoE that triggered the Reaction has no effect on anything inside the Emanation, which lasts as long as you maintain Concentration, up to 1 minute. Nothing can pass into or out of the Emanation. Creature or objects inside the Emanation can’t be damaged by sources outside, nor can a source inside damage anything outside.\n\n(Forceful Bash: Not used)",
         "equip": true,
         "attune": true,
         "row_color": "#867ec4"
@@ -332,36 +300,20 @@
         "name": "Staff of Power (very rare 2) (bonded)",
         "equip": true,
         "attune": true,
-        "description": "Requires Attunement\nThis staff has 20 charges and can be wielded as a magic Quarterstaff that grants a +2 bonus to attack rolls and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls. Spells: While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell.\n\nSpell                              Charge Cost\nCone of Cold                  5\nFireball (level 5)             5\nGlobe of Invulnerability  6\nHold Monster                 5\nLevitate                          2\nLightning Bolt (Level 5)  5\nMagic Missile                 1\nRay of Enfeeblement     1\nWall of Force                  5\n\nRegaining Charges: The staff regains 2d8 + 4 expended charges daily at dawn. If you expend the last charge, roll 1d20. On a 1, the staff retains its +2 bonus to attack rolls and damage rolls but loses all other properties. On a 20, the staff regains 1d8 + 2 charges. Retributive Strike: You can take a Magic action to break the staff over your knee or against a solid surface. The staff is destroyed and releases its magic in an explosion that fills a 30-foot Emanation originating from itself. You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take Force damage equal to 16 times the number of charges in the staff. Each other creature in the area makes a DC 17 Dexterity saving throw. On a failed save, a creature takes Force damage equal to 4 times the number of charges in the staff. On a successful save, a creature takes half as much damage.",
+        "description": "Requires Attunement\nThis magic Quarterstaff has 20 charges and +2 bonus to attack rolls and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls. Spells: While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell.\n\nSpell                              Charge Cost\nCone of Cold                  5\nFireball (level 5)             5\nGlobe of Invulnerability  6\nHold Monster                 5\nLevitate                          2\nLightning Bolt (Level 5)  5\nMagic Missile                 1\nRay of Enfeeblement     1\nWall of Force                  5\n\nRegaining Charges: The staff regains 2d8 + 4 charges at dawn. If you expend the last charge, roll 1d20. On a 1, the staff retains its +2 bonus to attack rolls and damage rolls but loses all other properties. On a 20, the staff regains 1d8 + 2 charges. \n\nRetributive Strike: You can take a Magic action to break the staff over your knee or against a solid surface. The staff is destroyed and releases its magic in an explosion that fills a 30-foot Emanation originating from itself. You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take Force damage equal to 16 times the number of charges in the staff. Each other creature in the area makes a DC 17 Dexterity saving throw. On a failed save, a creature takes Force damage equal to 4 times the number of charges in the staff. On a successful save, a creature takes half as much damage.",
         "row_color": "#867ec4"
       },
       {
         "name": "White Lightning Mask (legendary 1)",
-        "description": "Damage Absorption. You have resistance against the mask's damage type. If you already have resistance to that damage type from another source, you instead have immunity to that damage type. If you already have immunity to that damage type from another source, whenever you are subjected to damage of that type, you take none of that damage and regain a number of hit points equal to half the damage dealt of that type.\n\nElectromagnetism. Once per short rest, you can use your reaction when you or a creature within 10 feet of you is targeted by a ranged attack. Until the start of your next turn, you have resistance to ranged attacks and all attacks that target a creature within 10 feet of you target you instead.\n\nWhite Lightning Surge. Once per short rest, you can use a bonus action to shoot a 5 by 30 ft. line of divine lightning originating from you. Any creature in its path must make a DC (8 + Charisma + Prof) Dex Save, taking 4d6 (or 5d6 at 16th level) lightning damage on a fail or half as much on a success. Another creature within 30 feet of you regains hitpoints equal to half the amount of damage dealt this way. \n\nFlash Sight. You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes.\n\n___Tongue. TBT\n\nLegendary Resistance (1/Day). If you fail a saving throw, you can choose to succeed instead.\n\nLingering Shock. If you deal lightning damage to a creature, it can't take reactions until its next turn.",
+        "description": "Damage Absorption - You have resistance against the mask's damage type. If you already have resistance, you instead have immunity. If you already have immunity, you additionally regain a number of hit points equal to half the damage dealt of that type.\n\nElectromagnetism - Once per short rest, you can use your reaction when you or a creature within 10 feet of you is targeted by a ranged attack. Until the start of your next turn, you have resistance to ranged attacks and all attacks that target a creature within 10 feet of you target you instead.\n\nWhite Lightning Surge - Once per short rest, you can use a bonus action to shoot a 5 by 30 ft. line of divine lightning originating from you. Any creature in its path must make a DC (8 + Charisma + Prof) Dex Save, taking 4d6 (or 5d6 at 16th level) lightning damage on a fail or half as much on a success. Another creature within 30 feet of you regains hitpoints equal to half the amount of damage dealt this way. \n\nFlash Sight - You gain darkvision out to 60 feet, or to an additional 60 feet if you already have that sense. Once per day, you can gain blindsight out to 30 feet for 5 minutes.\n\nLegendary Resistance (1/Day) - If you fail a saving throw, you can choose to succeed instead.\n\nLingering Shock - If you deal lightning damage to a creature, it can't take reactions until its next turn.",
         "equip": true,
         "attune": true,
         "row_color": "#f3d159"
-      },
-      {
-        "name": "Voldraxis's Vessel Ring",
-        "equip": true,
-        "description": "Sapphire Silver Ring with bolt of lightning darting around in the sapphire"
-      },
-      {
-        "name": "Hat of Holding (uncommon 2)",
-        "description": "This bag has an interior space larger than its outside dimensions—roughly 2 feet square and 4 feet deep on the inside. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 5 pounds, regardless of its contents. Retrieving an item from the bag requires a Utilize action. If the bag is overloaded, pierced, or torn, it is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth unharmed, but the bag must be put right before it can be used again. The bag holds enough air for 10 minutes of breathing, divided by the number of breathing creatures inside. Placing a Bag of Holding inside an extradimensional space created by a Heward’s Handy Haversack, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within a 10-foot-radius Sphere centered on the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way and can’t be reopened.",
-        "equip": true,
-        "row_color": "#a2d7a8"
       }
     ],
     "miscellaneous_items": [
       {
-        "name": "Censer of Controlling Air Elementals (rare 2)",
-        "description": "While incense is burning in this censer, you can use an action to speak the censer's command word and summon an air elemental, as if you had cast the Conjure Elemental spell. The censer can't be used this way again until the next dawn.\n\nAir Elemental\nLarge Elemental, Neutral\nInitiative +5 (15)AC 15\nHP 90 (12d10 + 24)\nSpeed 10 ft., Fly 90 ft. (hover)\nStr14(+2) - Dex20(+5) - Con14(+2)\nInt6(-2) - Wis10(+0) - Cha6(-2)\nResistances Bludgeoning, Lightning, Piercing, Slashing\nImmunities Poison, Thunder; Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious\nSenses Darkvision 60 ft., Passive Perception 10\nLanguages Primordial (Auran)\nPB +3\nTraits\nAir Form. The elemental can enter a creature's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so.\n\nActions\nMultiattack. The elemental makes two Thunderous Slam attacks.\n\nThunderous Slam. Melee Attack Roll: +8, reach 10 ft. Hit: 14 (2d8 + 5) Thunder damage.\n\nWhirlwind (Recharge 4–6). Strength Saving Throw: DC 13, one Medium or smaller creature in the elemental's space. Failure: 24 (4d10 + 2) Thunder damage, and the target is pushed up to 20 feet straight away from the elemental and has the Prone condition. Success: Half damage only.",
-        "row_color": "#e77e7e"
-      },
-      {
-        "name": "Figurine of Wondrous Power (owl) (rare 3)",
+        "name": "(x2) Figurine of Wondrous Power (owl) (rare 2&3)",
         "description": "This serpentine statuette of an owl is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a a giant owl for up to 8 hours. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.\n\nThe creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.\n\nThe creature reverts to its figurine form at the end of the duration, if its creature form drops to 0 Hit Points, or if you take a Magic action while touching the creature to make it revert to figurine form.\n\nOnce it has been used, it can't be used again until 2 days have passed. \n\nGiant Owl\nLarge Celestial, Neutral\nInitiative +2 (12)AC 12\nHP 19 (3d10 + 3)\nSpeed 5 ft., Fly 60 ft.\nStr13(+1) - Dex15(+2) - Con12(+1)\nInt10(+0) - Wis14(+2)(save+4) - Cha10(+0)\nSkills Perception +6, Stealth +6\nResistances Necrotic, Radiant\nSenses Darkvision 120 ft., Passive Perception 16\nLanguages Celestial; understands Common, Elvish, and Sylvan but can't speak them\nPB +2\nTraits\nFlyby. The owl doesn't provoke an Opportunity Attack when it flies out of an enemy's reach.\n\nActions\nTalons. Melee Attack Roll: +4, reach 5 ft. Hit: 7 (1d10 + 2) Slashing damage.\n\nSpellcasting. The owl casts one of the following spells, requiring no spell components and using Wisdom as the spellcasting ability:\n\nAt will: Detect Evil and Good, Detect Magic\n1/day: Clairvoyance",
         "row_color": "#e77e7e"
       },
@@ -377,22 +329,22 @@
       }
     ],
     "spellcasting_ability": "charisma",
-    "spell_save_dc": 22,
-    "spell_attack_bonus": 14,
-    "spells_known": "4 - 12",
-    "spells_prepared": "4 - 12",
+    "spell_save_dc": 20,
+    "spell_attack_bonus": "14",
+    "spells_known": "4(W)  15(S)",
+    "spells_prepared": "4(W)  15(S)",
     "level_0_spell_slots_available": 0,
     "level_0_spell_slot_max": 0,
-    "level_1_spell_slots_available": "3",
+    "level_1_spell_slots_available": "4",
     "level_1_spell_slot_max": "4",
     "level_2_spell_slots_available": "3",
     "level_2_spell_slot_max": "3",
-    "level_3_spell_slots_available": "1",
+    "level_3_spell_slots_available": "3",
     "level_3_spell_slot_max": "3",
-    "level_4_spell_slots_available": "1",
+    "level_4_spell_slots_available": "2",
     "level_4_spell_slot_max": "2",
-    "level_5_spell_slots_available": 0,
-    "level_5_spell_slot_max": 0,
+    "level_5_spell_slots_available": "2",
+    "level_5_spell_slot_max": "2",
     "level_6_spell_slots_available": 0,
     "level_6_spell_slot_max": 0,
     "level_7_spell_slots_available": 0,
@@ -403,83 +355,8 @@
     "level_9_spell_slot_max": 0,
     "level_0_spells": [
       {
-        "name": "Booming Blade (warlock)",
-        "source": "Tasha's Cauldron of Everything",
-        "school": "evocation",
-        "level": 0,
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "Self (5-foot radius)",
-        "components": "S, M (a melee weapon worth at least 1 sp)",
-        "duration": "1 round",
-        "description": "You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends.\n\nAt Higher Levels: At 5th level, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).",
-        "class": [
-          "artificer",
-          "sorcerer",
-          "warlock",
-          "wizard"
-        ],
-        "row_color": "#8772c0"
-      },
-      {
-        "name": "Eldritch Blast (warlock)",
-        "source": "Player's Handbook",
-        "school": "evocation",
-        "level": 0,
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "120 feet",
-        "components": "V, S",
-        "duration": "Instantaneous",
-        "description": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.\n\nAt Higher Levels: The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
-        "class": [
-          "warlock"
-        ],
-        "row_color": "#8772c0"
-      },
-      {
-        "name": "Thunderclap (bard)",
-        "source": "Xanathar's Guide to Everything",
-        "school": "evocation",
-        "level": 0,
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "Self (5-foot radius)",
-        "components": "S",
-        "duration": "Instantaneous",
-        "description": "You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.\n\nAt Higher Levels: The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
-        "class": [
-          "bard",
-          "druid",
-          "sorcerer",
-          "warlock",
-          "wizard",
-          "artificer"
-        ],
-        "row_color": "#f0e6a3"
-      },
-      {
-        "name": "Prestidigitation (bard)",
-        "source": "Player's Handbook",
-        "school": "transmutation",
-        "level": 0,
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "10 feet",
-        "components": "V, S",
-        "duration": "Up to 1 hour",
-        "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:\n\nYou create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n\nYou instantaneously light or snuff out a candle, a torch, or a small campfire.\n\nYou instantaneously clean or soil an object no larger than 1 cubic foot.\n\nYou chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n\nYou make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\n\nYou create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
-        "class": [
-          "artificer",
-          "bard",
-          "sorcerer",
-          "warlock",
-          "wizard"
-        ],
-        "row_color": "#f0e6a3"
-      },
-      {
-        "name": "Mage Hand (bard)",
+        "name": "Mage Hand (warlock)",
+        "UA": false,
         "source": "Player's Handbook",
         "school": "conjuration",
         "level": 0,
@@ -496,28 +373,88 @@
           "warlock",
           "wizard"
         ],
-        "row_color": "#f0e6a3"
+        "row_color": "#8e7dd2"
       },
       {
-        "name": "Lightning Lure (magic initiate)",
+        "name": "Eldritch Blast (warlock)",
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.\n\nAt Higher Levels: The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+        "class": [
+          "warlock"
+        ],
+        "row_color": "#8e7dd2"
+      },
+      {
+        "name": "Booming Blade (sorcerer)",
+        "UA": false,
         "source": "Tasha's Cauldron of Everything",
         "school": "evocation",
         "level": 0,
         "ritual": false,
         "casting_time": "1 action",
-        "range": "Self (15-foot radius)",
-        "components": "V",
-        "duration": "Instantaneous",
-        "description": "You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.\n\nAt Higher Levels: This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+        "range": "Self (5-foot radius)",
+        "components": "S, M (a melee weapon worth at least 1 sp)",
+        "duration": "1 round",
+        "description": "You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends.\n\nAt Higher Levels: At 5th level, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).",
         "class": [
           "artificer",
           "sorcerer",
           "warlock",
           "wizard"
-        ]
+        ],
+        "row_color": "#c87373"
       },
       {
-        "name": "Chill Touch (magic initiate)",
+        "name": "Green-Flame Blade (sorcerer)",
+        "UA": false,
+        "source": "Tasha's Cauldron of Everything/Sword Coast Adventurer's Guide",
+        "school": "evocation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Self (5-foot radius)",
+        "components": "S, M (a melee weapon worth at least 1 sp)",
+        "duration": "Instantaneous",
+        "description": "You brandish the weapon used in the spell’s casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack’s normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.\n\nAt Higher Levels: At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).",
+        "class": [
+          "artificer",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#c87373"
+      },
+      {
+        "name": "Prestidigitation (sorcerer)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "10 feet",
+        "components": "V, S",
+        "duration": "Up to 1 hour",
+        "description": "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range:\n\nYou create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.\n\nYou instantaneously light or snuff out a candle, a torch, or a small campfire.\n\nYou instantaneously clean or soil an object no larger than 1 cubic foot.\n\nYou chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.\n\nYou make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.\n\nYou create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.\n\nIf you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+        "class": [
+          "artificer",
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#b87676"
+      },
+      {
+        "name": "Chill Touch (sorcerer)",
+        "UA": false,
         "source": "Player's Handbook",
         "school": "necromancy",
         "level": 0,
@@ -526,15 +463,147 @@
         "range": "120 feet",
         "components": "V, S",
         "duration": "1 round",
-        "description": "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.\n\nAt Higher Levels: This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+        "description": "Make a ranged spell attack against the creature. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.\n\nAt Higher Levels: This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
         "class": [
           "sorcerer",
           "warlock",
           "wizard"
-        ]
+        ],
+        "row_color": "#c87373"
+      },
+      {
+        "name": "Message (sorcerer)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "120 feet",
+        "components": "V, S, M (a short piece of copper wire)",
+        "duration": "1 round",
+        "description": "You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.\n\nYou can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn’t have to follow a straight line and can travel freely around corners or through openings.",
+        "class": [
+          "artificer",
+          "bard",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#c87373"
+      },
+      {
+        "name": "Minor illusion (sorcerer)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "illusion",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "30 feet",
+        "components": "S, M (a bit of fleece)",
+        "duration": "1 minute",
+        "description": "You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.\n\nIf you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else’s voice, a lion’s roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.\n\nIf you create an image of an object—such as a chair, muddy footprints, or a small chest—it must be no larger than a 5-foot cube. The image can’t create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.\n\nIf a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#c87373"
+      },
+      {
+        "name": "Sacred Flame (galvanic sorcery) (doubled)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "60 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "Flame-like radiance descends on *UP TO TWO CREATURES WITHIN 5 FEET OF EACH OTHER* that you can see within range. The target(s) must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target(s) gain no benefit from cover for this saving throw.\n\nAt Higher Levels: The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+        "class": [
+          "cleric"
+        ],
+        "row_color": "#8bceda"
+      },
+      {
+        "name": "Shillelagh (magic initiate)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 bonus action",
+        "range": "Touch",
+        "components": "V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)",
+        "duration": "1 minute",
+        "description": "The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon.",
+        "class": [
+          "druid"
+        ],
+        "row_color": "#e0e0e0"
+      },
+      {
+        "name": "Guidance (magic initiate)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "divination",
+        "level": 0,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Touch",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+        "description": "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.",
+        "class": [
+          "artificer",
+          "cleric",
+          "druid"
+        ],
+        "row_color": "#e0e0e0"
       }
     ],
     "level_1_spells": [
+      {
+        "name": "Hellish Rebuke (warlock)",
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 reaction, which you take when you are damaged by a creature within 60 feet of you that you can see",
+        "range": "60 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
+        "class": [
+          "warlock"
+        ],
+        "row_color": "#8e7dd2",
+        "prepared": true
+      },
+      {
+        "name": "Comprehend Languages (warlock)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "divination",
+        "level": 1,
+        "ritual": true,
+        "casting_time": "1 action",
+        "range": "Self",
+        "components": "V, S, M (a pinch of soot and salt)",
+        "duration": "1 hour",
+        "description": "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.\n\nThis spell doesn’t decode secret messages in a text or glyph, such as an arcane sigil, that isn’t part of a written language.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#8e7dd2",
+        "prepared": true
+      },
       {
         "name": "Detect Evil and Good (genie)",
         "source": "Player's Handbook",
@@ -550,7 +619,8 @@
           "cleric",
           "paladin"
         ],
-        "row_color": "#d095c0"
+        "row_color": "#d095c0",
+        "prepared": true
       },
       {
         "name": "Sanctuary (genie)",
@@ -567,82 +637,52 @@
           "artificer",
           "cleric"
         ],
-        "row_color": "#d095c0"
-      },
-      {
-        "name": "Hellish Rebuke (warlock)",
-        "source": "Player's Handbook",
-        "school": "evocation",
-        "level": 1,
-        "ritual": false,
-        "casting_time": "1 reaction, which you take when you are damaged by a creature within 60 feet of you that you can see",
-        "range": "60 feet",
-        "components": "V, S",
-        "duration": "Instantaneous",
-        "description": "You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
-        "class": [
-          "warlock"
-        ],
-        "row_color": "#8772c0",
+        "row_color": "#d095c0",
         "prepared": true
       },
       {
-        "name": "Unseen Servant (warlock)",
-        "source": "Player's Handbook",
-        "school": "conjuration",
+        "name": "Absorb Elements (sorcerer)",
+        "UA": false,
+        "source": "Xanathar's Guide to Everything",
+        "school": "abjuration",
         "level": 1,
-        "ritual": true,
-        "casting_time": "1 action",
-        "range": "60 feet",
-        "components": "V, S, M (a piece of string and a bit of wood)",
-        "duration": "1 hour",
-        "description": "This spell creates an invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 hit point, and a Strength of 2, and it can’t attack. If it drops to 0 hit points, the spell ends.\n\nOnce on each of your turns as a bonus action, you can mentally command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, the servant performs the task to the best of its ability until it completes the task, then waits for your next command.\n\nIf you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.",
+        "ritual": false,
+        "casting_time": "1 reaction, which you take when you take acid, cold, fire, lightning, or thunder damage",
+        "range": "Self",
+        "components": "S",
+        "duration": "1 round",
+        "description": "The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.",
         "class": [
-          "bard",
-          "warlock",
+          "artificer",
+          "druid",
+          "ranger",
+          "sorcerer",
           "wizard"
         ],
-        "row_color": "#8772c0",
+        "row_color": "#c87373",
         "prepared": true
       },
       {
-        "name": "Healing Word (bard)",
+        "name": "Shield (sorcerer)",
+        "UA": false,
         "source": "Player's Handbook",
-        "school": "evocation",
+        "school": "abjuration",
         "level": 1,
         "ritual": false,
-        "casting_time": "1 bonus action",
-        "range": "60 feet",
-        "components": "V",
-        "duration": "Instantaneous",
-        "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
+        "casting_time": "1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell",
+        "range": "Self",
+        "components": "V, S",
+        "duration": "1 round",
+        "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.",
         "class": [
-          "bard",
-          "cleric",
-          "druid"
+          "sorcerer",
+          "wizard"
         ],
-        "row_color": "#f0e6a3",
+        "row_color": "#c87373",
         "prepared": true
       },
       {
-        "name": "Dissonant Whispers (bard)",
-        "source": "Player's Handbook",
-        "school": "enchantment",
-        "level": 1,
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "60 feet",
-        "components": "V",
-        "duration": "Instantaneous",
-        "description": "You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away. A deafened creature automatically succeeds on the save.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
-        "class": [
-          "bard"
-        ],
-        "row_color": "#f0e6a3",
-        "prepared": true
-      },
-      {
-        "name": "Silvery Barbs (bard)",
+        "name": "Silvery Barbs (sorcerer)",
         "source": "Strixhaven: A Curriculum of Chaos",
         "school": "enchantment",
         "level": 1,
@@ -657,36 +697,38 @@
           "sorcerer",
           "wizard"
         ],
-        "row_color": "#f0e6a3",
+        "row_color": "#c87373",
         "prepared": true
       },
       {
-        "name": "Charm Person (glamour)",
+        "name": "Disguise Self (sorcerer)",
+        "UA": false,
         "source": "Player's Handbook",
-        "school": "enchantment",
+        "school": "illusion",
         "level": 1,
         "ritual": false,
         "casting_time": "1 action",
-        "range": "30 feet",
+        "range": "Self",
         "components": "V, S",
         "duration": "1 hour",
-        "description": "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+        "description": "You make yourself – including your clothing, armor, weapons, and other belongings on your person – look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can’t change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.\n\nThe changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.",
         "class": [
+          "artificer",
           "bard",
-          "druid",
           "sorcerer",
-          "warlock",
           "wizard"
         ],
-        "row_color": "#9ce2e1"
+        "row_color": "#c87373",
+        "prepared": true
       },
       {
-        "name": "Shield (magic initiate) (once free)",
+        "name": "Shield (galv) (W Lightning > once free)",
+        "UA": false,
         "source": "Player's Handbook",
         "school": "abjuration",
         "level": 1,
         "ritual": false,
-        "casting_time": "1 reaction, which you take when you are hit by an attack or targeted by themagic missilespell",
+        "casting_time": "1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell",
         "range": "Self",
         "components": "V, S",
         "duration": "1 round",
@@ -694,7 +736,68 @@
         "class": [
           "sorcerer",
           "wizard"
-        ]
+        ],
+        "prepared": true,
+        "row_color": "#8bceda"
+      },
+      {
+        "name": "Ray of Sickness (galv) (Black Lightning > once free)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "necromancy",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "60 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+        "class": [
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
+      },
+      {
+        "name": "Color Spray (galv) (Blue Lightning > once free)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "illusion",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Self (15-foot cone)",
+        "components": "V, S, M (a pinch of powder or sand that is colored red, yellow, and blue)",
+        "duration": "1 round",
+        "description": "A dazzling array of flashing, colored light springs from your hand. Roll 6d10, the total is how many hit points of creatures this spell can effect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can’t see).\n\nStarting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for the creature to be affected.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.",
+        "class": [
+          "bard",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
+      },
+      {
+        "name": "Healing Word (magic initiate) (once free)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "evocation",
+        "level": 1,
+        "ritual": false,
+        "casting_time": "1 bonus action",
+        "range": "60 feet",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nAt Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
+        "class": [
+          "bard",
+          "cleric",
+          "druid"
+        ],
+        "row_color": "#e0e0e0",
+        "prepared": true
       },
       {
         "name": "Magic Missile (Staff 1 Charge)",
@@ -711,45 +814,11 @@
           "sorcerer",
           "wizard"
         ],
-        "row_color": "#5c5c5c"
+        "row_color": "#5c5c5c",
+        "prepared": false
       }
     ],
     "level_2_spells": [
-      {
-        "name": "Phantasmal Force (genie)",
-        "source": "Player's Handbook",
-        "school": "illusion",
-        "level": 2,
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "60 feet",
-        "components": "V, S, M (a bit of fleece)",
-        "duration": "Concentration, up to 1 minute",
-        "description": "You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs.\n\nThe phantasm includes sound, temperature, and other stimuli, also evident only to the creature.\n\nThe target can use its action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends.\n\nWhile a target is affected by the spell, the target treats the phantasm as if it were real. The target rationalizes any illogical outcomes from interacting with the phantasm. For example, a target attempting to walk across a phantasmal bridge that spans a chasm falls once it steps onto the bridge. If the target survives the fall, it still believes that the bridge exists and comes up with some other explanation for its fall; it was pushed, it slipped, or a strong wind might have knocked it off.\n\nAn affected target is so convinced of the phantasm’s reality that it can even take damage from the illusion. A phantasm created to appear as a creature can attack the target. Similarly, a phantasm created to appear as fire, a pool of acid, or lava can burn the target. Each round on your turn, the phantasm can deal 1d6 psychic damage to the target if it is in the phantasm’s area or within 5 feet of the phantasm, provided that the illusion is of a creature or hazard that could logically deal damage, such as by attacking. The target perceives the damage as a type appropriate to the illusion.",
-        "class": [
-          "bard",
-          "sorcerer",
-          "wizard"
-        ],
-        "row_color": "#d095c0"
-      },
-      {
-        "name": "Spike Growth (genie)",
-        "source": "Player's Handbook",
-        "school": "transmutation",
-        "level": 2,
-        "ritual": false,
-        "casting_time": "1 action",
-        "range": "150 feet",
-        "components": "V, S, M (seven sharp thorns or seven small twigs, each sharpened to a point)",
-        "duration": "Concentration, up to 10 minutes",
-        "description": "The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.\n\nThe transformation of the ground is camouflaged to look natural. Any creature that can’t see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.",
-        "class": [
-          "druid",
-          "ranger"
-        ],
-        "row_color": "#d095c0"
-      },
       {
         "name": "Misty Step (warlock)",
         "source": "Player's Handbook",
@@ -790,26 +859,111 @@
         "row_color": "#8772c0"
       },
       {
-        "name": "Silence (bard)",
+        "name": "Phantasmal Force (genie)",
         "source": "Player's Handbook",
         "school": "illusion",
         "level": 2,
-        "ritual": true,
+        "ritual": false,
         "casting_time": "1 action",
-        "range": "120 feet",
-        "components": "V, S",
-        "duration": "Concentration, up to 10 minutes",
-        "description": "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.",
+        "range": "60 feet",
+        "components": "V, S, M (a bit of fleece)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs.\n\nThe phantasm includes sound, temperature, and other stimuli, also evident only to the creature.\n\nThe target can use its action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends.\n\nWhile a target is affected by the spell, the target treats the phantasm as if it were real. The target rationalizes any illogical outcomes from interacting with the phantasm. For example, a target attempting to walk across a phantasmal bridge that spans a chasm falls once it steps onto the bridge. If the target survives the fall, it still believes that the bridge exists and comes up with some other explanation for its fall; it was pushed, it slipped, or a strong wind might have knocked it off.\n\nAn affected target is so convinced of the phantasm’s reality that it can even take damage from the illusion. A phantasm created to appear as a creature can attack the target. Similarly, a phantasm created to appear as fire, a pool of acid, or lava can burn the target. Each round on your turn, the phantasm can deal 1d6 psychic damage to the target if it is in the phantasm’s area or within 5 feet of the phantasm, provided that the illusion is of a creature or hazard that could logically deal damage, such as by attacking. The target perceives the damage as a type appropriate to the illusion.",
         "class": [
           "bard",
-          "cleric",
-          "ranger"
+          "sorcerer",
+          "wizard"
         ],
-        "row_color": "#f0e6a3",
+        "row_color": "#d095c0",
         "prepared": true
       },
       {
-        "name": "Lesser Restoration (bard)",
+        "name": "Spike Growth (genie)",
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "150 feet",
+        "components": "V, S, M (seven sharp thorns or seven small twigs, each sharpened to a point)",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.\n\nThe transformation of the ground is camouflaged to look natural. Any creature that can’t see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.",
+        "class": [
+          "druid",
+          "ranger"
+        ],
+        "row_color": "#d095c0",
+        "prepared": true
+      },
+      {
+        "name": "Vortex Warp (sorcerer)",
+        "UA": false,
+        "source": "Strixhaven: A Curriculum of Chaos",
+        "school": "conjuration",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "90 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "You magically twist space around another creature you can see within range. The target must succeed on a Constitution saving throw (the target can choose to fail), or the target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze.\n\nAt Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the range of the spell increases by 30 feet for each slot level above 2nd.",
+        "class": [
+          "artificer",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#c87373",
+        "prepared": true
+      },
+      {
+        "name": "Invisibility (sorcerer)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "illusion",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Touch",
+        "components": "V, S, M (an eyelash encased in gum arabic)",
+        "duration": "Concentration, up to 1 hour",
+        "description": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell.\n\nAt Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+        "class": [
+          "artificer",
+          "bard",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#c87373",
+        "prepared": true
+      },
+      {
+        "name": "Enhance Ability (sorcerer)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Touch",
+        "components": "V, S, M (fur or a feather from a beast)",
+        "duration": "Concentration, up to 1 hour",
+        "description": "You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains the effect until the spell ends.\n\nBear’s Endurance:The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.\n\nBull’s Strength:The target has advantage on Strength checks, and their carrying capacity doubles.\n\nCat’s Grace:The target has advantage on Dexterity checks. It also doesn’t take damage from falling 20 feet or less if it isn’t incapacitated.\n\nEagle’s Splendor:The target has advantage on Charisma checks.\n\nFox’s Cunning:The target has advantage on Intelligence checks.\n\nOwl’s Wisdom:The target has advantage on Wisdom checks.\n\nAt Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+        "class": [
+          "artificer",
+          "bard",
+          "cleric",
+          "druid",
+          "ranger",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#ca6d6d",
+        "prepared": true
+      },
+      {
+        "name": "Lesser Restoration (galv) (W Lightning)",
+        "UA": false,
         "source": "Player's Handbook",
         "school": "abjuration",
         "level": 2,
@@ -827,27 +981,49 @@
           "paladin",
           "ranger"
         ],
-        "row_color": "#f0e6a3",
+        "row_color": "#8bceda",
         "prepared": true
       },
       {
-        "name": "Mirror Image (glamour)",
+        "name": "Blindness/Deafness (galv) (Black Lightning)",
+        "UA": false,
         "source": "Player's Handbook",
-        "school": "illusion",
+        "school": "necromancy",
+        "level": 2,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "30 feet",
+        "components": "V",
+        "duration": "1 minute",
+        "description": "You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.\n\nAt Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+        "class": [
+          "bard",
+          "cleric",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
+      },
+      {
+        "name": "Alter Self (galv) (Blue Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
         "level": 2,
         "ritual": false,
         "casting_time": "1 action",
         "range": "Self",
         "components": "V, S",
-        "duration": "1 minute",
-        "description": "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it’s impossible to track which image is real. You can use your action to dismiss the illusory duplicates.\n\nEach time a creature targets you with an attack during the spell’s duration, roll a d20 to determine whether the attack instead targets one of your duplicates.\n\nIf you have three duplicates, you must roll a 6 or higher to change the attack’s target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.\n\nA duplicate’s AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.\n\nA creature is unaffected by this spell if it can’t see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.",
+        "duration": "Concentration, up to 1 hour",
+        "description": "You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.\n\nAquatic Adaptation:You adapt your body to an aquatic environment, sprouting gills, and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.\n\nChange Appearance:You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also don’t appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can’t use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.\n\nNatural Weapons:You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.",
         "class": [
-          "bard",
+          "artificer",
           "sorcerer",
-          "warlock",
           "wizard"
         ],
-        "row_color": "#9ce2e1"
+        "row_color": "#8bceda",
+        "prepared": true
       },
       {
         "name": "Levitate (staff 2 charges)",
@@ -887,27 +1063,28 @@
     ],
     "level_3_spells": [
       {
-        "name": "Glyph of Warding (bard) (greater invis)",
+        "name": "Fly (sorcerer)",
+        "UA": false,
         "source": "Player's Handbook",
-        "school": "abjuration",
+        "school": "transmutation",
         "level": 3,
         "ritual": false,
-        "casting_time": "1 hour",
+        "casting_time": "1 action",
         "range": "Touch",
-        "components": "V, S, M (incense and powdered diamond worth at least 200 gp, which the spell consumes)",
-        "duration": "Until dispelled or triggered",
-        "description": "When you cast this spell, you inscribe a glyph that creates a magical effect triggered by other creatures, either upon a surface (such as a table or a section of floor or wall) or within an object that can be closed (such as a book, a scroll, or a treasure chest) to conceal the glyph. The glyph can cover an area no larger than 10 feet in diameter. If the surface or object is moved more than 10 feet from where you cast this spell, the glyph is broken, and the spell ends without being triggered.\n\nThe glyph is nearly invisible and requires a successful Intelligence (Investigation) check against your spell save DC to be found.\n\nYou decide what triggers the glyph when you cast the spell. For glyphs inscribed on a surface, the most typical triggers include touching or standing on the glyph, removing another object covering the glyph, approaching within a certain distance of the glyph, or manipulating the object on which the glyph is inscribed. For glyphs inscribed within an object, the most common triggers include opening that object, approaching within a certain distance of the object, or seeing or reading the glyph. Once a glyph is triggered, this spell ends.\n\nYou can further refine the trigger so the spell activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect aberrations or drow), or alignment. You can also set conditions for creatures that don’t trigger the glyph, such as those who say a certain password.\n\nWhen you inscribe the glyph, choose explosive runes or a spell glyph.\n\nExplosive Runes:When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one.\n\nSpell Glyph:You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding.",
+        "components": "V, S, M (a wing feather from any bird)",
+        "duration": "Concentration, up to 10 minutes",
+        "description": "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
         "class": [
           "artificer",
-          "bard",
-          "cleric",
+          "sorcerer",
+          "warlock",
           "wizard"
         ],
-        "prepared": true,
-        "row_color": "#f0e6a3"
+        "row_color": "#c87373",
+        "prepared": true
       },
       {
-        "name": "Hypnotic Pattern (bard)",
+        "name": "Hypnotic Pattern (sorcerer)",
         "source": "Player's Handbook",
         "school": "illusion",
         "level": 3,
@@ -924,44 +1101,132 @@
           "wizard"
         ],
         "prepared": true,
-        "row_color": "#f0e6a3"
+        "row_color": "#c87373"
       },
       {
-        "name": "Mass Healing Word (bard)",
+        "name": "Counterspell (sorcerer)",
+        "UA": false,
         "source": "Player's Handbook",
-        "school": "evocation",
+        "school": "abjuration",
         "level": 3,
         "ritual": false,
-        "casting_time": "1 bonus action",
+        "casting_time": "1 reaction, which you take when you see a creature within 60 feet of you casting a spell",
         "range": "60 feet",
-        "components": "V",
+        "components": "S",
         "duration": "Instantaneous",
-        "description": "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.",
+        "description": "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a success, the creature’s spell fails and has no effect.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
         "class": [
-          "bard",
-          "cleric"
+          "sorcerer",
+          "warlock",
+          "wizard"
         ],
-        "prepared": true,
-        "row_color": "#f0e6a3"
+        "row_color": "#c87373",
+        "prepared": true
       },
       {
-        "name": "Sending (bard)",
-        "source": "Player's Handbook",
-        "school": "evocation",
+        "name": "Thunder Step (sorcerer)",
+        "UA": false,
+        "source": "Xanathar's Guide to Everything",
+        "school": "conjuration",
         "level": 3,
         "ritual": false,
         "casting_time": "1 action",
-        "range": "Unlimited",
-        "components": "V, S, M (a short piece of fine copper wire)",
-        "duration": "1 round",
-        "description": "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.\n\nYou can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive.",
+        "range": "90 ft",
+        "components": "V",
+        "duration": "Instantaneous",
+        "description": "You teleport yourself to an unoccupied space you can see within range. Immediately after you disappear, a thunderous boom sounds, and each creature within 10 feet of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much damage on a successful one. The thunder can be heard from up to 300 feet away.\n\nYou can bring along objects as long as their weight doesn’t exceed what you can carry. You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell, and there must be an unoccupied space within 5 feet of your destination space for the creature to appear in; otherwise, the creature is left behind.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
+        "class": [
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#c87373",
+        "prepared": true
+      },
+      {
+        "name": "Tongues (sorcerer)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "divination",
+        "level": 3,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Touch",
+        "components": "V, M (a small clay model of a ziggurat)",
+        "duration": "1 hour",
+        "description": "This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.",
         "class": [
           "bard",
           "cleric",
+          "sorcerer",
+          "warlock",
           "wizard"
         ],
-        "prepared": true,
-        "row_color": "#f0e6a3"
+        "row_color": "#c87373",
+        "prepared": true
+      },
+      {
+        "name": "Dispel Magic (galv) (W Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "abjuration",
+        "level": 3,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "Instantaneous",
+        "description": "Choose any creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.",
+        "class": [
+          "artificer",
+          "bard",
+          "cleric",
+          "druid",
+          "paladin",
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
+      },
+      {
+        "name": "Vampiric Touch (galv) (Black Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "necromancy",
+        "level": 3,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Self",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+        "description": "The touch of your shadow-wreathed hand can siphon force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.\n\nAt Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+        "class": [
+          "sorcerer",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
+      },
+      {
+        "name": "Phantom Steed (galv) (Blue Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "illusion",
+        "level": 3,
+        "ritual": true,
+        "casting_time": "1 minute",
+        "range": "30 feet",
+        "components": "V, S",
+        "duration": "1 hour",
+        "description": "A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature’s appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.\n\nFor the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 miles at a fast pace. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an action to dismiss it or if the steed takes any damage.",
+        "class": [
+          "wizard"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
       },
       {
         "name": "Fireball (staff 5 charges)",
@@ -1000,7 +1265,7 @@
     ],
     "level_4_spells": [
       {
-        "name": "Polymorph (bard)",
+        "name": "Polymorph (sorcerer)",
         "source": "Player's Handbook",
         "school": "transmutation",
         "level": 4,
@@ -1016,50 +1281,173 @@
           "sorcerer",
           "wizard"
         ],
-        "row_color": "#f0e6a3",
+        "row_color": "#c87373",
         "prepared": true
       },
       {
-        "name": "Dimension Door (bard)",
+        "name": "Wall of Fire (sorcerer)",
+        "UA": false,
         "source": "Player's Handbook",
-        "school": "conjuration",
+        "school": "evocation",
         "level": 4,
         "ritual": false,
         "casting_time": "1 action",
-        "range": "500 feet",
-        "components": "V",
-        "duration": "Instantaneous",
-        "description": "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet\".\n\nYou can bring along objects as long as their weight doesn’t exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.\n\nIf you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.",
+        "range": "120 feet",
+        "components": "V, S, M (a small piece of phosphorus)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.\n\nWhen the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.\n\nOne side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.\n\nAt Higher Levels: When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+        "class": [
+          "druid",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#c87373",
+        "prepared": true
+      },
+      {
+        "name": "Death Ward (galv) (W Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "abjuration",
+        "level": 4,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "Touch",
+        "components": "V, S",
+        "duration": "8 hours",
+        "description": "You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends. If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spells ends.",
+        "class": [
+          "cleric",
+          "paladin"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
+      },
+      {
+        "name": "Confusion (galv) (Black Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "enchantment",
+        "level": 4,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "90 feet",
+        "components": "V, S, M (three nut shells)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "This spell assaults and twists creatures’ minds, spawning delusions and provoking uncontrolled actions. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.\n\nAn affected target can’t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.\n\nd10Behavior1The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn’t take an action this turn.2-6The creature doesn’t move or take actions this turn.7-8The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.9-10The creature can act and move normally.\n\nAt the end of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.\n\nAt Higher Levels: When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.",
+        "class": [
+          "bard",
+          "druid",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
+      },
+      {
+        "name": "Hallucinatory Terrain (galv) (Blue Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "illusion",
+        "level": 4,
+        "ritual": false,
+        "casting_time": "10 minutes",
+        "range": "300 feet",
+        "components": "V, S, M (a stone, a twig, and a bit of green plant)",
+        "duration": "24 hours",
+        "description": "You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren’t changed in appearance.\n\nThe tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn’t obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.",
+        "class": [
+          "bard",
+          "druid",
+          "warlock",
+          "wizard"
+        ],
+        "row_color": "#8bceda",
+        "prepared": true
+      }
+    ],
+    "level_5_spells": [
+      {
+        "name": "Animate Objects (sorcerer)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "transmutation",
+        "level": 5,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "120 feet",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can’t animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.\n\nAs a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.\n\nAnimated Object Statistics Size HPACAttack Ability Scores Tiny2018+8 to hit, 1d4 + 4 damage Str: 4, Dex: 18Small2516+6 to hit, 1d8 + 2 damage Str: 6, Dex: 14Medium4013+5 to hit, 2d6 + 1 damage Str: 10, Dex: 12Large5010+6 to hit, 2d10 + 2 damage Str: 14, Dex: 10Huge8010+8 to hit, 2d12 + 4 damage Str: 18, Dex: 6\n\nAn animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the objects lack legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.\n\nIf you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form.\n\nAt Higher Levels: If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th.",
+        "class": [
+          "artificer",
+          "bard",
+          "sorcerer",
+          "wizard"
+        ],
+        "row_color": "#c87373",
+        "prepared": true
+      },
+      {
+        "name": "Rary's Telepathic Bond (galv) (W Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "divination",
+        "level": 5,
+        "ritual": true,
+        "casting_time": "1 action",
+        "range": "30 feet",
+        "components": "V, S, M (pieces of eggshell from two different kinds of creatures)",
+        "duration": "1 hour",
+        "description": "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren’t affected by this spell.\n\nUntil the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can’t extend to other planes of existence.",
+        "class": [
+          "bard",
+          "wizard"
+        ],
+        "prepared": true,
+        "row_color": "#8bceda"
+      },
+      {
+        "name": "Hold Monster (galv) (Black Lightning)",
+        "UA": false,
+        "source": "Player's Handbook",
+        "school": "enchantment",
+        "level": 5,
+        "ritual": false,
+        "casting_time": "1 action",
+        "range": "90 feet",
+        "components": "V, S, M (a small, straight piece of iron)",
+        "duration": "Concentration, up to 1 minute",
+        "description": "Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.\n\nAt Higher Levels: When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.",
         "class": [
           "bard",
           "sorcerer",
           "warlock",
           "wizard"
         ],
-        "row_color": "#f0e6a3",
-        "prepared": true
+        "prepared": true,
+        "row_color": "#8bceda"
       },
       {
-        "name": "Greater Invisibility (bard)",
+        "name": "Mislead (galv) (Blue Lightning)",
+        "UA": false,
         "source": "Player's Handbook",
         "school": "illusion",
-        "level": 4,
+        "level": 5,
         "ritual": false,
         "casting_time": "1 action",
-        "range": "Touch",
-        "components": "V, S",
-        "duration": "Concentration, up to 1 minute",
-        "description": "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target’s person.",
+        "range": "Self",
+        "components": "S",
+        "duration": "Concentration, up to 1 hour",
+        "description": "You become invisible at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends if you attack or cast a spell.\n\nYou can use your action to move your illusory double up to twice your speed and make it gesture, speak, and behave in whatever way you choose.\n\nYou can see through its eyes and hear through its ears as if you were located where it is. On each of your turns as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.",
         "class": [
           "bard",
-          "sorcerer",
+          "warlock",
           "wizard"
         ],
-        "row_color": "#f0e6a3",
-        "prepared": true
-      }
-    ],
-    "level_5_spells": [
+        "prepared": true,
+        "row_color": "#8bceda"
+      },
       {
         "name": "Wall of Force (staff 5 charges)",
         "source": "Player's Handbook",
@@ -1144,13 +1532,15 @@
     ],
     "currentSpellLevel": 0,
     "character_image_path": "/dungeonadmin-api/character-image/character_1748440060658-6203.jpg",
-    "proficiencies": "All Armors\nShields\nAll Weapons\n\n-Tools-\nAlchemist's Supplies\nCaligrapher's Tools\n\n-Sight-\nDarkvision 60ft\n1x Long - 30 blindsight: 5 mins"
+    "proficiencies": "All Armors\nShields\nAll Weapons\n\n-Tools-\nAlchemist's Supplies\nCaligrapher's Tools\n\n-Sight-\nDarkvision 60ft\n1x Long - 30 blindsight: 5 mins",
+    "campaign_notes": "",
+    "misc_notes": "SPELLS CAST FROM ITEMS (DMG 365)\n- Some magic items allow the user to cast a spell from the item. The spell is cast at the lowest possible spell and caster level, doesn’t expend any of the user’s spell slots, and requires no components unless the item’s description notes otherwise. The spell uses its normal casting time, range, and duration, and the user of the item must concentrate if the spell requires concentration."
   },
-  "updated": "2026-01-13T16:21:40.543Z",
+  "updated": "2026-01-18T14:23:57.645Z",
   "id": "1748440060658-6203",
   "owner": "101058586979842834815",
   "created": "2025-06-01T23:01:37.306Z",
   "isPublic": true,
   "sharedWith": [],
-  "_version": 429
+  "_version": 2415
 }

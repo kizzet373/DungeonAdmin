@@ -1,0 +1,194 @@
+{
+  "name": "Monk",
+  "source": "Player's Handbook",
+  "class description": "<p>Monks use rigorous combat training and mental discipline to align themselves with the multiverse and focus their internal reservoirs of power. Different Monks conceptualize this power in various ways: as breath, energy, life force, essence, or self, for example. Whether channeled as a striking display of martial prowess or as a subtler manifestation of defense and speed, this power infuses all that a Monk does.</p><p>Monks focus their internal power to create extraordinary, even supernatural, effects. They channel uncanny speed and strength into their attacks, with or without the use of weapons. In a Monk’s hands, even the most basic weapons can become sophisticated implements of combat mastery.</p><p>Many Monks find that a structured life of ascetic withdrawal helps them cultivate the physical and mental focus they need to harness their power. Other Monks believe that immersing themselves in the vibrant confusion of life helps to fuel their determination and discipline.</p><p>Monks generally view adventures as tests of their physical and mental development. They are driven by a desire to accomplish a greater mission than merely slaying monsters and plundering treasure; they strive to turn themselves into living weapons.</p>",
+  "core traits": [
+    {
+      "name": "Primary Ability",
+      "html description": "Dexterity and Wisdom"
+    },
+    {
+      "name": "Hit Point Die",
+      "html description": "D8 per Monk level"
+    },
+    {
+      "name": "Saving Throw Proficiencies",
+      "html description": "Strength and Dexterity"
+    },
+    {
+      "name": "Skill Proficiencies",
+      "html description": "Choose 2: Acrobatics, Athletics, History, Insight, Religion, or Stealth"
+    },
+    {
+      "name": "Tool Proficiencies",
+      "html description": "Choose one type of Artisan's Tools or Musical Instrument"
+    },
+    {
+      "name": "Weapon Proficiencies",
+      "html description": "Simple weapons and Martial weapons that have the Light property"
+    },
+    {
+      "name": "Starting Equipment",
+      "html description": "Choose A or B: (A) Spear, 5 Daggers, Artisan's Tools or Musical Instrument chosen for the tool proficiency above, Explorer's Pack and 11 GP; or (B) 50 GP"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Warrior of Mercy",
+      "url": "/monk:warrior-of-mercy"
+    },
+    {
+      "name": "Warrior of Shadow",
+      "url": "/monk:warrior-of-shadow"
+    },
+    {
+      "name": "Warrior of the Elements",
+      "url": "/monk:warrior-of-the-elements"
+    },
+    {
+      "name": "Warrior of the Open Hand",
+      "url": "/monk:warrior-of-the-open-hand"
+    }
+  ],
+  "multiclass requirements": [],
+  "multiclass characteristics": [
+    {
+      "name": "Gained Traits",
+      "html_content": "<ul>\n<li>Gain the Hit Point Die trait from the Core Monk Traits table.</li>\n<li>Gain the Monk’s level 1 features, which are listed in the Monk Features table.</li>\n</ul>"
+    }
+  ],
+  "class feature table": [
+    {
+      "name": "Class Feature Table",
+      "columns": [
+        "Level",
+        "Martial Arts",
+        "Focus Points",
+        "Unarmored Movement"
+      ],
+      "rows": [
+        [
+          "1",
+          "1d6",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "1d6",
+          "2",
+          "+10 ft"
+        ],
+        [
+          "3",
+          "1d6",
+          "3",
+          "+10 ft"
+        ],
+        [
+          "4",
+          "1d6",
+          "4",
+          "+10 ft"
+        ],
+        [
+          "5",
+          "1d8",
+          "5",
+          "+10 ft"
+        ],
+        [
+          "6",
+          "1d8",
+          "6",
+          "+15 ft"
+        ],
+        [
+          "7",
+          "1d8",
+          "7",
+          "+15 ft"
+        ],
+        [
+          "8",
+          "1d8",
+          "8",
+          "+15 ft"
+        ],
+        [
+          "9",
+          "1d8",
+          "9",
+          "+15 ft"
+        ],
+        [
+          "10",
+          "1d8",
+          "10",
+          "+20 ft"
+        ],
+        [
+          "11",
+          "1d10",
+          "11",
+          "+20 ft"
+        ],
+        [
+          "12",
+          "1d10",
+          "12",
+          "+20 ft"
+        ],
+        [
+          "13",
+          "1d10",
+          "13",
+          "+20 ft"
+        ],
+        [
+          "14",
+          "1d10",
+          "14",
+          "+25 ft"
+        ],
+        [
+          "15",
+          "1d10",
+          "15",
+          "+25 ft"
+        ],
+        [
+          "16",
+          "1d10",
+          "16",
+          "+25 ft"
+        ],
+        [
+          "17",
+          "1d12",
+          "17",
+          "+25 ft"
+        ],
+        [
+          "18",
+          "1d12",
+          "18",
+          "+30 ft"
+        ],
+        [
+          "19",
+          "1d12",
+          "19",
+          "+30 ft"
+        ],
+        [
+          "20",
+          "1d12",
+          "20",
+          "+30 ft"
+        ]
+      ]
+    }
+  ],
+  "features": []
+}
