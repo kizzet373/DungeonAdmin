@@ -1,66 +1,506 @@
 [
   {
     "name": "Acolyte",
-    "file": "backgroundacolyte.html"
+    "type": "common",
+    "abilityScores": "Intelligence, Wisdom, Charisma",
+    "feat": "Magic Initiate (Cleric)",
+    "skillProficiencies": "Insight and Religion",
+    "toolProficiency": "Calligrapher's Supplies",
+    "equipment": "Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP"
   },
   {
     "name": "Artisan",
-    "file": "backgroundartisan.html"
+    "type": "common",
+    "abilityScores": "Strength, Dexterity, Intelligence",
+    "feat": "Crafter",
+    "skillProficiencies": "Investigation and Persuasion",
+    "toolProficiency": "Choose one kind of Artisan's Tools",
+    "equipment": "Choose A or B: (A) Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP; or (B) 50 GP"
   },
   {
     "name": "Charlatan",
-    "file": "backgroundcharlatan.html"
+    "type": "common",
+    "abilityScores": "Dexterity, Constitution, Charisma",
+    "feat": "Skilled",
+    "skillProficiencies": "Deception and Sleight of Hand",
+    "toolProficiency": "Forgery Kit",
+    "equipment": "Choose A or B: (A) Forgery Kit, Costume, Fine Clothes, 15 GP; or (B) 50 GP"
   },
   {
     "name": "Criminal",
-    "file": "backgroundcriminal.html"
+    "type": "common",
+    "abilityScores": "Dexterity, Constitution, Intelligence",
+    "feat": "Alert",
+    "skillProficiencies": "Sleight of Hand and Stealth",
+    "toolProficiency": "Thieves' Tools",
+    "equipment": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP"
   },
   {
     "name": "Entertainer",
-    "file": "backgroundentertainer.html"
+    "type": "common",
+    "abilityScores": "Strength, Dexterity, Charisma",
+    "feat": "Musician",
+    "skillProficiencies": "Acrobatics and Performance",
+    "toolProficiency": "Choose one kind of Musical Instrument",
+    "equipment": "Choose A or B: (A) Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP; or (B) 50 GP"
   },
   {
     "name": "Farmer",
-    "file": "backgroundfarmer.html"
+    "type": "common",
+    "abilityScores": "Strength, Constitution, Wisdom",
+    "feat": "Tough",
+    "skillProficiencies": "Animal Handling and Nature",
+    "toolProficiency": "Carpenter's Tools",
+    "equipment": "Choose A or B: (A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP; or (B) 50 GP"
   },
   {
     "name": "Guard",
-    "file": "backgroundguard.html"
+    "type": "common",
+    "abilityScores": "Strength, Intelligence, Wisdom",
+    "feat": "Alert",
+    "skillProficiencies": "Athletics and Perception",
+    "toolProficiency": "Choose one kind of Gaming Set",
+    "equipment": "Choose A or B: (A) Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP; or (B) 50 GP"
   },
   {
     "name": "Guide",
-    "file": "backgroundguide.html"
+    "type": "common",
+    "abilityScores": "Dexterity, Constitution, Wisdom",
+    "feat": "Magic Initiate (Druid)",
+    "skillProficiencies": "Stealth and Survival",
+    "toolProficiency": "Cartographer's Tools",
+    "equipment": "Choose A or B: (A) Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP; or (B) 50 GP"
   },
   {
     "name": "Hermit",
-    "file": "backgroundhermit.html"
+    "type": "common",
+    "abilityScores": "Constitution, Wisdom, Charisma",
+    "feat": "Healer",
+    "skillProficiencies": "Medicine and Religion",
+    "toolProficiency": "Herbalism Kit",
+    "equipment": "Choose A or B: (A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP; or (B) 50 GP"
   },
   {
     "name": "Merchant",
-    "file": "backgroundmerchant.html"
+    "type": "common",
+    "abilityScores": "Constitution, Intelligence, Charisma",
+    "feat": "Lucky",
+    "skillProficiencies": "Animal Handling and Persuasion",
+    "toolProficiency": "Navigator's Tools",
+    "equipment": "Choose A or B: (A) Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP; or (B) 50 GP"
   },
   {
     "name": "Noble",
-    "file": "backgroundnoble.html"
+    "type": "common",
+    "abilityScores": "Strength, Intelligence, Charisma",
+    "feat": "Skilled",
+    "skillProficiencies": "History and Persuasion",
+    "toolProficiency": "Choose one kind of Gaming Set",
+    "equipment": "Choose A or B: (A) Gaming Set (same as above), Fine Clothes, Perfume, 29 GP; or (B) 50 GP"
   },
   {
     "name": "Sage",
-    "file": "backgroundsage.html"
+    "type": "common",
+    "abilityScores": "Constitution, Intelligence, Wisdom",
+    "feat": "Magic Initiate (Wizard)",
+    "skillProficiencies": "Arcana and History",
+    "toolProficiency": "Calligrapher's Supplies",
+    "equipment": "Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP"
   },
   {
     "name": "Sailor",
-    "file": "backgroundsailor.html"
+    "type": "common",
+    "abilityScores": "Strength, Dexterity, Wisdom",
+    "feat": "Tavern Brawler",
+    "skillProficiencies": "Acrobatics and Perception",
+    "toolProficiency": "Navigator's Tools",
+    "equipment": "Choose A or B: (A) Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP; or (B) 50 GP"
   },
   {
     "name": "Scribe",
-    "file": "backgroundscribe.html"
+    "type": "common",
+    "abilityScores": "Dexterity, Intelligence, Wisdom",
+    "feat": "Skilled",
+    "skillProficiencies": "Investigation and Perception",
+    "toolProficiency": "Calligrapher's Supplies",
+    "equipment": "Choose A or B: (A) Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP; or (B) 50 GP"
   },
   {
     "name": "Soldier",
-    "file": "backgroundsoldier.html"
+    "type": "common",
+    "abilityScores": "Strength, Dexterity, Constitution",
+    "feat": "Savage Attacker",
+    "skillProficiencies": "Athletics and Intimidation",
+    "toolProficiency": "Choose one kind of Gaming Set",
+    "equipment": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP"
   },
   {
     "name": "Wayfarer",
-    "file": "backgroundwayfarer.html"
+    "type": "common",
+    "abilityScores": "Dexterity, Wisdom, Charisma",
+    "feat": "Lucky",
+    "skillProficiencies": "Insight and Stealth",
+    "toolProficiency": "Thieves' Tools",
+    "equipment": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Aberrant Heir",
+    "type": "eberron",
+    "abilityScores": "Constitution, Intelligence, Charisma",
+    "feat": "Aberrant Dragonmark",
+    "skillProficiencies": "Insight, Intimidation",
+    "toolProficiency": "Choose one kind of Artisan's Tools",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Dagger, Costume, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Archaeologist",
+    "type": "eberron",
+    "abilityScores": "Intelligence, Wisdom, Charisma",
+    "feat": "Skilled",
+    "skillProficiencies": "History, Survival",
+    "toolProficiency": "Cartographer's Tools",
+    "equipment": "Choose A or B: (A) Cartographer's Tools, Bullseye Lantern, Miner's Pick, Shovel, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Agent",
+    "type": "eberron",
+    "abilityScores": "Strength, Intelligence, Charisma",
+    "feat": "Lucky",
+    "skillProficiencies": "Investigation, Persuasion",
+    "toolProficiency": "Choose one kind of Artisan's Tools",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Fine Clothes, House Signet Ring, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Cannith Heir",
+    "type": "eberron",
+    "abilityScores": "Strength, Dexterity, Intelligence",
+    "feat": "Mark of Making",
+    "skillProficiencies": "Investigation, Persuasion",
+    "toolProficiency": "Alchemist's Supplies or Tinker's Tools",
+    "equipment": "Choose A or B: (A) Choice of tools above, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Deneith Heir",
+    "type": "eberron",
+    "abilityScores": "Strength, Dexterity, Constitution",
+    "feat": "Mark of Sentinel",
+    "skillProficiencies": "Athletics, Perception",
+    "toolProficiency": "One Gaming Set and Vehicles (Land)",
+    "equipment": "Choose A or B: (A) Spear, Shield, Gaming Set, Fine Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Ghallanda Heir",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Constitution, Charisma",
+    "feat": "Mark of Hospitality",
+    "skillProficiencies": "Persuasion, Sleight of Hand",
+    "toolProficiency": "Brewer's Supplies or Cook's Utensils",
+    "equipment": "Choose A or B: (A) Choice of tools above, Fine Clothes, 30 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Jorasco Heir",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Constitution, Wisdom",
+    "feat": "Mark of Healing",
+    "skillProficiencies": "Medicine, Stealth",
+    "toolProficiency": "Herbalism Kit",
+    "equipment": "Choose A or B: (A) Herbalism Kit, Healer's Kit, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Kundarak Heir",
+    "type": "eberron",
+    "abilityScores": "Strength, Constitution, Intelligence",
+    "feat": "Mark of Warding",
+    "skillProficiencies": "Investigation, Perception",
+    "toolProficiency": "Thieves' Tools or Tinker's Tools",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Lyrandar Heir",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Intelligence, Wisdom",
+    "feat": "Mark of Storm",
+    "skillProficiencies": "Acrobatics, Perception",
+    "toolProficiency": "Navigator's Tools and Vehicles (Air/Sea)",
+    "equipment": "Choose A or B: (A) Navigator's Tools, Fine Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Medani Heir",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Intelligence, Wisdom",
+    "feat": "Mark of Detection",
+    "skillProficiencies": "Insight, Investigation",
+    "toolProficiency": "Thieves' Tools or Disguise Kit",
+    "equipment": "Choose A or B: (A) Disguise Kit, Fine Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Orien Heir",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Intelligence, Wisdom",
+    "feat": "Mark of Passage",
+    "skillProficiencies": "Acrobatics, Survival",
+    "toolProficiency": "One Gaming Set and Vehicles (Land)",
+    "equipment": "Choose A or B: (A) Gaming Set, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Phiarlan Heir",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Intelligence, Charisma",
+    "feat": "Mark of Shadow",
+    "skillProficiencies": "Performance, Stealth",
+    "toolProficiency": "Disguise Kit or Musical Instrument",
+    "equipment": "Choose A or B: (A) Musical Instrument, Costume, Fine Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Sivis Heir",
+    "type": "eberron",
+    "abilityScores": "Intelligence, Wisdom, Charisma",
+    "feat": "Mark of Scribing",
+    "skillProficiencies": "History, Insight",
+    "toolProficiency": "Calligrapher's Supplies or Forgery Kit",
+    "equipment": "Choose A or B: (A) Calligrapher's Supplies, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Tharashk Heir",
+    "type": "eberron",
+    "abilityScores": "Strength, Dexterity, Wisdom",
+    "feat": "Mark of Finding",
+    "skillProficiencies": "Insight, Survival",
+    "toolProficiency": "Thieves' Tools or One Gaming Set",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Fine Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Thuranni Heir",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Intelligence, Charisma",
+    "feat": "Mark of Shadow",
+    "skillProficiencies": "Performance, Stealth",
+    "toolProficiency": "Poisoner's Kit or Musical Instrument",
+    "equipment": "Choose A or B: (A) Musical Instrument, Poisoner's Kit, Fine Clothes, 13 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Vadalis Heir",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Constitution, Wisdom",
+    "feat": "Mark of Handling",
+    "skillProficiencies": "Animal Handling, Nature",
+    "toolProficiency": "Herbalism Kit",
+    "equipment": "Choose A or B: (A) Herbalism Kit, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Inquisitive",
+    "type": "eberron",
+    "abilityScores": "Dexterity, Intelligence, Wisdom",
+    "feat": "Alert",
+    "skillProficiencies": "Insight, Investigation",
+    "toolProficiency": "Thieves' Tools or One Gaming Set",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Magnifying Glass, Fine Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Chondathan Freebooter",
+    "type": "faerun",
+    "abilityScores": "Strength, Dexterity, Charisma",
+    "feat": "Tavern Brawler",
+    "skillProficiencies": "Athletics, Perception",
+    "toolProficiency": "Navigator's Tools",
+    "equipment": "Choose A or B: (A) Navigator's Tools, Dagger, Traveler's Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Dead Magic Dweller",
+    "type": "faerun",
+    "abilityScores": "Constitution, Intelligence, Wisdom",
+    "feat": "Alert",
+    "skillProficiencies": "Arcana, Survival",
+    "toolProficiency": "Choose one kind of Artisan's Tools",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Quarterstaff, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Dragon Cultist",
+    "type": "faerun",
+    "abilityScores": "Intelligence, Wisdom, Charisma",
+    "feat": "Magic Initiate (Wizard)",
+    "skillProficiencies": "Deception, Religion",
+    "toolProficiency": "Choose one kind of Artisan's Tools",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Robe, 5 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Emerald Enclave Caretaker",
+    "type": "faerun",
+    "abilityScores": "Strength, Constitution, Wisdom",
+    "feat": "Magic Initiate (Druid)",
+    "skillProficiencies": "Animal Handling, Nature",
+    "toolProficiency": "Herbalism Kit",
+    "equipment": "Choose A or B: (A) Herbalism Kit, Sickle, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Flaming Fist Mercenary",
+    "type": "faerun",
+    "abilityScores": "Strength, Dexterity, Constitution",
+    "feat": "Savage Attacker",
+    "skillProficiencies": "Athletics, Intimidation",
+    "toolProficiency": "Choose one kind of Gaming Set",
+    "equipment": "Choose A or B: (A) Gaming Set, Spear, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Genie-touched",
+    "type": "faerun",
+    "abilityScores": "Constitution, Intelligence, Charisma",
+    "feat": "Skilled",
+    "skillProficiencies": "Arcana, Persuasion",
+    "toolProficiency": "Choose one kind of Artisan's Tools",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Fine Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Harper",
+    "type": "faerun",
+    "abilityScores": "Dexterity, Intelligence, Charisma",
+    "feat": "Skilled",
+    "skillProficiencies": "Investigation, Stealth",
+    "toolProficiency": "Choose one kind of Musical Instrument",
+    "equipment": "Choose A or B: (A) Musical Instrument, Fine Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Ice Fisher",
+    "type": "faerun",
+    "abilityScores": "Strength, Constitution, Wisdom",
+    "feat": "Tough",
+    "skillProficiencies": "Perception, Survival",
+    "toolProficiency": "Choose one kind of Artisan's Tools",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Spear, Traveler's Clothes, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Knight of the Gauntlet",
+    "type": "faerun",
+    "abilityScores": "Strength, Constitution, Wisdom",
+    "feat": "Magic Initiate (Cleric)",
+    "skillProficiencies": "Insight, Religion",
+    "toolProficiency": "Choose one kind of Gaming Set",
+    "equipment": "Choose A or B: (A) Gaming Set, Holy Symbol, Traveler's Clothes, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Lords' Alliance Vassal",
+    "type": "faerun",
+    "abilityScores": "Strength, Intelligence, Charisma",
+    "feat": "Skilled",
+    "skillProficiencies": "History, Persuasion",
+    "toolProficiency": "Choose one kind of Gaming Set",
+    "equipment": "Choose A or B: (A) Gaming Set, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Moonwell Pilgrim",
+    "type": "faerun",
+    "abilityScores": "Dexterity, Constitution, Wisdom",
+    "feat": "Magic Initiate (Druid)",
+    "skillProficiencies": "Nature, Religion",
+    "toolProficiency": "Herbalism Kit",
+    "equipment": "Choose A or B: (A) Herbalism Kit, Quarterstaff, Traveler's Clothes, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Mulhorandi Tomb Raider",
+    "type": "faerun",
+    "abilityScores": "Strength, Dexterity, Intelligence",
+    "feat": "Alert",
+    "skillProficiencies": "Athletics, Investigation",
+    "toolProficiency": "Thieves' Tools",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Crowbar, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Mythalkeeper",
+    "type": "faerun",
+    "abilityScores": "Intelligence, Wisdom, Charisma",
+    "feat": "Magic Initiate (Wizard)",
+    "skillProficiencies": "Arcana, History",
+    "toolProficiency": "Calligrapher's Supplies",
+    "equipment": "Choose A or B: (A) Calligrapher's Supplies, Book (History), Robe, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Purple Dragon Squire",
+    "type": "faerun",
+    "abilityScores": "Strength, Constitution, Charisma",
+    "feat": "Savage Attacker",
+    "skillProficiencies": "Animal Handling, Athletics",
+    "toolProficiency": "Choose one kind of Gaming Set",
+    "equipment": "Choose A or B: (A) Gaming Set, Spear, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Rashemi Wanderer",
+    "type": "faerun",
+    "abilityScores": "Strength, Dexterity, Wisdom",
+    "feat": "Tough",
+    "skillProficiencies": "Perception, Survival",
+    "toolProficiency": "Choose one kind of Musical Instrument",
+    "equipment": "Choose A or B: (A) Musical Instrument, Quarterstaff, Traveler's Clothes, 5 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Shadowmasters' Exile",
+    "type": "faerun",
+    "abilityScores": "Dexterity, Intelligence, Charisma",
+    "feat": "Skilled",
+    "skillProficiencies": "Deception, Stealth",
+    "toolProficiency": "Thieves' Tools",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Dagger, Costume, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Spellfire Initiate",
+    "type": "faerun",
+    "abilityScores": "Constitution, Intelligence, Wisdom",
+    "feat": "Magic Initiate (Wizard)",
+    "skillProficiencies": "Arcana, Insight",
+    "toolProficiency": "Choose one kind of Artisan's Tools",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Quarterstaff, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Zhentarim Mercenary",
+    "type": "faerun",
+    "abilityScores": "Strength, Dexterity, Intelligence",
+    "feat": "Alert",
+    "skillProficiencies": "Intimidation, Stealth",
+    "toolProficiency": "Poisoner's Kit",
+    "equipment": "Choose A or B: (A) Poisoner's Kit, Dagger, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Carouser",
+    "type": "exotic",
+    "abilityScores": "Dexterity, Intelligence, Charisma",
+    "feat": "Tireless Reveler",
+    "skillProficiencies": "Deception and Persuasion",
+    "toolProficiency": "Choose one kind of Gaming Set",
+    "equipment": "Choose A or B: (A) Dagger, Gaming Set (same as above), Fine Clothes, Glass Bottle, Mirror, Perfume, Pouch, Tinderbox, 19 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Lorwyn Expert",
+    "type": "exotic",
+    "abilityScores": "Strength, Constitution, Wisdom",
+    "feat": "Child of the Sun",
+    "skillProficiencies": "Athletics and Nature",
+    "toolProficiency": "Cartographer's Tools",
+    "equipment": "Choose A or B: (A) Quarterstaff, Cartographer's Tools, Backpack, Basket, Parchment (4 sheets), Rope, Traveler's Clothes, 29 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Shadowmoor Expert",
+    "type": "exotic",
+    "abilityScores": "Dexterity, Intelligence, Charisma",
+    "feat": "Shadowmoor Hexer",
+    "skillProficiencies": "Acrobatics and Deception",
+    "toolProficiency": "Glassblower's Tools",
+    "equipment": "Choose A or B: (A) Dagger, Glassblower's Tools, Backpack, Hunting Trap, Lamp, Oil (3 flasks), Traveler's Clothes, Waterskin, 8 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Vampire Devotee",
+    "type": "exotic",
+    "abilityScores": "Strength, Constitution, Charisma",
+    "feat": "Vampire's Plaything",
+    "skillProficiencies": "Persuasion and Stealth",
+    "toolProficiency": "Cook's Utensils",
+    "equipment": "Choose A or B: (A) Cook's Utensils, Fine Clothes, 2 Glass Bottles, Healer's Kit, Perfume, Lamp, Oil (3 flasks), Waterskin, 19 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Vampire Survivor",
+    "type": "exotic",
+    "abilityScores": "Dexterity, Constitution, Wisdom",
+    "feat": "Vampire Hunter",
+    "skillProficiencies": "Insight and Religion",
+    "toolProficiency": "Woodcarver's Tools",
+    "equipment": "Choose A or B: (A) Woodcarver's Tools, Crowbar, Hooded Lantern, Holy Symbol (reliquary), Holy Water, Mirror, Oil (3 flasks), Tinderbox, Traveler's Clothes, Waterskin, 4 GP; or (B) 50 GP"
   }
 ]

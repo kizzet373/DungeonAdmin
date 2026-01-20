@@ -1,0 +1,372 @@
+{
+  "name": "Paladin",
+  "source": "Player's Handbook",
+  "class description": "<p>Paladins are united by their oaths to stand against the forces of annihilation and corruption. Whether sworn before a god's altar, in a sacred glade before nature spirits or in a moment of desperation and grief with the dead as the only witness, a Paladin's oath is a powerful bond. It is a source of power that turns a devout warrior into a blessed champion.<br>\nPaladins train to learn the skills of combat, mastering a variety of weapons and armor. Even so, their martial skills are secondary to the magical power they wield: power to heal the injured, smite their foes, and protect the helpless and those who fight at their side.<br>\nAlmost by definition, the life of a Paladin is an adventuring life, for every Paladin lives on the lines of the cosmic struggle against annihilation. Fighters are rare enough among the ranks of the world's armies, but even fewer can claim the calling of a Paladin. When they do receive the call, these blessed folk turn from their former occupations and take up arms and magic.</p>",
+  "core traits": [
+    {
+      "name": "Primary Ability",
+      "html description": "Strength and Charisma"
+    },
+    {
+      "name": "Hit Point Die",
+      "html description": "D10 per Paladin level"
+    },
+    {
+      "name": "Saving Throw Proficiencies",
+      "html description": "Wisdom and Charisma"
+    },
+    {
+      "name": "Skill Proficiencies",
+      "html description": "Choose 2: Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion"
+    },
+    {
+      "name": "Weapon Proficiencies",
+      "html description": "Simple and Martial weapons"
+    },
+    {
+      "name": "Armor Training",
+      "html description": "Light, Medium and Heavy armor and Shields"
+    },
+    {
+      "name": "Starting Equipment",
+      "html description": "Choose A or B: (A) Chain Mail, Shield, Longsword, 6 Javelins, Holy Symbol, Priest's Pack and 9 GP; or (B) 150 GP"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Paladin spell list",
+      "url": "/content/classes/subclasses/paladin_spell-list"
+    },
+    {
+      "name": "Oath of Devotion",
+      "url": "/content/classes/subclasses/paladin_oath-of-devotion"
+    },
+    {
+      "name": "Oath of Glory",
+      "url": "/content/classes/subclasses/paladin_oath-of-glory"
+    },
+    {
+      "name": "Oath of the Ancients",
+      "url": "/content/classes/subclasses/paladin_oath-of-the-ancients"
+    },
+    {
+      "name": "Oath of the Noble Genies",
+      "url": "/content/classes/subclasses/paladin_oath-of-the-noble-genies"
+    },
+    {
+      "name": "Oath of Vengeance",
+      "url": "/content/classes/subclasses/paladin_oath-of-vengeance"
+    }
+  ],
+  "multiclass requirements": [],
+  "multiclass characteristics": [
+    {
+      "name": "Gained Traits",
+      "html_content": "<ul>\n<li>Gain the following traits from the Core Paladin Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.</li>\n<li>Gain the Paladin's level 1 features, which are listed in the Paladin Features table. See the multiclassing rules in <a href=\"/class:multiclassing\">multiclassing</a> to determine your available spell slots.</li>\n</ul>"
+    }
+  ],
+  "class feature table": [
+    {
+      "name": "Class Feature Table",
+      "columns": [
+        "Level",
+        "Channel Divinity",
+        "Prepared Spells",
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th"
+      ],
+      "rows": [
+        [
+          "1",
+          "-",
+          "2",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "-",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "2",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "2",
+          "5",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "2",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "2",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "2",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "2",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-"
+        ],
+        [
+          "14",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-"
+        ],
+        [
+          "15",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "16",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-"
+        ],
+        [
+          "17",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1"
+        ],
+        [
+          "18",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1"
+        ],
+        [
+          "19",
+          "3",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2"
+        ],
+        [
+          "20",
+          "3",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2"
+        ]
+      ]
+    }
+  ],
+  "features": [
+    {
+      "name": "Lay On Hands",
+      "level": 1,
+      "html_content": "<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you finish a Long Rest. With that pool, you can restore a total number of Hit Points equal to five times your Paladin level.</p>\n<p>As a Bonus Action, you can touch a creature (which could be yourself) and draw power from the pool of healing to restore a number of Hit Points to that creature, up to the maximum amount remaining in the pool.</p>\n<p>You can also expend 5 Hit Points from the pool of healing power to remove the Poisoned condition from the creature; those points don't also restore Hit Points to the creature.</p>"
+    },
+    {
+      "name": "Spellcasting",
+      "level": 1,
+      "html_content": "<p>You have learned to cast spells through prayer and meditation. See Chapter 7 for the rules on Spellcasting. The Information below details how you use those rules with Paladin spells, which appear in the <a href=\"/paladin:spell-list\">Paladin spell list</a> later in the class's description.</p>\n<p><strong>Spell Slots.</strong> The Paladin Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>\n<p><strong>Prepared Spells of Level 1+.</strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose two level 1 Paladin spells. <a href=\"/spell:heroism\">Heroism</a> and <a href=\"/spell:searing-smite\">Searing Smite</a> are recommended.</p>\n<p>The number of spells on your list increases as you gain Paladin levels, as shown in the Prepared Spells column of the Paladin Features table. Whenever that number increases, choose additional spells from the Paladin spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 5 Paladin, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p>\n<p>If another Paladin feature gives you spells that you always have prepared, those spells don’t count against the number of spells you can prepare with this feature, but those spells otherwise count as Paladin spells for you.</p>\n<p><strong>Changing Your Prepared Spells.</strong> Whenever you finish a Long Rest, you can replace one spell on your list with another Paladin spell for which you have spell slots.</p>\n<p><strong>Spellcasting Ability.</strong> Charisma is your spellcasting ability for your Paladin spells.</p>\n<p><strong>Spellcasting Focus.</strong> You can use a Holy Symbol as a Spellcasting Focus for your Paladin spells.</p>"
+    },
+    {
+      "name": "Weapon Mastery",
+      "level": 1,
+      "html_content": "<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longswords and Javelins.</p>\n<p>Whenever you finish a Long Rest, you can change the kinds of weapons you chose. For Example, you could switch to using the mastery properties of Halberds and Flails.</p>"
+    },
+    {
+      "name": "Fighting Style",
+      "level": 2,
+      "html_content": "<p>You gain a <a href=\"/feat:all\">Fighting Style feat</a> of your choice (see chapter 5). Instead of choosing one of those feats, you can choose the option below.</p>\n<p><strong>Blessed Warrior.</strong> You learn two Cleric cantrips of your choice (See the Cleric class's section for a list of Cleric spells). <a href=\"/spell:guidance\">Guidance</a> and <a href=\"/spell:sacred-flame\">Sacred Flame</a> are recommended. The chosen cantrips count as Paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a Paladin level, you can replace one of these cantrips with another Cleric cantrip.</p>"
+    },
+    {
+      "name": "Paladin's Smite",
+      "level": 2,
+      "html_content": "<p>You always have the <a href=\"/spell:divine-smite\">Divine Smite</a> spell prepared.<br>\nYou can cast it without expending a spell slot, but you must finish a Long Rest before you can cast it this way again.</p>"
+    },
+    {
+      "name": "Channel Divinity",
+      "level": 3,
+      "html_content": "<p>You can channel divine energy directly from the Outer Planes, using it to fuel magical effects. You start with one such effect: Divine Sense, which is described below. Other Paladin features give additional Channel Divinity effect options. Each time you use this class's Channel Divinity, you choose which effect from this class to create.</p>\n<p>You can use this class's Channel Divinity twice. You regain one of its expended uses when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest. You gain an additional use when you reach Paladin level 11.</p>\n<p>If a Channel Divinity effect requires a saving throw, the DC equals the spell save DC from this class's Spellcasting Feature.</p>\n<p><strong>Divine Sense.</strong> As a Bonus Action, you can open your awareness to detect Celestials, Fiends, and Undead. For the next 10 minutes or until you have the Incapacitated condition, you know the location of any creature of those types within 60 feet of yourself, and you know its creature type. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the <a href=\"/spell:hallow\">Hallow</a> spell.</p>"
+    },
+    {
+      "name": "Paladin Subclass",
+      "level": 3,
+      "html_content": "<p>You gain a Paladin Subclass of your choice. The Oath of Devotion, Oath of Glory, Oath of the Ancients and Oath of Vengeance subclasses are detailed after this class's description. A Subclass is a specialization that grants you features at certain Paladin levels. For the rest of your career, you gain each of your subclass’s features that are of your Paladin level or lower.</p>\n<h5 id=\"toc13\"><span>Paladin Subclasses</span></h5>\n<div class=\"list-pages-box\">    \n\n<table class=\"wiki-content-table\">\n<tbody><tr>\n<th>Name</th>\n</tr>\n<tr>\n<td><a href=\"/paladin:oath-of-devotion\">Oath of Devotion</a></td>\n</tr>\n<tr>\n<td><a href=\"/paladin:oath-of-glory\">Oath of Glory</a></td>\n</tr>\n<tr>\n<td><a href=\"/paladin:oath-of-the-ancients\">Oath of the Ancients</a></td>\n</tr>\n<tr>\n<td><a href=\"/paladin:oath-of-the-noble-genies\">Oath of the Noble Genies</a></td>\n</tr>\n<tr>\n<td><a href=\"/paladin:oath-of-vengeance\">Oath of Vengeance</a></td>\n</tr>\n</tbody></table>\n\n    \n    \n    \n    </div>\n<h4 id=\"toc14\"><span>Breaking Your Oath</span></h4>\n<p>A Paladin tries to hold to the highest standards of conduct, but even the most dedicated are fallible. Sometimes a Paladin transgresses on their oath.</p>\n<p>A Paladin who has broken a vow typically seeks absolution, spending an all-night vigil as a sign of penitence or undertaking a fast. After a rite of forgiveness, the Paladin starts fresh.</p>\n<p>If your Paladin unrepentantly violates their oath, talk to your DM. Your Paladin should probably take a more appropriate subclass or even abandon the class and adopt another one.</p>"
+    },
+    {
+      "name": "Ability Score Improvement",
+      "level": 4,
+      "html_content": "<p>You gain the <a href=\"/feat:ability-score-improvement\">Ability Score Improvement feat</a> or another <a href=\"/feat:all\">feat of your choice</a> for which you qualify. You gain this feature again at Paladin levels 8, 12, and 16.</p>"
+    },
+    {
+      "name": "Extra Attack",
+      "level": 5,
+      "html_content": "<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>"
+    },
+    {
+      "name": "Faithful Steed",
+      "level": 5,
+      "html_content": "<p>You can call on the aid of an otherworldly steed.<br>\nYou always have the <a href=\"/spell:find-steed\">Find Steed</a> spell prepared.</p>\n<p>You can also cast the spell once without expending a spell slot, and you regain your ability to do so when you finish a Long Rest.</p>"
+    },
+    {
+      "name": "Aura of Protection",
+      "level": 6,
+      "html_content": "<p>You radiate a protective, unseeable aura in a 10-foot Emanation that originates from you. The aura is inactive while you have the Incapacitated condition.</p>\n<p>You and your allies in the aura gain a bonus to saving throws equal to your Charisma modifier (minimum bonus of +1).</p>\n<p>If another Paladin is present, a creature can benefit from only one Aura of Protection at a time; the creature chooses which aura while in them.</p>"
+    },
+    {
+      "name": "Abjure Foes",
+      "level": 9,
+      "html_content": "<p>As a Magic action, you can expend one use of this class's Channel Divinity to overwhelm foes with awe. As you present your Holy Symbol or weapon, you can target a number of creatures equal to your Charisma modifier (minimum of one creature) that you can see within 60 feet of yourself. Each target must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute or until it takes any damage. While Frightened in this way, a target can only do one of the following on its turns: move, take an action or take a Bonus Action.</p>"
+    },
+    {
+      "name": "Level 10: Aura of Courage",
+      "level": 10,
+      "html_content": "<p>You and your allies have Immunity to the Frightened condition while in your Aura of Protection. If a Frightened ally enters the aura, that condition has no effect on that ally while there.</p>"
+    },
+    {
+      "name": "Radiant Strikes",
+      "level": 11,
+      "html_content": "<p>Your strikes now carry supernatural power. When you hit a target with an attack roll using a Melee weapon or an Unarmed Strike, the target takes an extra 1d8 Radiant damage.</p>"
+    },
+    {
+      "name": "Restoring Touch",
+      "level": 14,
+      "html_content": "<p>When you use Lay On Hands on a creature, you can also remove one or more of the following conditions from the creature: Blinded, Charmed, Deafened, Frightened, Paralyzed, or Stunned. You must expend 5 Hit Points from the healing pool of Lay On Hands for each of these conditions you remove; those points don't also restore Hit Points to the creature.</p>"
+    },
+    {
+      "name": "Aura Expansion",
+      "level": 18,
+      "html_content": "<p>Your Aura of Protection is now a 30-foot Emanation.</p>"
+    },
+    {
+      "name": "Epic Boon",
+      "level": 19,
+      "html_content": "<p>You gain an <a href=\"/feat:all\">Epic Boon feat</a> or another feat of your choice for which you qualify. <a href=\"/feat:boon-of-truesight\">Boon of Truesight</a> is recommended.</p>"
+    }
+  ]
+}

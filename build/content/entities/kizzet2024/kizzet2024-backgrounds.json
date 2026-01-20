@@ -1,66 +1,282 @@
 [
   {
     "name": "Acolyte",
-    "file": "backgroundacolyte.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Calligrapher's Supplies, Book (prayers), Holy Symbol, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP"
   },
   {
     "name": "Artisan",
-    "file": "backgroundartisan.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Artisan's Tools (same as above), 2 Pouches, Traveler's Clothes, 32 GP; or (B) 50 GP"
   },
   {
     "name": "Charlatan",
-    "file": "backgroundcharlatan.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Forgery Kit, Costume, Fine Clothes, 15 GP; or (B) 50 GP"
   },
   {
     "name": "Criminal",
-    "file": "backgroundcriminal.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP"
   },
   {
     "name": "Entertainer",
-    "file": "backgroundentertainer.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Musical Instrument (same as above), 2 Costumes, Mirror, Perfume, Traveler's Clothes, 11 GP; or (B) 50 GP"
   },
   {
     "name": "Farmer",
-    "file": "backgroundfarmer.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Sickle, Carpenter's Tools, Healer's Kit, Iron Pot, Shovel, Traveler's Clothes, 30 GP; or (B) 50 GP"
   },
   {
     "name": "Guard",
-    "file": "backgroundguard.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Spear, Light Crossbow, 20 Bolts, Gaming Set (same as above), Hooded Lantern, Manacles, Quiver, Traveler's Clothes, 12 GP; or (B) 50 GP"
   },
   {
     "name": "Guide",
-    "file": "backgroundguide.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Shortbow, 20 Arrows, Cartographer's Tools, Bedroll, Quiver, Tent, Traveler's Clothes, 3 GP; or (B) 50 GP"
   },
   {
     "name": "Hermit",
-    "file": "backgroundhermit.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Quarterstaff, Herbalism Kit, Bedroll, Book (philosophy), Lamp, Oil (3 flasks), Traveler's Clothes, 16 GP; or (B) 50 GP"
   },
   {
     "name": "Merchant",
-    "file": "backgroundmerchant.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Navigator's Tools, 2 Pouches, Traveler's Clothes, 22 GP; or (B) 50 GP"
   },
   {
     "name": "Noble",
-    "file": "backgroundnoble.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Gaming Set (same as above), Fine Clothes, Perfume, 29 GP; or (B) 50 GP"
   },
   {
     "name": "Sage",
-    "file": "backgroundsage.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP"
   },
   {
     "name": "Sailor",
-    "file": "backgroundsailor.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Dagger, Navigator's Tools, Rope, Traveler's Clothes, 20 GP; or (B) 50 GP"
   },
   {
     "name": "Scribe",
-    "file": "backgroundscribe.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Calligrapher's Supplies, Fine Clothes, Lamp, Oil (3 flasks), Parchment (12 sheets), 23 GP; or (B) 50 GP"
   },
   {
     "name": "Soldier",
-    "file": "backgroundsoldier.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP"
   },
   {
     "name": "Wayfarer",
-    "file": "backgroundwayfarer.html"
+    "type": "common",
+    "equipment": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Gaming Set (any), Bedroll, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Aberrant Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Dagger, Costume, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Archaeologist",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Cartographer's Tools, Bullseye Lantern, Miner's Pick, Shovel, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Agent",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Fine Clothes, House Signet Ring, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Cannith Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Choice of tools above, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Deneith Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Spear, Shield, Gaming Set, Fine Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Ghallanda Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Choice of tools above, Fine Clothes, 30 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Jorasco Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Herbalism Kit, Healer's Kit, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Kundarak Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Lyrandar Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Navigator's Tools, Fine Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Medani Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Disguise Kit, Fine Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Orien Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Gaming Set, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Phiarlan Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Musical Instrument, Costume, Fine Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Sivis Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Calligrapher's Supplies, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Tharashk Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Fine Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Thuranni Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Musical Instrument, Poisoner's Kit, Fine Clothes, 13 GP; or (B) 50 GP"
+  },
+  {
+    "name": "House Vadalis Heir",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Herbalism Kit, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Inquisitive",
+    "type": "eberron",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Magnifying Glass, Fine Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Chondathan Freebooter",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Navigator's Tools, Dagger, Traveler's Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Dead Magic Dweller",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Quarterstaff, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Dragon Cultist",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Robe, 5 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Emerald Enclave Caretaker",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Herbalism Kit, Sickle, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Flaming Fist Mercenary",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Gaming Set, Spear, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Genie-touched",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Fine Clothes, 20 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Harper",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Musical Instrument, Fine Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Ice Fisher",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Spear, Traveler's Clothes, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Knight of the Gauntlet",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Gaming Set, Holy Symbol, Traveler's Clothes, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Lords' Alliance Vassal",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Gaming Set, Fine Clothes, 25 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Moonwell Pilgrim",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Herbalism Kit, Quarterstaff, Traveler's Clothes, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Mulhorandi Tomb Raider",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Crowbar, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Mythalkeeper",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Calligrapher's Supplies, Book (History), Robe, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Purple Dragon Squire",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Gaming Set, Spear, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Rashemi Wanderer",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Musical Instrument, Quarterstaff, Traveler's Clothes, 5 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Shadowmasters' Exile",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Thieves' Tools, Dagger, Costume, 10 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Spellfire Initiate",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Artisan's Tools, Quarterstaff, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Zhentarim Mercenary",
+    "type": "faerun",
+    "equipment": "Choose A or B: (A) Poisoner's Kit, Dagger, Traveler's Clothes, 15 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Carouser",
+    "type": "exotic",
+    "equipment": "Choose A or B: (A) Dagger, Gaming Set (same as above), Fine Clothes, Glass Bottle, Mirror, Perfume, Pouch, Tinderbox, 19 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Lorwyn Expert",
+    "type": "exotic",
+    "equipment": "Choose A or B: (A) Quarterstaff, Cartographer's Tools, Backpack, Basket, Parchment (4 sheets), Rope, Traveler's Clothes, 29 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Shadowmoor Expert",
+    "type": "exotic",
+    "equipment": "Choose A or B: (A) Dagger, Glassblower's Tools, Backpack, Hunting Trap, Lamp, Oil (3 flasks), Traveler's Clothes, Waterskin, 8 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Vampire Devotee",
+    "type": "exotic",
+    "equipment": "Choose A or B: (A) Cook's Utensils, Fine Clothes, 2 Glass Bottles, Healer's Kit, Perfume, Lamp, Oil (3 flasks), Waterskin, 19 GP; or (B) 50 GP"
+  },
+  {
+    "name": "Vampire Survivor",
+    "type": "exotic",
+    "equipment": "Choose A or B: (A) Woodcarver's Tools, Crowbar, Hooded Lantern, Holy Symbol (reliquary), Holy Water, Mirror, Oil (3 flasks), Tinderbox, Traveler's Clothes, Waterskin, 4 GP; or (B) 50 GP"
   }
 ]

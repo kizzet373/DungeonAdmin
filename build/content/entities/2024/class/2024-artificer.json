@@ -39,23 +39,23 @@
     "subclasses": [
         {
             "name": "Alchemist",
-            "url": "/artificer_alchemist"
+            "url": "/content/classes/subclasses/artificer_alchemist"
         },
         {
             "name": "Armorer",
-            "url": "/artificer_armorer"
+            "url": "/content/classes/subclasses/artificer_armorer"
         },
         {
             "name": "Artillerist",
-            "url": "/artificer_artillerist"
+            "url": "/content/classes/subclasses/artificer_artillerist"
         },
         {
             "name": "Battle Smith",
-            "url": "/artificer_battle-smith"
+            "url": "/content/classes/subclasses/artificer_battle-smith"
         },
         {
             "name": "Cartographer",
-            "url": "/artificer_cartographer"
+            "url": "/content/classes/subclasses/artificer_cartographer"
         }
     ],
     "multiclass requirements": [],

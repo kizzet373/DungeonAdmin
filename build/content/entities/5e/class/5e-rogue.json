@@ -1,0 +1,283 @@
+{
+  "name": "Rogue",
+  "source": "DND 5e Wikidot (https://dnd5e.wikidot.com/rogue)",
+  "class description": "<p><strong><em>Rogues rely on skill, stealth, and their foes' vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.</em></strong></p>",
+  "core traits": [
+    {
+      "name": "Hit Point Die",
+      "html description": "<p>1d8 per rogue level</p>"
+    },
+    {
+      "name": "Hit Points",
+      "html description": "<p><strong>Hit Dice:</strong> 1d8 per rogue level<br/>\n<strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier<br/>\n<strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per rogue level after 1st</p>"
+    },
+    {
+      "name": "Proficiencies",
+      "html description": "<p><strong>Armor:</strong> Light armor<br/>\n<strong>Weapons:</strong> Simple weapons, hand crossbows, longswords, rapiers, shortswords<br/>\n<strong>Tools:</strong> Thieves' tools<br/>\n<strong>Saving Throws:</strong> Dexterity, Intelligence<br/>\n<strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth</p>"
+    },
+    {
+      "name": "Equipment",
+      "html description": "<p>You start with the following equipment, in addition to the equipment granted by your background:</p><ul>\n<li>(a) a rapier or (b) a shortsword</li>\n<li>(a) a shortbow and quiver of 20 arrows or (b) a shortsword</li>\n<li>(a) a burglar's pack, (b) dungeoneer's pack, or (c) an explorer's pack</li>\n<li>Leather armor, two daggers, and thieves' tools</li>\n</ul>"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Arcane Trickster",
+      "source": "Player's Handbook",
+      "url": "http://dnd5e.wikidot.com/rogue:arcane-trickster"
+    },
+    {
+      "name": "Assassin",
+      "source": "Player's Handbook",
+      "url": "http://dnd5e.wikidot.com/rogue:assassin"
+    },
+    {
+      "name": "Inquisitive",
+      "source": "Xanathar's Guide to Everything",
+      "url": "http://dnd5e.wikidot.com/rogue:inquisitive"
+    },
+    {
+      "name": "Mastermind",
+      "source": "Xanathar's Guide to Everything",
+      "url": "http://dnd5e.wikidot.com/rogue:mastermind"
+    },
+    {
+      "name": "Phantom",
+      "source": "Tasha's Cauldron of Everything",
+      "url": "http://dnd5e.wikidot.com/rogue:phantom"
+    },
+    {
+      "name": "Scout",
+      "source": "Xanathar's Guide to Everything",
+      "url": "http://dnd5e.wikidot.com/rogue:scout"
+    },
+    {
+      "name": "Soulknife",
+      "source": "Tasha's Cauldron of Everything",
+      "url": "http://dnd5e.wikidot.com/rogue:soulknife"
+    },
+    {
+      "name": "Swashbuckler",
+      "source": "Xanathar's Guide to Everything",
+      "url": "http://dnd5e.wikidot.com/rogue:swashbuckler"
+    },
+    {
+      "name": "Thief",
+      "source": "Player's Handbook",
+      "url": "http://dnd5e.wikidot.com/rogue:thief"
+    },
+    {
+      "name": "Phantom",
+      "source": "Unearthed Arcana 72 - Subclasses Revisited",
+      "url": "http://dnd5e.wikidot.com/rogue:phantom-ua"
+    },
+    {
+      "name": "Revived",
+      "source": "Unearthed Arcana 64 - Fighter, Ranger, Rogue",
+      "url": "http://dnd5e.wikidot.com/rogue:revived-ua"
+    },
+    {
+      "name": "Soulknife (2019)",
+      "source": "Unearthed Arcana 66 - Fighter, Rogue, Wizard",
+      "url": "http://dnd5e.wikidot.com/rogue:soulknife-ua"
+    },
+    {
+      "name": "Soulknife (2020)",
+      "source": "Unearthed Arcana 71 - Psionic Options Revisited",
+      "url": "http://dnd5e.wikidot.com/rogue:soulknife-revisited-ua"
+    }
+  ],
+  "multiclass requirements": "You must have a Dexterity score of 13 or higher in order to multiclass in or out of this class.",
+  "multiclass characteristics": [],
+  "class feature table": [
+    {
+      "name": "The Rogue",
+      "columns": [
+        "Level",
+        "Proficiency Bonus",
+        "Sneak Attack",
+        "Features"
+      ],
+      "rows": [
+        [
+          "1st",
+          "+2",
+          "1d6",
+          "Expertise, Sneak Attack, Thieves' Cant"
+        ],
+        [
+          "2nd",
+          "+2",
+          "1d6",
+          "Cunning Action"
+        ],
+        [
+          "3rd",
+          "+2",
+          "2d6",
+          "Roguish Archetype, Steady Aim (Optional)"
+        ],
+        [
+          "4th",
+          "+2",
+          "2d6",
+          "Ability Score Improvement"
+        ],
+        [
+          "5th",
+          "+3",
+          "3d6",
+          "Uncanny Dodge"
+        ],
+        [
+          "6th",
+          "+3",
+          "3d6",
+          "Expertise"
+        ],
+        [
+          "7th",
+          "+3",
+          "4d6",
+          "Evasion"
+        ],
+        [
+          "8th",
+          "+3",
+          "4d6",
+          "Ability Score Improvement"
+        ],
+        [
+          "9th",
+          "+4",
+          "5d6",
+          "Roguish Archetype feature"
+        ],
+        [
+          "10th",
+          "+4",
+          "5d6",
+          "Ability Score Improvement"
+        ],
+        [
+          "11th",
+          "+4",
+          "6d6",
+          "Reliable Talent"
+        ],
+        [
+          "12th",
+          "+4",
+          "6d6",
+          "Ability Score Improvement"
+        ],
+        [
+          "13th",
+          "+5",
+          "7d6",
+          "Roguish Archetype feature"
+        ],
+        [
+          "14th",
+          "+5",
+          "7d6",
+          "Blindsense"
+        ],
+        [
+          "15th",
+          "+5",
+          "8d6",
+          "Slippery Mind"
+        ],
+        [
+          "16th",
+          "+5",
+          "8d6",
+          "Ability Score Improvement"
+        ],
+        [
+          "17th",
+          "+6",
+          "9d6",
+          "Roguish Archetype feature"
+        ],
+        [
+          "18th",
+          "+6",
+          "9d6",
+          "Elusive"
+        ],
+        [
+          "19th",
+          "+6",
+          "10d6",
+          "Ability Score Improvement"
+        ],
+        [
+          "20th",
+          "+6",
+          "10d6",
+          "Stroke of Luck"
+        ]
+      ]
+    }
+  ],
+  "features": [
+    {
+      "name": "Expertise",
+      "html_content": "<p>At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</p><p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>"
+    },
+    {
+      "name": "Sneak Attack",
+      "html_content": "<p>Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p><p>You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p><p>The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.</p>"
+    },
+    {
+      "name": "Thieves' Cant",
+      "html_content": "<p>During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.</p><p>In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</p>"
+    },
+    {
+      "name": "Cunning Action",
+      "html_content": "<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>"
+    },
+    {
+      "name": "Roguish Archetype",
+      "html_content": "<p>At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.</p><table class=\"wiki-content-table\">\n<tr>\n<th>Archetype</th>\n<th>Source</th>\n</tr>\n<tr>\n<td><a href=\"http://dnd5e.wikidot.com/rogue:arcane-trickster\">Arcane Trickster</a></td>\n<td>Player's Handbook</td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:assassin\">Assassin</a></td>\n<td>Player's Handbook</td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:inquisitive\">Inquisitive</a></td>\n<td>Xanathar's Guide to Everything</td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:mastermind\">Mastermind</a></td>\n<td>Xanathar's Guide to Everything</td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:phantom\">Phantom</a></td>\n<td>Tasha's Cauldron of Everything</td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:scout\">Scout</a></td>\n<td>Xanathar's Guide to Everything</td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:soulknife\">Soulknife</a></td>\n<td>Tasha's Cauldron of Everything</td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:swashbuckler\">Swashbuckler</a></td>\n<td>Xanathar's Guide to Everything</td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:thief\">Thief</a></td>\n<td>Player's Handbook</td>\n</tr>\n<tr>\n<th colspan=\"2\">Archived Unearthed Arcana</th>\n</tr>\n<tr>\n<td><a href=\"http://dnd5e.wikidot.com/rogue:phantom-ua\">Phantom</a></td>\n<td><a href=\"https://media.wizards.com/2020/dnd/downloads/UA2020_SubclassesRevisited_0512.pdf\">Unearthed Arcana 72 - Subclasses Revisited</a></td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:revived-ua\">Revived</a></td>\n<td><a href=\"https://media.wizards.com/2019/dnd/downloads/UA-RuneSwarmRevived.pdf\">Unearthed Arcana 64 - Fighter, Ranger, Rogue</a></td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:soulknife-ua\">Soulknife (2019)</a></td>\n<td><a href=\"https://media.wizards.com/2019/dnd/downloads/UA-PsychicSoulPsionics.pdf\">Unearthed Arcana 66 - Fighter, Rogue, Wizard</a></td>\n</tr>\n<tr>\n<td> <a href=\"http://dnd5e.wikidot.com/rogue:soulknife-revisited-ua\">Soulknife (2020)</a></td>\n<td><a href=\"https://media.wizards.com/2020/dnd/downloads/UA2020_PsionicOptions.pdf\">Unearthed Arcana 71 - Psionic Options Revisited</a></td>\n</tr>\n</table>"
+    },
+    {
+      "name": "Steady Aim (Optional)",
+      "html_content": "<p>At 3rd level, as a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn.</p>"
+    },
+    {
+      "name": "Ability Score Improvement",
+      "html_content": "<p>When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+    },
+    {
+      "name": "Uncanny Dodge",
+      "html_content": "<p>Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.</p>"
+    },
+    {
+      "name": "Evasion",
+      "html_content": "<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an <a href=\"http://dnd5e.wikidot.com/spell:ice-storm\">Ice Storm</a> spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>"
+    },
+    {
+      "name": "Reliable Talent",
+      "html_content": "<p>By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</p>"
+    },
+    {
+      "name": "Blindsense",
+      "html_content": "<p>Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.</p>"
+    },
+    {
+      "name": "Slippery Mind",
+      "html_content": "<p>By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</p>"
+    },
+    {
+      "name": "Elusive",
+      "html_content": "<p>Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.</p>"
+    },
+    {
+      "name": "Stroke of Luck",
+      "html_content": "<p>At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.</p><p>Once you use this feature, you can't use it again until you finish a short or long rest.</p>"
+    }
+  ]
+}

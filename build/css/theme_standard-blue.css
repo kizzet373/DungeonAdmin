@@ -109,18 +109,13 @@ table tr td,th{ font-size:13px; }
 .tab-item {
     cursor: pointer;
     display: inline-block;
-    padding: 10px 30px;
+    padding: .5vh 2vh;
     border: 1px solid #ccc;
     background:rgb(36, 33, 41);
 
     &:hover {
       background:rgb(56, 51, 63)
     }
-}
-
-.tab-item.active {
-    background: white;
-    font-weight: bold;
 }
 
 .tab-content-container {
@@ -218,7 +213,6 @@ a {
 }
 
 .btn.active, .tab-item.active {
-    font-weight: bold;
     background-color: #005abb;
     color: white;
 }

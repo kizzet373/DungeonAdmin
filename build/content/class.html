@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <title x-text="className ? className.name">Class Details</title>
+    <title>Class Details</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <meta http-equiv="content-language" content="en">
@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="main-content-wrap col-md-12">
                         <div class="main-content">
-                            <template x-if="!className && isReady">
+                            <template x-if="!cls && isReady">
                                 <div class="not-found p-3">
                                     <h3>Class Not Found</h3>
                                     <p>Sorry, the class you're looking for couldn't be found.</p>
@@ -166,7 +166,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.addEventListener('globalEditionHandled', async (event) => {
-                await loadEntity(window.currentGlobalEdition, `${window.location.hash.substring(1)}`);
+                await loadEntity(window.currentGlobalEdition, `${window.location.hash.substring(1)}`, "/class/");
             });
         });
 
@@ -185,19 +185,14 @@
                         });
 
                         document.addEventListener(`${this.className}Loaded`, (e) => { 
-                            this.loadClassFromUrl(); 
-                        });
-                    },
-
-                    loadClassFromUrl() {
-                        if (!this.className) {
+                            this.cls = window.entities?.[this.className];
+                            document.title = this.cls.name;
                             this.isReady = true;
-                            return;
-                        }
+                        });
 
-                        this.cls = window.entities?.[this.className];
-                        document.title = this.className;
-                        this.isReady = true;
+                        document.addEventListener(`${this.className}Failed`, (e) => { 
+                            this.isReady = true;
+                        });
                     }
                 };
             });

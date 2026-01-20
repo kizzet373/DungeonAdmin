@@ -1,0 +1,376 @@
+{
+  "name": "Warlock",
+  "source": "DND 5th Edition (dnd5e.wikidot.com)",
+  "class description": "<p>Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of supernatural power, warlocks unlock magical effects both subtle and spectacular.</p>",
+  "multiclass requirements": [
+    "Charisma 13 or higher"
+  ],
+  "multiclass characteristics": [],
+  "core traits": [
+    {
+      "name": "Primary Ability",
+      "html description": "<p>Charisma</p>"
+    },
+    {
+      "name": "Hit Point Die",
+      "html description": "<p>1d8 per warlock level</p>"
+    },
+    {
+      "name": "Saving Throw Proficiencies",
+      "html description": "<p>Wisdom, Charisma</p>"
+    },
+    {
+      "name": "Skill Proficiencies",
+      "html description": "<p>Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion</p>"
+    },
+    {
+      "name": "Armor Proficiencies",
+      "html description": "<p>Light armor</p>"
+    },
+    {
+      "name": "Weapon Proficiencies",
+      "html description": "<p>Simple weapons</p>"
+    },
+    {
+      "name": "Tool Proficiencies",
+      "html description": "<p>None</p>"
+    },
+    {
+      "name": "Equipment",
+      "html description": "<p>You start with the following equipment, in addition to the equipment granted by your background:</p>\n<ul>\n  <li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>\n  <li>(a) a component pouch or (b) an arcane focus</li>\n  <li>(a) a scholar's pack or (b) a dungeoneer's pack</li>\n  <li>Leather armor, any simple weapon, and two daggers</li>\n</ul>"
+    }
+  ],
+  "class feature table": [
+    {
+      "name": "Class Feature Table",
+      "columns": [
+        "Level",
+        "Proficiency Bonus",
+        "Features",
+        "Cantrips Known",
+        "Spells Known",
+        "Spell Slots",
+        "Slot Level",
+        "Invocations Known"
+      ],
+      "rows": [
+        [
+          "1st",
+          "+2",
+          "Otherworldly Patron, Pact Magic",
+          "2",
+          "2",
+          "1",
+          "1st",
+          "-"
+        ],
+        [
+          "2nd",
+          "+2",
+          "Eldritch Invocations",
+          "2",
+          "3",
+          "2",
+          "1st",
+          "2"
+        ],
+        [
+          "3rd",
+          "+2",
+          "Pact Boon",
+          "2",
+          "4",
+          "2",
+          "2nd",
+          "2"
+        ],
+        [
+          "4th",
+          "+2",
+          "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "3",
+          "5",
+          "2",
+          "2nd",
+          "2"
+        ],
+        [
+          "5th",
+          "+3",
+          "-",
+          "3",
+          "6",
+          "2",
+          "3rd",
+          "3"
+        ],
+        [
+          "6th",
+          "+3",
+          "Otherworldly Patron feature",
+          "3",
+          "7",
+          "2",
+          "3rd",
+          "3"
+        ],
+        [
+          "7th",
+          "+3",
+          "-",
+          "3",
+          "8",
+          "2",
+          "4th",
+          "4"
+        ],
+        [
+          "8th",
+          "+3",
+          "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "3",
+          "9",
+          "2",
+          "4th",
+          "4"
+        ],
+        [
+          "9th",
+          "+4",
+          "-",
+          "3",
+          "10",
+          "2",
+          "5th",
+          "5"
+        ],
+        [
+          "10th",
+          "+4",
+          "Otherworldly Patron feature",
+          "4",
+          "10",
+          "2",
+          "5th",
+          "5"
+        ],
+        [
+          "11th",
+          "+4",
+          "Mystic Arcanum (6th level)",
+          "4",
+          "11",
+          "3",
+          "5th",
+          "5"
+        ],
+        [
+          "12th",
+          "+4",
+          "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "4",
+          "11",
+          "3",
+          "5th",
+          "6"
+        ],
+        [
+          "13th",
+          "+5",
+          "Mystic Arcanum (7th level)",
+          "4",
+          "12",
+          "3",
+          "5th",
+          "6"
+        ],
+        [
+          "14th",
+          "+5",
+          "Otherworldly Patron feature",
+          "4",
+          "12",
+          "3",
+          "5th",
+          "6"
+        ],
+        [
+          "15th",
+          "+5",
+          "Mystic Arcanum (8th level)",
+          "4",
+          "13",
+          "3",
+          "5th",
+          "7"
+        ],
+        [
+          "16th",
+          "+5",
+          "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "4",
+          "13",
+          "3",
+          "5th",
+          "7"
+        ],
+        [
+          "17th",
+          "+6",
+          "Mystic Arcanum (9th level)",
+          "4",
+          "14",
+          "4",
+          "5th",
+          "7"
+        ],
+        [
+          "18th",
+          "+6",
+          "-",
+          "4",
+          "14",
+          "4",
+          "5th",
+          "8"
+        ],
+        [
+          "19th",
+          "+6",
+          "Ability Score Improvement, Eldritch Versatility (Optional)",
+          "4",
+          "15",
+          "4",
+          "5th",
+          "8"
+        ],
+        [
+          "20th",
+          "+6",
+          "Eldritch Master",
+          "4",
+          "15",
+          "4",
+          "5th",
+          "8"
+        ]
+      ]
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "The Archfey",
+      "url": "https://dnd5e.wikidot.com/warlock:archfey",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "The Celestial",
+      "url": "https://dnd5e.wikidot.com/warlock:celestial",
+      "source": "Xanathar's Guide to Everything"
+    },
+    {
+      "name": "The Fathomless",
+      "url": "https://dnd5e.wikidot.com/warlock:fathomless",
+      "source": "Tasha's Cauldron of Everything"
+    },
+    {
+      "name": "The Fiend",
+      "url": "https://dnd5e.wikidot.com/warlock:fiend",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "The Genie",
+      "url": "https://dnd5e.wikidot.com/warlock:genie",
+      "source": "Tasha's Cauldron of Everything"
+    },
+    {
+      "name": "The Great Old One",
+      "url": "https://dnd5e.wikidot.com/warlock:great-old-one",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "The Hexblade",
+      "url": "https://dnd5e.wikidot.com/warlock:hexblade",
+      "source": "Xanathar's Guide to Everything"
+    },
+    {
+      "name": "The Undead",
+      "url": "https://dnd5e.wikidot.com/warlock:undead",
+      "source": "Van Richten's Guide to Ravenloft"
+    },
+    {
+      "name": "The Undying",
+      "url": "https://dnd5e.wikidot.com/warlock:undying",
+      "source": "Sword Coast Adventurer's Guide"
+    },
+    {
+      "name": "The Ghost in the Machine (UA)",
+      "url": "https://dnd5e.wikidot.com/warlock:ghost-in-the-machine-ua",
+      "source": "Unearthed Arcana 7 - Modern Magic"
+    },
+    {
+      "name": "The Lurker in the Deep (UA)",
+      "url": "https://dnd5e.wikidot.com/warlock:lurker-in-the-deep-ua",
+      "source": "Unearthed Arcana 62 - Sorcerer and Warlock"
+    },
+    {
+      "name": "The Noble Genie (UA)",
+      "url": "https://dnd5e.wikidot.com/warlock:noble-genie-ua",
+      "source": "Unearthed Arcana 68 - Subclasses, Part 2"
+    },
+    {
+      "name": "The Raven Queen (UA)",
+      "url": "https://dnd5e.wikidot.com/warlock:raven-queen-ua",
+      "source": "Unearthed Arcana 29 - Warlock and Wizard"
+    },
+    {
+      "name": "The Seeker (UA)",
+      "url": "https://dnd5e.wikidot.com/warlock:seeker-ua",
+      "source": "Unearthed Arcana 12 - Kits of Old"
+    },
+    {
+      "name": "The Undead (UA)",
+      "url": "https://dnd5e.wikidot.com/warlock:undead-ua",
+      "source": "Unearthed Arcana 76 - Subclasses, Part 5"
+    },
+    {
+      "name": "The Undying Light (UA)",
+      "url": "https://dnd5e.wikidot.com/warlock:undying-light-ua",
+      "source": "Unearthed Arcana 10 - Light, Dark, Underdark!"
+    }
+  ],
+  "features": [
+    {
+      "name": "Otherworldly Patron",
+      "html description": "<p>At 1st level, you choose an otherworldly patron, which grants you features at 1st level and again at 6th, 10th, and 14th level.</p>"
+    },
+    {
+      "name": "Pact Magic",
+      "html description": "<p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>\n<h5>Cantrips</h5>\n<p>At 1st level, you know two cantrips of your choice from the warlock spell list.</p>\n<h5>Spell Slots</h5>\n<p>The Warlock table shows how many spell slots you have. You regain all expended spell slots when you finish a short or long rest.</p>\n<h5>Spells Known of 1st Level and Higher</h5>\n<p>You know two 1st-level spells of your choice from the warlock spell list.</p>\n<h5>Spellcasting Ability</h5>\n<p>Charisma is your spellcasting ability for your warlock spells.</p>\n<h5>Spellcasting Focus</h5>\n<p>You can use an arcane focus as a spellcasting focus for your warlock spells.</p>"
+    },
+    {
+      "name": "Eldritch Invocations",
+      "html description": "<p>At 2nd level, you gain two eldritch invocations of your choice, and you gain more as you level (see Invocations Known in the class table). You can replace an invocation when you gain a level.</p>"
+    },
+    {
+      "name": "Pact Boon",
+      "html description": "<p>At 3rd level, you gain a Pact Boon: Pact of the Blade, Pact of the Chain, Pact of the Tome, Pact of the Talisman, or (UA) Pact of the Star Chain (with prerequisites).</p>"
+    },
+    {
+      "name": "Ability Score Improvement",
+      "html description": "<p>At 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase ability scores as normal.</p>"
+    },
+    {
+      "name": "Eldritch Versatility (Optional)",
+      "html description": "<p>Whenever you gain an Ability Score Improvement, you can optionally swap certain warlock choices, as described on the page.</p>"
+    },
+    {
+      "name": "Mystic Arcanum",
+      "html description": "<p>At 11th level, you gain a 6th-level arcanum spell you can cast once per long rest. You gain additional arcanum spells at 13th (7th), 15th (8th), and 17th (9th).</p>"
+    },
+    {
+      "name": "Eldritch Master",
+      "html description": "<p>At 20th level, you can spend 1 minute entreating your patron to regain all expended Pact Magic spell slots; once per long rest.</p>"
+    }
+  ]
+}

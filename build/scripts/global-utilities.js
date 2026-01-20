@@ -53,9 +53,8 @@ function handleEditionChange(selectedEdition) {
         credentials: 'include'
     })
     .then(response => {
-        if (!response.ok) {
+        if (!response.ok)
             return response.json().then(errorData => { throw new Error(errorData.error || `Server error: ${response.status}`); });
-        }
         return response.json();
     })
     .then(data => {
@@ -63,13 +62,13 @@ function handleEditionChange(selectedEdition) {
             if (window.auth && window.auth.user) {
                 window.auth.user.currentEdition = data.edition;
             }
-            window.location.reload(); 
-        } else {
+        } else
             console.error('Failed to set edition:', data.error);
-        }
     })
     .catch(error => {
         console.error('Error setting edition:', error);
+    })
+    .finally(() => {
         window.location.reload();
     });
 }

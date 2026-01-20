@@ -2,12 +2,62 @@ window.entities = window.entities || {};
 
 const defaultEdition = 'kizzet2024';
 
-async function loadEntity(edition, entityName) {
+async function loadEntity(edition, entityName, subdir = "") {
     edition = edition.toLowerCase();
     entityName = entityName.toLowerCase();
 
-    const primaryPath = `/content/entities/${edition}/${edition}-${entityName}.json`;
-    const fallbackPath = `/content/entities/${defaultEdition}/${defaultEdition}-${entityName}.json`;
+    const primaryPath = `/content/entities/${edition}/${subdir}${edition}-${entityName}.json`;
+    const fallbackPath = `/content/entities/${defaultEdition}/${subdir}${defaultEdition}-${entityName}.json`;
+
+    let data = null;
+    let loadedFromEdition = null;
+
+    try {
+        const response = await fetch(primaryPath);
+        if (response.ok) {
+            data = await response.json();
+            loadedFromEdition = edition;
+        } else if (response.status === 404 && edition !== defaultEdition) {
+            console.warn(`${entityName} data not found for ${edition} (status ${response.status}). Attempting fallback to ${defaultEdition} from ${fallbackPath}.`);
+            
+            const fallbackResponse = await fetch(fallbackPath);
+            if (fallbackResponse.ok) {
+                data = await fallbackResponse.json();
+                loadedFromEdition = defaultEdition;
+            } else {
+                console.error(`Failed to load ${entityName} from fallback ${fallbackPath} (status ${fallbackResponse.status}).`);
+            }
+        } else if (response.status === 404 && edition === defaultEdition) {
+            console.error(`${entityName} data not found for default edition ${edition} at ${primaryPath}. No other fallback attempted.`);
+        } else {
+            console.error(`Failed to load ${entityName} from ${primaryPath} (status ${response.status}).`);
+        }
+    } catch (error) {
+        console.error(`Network error or JSON parsing error fetching ${entityName} (primary path: ${primaryPath}):`, error);
+    }
+
+    if (data) {
+        window.entities[entityName] = data;
+
+        document.dispatchEvent(new CustomEvent(`${entityName}Loaded`, {
+            detail: {
+                edition: loadedFromEdition,
+                requestedEdition: edition,
+                data: data
+            }
+        }));
+        return data; 
+    } else {
+        console.warn(`Data for ${entityName} (key: ${entityName}) could not be loaded for ${edition} or fallback ${defaultEdition}.`);
+        document.dispatchEvent(new CustomEvent(`${entityName}Failed`, {
+            detail: {
+                edition: loadedFromEdition,
+                requestedEdition: edition,
+                data: data
+            }
+        }));
+        return null; 
+    }
 }
 
 async function loadMultipleEntities(entityConfigs, eventName = 'allEntitiesLoaded') {
@@ -55,49 +105,4 @@ async function loadClasses(edition = "", classes = []) {
     classes.forEach(cls => {
         loadEntity(edition, cls);
     });
-}
-
-async function getEntityData() {
-    let data = null;
-    let loadedFromEdition = null;
-
-    try {
-        const response = await fetch(primaryPath);
-        if (response.ok) {
-            data = await response.json();
-            loadedFromEdition = edition;
-        } else if (response.status === 404 && edition !== defaultEdition) {
-            console.warn(`${entityName} data not found for ${edition} (status ${response.status}). Attempting fallback to ${defaultEdition} from ${fallbackPath}.`);
-            
-            const fallbackResponse = await fetch(fallbackPath);
-            if (fallbackResponse.ok) {
-                data = await fallbackResponse.json();
-                loadedFromEdition = defaultEdition;
-            } else {
-                console.error(`Failed to load ${entityName} from fallback ${fallbackPath} (status ${fallbackResponse.status}).`);
-            }
-        } else if (response.status === 404 && edition === defaultEdition) {
-            console.error(`${entityName} data not found for default edition ${edition} at ${primaryPath}. No other fallback attempted.`);
-        } else {
-            console.error(`Failed to load ${entityName} from ${primaryPath} (status ${response.status}).`);
-        }
-    } catch (error) {
-        console.error(`Network error or JSON parsing error fetching ${entityName} (primary path: ${primaryPath}):`, error);
-    }
-
-    if (data) {
-        window.entities[entityName] = data;
-
-        document.dispatchEvent(new CustomEvent(`${entityName}Loaded`, {
-            detail: {
-                edition: loadedFromEdition,
-                requestedEdition: edition,
-                data: data
-            }
-        }));
-        return data; 
-    } else {
-        console.warn(`Data for ${entityName} (key: ${entityName}) could not be loaded for ${edition} or fallback ${defaultEdition}.`);
-        return null; 
-    }
 }

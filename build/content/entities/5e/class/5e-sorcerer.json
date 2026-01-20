@@ -1,0 +1,582 @@
+{
+  "name": "Sorcerer",
+  "source": "DND 5th Edition (dnd5e.wikidot.com)",
+  "class description": "<p>Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. No one chooses sorcery; the power chooses the sorcerer.</p>",
+  "multiclass requirements": [
+    "Charisma 13 or higher"
+  ],
+  "multiclass characteristics": [],
+  "core traits": [
+    {
+      "name": "Primary Ability",
+      "html description": "<p>Charisma</p>"
+    },
+    {
+      "name": "Hit Point Die",
+      "html description": "<p>1d6 per sorcerer level</p>"
+    },
+    {
+      "name": "Saving Throw Proficiencies",
+      "html description": "<p>Constitution, Charisma</p>"
+    },
+    {
+      "name": "Skill Proficiencies",
+      "html description": "<p>Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion</p>"
+    },
+    {
+      "name": "Armor Proficiencies",
+      "html description": "<p>None</p>"
+    },
+    {
+      "name": "Weapon Proficiencies",
+      "html description": "<p>Daggers, darts, slings, quarterstaffs, light crossbows</p>"
+    },
+    {
+      "name": "Tool Proficiencies",
+      "html description": "<p>None</p>"
+    },
+    {
+      "name": "Equipment",
+      "html description": "<p>You start with the following equipment, in addition to the equipment granted by your background:</p>\n<ul>\n  <li>(a) a light crossbow and 20 bolts or (b) any simple weapon</li>\n  <li>(a) a component pouch or (b) an arcane focus</li>\n  <li>(a) a dungeoneer's pack or (b) an explorer's pack</li>\n  <li>Two daggers</li>\n</ul>"
+    }
+  ],
+  "class feature table": [
+    {
+      "name": "Class Feature Table",
+      "columns": [
+        "Level",
+        "Proficiency Bonus",
+        "Sorcery Points",
+        "Features",
+        "Cantrips Known",
+        "Spells Known",
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th"
+      ],
+      "rows": [
+        [
+          "1st",
+          "+2",
+          "-",
+          "Spellcasting, Sorcerous Origin",
+          "4",
+          "2",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2nd",
+          "+2",
+          "2",
+          "Font of Magic",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3rd",
+          "+2",
+          "3",
+          "Metamagic",
+          "4",
+          "4",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4th",
+          "+2",
+          "4",
+          "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "5",
+          "5",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5th",
+          "+3",
+          "5",
+          "Magical Guidance (Optional)",
+          "5",
+          "6",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6th",
+          "+3",
+          "6",
+          "Sorcerous Origin feature",
+          "5",
+          "7",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7th",
+          "+3",
+          "7",
+          "-",
+          "5",
+          "8",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8th",
+          "+3",
+          "8",
+          "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "5",
+          "9",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9th",
+          "+4",
+          "9",
+          "-",
+          "5",
+          "10",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "10th",
+          "+4",
+          "10",
+          "Metamagic",
+          "6",
+          "11",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "11th",
+          "+4",
+          "11",
+          "-",
+          "6",
+          "12",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "12th",
+          "+4",
+          "12",
+          "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "6",
+          "12",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "13th",
+          "+5",
+          "13",
+          "-",
+          "6",
+          "13",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "14th",
+          "+5",
+          "14",
+          "Sorcerous Origin feature",
+          "6",
+          "13",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "15th",
+          "+5",
+          "15",
+          "-",
+          "6",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "16th",
+          "+5",
+          "16",
+          "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "6",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "17th",
+          "+6",
+          "17",
+          "Metamagic",
+          "6",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "18th",
+          "+6",
+          "18",
+          "Sorcerous Origin feature",
+          "6",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "19th",
+          "+6",
+          "19",
+          "Ability Score Improvement, Sorcerous Versatility (Optional)",
+          "6",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "20th",
+          "+6",
+          "20",
+          "Sorcerous Restoration",
+          "6",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "2",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    {
+      "name": "Creating Spell Slots",
+      "columns": [
+        "Spell Slot Level",
+        "Sorcery Point Cost"
+      ],
+      "rows": [
+        [
+          "1st",
+          "2"
+        ],
+        [
+          "2nd",
+          "3"
+        ],
+        [
+          "3rd",
+          "5"
+        ],
+        [
+          "4th",
+          "6"
+        ],
+        [
+          "5th",
+          "7"
+        ]
+      ]
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Aberrant Mind",
+      "url": "https://dnd5e.wikidot.com/sorcerer:aberrant-mind",
+      "source": "Tasha's Cauldron of Everything"
+    },
+    {
+      "name": "Clockwork Soul",
+      "url": "https://dnd5e.wikidot.com/sorcerer:clockwork-soul",
+      "source": "Tasha's Cauldron of Everything"
+    },
+    {
+      "name": "Draconic Bloodline",
+      "url": "https://dnd5e.wikidot.com/sorcerer:draconic",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "Divine Soul",
+      "url": "https://dnd5e.wikidot.com/sorcerer:divine-soul",
+      "source": "Xanathar's Guide to Everything"
+    },
+    {
+      "name": "Lunar Sorcery",
+      "url": "https://dnd5e.wikidot.com/sorcerer:lunar",
+      "source": "Dragonlance: Shadow of the Dragon Queen"
+    },
+    {
+      "name": "Shadow Magic",
+      "url": "https://dnd5e.wikidot.com/sorcerer:shadow",
+      "source": "Xanathar's Guide to Everything"
+    },
+    {
+      "name": "Storm Sorcery",
+      "url": "https://dnd5e.wikidot.com/sorcerer:storm",
+      "source": "Sword Coast Adventurer's Guide / Xanathar's Guide to Everything"
+    },
+    {
+      "name": "Wild Magic",
+      "url": "https://dnd5e.wikidot.com/sorcerer:wild",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "Pyromancy",
+      "url": "https://dnd5e.wikidot.com/sorcerer:pyromancy",
+      "source": "Plane Shift: Kaladesh (Planeshift)"
+    },
+    {
+      "name": "Lunar Magic (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:lunar-magic-ua",
+      "source": "Unearthed Arcana 81 - Heroes of Krynn"
+    },
+    {
+      "name": "Aberrant Mind (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:aberrant-mind-ua",
+      "source": "Unearthed Arcana 61 - Sorcerer and Warlock"
+    },
+    {
+      "name": "Clockwork Soul (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:clockwork-soul-ua",
+      "source": "Unearthed Arcana 68 - Subclasses, Part 2"
+    },
+    {
+      "name": "Favored Soul (2015) (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:favored-soul-ua-2015",
+      "source": "Unearthed Arcana 3 - Modifying Classes"
+    },
+    {
+      "name": "Favored Soul (2017) (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:favored-soul-ua-2017",
+      "source": "Unearthed Arcana 28 - Sorcerer"
+    },
+    {
+      "name": "Giant Soul (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:giant-soul-ua",
+      "source": "Unearthed Arcana 50 - Giant Soul"
+    },
+    {
+      "name": "Mage of Prismari (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:mage-of-prismari-ua",
+      "source": "Unearthed Arcana 79 - Mages of Strixhaven"
+    },
+    {
+      "name": "Mage of Quandrix (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:mage-of-quandrix-ua",
+      "source": "Unearthed Arcana 79 - Mages of Strixhaven"
+    },
+    {
+      "name": "Phoenix Sorcery (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:phoenix-sorcery-ua",
+      "source": "Unearthed Arcana 28 - Sorcerer"
+    },
+    {
+      "name": "Psionic Soul (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:psionic-soul-ua",
+      "source": "Unearthed Arcana 71 - Psionic Options Revisited"
+    },
+    {
+      "name": "Sea Sorcery (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:sea-sorcery-ua",
+      "source": "Unearthed Arcana 28 - Sorcerer"
+    },
+    {
+      "name": "Shadow (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:shadow-ua",
+      "source": "Unearthed Arcana 10 - Light, Dark, Underdark!"
+    },
+    {
+      "name": "Stone Sorcery (UA)",
+      "url": "https://dnd5e.wikidot.com/sorcerer:stone-sorcery-ua",
+      "source": "Unearthed Arcana 28 - Sorcerer"
+    }
+  ],
+  "features": [
+    {
+      "name": "Spellcasting",
+      "html description": "<p>An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells.</p>\n<h5>Cantrips</h5>\n<p>At 1st level, you know four cantrips of your choice from the sorcerer spell list.</p>\n<h5>Spell Slots</h5>\n<p>The Sorcerer table shows how many spell slots you have to cast your sorcerer spells of 1st level and higher. You regain all expended spell slots when you finish a long rest.</p>\n<h5>Spells Known of 1st Level and Higher</h5>\n<p>You know two 1st-level spells of your choice from the sorcerer spell list.</p>\n<h5>Spellcasting Ability</h5>\n<p>Charisma is your spellcasting ability for your sorcerer spells.</p>\n<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>\n<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Charisma modifier</p>\n<h5>Spellcasting Focus</h5>\n<p>You can use an arcane focus as a spellcasting focus for your sorcerer spells.</p>"
+    },
+    {
+      "name": "Sorcerous Origin",
+      "html description": "<p>Choose a sorcerous origin, which grants you features at 1st level and again at 6th, 14th, and 18th level.</p>"
+    },
+    {
+      "name": "Font of Magic",
+      "html description": "<p>At 2nd level, you gain sorcery points that you can use to create a variety of magical effects.</p>\n<ul>\n  <li><strong>Sorcery Points.</strong> You gain sorcery points as shown in the class table and regain all spent points when you finish a long rest.</li>\n  <li><strong>Flexible Casting.</strong> You can create spell slots from sorcery points or convert spell slots into sorcery points (see “Creating Spell Slots”).</li>\n</ul>"
+    },
+    {
+      "name": "Metamagic",
+      "html description": "<p>At 3rd level, you gain two Metamagic options of your choice. You gain another at 10th and 17th level. You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>\n<p>This page lists many options, including Careful Spell, Distant Spell, Empowered Spell, Extended Spell, Heightened Spell, Quickened Spell, Seeking Spell (and UA variant), Subtle Spell, and Transmuted Spell.</p>"
+    },
+    {
+      "name": "Ability Score Improvement",
+      "html description": "<p>At 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase ability scores as normal.</p>"
+    },
+    {
+      "name": "Sorcerous Versatility (Optional)",
+      "html description": "<p>Whenever you gain an Ability Score Improvement, you can optionally swap certain sorcerer choices (as listed on the page).</p>"
+    },
+    {
+      "name": "Magical Guidance (Optional)",
+      "html description": "<p>At 5th level, you can spend 1 sorcery point to reroll a failed ability check (per the optional feature on the page).</p>"
+    },
+    {
+      "name": "Sorcerous Restoration",
+      "html description": "<p>At 20th level, you regain a small number of sorcery points when you finish a short rest (per the class feature).</p>"
+    }
+  ]
+}

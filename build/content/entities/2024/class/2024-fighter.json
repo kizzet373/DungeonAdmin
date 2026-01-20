@@ -1,0 +1,295 @@
+{
+  "name": "Fighter",
+  "source": "Player's Handbook",
+  "class description": "<p>Fighters rule many battlefields. Questing knights, royal champions, elite soldiers, and hardened mercenaries - as Fighters, they all share an unparalleled prowess with weapons and armor. And they are well acquainted with death, both meting it out and defying it.</p><p>Fighters master various weapon techniques, and a well-equipped Fighter always has the right tool at hand for any combat situation. Likewise, a Fighter is adept with every form of armor. Beyond that basic degree of familiarity, each Fighter specializes in certain styles of combat. Some concentrate on archery, some on fighting with two weapons at once, and some on augmenting their martial skills with magic. This combination of broad ability and extensive specialization makes Fighters superior combatants.</p>",
+  "core traits": [
+    {
+      "name": "Primary Ability",
+      "html description": "Strength or Dexterity"
+    },
+    {
+      "name": "Hit Point Die",
+      "html description": "D10 per Fighter level"
+    },
+    {
+      "name": "Saving Throw Proficiencies",
+      "html description": "Strength and Constitution"
+    },
+    {
+      "name": "Skill Proficiencies",
+      "html description": "Choose 2: Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Persuasion, Perception, or Survival"
+    },
+    {
+      "name": "Weapon Proficiencies",
+      "html description": "Simple and Martial weapons"
+    },
+    {
+      "name": "Armor Training",
+      "html description": "Light, Medium and Heavy armor and Shields"
+    },
+    {
+      "name": "Starting Equipment",
+      "html description": "Choose A, B, or C: (A) Chain Mail, Greatsword, Flail, 8 Javelins, Dungeoneer's Pack, and 4gp (B) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Dungeoneer's Pack and 11 GP; or (C) 155 GP"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Banneret",
+      "url": "/content/classes/subclasses/fighter_banneret"
+    },
+    {
+      "name": "Battle Master",
+      "url": "/content/classes/subclasses/fighter_battle-master"
+    },
+    {
+      "name": "Champion",
+      "url": "/content/classes/subclasses/fighter_champion"
+    },
+    {
+      "name": "Eldritch Knight",
+      "url": "/content/classes/subclasses/fighter_eldritch-knight"
+    },
+    {
+      "name": "Psi Warrior",
+      "url": "/content/classes/subclasses/fighter_psi-warrior"
+    }
+  ],
+  "multiclass requirements": [],
+  "multiclass characteristics": [
+    {
+      "name": "Gained Traits",
+      "html_content": "<ul>\n<li>Gain the following traits from the Core Fighter Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.</li>\n<li>Gain the Fighter’s level 1 features, which are listed in the Fighter Features table.</li>\n</ul>"
+    }
+  ],
+  "class feature table": [
+    {
+      "name": "Class Feature Table",
+      "columns": [
+        "Level",
+        "Proficiency Bonus",
+        "Class Features",
+        "Second Wind",
+        "Weapon Mastery"
+      ],
+      "rows": [
+        [
+          "1",
+          "2",
+          "Fighting Style, Second Wind, Weapon Mastery",
+          "2",
+          "3"
+        ],
+        [
+          "2",
+          "2",
+          "Action Surge (One Use), Tactical Mind",
+          "2",
+          "3"
+        ],
+        [
+          "3",
+          "2",
+          "Fighter Subclass",
+          "2",
+          "3"
+        ],
+        [
+          "4",
+          "2",
+          "Ability Score Improvement",
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "3",
+          "Extra Attack, Tactical Shift",
+          "3",
+          "4"
+        ],
+        [
+          "6",
+          "3",
+          "Ability Score Improvement",
+          "3",
+          "4"
+        ],
+        [
+          "7",
+          "3",
+          "Subclass Feature",
+          "3",
+          "4"
+        ],
+        [
+          "8",
+          "3",
+          "Ability Score Improvement",
+          "3",
+          "4"
+        ],
+        [
+          "9",
+          "4",
+          "Indomitable (One Use), Tactical Master",
+          "3",
+          "4"
+        ],
+        [
+          "10",
+          "4",
+          "Subclass Feature",
+          "4",
+          "5"
+        ],
+        [
+          "11",
+          "4",
+          "Two Extra Attacks",
+          "4",
+          "5"
+        ],
+        [
+          "12",
+          "4",
+          "Ability Score Improvement",
+          "4",
+          "5"
+        ],
+        [
+          "13",
+          "5",
+          "Indomitable (Two Uses), Studied Attacks",
+          "4",
+          "5"
+        ],
+        [
+          "14",
+          "5",
+          "Ability Score Improvement",
+          "4",
+          "5"
+        ],
+        [
+          "15",
+          "5",
+          "Subclass Feature",
+          "4",
+          "5"
+        ],
+        [
+          "16",
+          "5",
+          "Ability Score Improvement",
+          "4",
+          "6"
+        ],
+        [
+          "17",
+          "6",
+          "Action Surge (Two Uses), Indomitable (Three Uses)",
+          "4",
+          "6"
+        ],
+        [
+          "18",
+          "6",
+          "Subclass Feature",
+          "4",
+          "6"
+        ],
+        [
+          "19",
+          "6",
+          "Epic Boon",
+          "4",
+          "6"
+        ],
+        [
+          "20",
+          "6",
+          "Three Extra Attacks",
+          "4",
+          "6"
+        ]
+      ]
+    }
+  ],
+  "features": [
+    {
+      "name": "Fighting Style",
+      "level": 1,
+      "html_content": "<p>You gain a <a href=\"/feat:all\">Fighting Style feat</a> of your choice (see chapter 5). <a href=\"/feat:defense\">Defense</a> is recommended.</p>\n<p>Whenever you gain a Fighter level, you can replace the feat you chose with a different Fighting Style feat.</p>"
+    },
+    {
+      "name": "Second Wind",
+      "level": 1,
+      "html_content": "<p>You have a limited well of physical and mental stamina that you can draw on. As a Bonus Action, you can use it to regain Hit Points equal to 1d10 plus your Fighter level.</p>\n<p>You can use this feature twice. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>\n<p>When you reach certain Fighter levels, you gain more uses of this feature, as shown in the Second Wind column of the Fighter Features table.</p>"
+    },
+    {
+      "name": "Weapon Mastery",
+      "level": 1,
+      "html_content": "<p>Your training with weapons allows you to use the mastery properties of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>\n<p>When you reach certain Fighter levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter Features table.</p>"
+    },
+    {
+      "name": "Action Surge",
+      "level": 2,
+      "html_content": "<p>You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action.</p>\n<p>Once you use this feature, you can’t do so again until you finish a Short or Long Rest. Starting at level 17, you can use it twice before a rest but only once on a turn.</p>"
+    },
+    {
+      "name": "Tactical Mind",
+      "level": 2,
+      "html_content": "<p>You have a mind for tactics on and off the battlefield. When you fail an ability check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the ability check, potentially turning it into a success. If the check still fails, this use of Second Wind isn’t expended.</p>"
+    },
+    {
+      "name": "Fighter Subclass",
+      "level": 3,
+      "html_content": "<p>You gain a Fighter subclass of your choice. The Battle Master, Champion, Eldritch Knight, and Psi Warrior subclasses are detailed after this class’s description. A subclass is a specialization that grants you features at certain Fighter levels. For the rest of your career, you gain each of your subclass’s features that are of your Fighter level or lower.</p>\n<h5 id=\"toc11\"><span>Fighter Subclasses</span></h5>\n<div class=\"list-pages-box\">    \n\n<table class=\"wiki-content-table\">\n<tbody><tr>\n<th>Name</th>\n</tr>\n<tr>\n<td><a href=\"/fighter:banneret\">Banneret</a></td>\n</tr>\n<tr>\n<td><a href=\"/fighter:battle-master\">Battle Master</a></td>\n</tr>\n<tr>\n<td><a href=\"/fighter:champion\">Champion</a></td>\n</tr>\n<tr>\n<td><a href=\"/fighter:eldritch-knight\">Eldritch Knight</a></td>\n</tr>\n<tr>\n<td><a href=\"/fighter:psi-warrior\">Psi Warrior</a></td>\n</tr>\n</tbody></table>\n\n    \n    \n    \n    </div>"
+    },
+    {
+      "name": "Ability Score Improvement",
+      "level": 4,
+      "html_content": "<p>You gain the <a href=\"/feat:ability-score-improvement\">Ability Score Improvement feat</a> or another <a href=\"/feat:all\">feat of your choice</a> for which you qualify. You gain this feature again at Fighter levels 6, 8, 12, 14, and 16.</p>"
+    },
+    {
+      "name": "Extra Attack",
+      "level": 5,
+      "html_content": "<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>"
+    },
+    {
+      "name": "Tactical Shift",
+      "level": 5,
+      "html_content": "<p>Whenever you activate your Second Wind with a Bonus Action, you can move up to half your Speed without provoking Opportunity Attacks.</p>"
+    },
+    {
+      "name": "Indomitable",
+      "level": 9,
+      "html_content": "<p>If you fail a saving throw, you can reroll it with a bonus equal to your Fighter level. You must use the new roll, and you can’t use this feature again until you finish a Long Rest.</p>\n<p>You can use this feature twice before a Long Rest starting at level 13 and three times before a Long Rest starting at level 17.</p>"
+    },
+    {
+      "name": "Tactical Master",
+      "level": 9,
+      "html_content": "<p>When you attack with a weapon whose mastery property you can use, you can replace that property with the Push, Sap, or Slow property for that attack.</p>"
+    },
+    {
+      "name": "Two Extra Attacks",
+      "level": 11,
+      "html_content": "<p>You can attack three times instead of once whenever you take the Attack action on your turn.</p>"
+    },
+    {
+      "name": "Studied Attacks",
+      "level": 13,
+      "html_content": "<p>You study your opponents and learn from each attack you make. If you make an attack roll against a creature and miss, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>"
+    },
+    {
+      "name": "Epic Boon",
+      "level": 19,
+      "html_content": "<p>You gain an <a href=\"/feat:all\">Epic Boon feat</a> or another feat of your choice for which you qualify. <a href=\"/feat:boon-of-combat-prowess\">Boon of Combat Prowess</a> is recommended.</p>"
+    },
+    {
+      "name": "Level 20: Three Extra Attacks",
+      "level": 20,
+      "html_content": "<p>You can attack four times instead of once whenever you take the Attack action on your turn.</p>"
+    }
+  ]
+}

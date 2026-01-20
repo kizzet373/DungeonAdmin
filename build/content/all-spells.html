@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <meta http-equiv="content-language" content="en">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -43,16 +44,16 @@
                                             <div class="filter-buttons">
                                                 <button class="btn btn-outline-secondary" :class="{'active': !activeFilter.school}" @click="EPManager.clearFilter('school')">All Schools</button>
                                                 <template x-for="school in uniqueSchools" :key="school">
-                                                    <button class="btn btn-outline-secondary ms-1 mb-1 text-capitalize" :class="{'active': activeFilter.school === school.toLowerCase()}" @click="EPManager.setFilter('school', school.toLowerCase())" x-text="school"></button>
+                                                    <button class="btn btn-outline-secondary ms-1 text-capitalize" :class="{'active': activeFilter.school === school.toLowerCase()}" @click="EPManager.setFilter('school', school.toLowerCase())" x-text="school"></button>
                                                 </template>
                                             </div>
                                         </div>
                                         <div class="group-list mt-3">
                                             <h4><span>Class Spell Lists</span></h4>
                                             <div class="filter-buttons">
-                                                <button class="btn btn-outline-secondary" :class="{'active': !activeFilter.class}" @click="EPManager.clearFilter('class')">All Classes</button>
+                                                <button class="btn btn-outline-secondary px-1" :class="{'active': !activeFilter.class}" @click="EPManager.clearFilter('class')">All Classes</button>
                                                 <template x-for="className in uniqueClasses" :key="className">
-                                                    <button class="btn btn-outline-secondary ms-1 mb-1 text-capitalize" :class="{'active': activeFilter.class === className.toLowerCase()}" @click="EPManager.setFilter('class', className.toLowerCase())" x-text="className"></button>
+                                                    <button class="btn btn-outline-secondary px-1 ms-1 text-capitalize" :class="{'active': activeFilter.class === className.toLowerCase()}" @click="EPManager.setFilter('class', className.toLowerCase())" x-text="className"></button>
                                                 </template>
                                             </div>
                                         </div>
@@ -89,10 +90,10 @@
                                                                                 <purple style="font-size:small" x-text="spell.status ? ' (' + spell.status + ')' : ''">
                                                                                 </purple>
                                                                             </a></td>
-                                                                        <td class="text-capitalize" x-text="spell.school"></td>
+                                                                        <td class="text-capitalize desktop" x-text="spell.school"></td>
                                                                         <td class="text-capitalize" x-text="spell.class ? spell.class.join(', ') : ''">
                                                                         </td>
-                                                                        <td class="desktop">
+                                                                        <td>
                                                                             <span x-text="spell.casting_time"></span>
                                                                             <span x-text="spell.ritual ? '(ritual)' : ''"></span>
                                                                         </td>
@@ -103,11 +104,10 @@
                                                                         </td>
                                                                     </tr>
                                                                     <tr :class="Math.floor(i) % 2 === 0 ? 'primary-row' : 'secondary-row'">
-                                                                        <td colspan="7" class="p-0">
+                                                                        <td colspan="100%" class="p-0">
                                                                             <div class="collapse p-3" style="border-bottom:1px solid;" :id="i + '-details'">
-                                                                                <p class="mobile"><b>Casting Time:</b>
-                                                                                    <span x-text="spell.casting_time"></span>
-                                                                                    <span x-text="spell.ritual ? '(ritual)' : ''"></span>
+                                                                                <p class="mobile"><b>School:</b>
+                                                                                    <span class="text-capitalize" x-text="spell.school"></span>
                                                                                 </p>
                                                                                 <p class="mobile"><b>Components:</b>
                                                                                     <span x-text="spell.components"></span>

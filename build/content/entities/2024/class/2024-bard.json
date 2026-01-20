@@ -1,0 +1,439 @@
+{
+  "name": "Bard",
+  "source": "Player's Handbook",
+  "class description": "<p>Invoking magic through music, dance, and verse, Bards are expert at inspiring others, soothing hurts, disheartening foes, and creating illusions. Bards believe the multiverse was spoken into existence and that remnants of its Words of Creation still resound and glimmer on every plane of existence. Bardic magic attempts to harness those words, which transcend any language.</p><p>Anything can inspire a new song or tale, so Bards are fascinated by almost everything. They become masters of many things, including performing music, working magic, and making jests.</p><p>A Bard's life is spent traveling, gathering lore, telling stories, and living on the gratitude of audiences, much like any other entertainer. But Bards' depth of knowledge and mastery of magic sets them apart.</p>",
+  "core traits": [
+    {
+      "name": "Primary Ability",
+      "html description": "Charisma"
+    },
+    {
+      "name": "Hit Point Die",
+      "html description": "D8 per Bard level"
+    },
+    {
+      "name": "Saving Throw Proficiencies",
+      "html description": "Dexterity and Charisma"
+    },
+    {
+      "name": "Skill Proficiencies",
+      "html description": "Choose any 3 skills"
+    },
+    {
+      "name": "Tool Proficiencies",
+      "html description": "Choose 3 Musical Instruments"
+    },
+    {
+      "name": "Weapon Proficiencies",
+      "html description": "Simple weapons"
+    },
+    {
+      "name": "Armor Training",
+      "html description": "Light armor"
+    },
+    {
+      "name": "Starting Equipment",
+      "html description": "Choose A or B: (A) Leather Armor, 2 Daggers, Musical Instrument of your choice, Entertainer’s Pack, and 19 GP; or (B) 90 GP"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Bard spell list",
+      "url": "/content/classes/subclasses/bard_spell-list"
+    },
+    {
+      "name": "College of Dance",
+      "url": "/content/classes/subclasses/bard_college-of-dance"
+    },
+    {
+      "name": "College of Glamour",
+      "url": "/content/classes/subclasses/bard_college-of-glamour"
+    },
+    {
+      "name": "College of Lore",
+      "url": "/content/classes/subclasses/bard_college-of-lore"
+    },
+    {
+      "name": "College of the Moon",
+      "url": "/content/classes/subclasses/bard_college-of-the-moon"
+    },
+    {
+      "name": "College of Valor",
+      "url": "/content/classes/subclasses/bard_college-of-valor"
+    },
+    {
+      "name": "Bard",
+      "url": "/content/classes/subclasses/bard_spell-list"
+    }
+  ],
+  "multiclass requirements": [],
+  "multiclass characteristics": [
+    {
+      "name": "Gained Traits",
+      "html_content": "<ul>\n<li>Gain the following traits from the Core Bard Traits table: Hit Point Die, proficiency in one skill of your choice, proficiency with one Musical Instrument of your choice, and training with Light armor.</li>\n<li>Gain the Bard's level 1 features, which are listed in the Bard Features table. See the multiclassing rules in <a href=\"/class:multiclassing\">multiclassing</a> to determine your available spell slots.</li>\n</ul>"
+    }
+  ],
+  "class feature table": [
+    {
+      "name": "Class Feature Table",
+      "columns": [
+        "Level",
+        "Cantrips",
+        "Prepared Spells",
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th"
+      ],
+      "rows": [
+        [
+          "1",
+          "2",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "2",
+          "5",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "2",
+          "6",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "3",
+          "7",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "3",
+          "9",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "3",
+          "10",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7",
+          "3",
+          "11",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8",
+          "3",
+          "12",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9",
+          "3",
+          "14",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "10",
+          "4",
+          "15",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "11",
+          "4",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "12",
+          "4",
+          "16",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "13",
+          "4",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "14",
+          "4",
+          "17",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "15",
+          "4",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "16",
+          "4",
+          "18",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "17",
+          "4",
+          "19",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "18",
+          "4",
+          "20",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "19",
+          "4",
+          "21",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "20",
+          "4",
+          "22",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "2",
+          "1",
+          "1"
+        ]
+      ]
+    }
+  ],
+  "features": [
+    {
+      "name": "Bardic Inspiration",
+      "level": 1,
+      "html_content": "<p>You can supernaturally inspire others through words, music, or dance. This inspiration is represented by your Bardic Inspiration die, which is a d6.</p>\n<p><strong>Using Bardic Inspiration.</strong> As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time.</p>\n<p>Once within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled.</p>\n<p><strong>Number of Uses.</strong> You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>\n<p><strong>At Higher Levels.</strong> Your Bardic Inspiration die changes when you reach certain Bard levels, as shown in the Bardic Die column of the Bard Features table. The die becomes a d8 at level 5, a d10 at level 10, and a d12 at level 15.</p>"
+    },
+    {
+      "name": "Spellcasting",
+      "level": 1,
+      "html_content": "<p>You have learned to cast spells through your bardic arts. See chapter 7 for the rules on spellcasting. The information below details how you use those rules with Bard spells, which appear in the <a href=\"/bard:spell-list\">Bard spell list</a> later in the class's description.</p>\n<p><strong>Cantrips.</strong> You know two cantrips of your choice from the Bard spell list. <a href=\"/spell:dancing-lights\">Dancing Lights</a> and <a href=\"/spell:vicious-mockery\">Vicious Mockery</a> are recommended.</p>\n<p>Whenever you gain a Bard level, you can replace one of your cantrips with another cantrip of your choice from the Bard spell list.</p>\n<p>When you reach Bard levels 4 and 10, you learn another cantrip of your choice from the Bard spell list, as shown in the Cantrips column of the Bard Features table.</p>\n<p><strong>Spell Slots.</strong> The Bard Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>\n<p><strong>Prepared Spells of Level 1+.</strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the Bard spell list. <a href=\"/spell:charm-person\">Charm Person</a>, <a href=\"/spell:color-spray\">Color Spray</a>, <a href=\"/spell:dissonant-whispers\">Dissonant Whispers</a>, and <a href=\"/spell:healing-word\">Healing Word</a> are recommended.</p>\n<p>The number of spells on your list increases as you gain Bard levels, as shown in the Prepared Spells column of the Bard Features table. Whenever that number increases, choose additional spells from the Bard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Bard, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p>\n<p>If another Bard feature gives you spells that you always have prepared, those spells don’t count against the number of spells you can prepare with this feature, but those spells otherwise count as Bard spells for you.</p>\n<p><strong>Changing Your Prepared Spells.</strong> Whenever you gain a Bard level, you can replace one spell on your list with another Bard spell for which you have spell slots.</p>\n<p><strong>Spellcasting Ability.</strong> Charisma is your spellcasting ability for your Bard spells.</p>\n<p><strong>Spellcasting Focus.</strong> You can use a Musical Instrument as a Spellcasting Focus for your Bard spells.</p>"
+    },
+    {
+      "name": "Expertise",
+      "level": 2,
+      "html_content": "<p>You gain Expertise (see the rules glossary) in two of your skill proficiencies of your choice. Performance and Persuasion are recommended if you have proficiency in them.</p>\n<p>At Bard level 9, you gain Expertise in two more of your skill proficiencies of your choice.</p>"
+    },
+    {
+      "name": "Jack of all Trades",
+      "level": 2,
+      "html_content": "<p>You can add half your Proficiency Bonus (round down) to any ability check you make that uses a skill proficiency you lack and that doesn't otherwise use your Proficiency Bonus.</p>\n<p>For example, if you make a Strength (Athletics) check and lack Athletics proficiency, you can add half your Proficiency Bonus to the check.</p>"
+    },
+    {
+      "name": "Bard Subclass",
+      "level": 3,
+      "html_content": "<p>You gain a Bard subclass of your choice. The College of Dance, College of Glamour, College of Lore, and College of Valor subclasses are detailed after this class's description. A subclass is a specialization that grants you features at certain Bard levels. For the rest of your career, you gain each of your subclass’s features that are of your Bard level or lower.</p>\n<h5 id=\"toc11\"><span>Bard Subclasses</span></h5>\n<div class=\"list-pages-box\">    \n\n<table class=\"wiki-content-table\">\n<tbody><tr>\n<th>Name</th>\n</tr>\n<tr>\n<td><a href=\"/bard:college-of-dance\">College of Dance</a></td>\n</tr>\n<tr>\n<td><a href=\"/bard:college-of-glamour\">College of Glamour</a></td>\n</tr>\n<tr>\n<td><a href=\"/bard:college-of-lore\">College of Lore</a></td>\n</tr>\n<tr>\n<td><a href=\"/bard:college-of-the-moon\">College of the Moon</a></td>\n</tr>\n<tr>\n<td><a href=\"/bard:college-of-valor\">College of Valor</a></td>\n</tr>\n</tbody></table>\n\n    \n    \n    \n    </div>"
+    },
+    {
+      "name": "Ability Score Improvement",
+      "level": 4,
+      "html_content": "<p>You gain the <a href=\"/feat:ability-score-improvement\">Ability Score Improvement feat</a> or another <a href=\"/feat:all\">feat of your choice</a> for which you qualify. You gain this feature again at Bard levels 8, 12, and 16.</p>"
+    },
+    {
+      "name": "Font of Inspiration",
+      "level": 5,
+      "html_content": "<p>You now regain all your expended uses of Bardic Inspiration when you finish a Short or Long Rest.</p>\n<p>In addition, you can expend a spell slot (no action required) to regain one expended use of Bardic Inspiration.</p>"
+    },
+    {
+      "name": "Countercharm",
+      "level": 7,
+      "html_content": "<p>You can use musical notes or words of power to disrupt mind-influencing effects. If you or a creature within 30 feet of you fails a saving throw against an effect that applies the Charmed or Frightened condition, you can take a Reaction to cause the save to be rerolled, and the new roll has Advantage.</p>"
+    },
+    {
+      "name": "Level 10: Magical Secrets",
+      "level": 10,
+      "html_content": "<p>You've learned secrets from various magical traditions. Whenever you reach a Bard level (including this level) and the Prepared Spells number in the Bard Features table increases, you can choose any of your new prepared spells from the <a href=\"/bard:spell-list\">Bard</a>, <a href=\"/cleric:spell-list\">Cleric</a>, <a href=\"/druid:spell-list\">Druid</a>, and <a href=\"/wizard:spell-list\">Wizard</a> spell lists, and the chosen spells count as Bard spells for you (see a class’s section for its spell list). In addition, whenever you replace a spell prepared for this class, you can replace it with a spell from those lists.</p>"
+    },
+    {
+      "name": "Superior Inspiration",
+      "level": 18,
+      "html_content": "<p>When you roll Initiative, you regain expended uses of Bardic Inspiration until you have two if you have fewer than that.</p>"
+    },
+    {
+      "name": "Epic Boon",
+      "level": 19,
+      "html_content": "<p>You gain an <a href=\"/feat:all\">Epic Boon feat</a> or another feat of your choice for which you qualify. <a href=\"/feat:boon-of-spell-recall\">Boon of Spell Recall</a> is recommended.</p>"
+    },
+    {
+      "name": "Level 20: Words of Creation",
+      "level": 20,
+      "html_content": "<p>You have mastered two of the Words of Creation: the words of life and death. You therefore always have the <a href=\"/spell:power-word-heal\">Power Word: Heal</a> and <a href=\"/spell:power-word-kill\">Power Word: Kill</a> spells prepared. When you cast either spell, you can target a second creature with it if that creature is within 10 feet of the first target.</p>"
+    }
+  ]
+}

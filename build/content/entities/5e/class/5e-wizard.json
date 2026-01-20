@@ -1,0 +1,487 @@
+{
+  "name": "Wizard",
+  "source": "DND 5th Edition (dnd5e.wikidot.com)",
+  "class description": "<p>Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, brutal mind control, and much more.</p>",
+  "multiclass requirements": [
+    "Intelligence 13 or higher"
+  ],
+  "multiclass characteristics": [],
+  "core traits": [
+    {
+      "name": "Primary Ability",
+      "html description": "<p>Intelligence</p>"
+    },
+    {
+      "name": "Hit Point Die",
+      "html description": "<p>1d6 per wizard level</p>"
+    },
+    {
+      "name": "Saving Throw Proficiencies",
+      "html description": "<p>Intelligence, Wisdom</p>"
+    },
+    {
+      "name": "Skill Proficiencies",
+      "html description": "<p>Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion</p>"
+    },
+    {
+      "name": "Armor Proficiencies",
+      "html description": "<p>None</p>"
+    },
+    {
+      "name": "Weapon Proficiencies",
+      "html description": "<p>Daggers, darts, slings, quarterstaffs, light crossbows</p>"
+    },
+    {
+      "name": "Tool Proficiencies",
+      "html description": "<p>None</p>"
+    },
+    {
+      "name": "Equipment",
+      "html description": "<p>You start with the following equipment, in addition to the equipment granted by your background:</p>\n<ul>\n  <li>(a) a quarterstaff or (b) a dagger</li>\n  <li>(a) a component pouch or (b) an arcane focus</li>\n  <li>(a) a scholar's pack or (b) an explorer's pack</li>\n  <li>A spellbook</li>\n</ul>"
+    }
+  ],
+  "class feature table": [
+    {
+      "name": "Class Feature Table",
+      "columns": [
+        "Level",
+        "Proficiency Bonus",
+        "Features",
+        "Cantrips Known",
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th"
+      ],
+      "rows": [
+        [
+          "1st",
+          "+2",
+          "Spellcasting, Arcane Recovery",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2nd",
+          "+2",
+          "Arcane Tradition",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "3rd",
+          "+2",
+          "-",
+          "3",
+          "4",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "4th",
+          "+2",
+          "Ability Score Improvement",
+          "4",
+          "4",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "5th",
+          "+3",
+          "-",
+          "4",
+          "4",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "6th",
+          "+3",
+          "Arcane Tradition feature",
+          "4",
+          "4",
+          "3",
+          "3",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "7th",
+          "+3",
+          "-",
+          "4",
+          "4",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "8th",
+          "+3",
+          "Ability Score Improvement",
+          "4",
+          "4",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "9th",
+          "+4",
+          "-",
+          "4",
+          "4",
+          "3",
+          "3",
+          "3",
+          "1",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "10th",
+          "+4",
+          "Arcane Tradition feature",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "11th",
+          "+4",
+          "-",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "12th",
+          "+4",
+          "Ability Score Improvement",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "13th",
+          "+5",
+          "-",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "14th",
+          "+5",
+          "Arcane Tradition feature",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "-",
+          "-"
+        ],
+        [
+          "15th",
+          "+5",
+          "-",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "16th",
+          "+5",
+          "Ability Score Improvement",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "-"
+        ],
+        [
+          "17th",
+          "+6",
+          "-",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "18th",
+          "+6",
+          "Spell Mastery",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "19th",
+          "+6",
+          "Ability Score Improvement",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "20th",
+          "+6",
+          "Signature Spells",
+          "5",
+          "4",
+          "3",
+          "3",
+          "3",
+          "3",
+          "2",
+          "2",
+          "1",
+          "1"
+        ]
+      ]
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Bladesinging",
+      "url": "https://dnd5e.wikidot.com/wizard:bladesinging",
+      "source": "Tasha's Cauldron of Everything"
+    },
+    {
+      "name": "Chronurgy Magic",
+      "url": "https://dnd5e.wikidot.com/wizard:chronurgy",
+      "source": "Explorer's Guide to Wildemount"
+    },
+    {
+      "name": "Graviturgy Magic",
+      "url": "https://dnd5e.wikidot.com/wizard:graviturgy",
+      "source": "Explorer's Guide to Wildemount"
+    },
+    {
+      "name": "Order of Scribes",
+      "url": "https://dnd5e.wikidot.com/wizard:scribes",
+      "source": "Tasha's Cauldron of Everything"
+    },
+    {
+      "name": "School of Abjuration",
+      "url": "https://dnd5e.wikidot.com/wizard:abjuration",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "School of Conjuration",
+      "url": "https://dnd5e.wikidot.com/wizard:conjuration",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "School of Divination",
+      "url": "https://dnd5e.wikidot.com/wizard:divination",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "School of Enchantment",
+      "url": "https://dnd5e.wikidot.com/wizard:enchantment",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "School of Evocation",
+      "url": "https://dnd5e.wikidot.com/wizard:evocation",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "School of Illusion",
+      "url": "https://dnd5e.wikidot.com/wizard:illusion",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "School of Necromancy",
+      "url": "https://dnd5e.wikidot.com/wizard:necromancy",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "School of Transmutation",
+      "url": "https://dnd5e.wikidot.com/wizard:transmutation",
+      "source": "Player's Handbook"
+    },
+    {
+      "name": "War Magic",
+      "url": "https://dnd5e.wikidot.com/wizard:war-magic",
+      "source": "Xanathar's Guide to Everything"
+    },
+    {
+      "name": "Onomancy (UA)",
+      "url": "https://dnd5e.wikidot.com/wizard:onomancy-ua",
+      "source": "Unearthed Arcana 63 - Fighter, Ranger, Rogue"
+    },
+    {
+      "name": "Order of Scribes (UA)",
+      "url": "https://dnd5e.wikidot.com/wizard:order-of-scribes-ua",
+      "source": "Unearthed Arcana 72 - Subclasses Revisited"
+    },
+    {
+      "name": "Psionics (UA)",
+      "url": "https://dnd5e.wikidot.com/wizard:psionics-ua",
+      "source": "Unearthed Arcana 66 - Fighter, Rogue, Wizard"
+    },
+    {
+      "name": "Technomancy (UA)",
+      "url": "https://dnd5e.wikidot.com/wizard:technomancy-ua",
+      "source": "Unearthed Arcana 7 - Modern Magic"
+    },
+    {
+      "name": "Theurgy (UA)",
+      "url": "https://dnd5e.wikidot.com/wizard:theurgy-ua",
+      "source": "Unearthed Arcana 33 - Wizard Revisited"
+    }
+  ],
+  "features": [
+    {
+      "name": "Spellcasting",
+      "html description": "<p>As a wizard, you gain the ability to cast spells. Your spellbook contains the spells you know, and you prepare a list of wizard spells to cast.</p>\n<h5>Cantrips</h5>\n<p>At 1st level, you know three cantrips of your choice from the wizard spell list.</p>\n<h5>Spell Slots</h5>\n<p>The Wizard table shows how many spell slots you have. You regain all expended spell slots when you finish a long rest.</p>\n<h5>Preparing and Casting Spells</h5>\n<p>You prepare a list of wizard spells from your spellbook each day.</p>\n<h5>Spellcasting Ability</h5>\n<p>Intelligence is your spellcasting ability for wizard spells.</p>\n<h5>Ritual Casting</h5>\n<p>You can cast a wizard spell as a ritual if it has the ritual tag and you have the spell in your spellbook.</p>\n<h5>Spellcasting Focus</h5>\n<p>You can use an arcane focus as a spellcasting focus for your wizard spells.</p>\n<h5>Learning Spells of 1st Level and Higher</h5>\n<p>Each time you gain a wizard level, you can add two wizard spells to your spellbook.</p>"
+    },
+    {
+      "name": "Arcane Recovery",
+      "html description": "<p>Once per day when you finish a short rest, you can recover expended spell slots (see the class feature for the details and limits).</p>"
+    },
+    {
+      "name": "Arcane Tradition",
+      "html description": "<p>When you reach 2nd level, you choose an Arcane Tradition, granting features at 2nd level and again at 6th, 10th, and 14th level.</p>"
+    },
+    {
+      "name": "Cantrip Formulas (Optional)",
+      "html description": "<p>At 3rd level, you can replace one wizard cantrip you know with another cantrip from the wizard spell list when you finish a long rest (optional feature).</p>"
+    },
+    {
+      "name": "Ability Score Improvement",
+      "html description": "<p>At 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase ability scores as normal.</p>"
+    },
+    {
+      "name": "Spell Mastery",
+      "html description": "<p>At 18th level, you can cast one chosen 1st-level wizard spell and one chosen 2nd-level wizard spell at will when prepared (see feature for details, and you can swap them after extended study).</p>"
+    },
+    {
+      "name": "Signature Spells",
+      "html description": "<p>At 20th level, choose two 3rd-level wizard spells in your spellbook as signature spells. You always have them prepared, and you can cast each once at 3rd level without expending a spell slot per short/long rest.</p>"
+    }
+  ]
+}
